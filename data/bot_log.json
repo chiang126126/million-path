@@ -1,6 +1,6 @@
 {
-  "ts": "2026-06-19T20:13:39Z",
-  "mode": "dry",
+  "ts": "2026-06-19T20:39:05Z",
+  "mode": "testnet",
   "equity": 500.0,
   "day_pnl_pct": 0.0,
   "total_dd_pct": 0.0,
@@ -9,21 +9,22 @@
       "symbol": "BTCUSDT",
       "source": "llm",
       "bias": "FLAT",
-      "confidence": 0.0,
+      "confidence": 0.3,
       "vetted": false,
       "reason": "决策为 FLAT/非做多，观望",
-      "rationale": "价格在EMA21上方但低于EMA50，均线未形成多头排列；RSI中性；恐惧指数极低但未形成明确反转信号；波动率低，方向不明。",
+      "rationale": "价格在EMA21上方但低于EMA50，RSI中性，恐惧贪婪指数极低，市场情绪悲观但未形成明确多头信号，观望为主。",
       "action": "skip"
     },
     {
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "FLAT",
-      "confidence": 0.0,
+      "confidence": 0.3,
       "vetted": false,
       "reason": "决策为 FLAT/非做多，观望",
-      "rationale": "价格在EMA21附近，但EMA50在上方形成压制，RSI中性，波动率低，恐惧指数极低但未形成明确反转信号，方向不明。",
+      "rationale": "价格在EMA21和EMA50下方，均线空头排列；RSI中性，波动率低；极度恐惧情绪下市场可能继续弱势震荡，缺乏明确做多信号。",
       "action": "skip"
     }
-  ]
+  ],
+  "testnet_error": "451 Client Error:  for url: https://testnet.binance.vision/api/v3/account?timestamp=1781901545982&recvWindow=5000&signature=f0cb367b93e4ac3b2eb787468e534497affb1f7f6d7d34ffae7b2471b35ddce7"
 }
