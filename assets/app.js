@@ -216,6 +216,55 @@ async function loadEvents() {
   }).join("") || '<span class="badge">暂无事件，去 data/events.json 添加</span>';
 }
 
+//==================== 自动机器人（读取 bot 写入的数据）====================
+async function loadBot() {
+  if (!$("botStats")) return;
+  let st;
+  try { st = await jget("./data/bot_state.json", { cache: "no-store" }); }
+  catch (e) { $("botStats").innerHTML = '<div class="badge">机器人尚未运行（配置 LLM_API_KEY + 启用 Actions 后每小时自动决策）。</div>'; return; }
+  let log = { items: [] }, tr = [];
+  try { log = await jget("./data/bot_log.json", { cache: "no-store" }); } catch (e) {}
+  try { tr = await jget("./data/bot_trades.json", { cache: "no-store" }); } catch (e) {}
+
+  const eq0 = st.equity0 || 500, cum = (st.equity / eq0 - 1) * 100;
+  const wins = tr.filter(t => t.pnl > 0), wr = tr.length ? wins.length / tr.length * 100 : null;
+  const sw = wins.reduce((s, t) => s + t.pnl, 0), sl = Math.abs(tr.filter(t => t.pnl < 0).reduce((s, t) => s + t.pnl, 0));
+  const pf = sl > 0 ? sw / sl : (sw > 0 ? Infinity : null);
+  $("botStats").innerHTML = [
+    ["模式", `<span class="chip neutral">${st.mode || "—"}</span>`],
+    ["机器人权益", fmt(st.equity, 1) + " U"],
+    ["累计收益", `<span class="${cls(cum)}">${pct(cum)}</span>`],
+    ["已平笔数", tr.length],
+    ["胜率", wr == null ? "—" : fmt(wr, 0) + "%"],
+    ["盈亏比", pf == null ? "—" : (pf === Infinity ? "∞" : fmt(pf, 2))],
+    ["持仓中", (st.positions || []).length],
+  ].map(([k, v]) => `<div class="card"><div class="k">${k}</div><div class="v">${v}</div></div>`).join("");
+
+  $("botMode").textContent = `更新于 ${(st.updated_at || "").slice(5, 16).replace("T", " ")} · 日盈亏 ${pct(log.day_pnl_pct)} · 回撤 ${fmt(log.total_dd_pct, 1)}%`;
+
+  $("botOpenBody").innerHTML = (st.positions || []).map(p => {
+    const lp = livePrice((p.symbol || "").replace("USDT", "")); let u = null;
+    if (lp != null) u = (lp - p.entry) * p.qty - (p.fee_in || 0) - lp * p.qty * FEE;
+    return `<tr><td><b>${p.symbol}</b> <span class="chip risk-on">LONG</span></td>
+      <td>${fmt(p.entry, 2)}</td><td>${lp != null ? fmt(lp, 2) : "—"}</td>
+      <td>${fmt(p.stop, 2)}</td><td>${fmt(p.target, 2)}</td>
+      <td class="${cls(u)}">${u == null ? "—" : (u >= 0 ? "+" : "") + fmt(u, 2) + "U"}</td></tr>`;
+  }).join("") || '<tr><td colspan="6" class="badge">当前无持仓</td></tr>';
+
+  $("botDecisions").innerHTML = (log.items || []).map(it =>
+    `<div class="ev" style="padding:8px 0"><div class="t"><b>${it.symbol || ""}</b>
+      <span class="chip ${it.bias === "LONG" ? "risk-on" : "neutral"}">${it.bias || it.action || "—"}</span>
+      <span class="badge">${it.source ? it.source + " · " : ""}${it.confidence != null ? "conf " + it.confidence + " · " : ""}${it.reason || it.rationale || ""}</span></div></div>`).join("") || '<span class="badge">暂无决策</span>';
+
+  $("botTradesBody").innerHTML = tr.slice().reverse().slice(0, 20).map(t => `<tr>
+    <td><b>${t.symbol}</b></td><td>${fmt(t.entry, 2)} → ${fmt(t.exit, 2)}</td>
+    <td>${t.exit_reason || ""}</td>
+    <td class="${cls(t.pnl)}">${(t.pnl >= 0 ? "+" : "") + fmt(t.pnl, 2)}U</td>
+    <td class="${cls(t.r)}">${(t.r >= 0 ? "+" : "") + fmt(t.r, 2)}R</td>
+    <td><span class="chip ${t.outcome === "WIN" ? "risk-on" : t.outcome === "LOSS" ? "risk-off" : "neutral"}">${t.outcome}</span></td>
+    <td class="badge">${(t.closed_at || "").slice(5, 16).replace("T", " ")}</td></tr>`).join("") || '<tr><td colspan="7" class="badge">暂无已平仓</td></tr>';
+}
+
 //==================== 加密新闻（CryptoCompare 直连 + 可选 RSS）====================
 function stampNews() { const nt = $("newsTime"); if (nt) nt.textContent = "更新于 " + new Date().toLocaleTimeString("zh-CN"); }
 async function loadCryptoNews() {
@@ -560,6 +609,7 @@ function applyLivePrice(name, price, chg) {
   _lastPx[name] = price;
   const chgEl = $("chg-" + name);
   if (chgEl) { chgEl.textContent = pct(chg); chgEl.className = "tag " + (chg >= 0 ? "risk-on" : "risk-off"); }
+  paperTick();   // 持仓中则实时刷新浮动盈亏
 }
 
 const LIVE = {
@@ -603,12 +653,120 @@ function toggleLive() {
   next ? LIVE.start() : LIVE.stop();
 }
 
+//==================== Paper 持仓器（localStorage，实时算 PnL）====================
+const FEE = 0.001;  // 模拟手续费 0.1%/边
+function livePrice(name) {
+  if (_lastPx[name] != null) return _lastPx[name];
+  const e = (STATE.market || []).find(c => c.name === name); return e ? e.price : null;
+}
+const PAPER = {
+  data: { equity0: 500, positions: [], closed: [] },
+  load() { try { const s = localStorage.getItem("mp_paper"); if (s) this.data = JSON.parse(s); } catch (e) {} },
+  save() { try { localStorage.setItem("mp_paper", JSON.stringify(this.data)); } catch (e) {} },
+  equity() { return this.data.equity0 + this.data.closed.reduce((s, t) => s + t.pnl, 0); }
+};
+function paperVal(id) { const el = $(id); return el ? el.value : ""; }
+function paperFillEntry() { const p = livePrice(paperVal("pSym")); if (p != null) { const el = $("pEntry"); if (el) el.value = p; } }
+function paperOpen() {
+  const sym = paperVal("pSym"), side = paperVal("pSide");
+  const entry = +paperVal("pEntry"), stop = +paperVal("pStop"), target = +paperVal("pTarget") || null;
+  const riskPct = (+paperVal("pRisk") || 1) / 100;
+  const msg = $("paperMsg"); const warn = t => { if (msg) { msg.textContent = t; msg.className = "err"; } };
+  if (!(entry > 0)) return warn("请填入有效入场价（可点「用现价」）");
+  if (!(stop > 0)) return warn("必须填止损价（无止损不开仓）");
+  if (side === "LONG" && !(stop < entry)) return warn("多单止损价必须低于入场价");
+  if (side === "SHORT" && !(stop > entry)) return warn("空单止损价必须高于入场价");
+  const eq = PAPER.equity();
+  const riskUsdt = eq * riskPct, stopDist = Math.abs(entry - stop) / entry;
+  const notional = riskUsdt / stopDist, qty = notional / entry, feeIn = notional * FEE;
+  PAPER.data.positions.push({ id: Date.now(), sym, side, entry, stop, target, qty, notional, riskUsdt, feeIn, openedAt: new Date().toISOString() });
+  PAPER.save();
+  if (msg) { msg.textContent = `已开 paper ${side} ${sym}：名义 ${fmt(notional, 1)}U，风险 ${fmt(riskUsdt, 2)}U`; msg.className = "badge"; }
+  renderPaper();
+}
+function paperClose(id) {
+  const i = PAPER.data.positions.findIndex(p => p.id === id); if (i < 0) return;
+  const p = PAPER.data.positions[i], exit = livePrice(p.sym);
+  if (exit == null) { const m = $("paperMsg"); if (m) { m.textContent = "暂无实时价，无法平仓（开实时开关或稍候）"; m.className = "err"; } return; }
+  const gross = p.side === "LONG" ? (exit - p.entry) * p.qty : (p.entry - exit) * p.qty;
+  const feeOut = exit * p.qty * FEE, pnl = gross - p.feeIn - feeOut;
+  const r = p.riskUsdt ? pnl / p.riskUsdt : 0, outcome = pnl > 0 ? "WIN" : pnl < 0 ? "LOSS" : "BE";
+  PAPER.data.closed.push({ ...p, exit, pnl, r, feeTotal: p.feeIn + feeOut, closedAt: new Date().toISOString(), outcome });
+  PAPER.data.positions.splice(i, 1); PAPER.save(); renderPaper();
+}
+function paperReset() {
+  if (typeof confirm === "function" && !confirm("确定清空所有 paper 持仓与历史？此操作不可撤销。")) return;
+  PAPER.data = { equity0: 500, positions: [], closed: [] }; PAPER.save(); renderPaper();
+}
+function paperStats() {
+  const c = PAPER.data.closed, n = c.length;
+  const wins = c.filter(t => t.pnl > 0), losses = c.filter(t => t.pnl < 0);
+  const wr = n ? wins.length / n * 100 : null;
+  const sw = wins.reduce((s, t) => s + t.pnl, 0), sl = Math.abs(losses.reduce((s, t) => s + t.pnl, 0));
+  const pf = sl > 0 ? sw / sl : (sw > 0 ? Infinity : null);
+  let eq = PAPER.data.equity0, peak = eq, dd = 0;
+  c.forEach(t => { eq += t.pnl; peak = Math.max(peak, eq); dd = Math.max(dd, (peak - eq) / peak * 100); });
+  const avgR = n ? c.reduce((s, t) => s + (t.r || 0), 0) / n : null;
+  return { n, wr, pf, dd, avgR, equity: PAPER.equity() };
+}
+function renderPaper() {
+  const st = paperStats();
+  if ($("paperStats")) $("paperStats").innerHTML = [
+    ["Paper 权益", fmt(st.equity, 1) + " U"],
+    ["累计收益", `<span class="${cls(st.equity - 500)}">${pct((st.equity / 500 - 1) * 100)}</span>`],
+    ["已平笔数", st.n],
+    ["胜率", st.wr == null ? "—" : fmt(st.wr, 0) + "%"],
+    ["盈亏比", st.pf == null ? "—" : (st.pf === Infinity ? "∞" : fmt(st.pf, 2))],
+    ["平均 R", st.avgR == null ? "—" : (st.avgR >= 0 ? "+" : "") + fmt(st.avgR, 2)],
+    ["最大回撤", fmt(st.dd, 1) + "%"],
+    ["持仓中", PAPER.data.positions.length],
+  ].map(([k, v]) => `<div class="card"><div class="k">${k}</div><div class="v">${v}</div></div>`).join("");
+
+  const ob = $("paperOpenBody");
+  if (ob) ob.innerHTML = PAPER.data.positions.map(p => {
+    const lp = livePrice(p.sym);
+    let upnl = null, upct = null, rr = null;
+    if (lp != null) {
+      const gross = p.side === "LONG" ? (lp - p.entry) * p.qty : (p.entry - lp) * p.qty;
+      upnl = gross - p.feeIn - lp * p.qty * FEE; upct = upnl / p.notional * 100; rr = p.riskUsdt ? upnl / p.riskUsdt : null;
+    }
+    return `<tr>
+      <td><b>${p.sym}</b> <span class="chip ${p.side === "LONG" ? "risk-on" : "risk-off"}">${p.side}</span></td>
+      <td>${fmt(p.entry, 2)}</td><td>${lp != null ? fmt(lp, 2) : "—"}</td>
+      <td>${fmt(p.stop, 2)}</td><td>${p.target ? fmt(p.target, 2) : "—"}</td>
+      <td>${fmt(p.notional, 1)}U</td>
+      <td class="${cls(upnl)}">${upnl == null ? "—" : (upnl >= 0 ? "+" : "") + fmt(upnl, 2) + "U"} ${upct != null ? "(" + pct(upct) + ")" : ""}</td>
+      <td class="${cls(rr)}">${rr == null ? "—" : (rr >= 0 ? "+" : "") + fmt(rr, 2) + "R"}</td>
+      <td><button class="btn" data-close="${p.id}">平仓</button></td></tr>`;
+  }).join("") || `<tr><td colspan="9" class="badge">暂无持仓</td></tr>`;
+
+  const cb = $("paperClosedBody");
+  if (cb) cb.innerHTML = PAPER.data.closed.slice().reverse().slice(0, 30).map(t => `<tr>
+    <td><b>${t.sym}</b> <span class="chip ${t.side === "LONG" ? "risk-on" : "risk-off"}">${t.side}</span></td>
+    <td>${fmt(t.entry, 2)} → ${fmt(t.exit, 2)}</td>
+    <td class="${cls(t.pnl)}">${(t.pnl >= 0 ? "+" : "") + fmt(t.pnl, 2)}U</td>
+    <td class="${cls(t.r)}">${(t.r >= 0 ? "+" : "") + fmt(t.r, 2)}R</td>
+    <td><span class="chip ${t.outcome === "WIN" ? "risk-on" : t.outcome === "LOSS" ? "risk-off" : "neutral"}">${t.outcome}</span></td>
+    <td class="badge">${(t.closedAt || "").slice(5, 16).replace("T", " ")}</td></tr>`).join("") || `<tr><td colspan="6" class="badge">暂无已平仓记录</td></tr>`;
+}
+function paperExport() {
+  const st = paperStats();
+  const txt = `本期 paper 统计（填入 ledger）：trades=${st.n}, win_rate_pct=${st.wr == null ? "" : Math.round(st.wr)}, ` +
+    `profit_factor=${st.pf == null || st.pf === Infinity ? "" : st.pf.toFixed(2)}, max_drawdown_pct=${st.dd.toFixed(1)}, ` +
+    `equity_end=${st.equity.toFixed(1)}`;
+  const out = $("paperExport"); if (out) out.value = txt;
+  if (navigator.clipboard) navigator.clipboard.writeText(txt);
+  const b = $("pExportBtn"); if (b) { const o = b.textContent; b.textContent = "已复制 ✓"; setTimeout(() => b.textContent = o, 1500); }
+}
+let _paperT = 0;
+function paperTick() { const now = Date.now(); if (now - _paperT < 900) return; _paperT = now; if ($("paperOpenBody") && PAPER.data.positions.length) renderPaper(); }
+
 //==================== 启动 ====================
 async function refreshLive() {
   // 并行刷新所有信息面板，等全部结束后再（可选）自动重建 Evidence
   await Promise.allSettled([
     loadMarket(), loadSentiment(), loadCryptoMacro(), loadDefi(),
-    loadCryptoNews(), loadFred(), loadUsStocks(), loadMstr()
+    loadCryptoNews(), loadFred(), loadUsStocks(), loadMstr(), loadBot()
   ]);
   renderDecision();   // 规则推断的决策元组（直接可读）
   // 给 LLM 的 Evidence 文本自动重生成：用户正在框选/编辑该文本框时跳过，避免打断复制
@@ -622,6 +780,17 @@ function init() {
   $("genEvBtn") && $("genEvBtn").addEventListener("click", showEvidence);
   $("copyEvBtn") && $("copyEvBtn").addEventListener("click", copyEvidence);
   $("liveToggle") && $("liveToggle").addEventListener("click", toggleLive);
+  // Paper 持仓器
+  PAPER.load();
+  $("pOpenBtn") && $("pOpenBtn").addEventListener("click", paperOpen);
+  $("pUseLiveBtn") && $("pUseLiveBtn").addEventListener("click", paperFillEntry);
+  $("pSym") && $("pSym").addEventListener("change", paperFillEntry);
+  $("pResetBtn") && $("pResetBtn").addEventListener("click", paperReset);
+  $("pExportBtn") && $("pExportBtn").addEventListener("click", paperExport);
+  $("paperOpenBody") && $("paperOpenBody").addEventListener("click", e => {
+    const b = e.target.closest && e.target.closest("[data-close]"); if (b) paperClose(+b.getAttribute("data-close"));
+  });
+  renderPaper();
   loadLedger(); loadEvents(); refreshLive(); renderCalc();
   const ms = Math.max(15, (+CFG.REFRESH_SECONDS || 60)) * 1000;
   setInterval(refreshLive, ms);
