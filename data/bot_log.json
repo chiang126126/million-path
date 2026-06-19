@@ -1,5 +1,5 @@
 {
-  "ts": "2026-06-19T21:00:23Z",
+  "ts": "2026-06-19T22:06:35Z",
   "mode": "testnet",
   "equity": 500.0,
   "day_pnl_pct": 0.0,
@@ -12,7 +12,7 @@
       "confidence": 0.3,
       "vetted": false,
       "reason": "决策为 FLAT/非做多，观望",
-      "rationale": "价格站上30小时均线，RSI中性偏强，但EMA50压制，资金费率中性，恐惧贪婪极低，方向不明确，观望为主。",
+      "rationale": "价格在EMA21上方但低于EMA50，RSI中性偏多但未超买，资金费率中性。新闻显示Nvidia下跌、宏观不确定性（Powell讲话前市场暂停），比特币曾触及72000但现价63000，情绪极度恐惧。技术面与消息面矛盾，缺乏明确方向，建议观望。",
       "action": "skip"
     },
     {
@@ -22,9 +22,10 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/非做多，观望",
-      "rationale": "价格在EMA21和EMA50之间，RSI中性，资金费率负但极低，恐惧指数极低，方向不明确。",
+      "rationale": "价格在EMA21和EMA50下方，均线空头排列；RSI中性偏弱；资金费率负值显示空头情绪；恐惧贪婪指数极低但未形成反转信号；Nvidia下跌和宏观不确定性压制风险资产。技术面与消息面均不支撑做多，建议观望。",
       "action": "skip"
     }
   ],
-  "testnet_usdt": 10000.0
+  "testnet_usdt": 10000.0,
+  "news_lines": 3
 }
