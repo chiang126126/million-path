@@ -1,10 +1,29 @@
 {
-  "ts": "2026-06-19T00:00:00Z",
-  "mode": "sim",
+  "ts": "2026-06-19T20:13:39Z",
+  "mode": "dry",
   "equity": 500.0,
-  "day_pnl_pct": 0,
-  "total_dd_pct": 0,
+  "day_pnl_pct": 0.0,
+  "total_dd_pct": 0.0,
   "items": [
-    {"symbol": "BTCUSDT", "source": "—", "bias": "—", "vetted": false, "reason": "机器人尚未运行；配置 LLM_API_KEY 后每小时自动决策", "action": "skip"}
+    {
+      "symbol": "BTCUSDT",
+      "source": "llm",
+      "bias": "FLAT",
+      "confidence": 0.0,
+      "vetted": false,
+      "reason": "决策为 FLAT/非做多，观望",
+      "rationale": "价格在EMA21上方但低于EMA50，均线未形成多头排列；RSI中性；恐惧指数极低但未形成明确反转信号；波动率低，方向不明。",
+      "action": "skip"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "source": "llm",
+      "bias": "FLAT",
+      "confidence": 0.0,
+      "vetted": false,
+      "reason": "决策为 FLAT/非做多，观望",
+      "rationale": "价格在EMA21附近，但EMA50在上方形成压制，RSI中性，波动率低，恐惧指数极低但未形成明确反转信号，方向不明。",
+      "action": "skip"
+    }
   ]
 }
