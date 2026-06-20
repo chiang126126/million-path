@@ -1,5 +1,5 @@
 {
-  "ts": "2026-06-20T02:07:02Z",
+  "ts": "2026-06-20T03:07:01Z",
   "mode": "testnet",
   "equity": 500.0,
   "day_pnl_pct": 0.0,
@@ -12,7 +12,7 @@
       "confidence": 0.3,
       "vetted": false,
       "reason": "决策为 FLAT/非做多，观望",
-      "rationale": "价格在EMA50附近，RSI中性偏多但未超买，资金费率正常，恐惧指数极低。但Nvidia下跌和宏观不确定性可能压制风险偏好，缺乏明确突破信号，建议观望。",
+      "rationale": "价格在EMA50下方，RSI中性，资金费率中性，恐惧贪婪指数极低但未形成反转信号。Nvidia下跌和宏观不确定性压制风险偏好，市场等待鲍威尔讲话，方向不明。",
       "action": "skip"
     },
     {
@@ -22,7 +22,7 @@
       "confidence": 0.3,
       "vetted": false,
       "reason": "决策为 FLAT/非做多，观望",
-      "rationale": "价格在EMA21上方但低于EMA50，RSI中性，资金费率低，恐惧贪婪指数极低。Nvidia下跌及宏观不确定性压制风险偏好，缺乏明确做多信号。",
+      "rationale": "价格在EMA21附近但低于EMA50，RSI中性，资金费率略正但恐惧指数极低。Nvidia下跌和宏观不确定性压制风险偏好，缺乏明确看多信号。",
       "action": "skip"
     }
   ],
