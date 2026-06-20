@@ -1,5 +1,5 @@
 {
-  "ts": "2026-06-20T17:07:01Z",
+  "ts": "2026-06-20T18:07:01Z",
   "mode": "testnet",
   "equity": 500.0,
   "day_pnl_pct": 0.0,
@@ -9,20 +9,20 @@
       "symbol": "BTCUSDT",
       "source": "llm",
       "bias": "FLAT",
-      "confidence": 0.3,
+      "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/非做多，观望",
-      "rationale": "价格站上均线但偏离仅0.74%，RSI 60中性偏多，资金费率正常，但恐惧贪婪23极度恐惧，Nvidia利空及宏观不确定性压制风险偏好，缺乏明确驱动，观望为主。",
+      "rationale": "价格在EMA21和EMA50上方但偏离30小时均线仅0.54%，RSI中性55.8，波动率低。Nvidia下跌和宏观不确定性压制风险偏好，恐惧贪婪指数23极度恐惧，资金费率中性。缺乏明确突破信号，观望。",
       "action": "skip"
     },
     {
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "FLAT",
-      "confidence": 0.0,
+      "confidence": 0.4,
       "vetted": false,
       "reason": "决策为 FLAT/非做多，观望",
-      "rationale": "价格站上均线但RSI 65.2接近超买，波动率低，资金费率中性偏多但极端恐惧情绪压制。Nvidia下跌及宏观不确定性（鲍威尔讲话前）可能拖累风险资产，缺乏明确突破信号，观望为宜。",
+      "rationale": "价格站上均线但偏离仅0.72%，RSI 60中性偏多，但恐惧贪婪指数23极度恐惧，市场情绪脆弱。Nvidia下跌及宏观不确定性压制风险偏好，资金费率中性。波动率低，方向不明，观望为主。",
       "action": "skip"
     }
   ],
