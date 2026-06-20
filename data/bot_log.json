@@ -1,5 +1,5 @@
 {
-  "ts": "2026-06-20T21:07:01Z",
+  "ts": "2026-06-20T22:07:01Z",
   "mode": "testnet",
   "equity": 500.0,
   "day_pnl_pct": 0.0,
@@ -9,20 +9,20 @@
       "symbol": "BTCUSDT",
       "source": "llm",
       "bias": "FLAT",
-      "confidence": 0.3,
+      "confidence": 0.6,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "价格在均线上方但偏离仅0.56%，RSI 56.2中性，资金费率负值但极低，恐惧贪婪23极端恐惧。Nvidia下跌及宏观不确定性压制风险偏好，但BTC未跟随大跌。方向不明确，震荡概率大，观望。",
+      "rationale": "价格在均线上方但偏离仅0.66%，RSI 65中性偏强，资金费率负值显示空头略占优，恐惧贪婪23极度恐惧。Nvidia下跌及宏观不确定性压制风险偏好，但价格未破均线。方向不明，建议观望。",
       "action": "skip"
     },
     {
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "FLAT",
-      "confidence": 0.6,
+      "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "价格在EMA21和EMA50上方但偏离30小时均线仅0.72%，RSI中性，波动率低，资金费率中性偏多但极低，恐惧贪婪指数显示极度恐惧。Nvidia下跌和宏观不确定性压制风险偏好，市场等待鲍威尔讲话，方向不明，震荡概率大，故观望。",
+      "rationale": "价格在均线上方但偏离仅0.85%，RSI中性，资金费率中性，恐惧贪婪极低。新闻显示宏观不确定性（Nvidia下跌、日本股市下跌、鲍威尔讲话前市场暂停），缺乏明确方向。建议观望。",
       "action": "skip"
     }
   ],
