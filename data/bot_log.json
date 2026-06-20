@@ -1,5 +1,5 @@
 {
-  "ts": "2026-06-19T23:07:01Z",
+  "ts": "2026-06-20T00:07:01Z",
   "mode": "testnet",
   "equity": 500.0,
   "day_pnl_pct": 0.0,
@@ -9,20 +9,20 @@
       "symbol": "BTCUSDT",
       "source": "llm",
       "bias": "FLAT",
-      "confidence": 0.6,
+      "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/非做多，观望",
-      "rationale": "RSI 71.1接近超买，价格在EMA50下方，资金费率中性偏低，恐惧指数14显示极度恐慌但价格未破位。Nvidia下跌和宏观不确定性压制风险偏好，缺乏明确突破信号。",
+      "rationale": "RSI 71.9超买，价格偏离均线较小，资金费率中性，恐惧贪婪指数极低但新闻面偏空（Nvidia下跌、宏观恶化），技术面与消息面矛盾，缺乏明确方向，观望。",
       "action": "skip"
     },
     {
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "FLAT",
-      "confidence": 0.6,
+      "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/非做多，观望",
-      "rationale": "价格站上EMA21但受EMA50压制，RSI中性偏强但未超买，资金费率极低，恐惧指数14显示极度恐慌。Nvidia下跌及宏观不确定性压制风险偏好，市场等待鲍威尔讲话，方向不明。",
+      "rationale": "价格在EMA21上方但低于EMA50，RSI中性偏多但未超买，资金费率极低，恐惧指数极低。Nvidia下跌及宏观不确定性压制风险偏好，缺乏明确突破信号，建议观望。",
       "action": "skip"
     }
   ],
