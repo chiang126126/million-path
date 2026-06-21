@@ -19,7 +19,21 @@
       "confidence": 0.65,
       "opened_at": "2026-06-21T01:07:10Z",
       "opened_kline_t": 1782003600000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "side": "SHORT",
+      "entry": 1713.74,
+      "stop": 1739.45,
+      "target": 1662.33,
+      "qty": 0.192,
+      "notional": 329.56,
+      "risk_usdt": 4.94,
+      "fee_in": 0.32956,
+      "confidence": 0.75,
+      "opened_at": "2026-06-21T23:07:10Z",
+      "opened_kline_t": 1782082800000
     }
   ],
-  "updated_at": "2026-06-21T22:07:06Z"
+  "updated_at": "2026-06-21T23:07:10Z"
 }
