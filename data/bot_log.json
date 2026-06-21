@@ -1,22 +1,10 @@
 {
-  "ts": "2026-06-21T01:07:01Z",
+  "ts": "2026-06-21T02:07:01Z",
   "mode": "testnet",
   "equity": 500.0,
   "day_pnl_pct": 0.0,
   "total_dd_pct": 0.0,
-  "items": [
-    {
-      "symbol": "BTCUSDT",
-      "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.65,
-      "vetted": true,
-      "reason": "通过风控",
-      "rationale": "价格站上30小时均线（偏离+0.84%），EMA21和EMA50均线多头排列，RSI 65处于中性偏强区域，资金费率小幅正数，恐惧贪婪指数23（极端恐惧）暗示潜在反弹。但Nvidia下跌和宏观不确定性限制上行空间，故谨慎看多。",
-      "action": "OPEN LONG",
-      "price": 64272.43
-    }
-  ],
-  "testnet_usdt": 4023.36,
+  "items": [],
+  "testnet_usdt": 3695.37,
   "news_lines": 3
 }
