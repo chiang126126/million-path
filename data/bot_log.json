@@ -1,5 +1,5 @@
 {
-  "ts": "2026-06-20T23:07:01Z",
+  "ts": "2026-06-21T00:07:01Z",
   "mode": "testnet",
   "equity": 500.0,
   "day_pnl_pct": 0.0,
@@ -9,24 +9,13 @@
       "symbol": "BTCUSDT",
       "source": "llm",
       "bias": "FLAT",
-      "confidence": 0.6,
+      "confidence": 0.3,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "价格在EMA21和EMA50上方，RSI中性偏强，但偏离30小时均线仅0.99%，动能不强。资金费率极低，恐惧贪婪指数23（极度恐惧），市场情绪悲观。Nvidia下跌和宏观不确定性压制风险偏好，但价格未破均线，方向不明。建议观望。",
+      "rationale": "价格在均线上方但偏离仅0.91%，RSI 65.4未超买，但恐惧贪婪指数23显示极端恐惧，市场情绪脆弱。Nvidia下跌及宏观不确定性压制风险偏好，资金费率中性。缺乏明确动能，建议观望。",
       "action": "skip"
-    },
-    {
-      "symbol": "ETHUSDT",
-      "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.65,
-      "vetted": true,
-      "reason": "通过风控",
-      "rationale": "价格站上30小时均线1.2%，EMA21和EMA50均线多头排列，RSI 60.6处于中性偏强区域，资金费率温和为正，恐惧贪婪指数极低（23）暗示市场过度悲观，可能反弹。但宏观面偏空（Nvidia下跌、日本股市下跌、比特币回调），需谨慎。",
-      "action": "OPEN LONG",
-      "price": 1742.41
     }
   ],
-  "testnet_usdt": 4356.6,
+  "testnet_usdt": 4023.16,
   "news_lines": 3
 }
