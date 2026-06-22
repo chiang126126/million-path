@@ -19,7 +19,21 @@
       "confidence": 0.75,
       "opened_at": "2026-06-21T23:07:10Z",
       "opened_kline_t": 1782082800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry": 63964.01,
+      "stop": 64923.47,
+      "target": 62364.91,
+      "qty": 0.005,
+      "notional": 325.85,
+      "risk_usdt": 4.89,
+      "fee_in": 0.32585000000000003,
+      "confidence": 0.75,
+      "opened_at": "2026-06-22T01:07:11Z",
+      "opened_kline_t": 1782090000000
     }
   ],
-  "updated_at": "2026-06-22T00:07:05Z"
+  "updated_at": "2026-06-22T01:07:11Z"
 }
