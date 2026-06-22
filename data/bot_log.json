@@ -1,15 +1,19 @@
 {
-  "ts": "2026-06-22T13:07:01Z",
+  "ts": "2026-06-22T14:07:01Z",
   "mode": "testnet",
-  "equity": 483.17,
-  "day_pnl_pct": -2.26,
-  "total_dd_pct": 3.37,
+  "equity": 477.73,
+  "day_pnl_pct": -3.36,
+  "total_dd_pct": 4.45,
   "items": [
     {
       "symbol": "BTCUSDT",
-      "action": "CLOSE STOP",
-      "price": 64923.47,
-      "pnl": -5.45
+      "source": "llm",
+      "bias": "SHORT",
+      "confidence": 0.75,
+      "vetted": false,
+      "reason": "当日亏损 -3.4% 触发停手",
+      "rationale": "日线偏空，禁止做多；小时级RSI接近超买，资金费率略高，Nvidia利空情绪蔓延，BTC反弹至30小时均线附近但动能不足，可逢高做空。",
+      "action": "skip"
     },
     {
       "symbol": "ETHUSDT",
@@ -17,11 +21,11 @@
       "bias": "SHORT",
       "confidence": 0.75,
       "vetted": false,
-      "reason": "当日亏损 -2.3% 触发停手",
-      "rationale": "日线偏空，禁止做多；小时级RSI超买（78.6），动能可能衰竭；资金费率略正但不高，情绪极度恐惧；Nvidia利空及宏观不确定性压制风险资产。",
+      "reason": "当日亏损 -3.4% 触发停手",
+      "rationale": "日线偏空，禁止做多；小时级RSI超买（71.7）且价格偏离均线，动能可能衰竭；Nvidia利空及宏观不确定性压制风险偏好，资金费率中性偏正但情绪极度恐惧，反弹或难持续。",
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4008.66,
+  "testnet_usdt": 4333.82,
   "news_lines": 3
 }
