@@ -1,17 +1,21 @@
 {
-  "ts": "2026-06-22T02:07:01Z",
+  "ts": "2026-06-22T03:07:01Z",
   "mode": "testnet",
-  "equity": 488.77,
-  "day_pnl_pct": -1.13,
-  "total_dd_pct": 2.25,
+  "equity": 483.17,
+  "day_pnl_pct": -2.26,
+  "total_dd_pct": 3.37,
   "items": [
     {
       "symbol": "ETHUSDT",
-      "action": "CLOSE STOP",
-      "price": 1739.45,
-      "pnl": -5.6
+      "source": "llm",
+      "bias": "SHORT",
+      "confidence": 0.75,
+      "vetted": false,
+      "reason": "当日亏损 -2.3% 触发停手",
+      "rationale": "日线偏空，禁止做多；小时级动能中性偏弱，RSI中性，但资金费率略正，恐惧指数极低，Nvidia利空及宏观不确定性压制风险偏好，可逢高做空。",
+      "action": "skip"
     }
   ],
-  "testnet_usdt": 3681.02,
+  "testnet_usdt": 4018.87,
   "news_lines": 3
 }
