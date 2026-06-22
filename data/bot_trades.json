@@ -38,5 +38,25 @@
     "r": -1.11,
     "outcome": "LOSS",
     "closed_at": "2026-06-22T00:07:03Z"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "side": "SHORT",
+    "entry": 1713.74,
+    "stop": 1739.45,
+    "target": 1662.33,
+    "qty": 0.192,
+    "notional": 329.56,
+    "risk_usdt": 4.94,
+    "fee_in": 0.32956,
+    "confidence": 0.75,
+    "opened_at": "2026-06-21T23:07:10Z",
+    "opened_kline_t": 1782082800000,
+    "exit": 1739.45,
+    "exit_reason": "STOP",
+    "pnl": -5.5999,
+    "r": -1.13,
+    "outcome": "LOSS",
+    "closed_at": "2026-06-22T02:07:03Z"
   }
 ]
