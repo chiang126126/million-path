@@ -1,5 +1,5 @@
 {
-  "ts": "2026-06-22T06:07:00Z",
+  "ts": "2026-06-22T07:07:03Z",
   "mode": "testnet",
   "equity": 483.17,
   "day_pnl_pct": -2.26,
@@ -9,13 +9,13 @@
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "SHORT",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "vetted": false,
       "reason": "当日亏损 -2.3% 触发停手",
-      "rationale": "日线偏空，禁止做多；小时级动能中性偏弱，RSI中性，资金费率略正但情绪极度恐惧，Nvidia下跌及宏观不确定性压制风险偏好，顺势做空。",
+      "rationale": "日线偏空，禁止做多。小时级动能中性偏弱，RSI 56.3未超买，但资金费率极低，恐惧贪婪20显示极端恐慌，可能继续下行。Nvidia利空及宏观不确定性压制风险资产。",
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4018.07,
+  "testnet_usdt": 4018.32,
   "news_lines": 3
 }
