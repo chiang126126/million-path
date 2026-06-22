@@ -1,10 +1,16 @@
 {
-  "ts": "2026-06-22T12:07:01Z",
+  "ts": "2026-06-22T13:07:01Z",
   "mode": "testnet",
   "equity": 483.17,
   "day_pnl_pct": -2.26,
   "total_dd_pct": 3.37,
   "items": [
+    {
+      "symbol": "BTCUSDT",
+      "action": "CLOSE STOP",
+      "price": 64923.47,
+      "pnl": -5.45
+    },
     {
       "symbol": "ETHUSDT",
       "source": "llm",
@@ -12,10 +18,10 @@
       "confidence": 0.75,
       "vetted": false,
       "reason": "当日亏损 -2.3% 触发停手",
-      "rationale": "日线偏空，禁止做多；小时级RSI超买（73.2），动能可能衰竭；Nvidia下跌及宏观担忧压制风险资产，资金费率中性偏高，情绪极度恐惧，反弹至30小时均线附近可试空。",
+      "rationale": "日线偏空，禁止做多；小时级RSI超买（78.6），动能可能衰竭；资金费率略正但不高，情绪极度恐惧；Nvidia利空及宏观不确定性压制风险资产。",
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4011.78,
+  "testnet_usdt": 4008.66,
   "news_lines": 3
 }

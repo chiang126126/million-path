@@ -58,5 +58,30 @@
     "r": -1.13,
     "outcome": "LOSS",
     "closed_at": "2026-06-22T02:07:03Z"
+  },
+  {
+    "symbol": "BTCUSDT",
+    "side": "SHORT",
+    "entry": 63964.01,
+    "stop": 64923.47,
+    "target": 62364.91,
+    "qty": 0.005,
+    "notional": 325.85,
+    "risk_usdt": 4.89,
+    "fee_in": 0.32585000000000003,
+    "confidence": 0.75,
+    "opened_at": "2026-06-22T01:07:11Z",
+    "opened_kline_t": 1782090000000,
+    "mfe_price": 63946.0,
+    "exit": 64923.47,
+    "exit_reason": "STOP",
+    "pnl": -5.4478,
+    "r": -1.11,
+    "outcome": "LOSS",
+    "fee_total": 0.6505,
+    "mfe_pct": 0.03,
+    "hold_hours": 12.0,
+    "analysis": "做空·入场后即走反，触发止损（方向判断偏差）",
+    "closed_at": "2026-06-22T13:07:03Z"
   }
 ]
