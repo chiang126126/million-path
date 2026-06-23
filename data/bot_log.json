@@ -1,17 +1,22 @@
 {
-  "ts": "2026-06-23T09:07:01Z",
+  "ts": "2026-06-23T10:07:01Z",
   "mode": "testnet",
-  "equity": 485.04,
-  "day_pnl_pct": 1.53,
-  "total_dd_pct": 2.99,
+  "equity": 492.26,
+  "day_pnl_pct": 3.04,
+  "total_dd_pct": 1.55,
   "items": [
     {
       "symbol": "BTCUSDT",
-      "action": "CLOSE TARGET",
-      "price": 62398.05,
-      "pnl": 7.22
+      "source": "llm",
+      "bias": "SHORT",
+      "confidence": 0.75,
+      "vetted": true,
+      "reason": "通过风控",
+      "rationale": "日线偏空，禁止做多；小时级RSI超卖但动能向下，资金费率负值，NVDA利空拖累情绪，宏观不确定性高，顺势做空。",
+      "action": "OPEN SHORT",
+      "price": 62559.99
     }
   ],
-  "testnet_usdt": 3731.08,
+  "testnet_usdt": 4033.72,
   "news_lines": 3
 }
