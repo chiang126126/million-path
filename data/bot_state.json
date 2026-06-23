@@ -19,7 +19,7 @@
       "confidence": 0.75,
       "opened_at": "2026-06-23T00:07:10Z",
       "opened_kline_t": 1782172800000,
-      "mfe_price": 63828.93
+      "mfe_price": 63612.62
     },
     {
       "symbol": "ETHUSDT",
@@ -34,8 +34,8 @@
       "confidence": 0.75,
       "opened_at": "2026-06-23T00:07:16Z",
       "opened_kline_t": 1782172800000,
-      "mfe_price": 1719.75
+      "mfe_price": 1717.75
     }
   ],
-  "updated_at": "2026-06-23T04:07:05Z"
+  "updated_at": "2026-06-23T05:07:04Z"
 }
