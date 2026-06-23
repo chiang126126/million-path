@@ -83,5 +83,30 @@
     "hold_hours": 12.0,
     "analysis": "做空·入场后即走反，触发止损（方向判断偏差）",
     "closed_at": "2026-06-22T13:07:03Z"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "side": "SHORT",
+    "entry": 1727.15,
+    "stop": 1753.06,
+    "target": 1683.97,
+    "qty": 0.184,
+    "notional": 318.48,
+    "risk_usdt": 4.78,
+    "fee_in": 0.31848000000000004,
+    "confidence": 0.75,
+    "opened_at": "2026-06-23T00:07:16Z",
+    "opened_kline_t": 1782172800000,
+    "mfe_price": 1680.52,
+    "exit": 1683.97,
+    "exit_reason": "TARGET",
+    "pnl": 7.3168,
+    "r": 1.53,
+    "outcome": "WIN",
+    "fee_total": 0.6283,
+    "mfe_pct": 2.77,
+    "hold_hours": 7.0,
+    "analysis": "做空·顺利止盈（最佳浮盈 2.8%，达标）",
+    "closed_at": "2026-06-23T07:07:04Z"
   }
 ]
