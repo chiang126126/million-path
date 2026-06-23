@@ -20,7 +20,21 @@
       "opened_at": "2026-06-23T00:07:10Z",
       "opened_kline_t": 1782172800000,
       "mfe_price": 62568.9
+    },
+    {
+      "symbol": "ETHUSDT",
+      "side": "SHORT",
+      "entry": 1680.15,
+      "stop": 1705.35,
+      "target": 1629.75,
+      "qty": 0.192,
+      "notional": 323.36,
+      "risk_usdt": 4.85,
+      "fee_in": 0.32336000000000004,
+      "confidence": 0.85,
+      "opened_at": "2026-06-23T08:07:10Z",
+      "opened_kline_t": 1782201600000
     }
   ],
-  "updated_at": "2026-06-23T07:07:05Z"
+  "updated_at": "2026-06-23T08:07:10Z"
 }
