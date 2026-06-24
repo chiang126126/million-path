@@ -1,33 +1,10 @@
 {
-  "ts": "2026-06-24T17:07:01Z",
+  "ts": "2026-06-24T18:07:01Z",
   "mode": "testnet",
   "equity": 510.41,
   "day_pnl_pct": 3.69,
   "total_dd_pct": 0.0,
-  "items": [
-    {
-      "symbol": "BTCUSDT",
-      "source": "llm",
-      "bias": "SHORT",
-      "confidence": 0.85,
-      "vetted": true,
-      "reason": "通过风控",
-      "rationale": "日线偏空，禁止做多。小时级RSI超卖但动能向下，资金费率负值显示空头主导，Nvidia利空及宏观不确定性压制风险资产。顺势做空，止损设于EMA21上方。",
-      "action": "OPEN SHORT",
-      "price": 59819.74
-    },
-    {
-      "symbol": "ETHUSDT",
-      "source": "llm",
-      "bias": "SHORT",
-      "confidence": 0.85,
-      "vetted": true,
-      "reason": "通过风控",
-      "rationale": "日线偏空，禁止做多；小时级RSI超卖但动能向下，资金费率中性，新闻面宏观与AI叙事利空，顺势做空。",
-      "action": "OPEN SHORT",
-      "price": 1586.86
-    }
-  ],
-  "testnet_usdt": 4369.89,
+  "items": [],
+  "testnet_usdt": 3875.02,
   "news_lines": 3
 }
