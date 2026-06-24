@@ -1,10 +1,23 @@
 {
-  "ts": "2026-06-24T15:07:01Z",
+  "ts": "2026-06-24T16:07:01Z",
   "mode": "testnet",
   "equity": 492.26,
   "day_pnl_pct": 0.0,
   "total_dd_pct": 1.55,
-  "items": [],
-  "testnet_usdt": 3729.7,
+  "items": [
+    {
+      "symbol": "ETHUSDT",
+      "action": "CLOSE TARGET",
+      "price": 1629.75,
+      "pnl": 9.04
+    },
+    {
+      "symbol": "BTCUSDT",
+      "action": "CLOSE TARGET",
+      "price": 60683.19,
+      "pnl": 9.12
+    }
+  ],
+  "testnet_usdt": 3746.19,
   "news_lines": 3
 }
