@@ -2,8 +2,8 @@
   "mode": "testnet",
   "equity0": 500.0,
   "equity": 492.2577532209999,
-  "day": "2026-06-23",
-  "day_start_equity": 477.7254391459999,
+  "day": "2026-06-24",
+  "day_start_equity": 492.2577532209999,
   "peak_equity": 500.0,
   "positions": [
     {
@@ -37,5 +37,5 @@
       "mfe_price": 61960.0
     }
   ],
-  "updated_at": "2026-06-23T23:07:04Z"
+  "updated_at": "2026-06-24T00:07:15Z"
 }
