@@ -1,22 +1,10 @@
 {
-  "ts": "2026-06-25T11:07:01Z",
+  "ts": "2026-06-25T12:07:01Z",
   "mode": "testnet",
   "equity": 493.62,
   "day_pnl_pct": -1.13,
   "total_dd_pct": 3.29,
-  "items": [
-    {
-      "symbol": "ETHUSDT",
-      "source": "llm",
-      "bias": "SHORT",
-      "confidence": 0.75,
-      "vetted": true,
-      "reason": "通过风控",
-      "rationale": "日线偏空，禁止做多；小时级动能偏弱（价格略低于30小时均线），资金费率中性偏低，恐惧贪婪极低但未形成反转信号，NVDA下跌及宏观恶化压制风险偏好。",
-      "action": "OPEN SHORT",
-      "price": 1628.55
-    }
-  ],
-  "testnet_usdt": 4027.17,
+  "items": [],
+  "testnet_usdt": 3696.79,
   "news_lines": 3
 }
