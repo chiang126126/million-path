@@ -18,7 +18,8 @@
       "fee_in": 0.34029000000000004,
       "confidence": 0.75,
       "opened_at": "2026-06-25T15:07:10Z",
-      "opened_kline_t": 1782399600000
+      "opened_kline_t": 1782399600000,
+      "mfe_price": 58874.85
     },
     {
       "symbol": "ETHUSDT",
@@ -32,8 +33,9 @@
       "fee_in": 0.25522,
       "confidence": 0.75,
       "opened_at": "2026-06-25T15:07:17Z",
-      "opened_kline_t": 1782399600000
+      "opened_kline_t": 1782399600000,
+      "mfe_price": 1544.68
     }
   ],
-  "updated_at": "2026-06-25T15:07:17Z"
+  "updated_at": "2026-06-25T16:07:04Z"
 }
