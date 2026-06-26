@@ -1,17 +1,22 @@
 {
-  "ts": "2026-06-26T14:07:01Z",
+  "ts": "2026-06-26T15:07:01Z",
   "mode": "testnet",
-  "equity": 498.98,
-  "day_pnl_pct": -1.13,
-  "total_dd_pct": 2.24,
+  "equity": 506.59,
+  "day_pnl_pct": 0.38,
+  "total_dd_pct": 0.75,
   "items": [
     {
       "symbol": "BTCUSDT",
-      "action": "CLOSE TARGET",
-      "price": 58582.88,
-      "pnl": 7.61
+      "source": "llm",
+      "bias": "SHORT",
+      "confidence": 0.75,
+      "vetted": true,
+      "reason": "通过风控",
+      "rationale": "日线偏空，禁止做多；小时级动能偏弱，价格在EMA21和EMA50下方，RSI中性偏弱；资金费率略正但不高，恐惧情绪极值可能引发反弹但趋势仍空；Nvidia下跌及宏观不确定性压制风险资产。",
+      "action": "OPEN SHORT",
+      "price": 59714.01
     }
   ],
-  "testnet_usdt": 3788.11,
+  "testnet_usdt": 4116.03,
   "news_lines": 3
 }

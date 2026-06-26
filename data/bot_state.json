@@ -20,7 +20,21 @@
       "opened_at": "2026-06-25T15:07:17Z",
       "opened_kline_t": 1782399600000,
       "mfe_price": 1512.0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry": 59714.01,
+      "stop": 60609.72,
+      "target": 58221.16,
+      "qty": 0.0056,
+      "notional": 337.73,
+      "risk_usdt": 5.07,
+      "fee_in": 0.33773000000000003,
+      "confidence": 0.75,
+      "opened_at": "2026-06-26T15:07:13Z",
+      "opened_kline_t": 1782486000000
     }
   ],
-  "updated_at": "2026-06-26T14:07:05Z"
+  "updated_at": "2026-06-26T15:07:13Z"
 }
