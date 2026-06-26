@@ -19,7 +19,7 @@
       "confidence": 0.75,
       "opened_at": "2026-06-25T15:07:17Z",
       "opened_kline_t": 1782399600000,
-      "mfe_price": 1544.68
+      "mfe_price": 1512.0
     },
     {
       "symbol": "BTCUSDT",
@@ -34,8 +34,8 @@
       "confidence": 0.75,
       "opened_at": "2026-06-25T23:07:11Z",
       "opened_kline_t": 1782428400000,
-      "mfe_price": 59228.0
+      "mfe_price": 58337.0
     }
   ],
-  "updated_at": "2026-06-26T02:07:04Z"
+  "updated_at": "2026-06-26T03:07:04Z"
 }
