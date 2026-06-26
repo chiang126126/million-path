@@ -2,8 +2,8 @@
   "mode": "testnet",
   "equity0": 500.0,
   "equity": 504.68753819199986,
-  "day": "2026-06-25",
-  "day_start_equity": 499.28501688699987,
+  "day": "2026-06-26",
+  "day_start_equity": 504.68753819199986,
   "peak_equity": 510.43661593299987,
   "positions": [
     {
@@ -33,8 +33,9 @@
       "fee_in": 0.33646,
       "confidence": 0.75,
       "opened_at": "2026-06-25T23:07:11Z",
-      "opened_kline_t": 1782428400000
+      "opened_kline_t": 1782428400000,
+      "mfe_price": 59739.99
     }
   ],
-  "updated_at": "2026-06-25T23:07:11Z"
+  "updated_at": "2026-06-26T00:07:19Z"
 }
