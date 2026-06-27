@@ -1,15 +1,19 @@
 {
-  "ts": "2026-06-27T14:07:01Z",
+  "ts": "2026-06-27T15:07:00Z",
   "mode": "testnet",
-  "equity": 500.98,
-  "day_pnl_pct": 0.0,
-  "total_dd_pct": 1.85,
+  "equity": 495.29,
+  "day_pnl_pct": -1.14,
+  "total_dd_pct": 2.97,
   "items": [
     {
       "symbol": "BTCUSDT",
-      "action": "CLOSE STOP",
-      "price": 60609.72,
-      "pnl": -5.69
+      "source": "llm",
+      "bias": "SHORT",
+      "confidence": 0.75,
+      "vetted": false,
+      "reason": "做空但价在均线上，不逆势",
+      "rationale": "日线偏空，禁止做多；小时级RSI超买（78.8），动能可能衰竭；Nvidia下跌及宏观不确定性压制风险偏好，资金费率中性偏低，反弹至均线附近可做空。",
+      "action": "skip"
     },
     {
       "symbol": "ETHUSDT",
@@ -18,10 +22,10 @@
       "confidence": 0.75,
       "vetted": false,
       "reason": "做空但价在均线上，不逆势",
-      "rationale": "日线偏空，禁止做多。小时级RSI超买（70.2），资金费率负值，Nvidia利空及宏观担忧压制情绪，反弹至均线附近可做空。",
+      "rationale": "日线偏空，禁止做多。小时级RSI超买(79.8)，动能可能衰竭，且Nvidia利空拖累科技情绪，资金费率中性偏多但极端恐惧下反弹难持续。",
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4023.08,
+  "testnet_usdt": 4361.83,
   "news_lines": 3
 }
