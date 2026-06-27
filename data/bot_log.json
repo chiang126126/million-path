@@ -1,5 +1,5 @@
 {
-  "ts": "2026-06-27T17:07:02Z",
+  "ts": "2026-06-27T18:07:02Z",
   "mode": "testnet",
   "equity": 495.29,
   "day_pnl_pct": -1.14,
@@ -9,20 +9,20 @@
       "symbol": "BTCUSDT",
       "source": "llm",
       "bias": "SHORT",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "vetted": false,
       "reason": "做空但价在均线上，不逆势",
-      "rationale": "日线偏空，禁止做多。小时级动能中性偏弱，RSI 58.9未超买，但资金费率正且极低，市场情绪极度恐惧，Nvidia下跌及宏观不确定性压制风险资产。现价接近EMA21/50，可轻仓试空，止损设于近期高点附近。",
+      "rationale": "日线偏空，禁止做多；小时级动能偏多但未确认反转，且资金费率中性偏高，恐惧贪婪极低，反弹空间有限。Nvidia下跌及宏观不确定性压制风险偏好，反弹至EMA21附近可试空。",
       "action": "skip"
     },
     {
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "SHORT",
-      "confidence": 0.7,
+      "confidence": 0.75,
       "vetted": false,
       "reason": "做空但价在均线上，不逆势",
-      "rationale": "日线偏空，禁止做多；小时级动能向上但力度弱，且RSI接近超买区，资金费率中性偏低，恐惧贪婪极低但未形成反转信号。Nvidia利空及宏观不确定性压制风险偏好，反弹至EMA21附近可试空。",
+      "rationale": "日线偏空，禁止做多；小时级动能向上但力度弱，且RSI接近超买区，资金费率中性，恐惧贪婪极低，Nvidia利空及宏观不确定性压制风险偏好，反弹至EMA21附近可试空。",
       "action": "skip"
     }
   ],
