@@ -1,5 +1,5 @@
 {
-  "ts": "2026-06-27T04:07:01Z",
+  "ts": "2026-06-27T05:07:01Z",
   "mode": "testnet",
   "equity": 500.98,
   "day_pnl_pct": 0.0,
@@ -12,10 +12,10 @@
       "confidence": 0.75,
       "vetted": false,
       "reason": "做空但价在均线上，不逆势",
-      "rationale": "日线偏空，禁止做多；小时级RSI接近超买，价格受EMA50压制，资金费率极低，NVDA利空及宏观不确定性压制风险偏好，反弹动能不足，适合逢高做空。",
+      "rationale": "日线偏空，禁止做多；小时级动能偏弱，RSI中性，资金费率负值，恐惧指数极低，Nvidia利空拖累科技情绪，顺势做空。",
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4024.7,
+  "testnet_usdt": 4026.26,
   "news_lines": 3
 }
