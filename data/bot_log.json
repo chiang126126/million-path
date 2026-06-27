@@ -1,33 +1,10 @@
 {
-  "ts": "2026-06-27T20:07:01Z",
+  "ts": "2026-06-27T21:07:01Z",
   "mode": "testnet",
   "equity": 495.29,
   "day_pnl_pct": -1.14,
   "total_dd_pct": 2.97,
-  "items": [
-    {
-      "symbol": "BTCUSDT",
-      "source": "llm",
-      "bias": "SHORT",
-      "confidence": 0.75,
-      "vetted": true,
-      "reason": "通过风控",
-      "rationale": "日线偏空，禁止做多；小时级动能向下（价格低于EMA21和EMA50，RSI<50），资金费率中性，恐惧贪婪极低但未反转，Nvidia下跌及宏观恶化压制风险资产。",
-      "action": "OPEN SHORT",
-      "price": 60257.96
-    },
-    {
-      "symbol": "ETHUSDT",
-      "source": "llm",
-      "bias": "SHORT",
-      "confidence": 0.75,
-      "vetted": true,
-      "reason": "通过风控",
-      "rationale": "日线偏空，禁止做多；小时级动能向下（价格低于EMA21和EMA50），RSI中性偏弱，资金费率负值显示空头情绪，恐惧贪婪极低但未反转。Nvidia利空及宏观不确定性压制风险资产。",
-      "action": "OPEN SHORT",
-      "price": 1580.7
-    }
-  ],
-  "testnet_usdt": 4361.83,
+  "items": [],
+  "testnet_usdt": 3705.51,
   "news_lines": 3
 }
