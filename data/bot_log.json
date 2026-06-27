@@ -1,5 +1,5 @@
 {
-  "ts": "2026-06-27T19:07:01Z",
+  "ts": "2026-06-27T20:07:01Z",
   "mode": "testnet",
   "equity": 495.29,
   "day_pnl_pct": -1.14,
@@ -10,20 +10,22 @@
       "source": "llm",
       "bias": "SHORT",
       "confidence": 0.75,
-      "vetted": false,
-      "reason": "做空但价在均线上，不逆势",
-      "rationale": "日线偏空，禁止做多；小时级动能向上但RSI接近超买，且资金费率正，市场情绪极度恐惧，Nvidia利空拖累风险资产，反弹至均线附近可做空。",
-      "action": "skip"
+      "vetted": true,
+      "reason": "通过风控",
+      "rationale": "日线偏空，禁止做多；小时级动能向下（价格低于EMA21和EMA50，RSI<50），资金费率中性，恐惧贪婪极低但未反转，Nvidia下跌及宏观恶化压制风险资产。",
+      "action": "OPEN SHORT",
+      "price": 60257.96
     },
     {
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "SHORT",
       "confidence": 0.75,
-      "vetted": false,
-      "reason": "做空但价在均线上，不逆势",
-      "rationale": "日线偏空，禁止做多；小时级动能向上但RSI接近超买，且宏观利空（Nvidia下跌、日本股市暴跌、比特币回调）压制情绪，资金费率中性，可逢高做空。",
-      "action": "skip"
+      "vetted": true,
+      "reason": "通过风控",
+      "rationale": "日线偏空，禁止做多；小时级动能向下（价格低于EMA21和EMA50），RSI中性偏弱，资金费率负值显示空头情绪，恐惧贪婪极低但未反转。Nvidia利空及宏观不确定性压制风险资产。",
+      "action": "OPEN SHORT",
+      "price": 1580.7
     }
   ],
   "testnet_usdt": 4361.83,
