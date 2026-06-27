@@ -1,26 +1,10 @@
 {
   "mode": "testnet",
   "equity0": 500.0,
-  "equity": 500.9824957999999,
+  "equity": 495.2893753679999,
   "day": "2026-06-27",
   "day_start_equity": 500.9824957999999,
   "peak_equity": 510.43661593299987,
-  "positions": [
-    {
-      "symbol": "BTCUSDT",
-      "side": "SHORT",
-      "entry": 59714.01,
-      "stop": 60609.72,
-      "target": 58221.16,
-      "qty": 0.0056,
-      "notional": 337.73,
-      "risk_usdt": 5.07,
-      "fee_in": 0.33773000000000003,
-      "confidence": 0.75,
-      "opened_at": "2026-06-26T15:07:13Z",
-      "opened_kline_t": 1782486000000,
-      "mfe_price": 59556.0
-    }
-  ],
-  "updated_at": "2026-06-27T13:07:07Z"
+  "positions": [],
+  "updated_at": "2026-06-27T14:07:13Z"
 }

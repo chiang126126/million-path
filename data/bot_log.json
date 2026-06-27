@@ -1,10 +1,16 @@
 {
-  "ts": "2026-06-27T13:07:01Z",
+  "ts": "2026-06-27T14:07:01Z",
   "mode": "testnet",
   "equity": 500.98,
   "day_pnl_pct": 0.0,
   "total_dd_pct": 1.85,
   "items": [
+    {
+      "symbol": "BTCUSDT",
+      "action": "CLOSE STOP",
+      "price": 60609.72,
+      "pnl": -5.69
+    },
     {
       "symbol": "ETHUSDT",
       "source": "llm",
@@ -12,10 +18,10 @@
       "confidence": 0.75,
       "vetted": false,
       "reason": "做空但价在均线上，不逆势",
-      "rationale": "日线偏空，禁止做多。小时级动能中性偏弱，RSI 62.4未超买，但资金费率负值显示空头情绪，Nvidia下跌及宏观担忧压制风险资产。ATR低波动，适合短线做空。",
+      "rationale": "日线偏空，禁止做多。小时级RSI超买（70.2），资金费率负值，Nvidia利空及宏观担忧压制情绪，反弹至均线附近可做空。",
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4024.51,
+  "testnet_usdt": 4023.08,
   "news_lines": 3
 }
