@@ -1,5 +1,5 @@
 {
-  "ts": "2026-06-27T07:07:01Z",
+  "ts": "2026-06-27T08:07:01Z",
   "mode": "testnet",
   "equity": 500.98,
   "day_pnl_pct": 0.0,
@@ -12,10 +12,10 @@
       "confidence": 0.75,
       "vetted": false,
       "reason": "做空但价在均线上，不逆势",
-      "rationale": "日线偏空，禁止做多。小时级动能中性偏弱，RSI 49.8，价格略高于EMA21但低于EMA50，资金费率负值，恐惧贪婪极低。Nvidia下跌及宏观不确定性压制风险偏好，顺势做空。",
+      "rationale": "日线偏空，禁止做多；小时级RSI偏高但未超买，资金费率负值，恐惧指数极低，Nvidia利空拖累科技情绪，Powell讲话前市场谨慎。顺势做空，止损设于EMA50上方。",
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4025.02,
+  "testnet_usdt": 4023.41,
   "news_lines": 3
 }
