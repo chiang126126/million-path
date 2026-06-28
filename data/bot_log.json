@@ -1,10 +1,10 @@
 {
-  "ts": "2026-06-27T22:07:01Z",
+  "ts": "2026-06-28T08:07:01Z",
   "mode": "testnet",
   "equity": 495.29,
-  "day_pnl_pct": -1.14,
+  "day_pnl_pct": 0.0,
   "total_dd_pct": 2.97,
   "items": [],
-  "testnet_usdt": 3710.76,
+  "testnet_usdt": 3710.91,
   "news_lines": 3
 }
