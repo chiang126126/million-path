@@ -1,21 +1,21 @@
 {
-  "ts": "2026-06-29T23:07:01Z",
+  "ts": "2026-06-30T00:07:01Z",
   "mode": "testnet",
   "equity": 489.69,
-  "day_pnl_pct": -1.13,
+  "day_pnl_pct": 0.0,
   "total_dd_pct": 4.06,
   "items": [
     {
       "symbol": "ETHUSDT",
       "source": "llm",
-      "bias": "SHORT",
-      "confidence": 0.75,
+      "bias": "FLAT",
+      "confidence": 0.0,
       "vetted": false,
-      "reason": "做空但价在均线上，不逆势",
-      "rationale": "日线偏空，禁止做多；小时级RSI接近超买，动能可能衰竭；Nvidia下跌及宏观不确定性压制风险偏好，资金费率中性偏多但情绪极度恐惧，反弹至30小时均线附近可试空。",
+      "reason": "决策为 FLAT/观望",
+      "rationale": "日线偏空禁止做多，但小时级动能向上（站上30小时均线，RSI 68.4），与高周期冲突，不宜做空；缺乏明确信号，故观望。",
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4024.42,
-  "news_lines": 3
+  "testnet_usdt": 4024.59,
+  "news_lines": 0
 }
