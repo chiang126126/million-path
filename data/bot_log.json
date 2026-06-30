@@ -1,10 +1,17 @@
 {
-  "ts": "2026-06-30T12:07:01Z",
+  "ts": "2026-06-30T13:07:01Z",
   "mode": "testnet",
   "equity": 489.69,
   "day_pnl_pct": 0.0,
   "total_dd_pct": 4.06,
-  "items": [],
-  "testnet_usdt": 3716.87,
+  "items": [
+    {
+      "symbol": "BTCUSDT",
+      "action": "CLOSE TARGET",
+      "price": 58751.51,
+      "pnl": 7.49
+    }
+  ],
+  "testnet_usdt": 3729.48,
   "news_lines": 3
 }
