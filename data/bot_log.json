@@ -1,10 +1,23 @@
 {
-  "ts": "2026-07-01T14:07:01Z",
+  "ts": "2026-07-01T15:07:01Z",
   "mode": "testnet",
   "equity": 497.18,
   "day_pnl_pct": 0.0,
   "total_dd_pct": 2.6,
-  "items": [],
-  "testnet_usdt": 3696.37,
+  "items": [
+    {
+      "symbol": "ETHUSDT",
+      "action": "CLOSE STOP",
+      "price": 1607.87,
+      "pnl": -5.55
+    },
+    {
+      "symbol": "BTCUSDT",
+      "action": "CLOSE STOP",
+      "price": 59935.74,
+      "pnl": -5.63
+    }
+  ],
+  "testnet_usdt": 3684.39,
   "news_lines": 3
 }
