@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-02T14:07:01Z",
+  "ts": "2026-07-02T15:07:01Z",
   "mode": "testnet",
   "equity": 486.0,
   "day_pnl_pct": 0.0,
@@ -8,25 +8,14 @@
     {
       "symbol": "BTCUSDT",
       "source": "llm",
-      "bias": "FLAT",
-      "confidence": 0.7,
+      "bias": "SHORT",
+      "confidence": 0.75,
       "vetted": false,
-      "reason": "决策为 FLAT/观望",
-      "rationale": "日线震荡，允许多空但需谨慎。小时级RSI超买(76.9)，动能可能衰竭；资金费率略正但不高；恐惧指数极低(19)暗示潜在反弹但需确认。Nvidia下跌及宏观不确定性压制风险偏好，不宜追多。建议观望等待更明确信号。",
+      "reason": "做空但价在均线上，不逆势",
+      "rationale": "日线偏空，禁止做多；小时级动能向上但RSI接近超买，资金费率中性，恐惧贪婪极低但可能反弹有限。Nvidia下跌及宏观不确定性压制风险偏好，反弹至阻力位附近可做空。",
       "action": "skip"
-    },
-    {
-      "symbol": "ETHUSDT",
-      "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.65,
-      "vetted": true,
-      "reason": "通过风控",
-      "rationale": "日线偏多，允许做多；小时级动能向上（价格站上30小时均线且偏离5.33%），RSI 84.1显示强势但未超买极端；资金费率正常，恐惧指数19极端恐惧但可能反弹。新闻偏空（NVDA下跌、宏观担忧），但技术面主导，需警惕回调。",
-      "action": "OPEN LONG",
-      "price": 1709.56
     }
   ],
-  "testnet_usdt": 4351.04,
+  "testnet_usdt": 4108.31,
   "news_lines": 3
 }
