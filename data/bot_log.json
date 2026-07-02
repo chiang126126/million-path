@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-02T00:07:00Z",
+  "ts": "2026-07-02T01:07:01Z",
   "mode": "testnet",
   "equity": 486.0,
   "day_pnl_pct": 0.0,
@@ -12,17 +12,17 @@
       "confidence": 0.75,
       "vetted": false,
       "reason": "做空但价在均线上，不逆势",
-      "rationale": "日线偏空，禁止做多。小时级动能向上但接近超买，且资金费率偏高，Nvidia利空及宏观不确定性压制风险偏好，反弹至阻力位附近可试空。",
+      "rationale": "日线偏空，禁止做多；小时级动能向上但RSI接近超买，且Nvidia利空情绪蔓延，资金费率中性偏多但恐惧指数极低，反弹可能有限，等待小时级动能转空后做空。",
       "action": "skip"
     },
     {
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "SHORT",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "vetted": false,
       "reason": "做空但价在均线上，不逆势",
-      "rationale": "日线偏空，禁止做多。小时级动能偏多但RSI未超买，资金费率中性，但宏观与NVDA利空压制风险偏好，极端恐惧情绪下反弹空间有限，倾向于反弹后继续下行。",
+      "rationale": "日线偏空，禁止做多；小时级RSI接近超买，价格略高于EMA21但动能不足，资金费率中性偏低，恐惧情绪极端，Nvidia利空及宏观不确定性压制风险偏好，反弹至均线附近可试空。",
       "action": "skip"
     }
   ],
