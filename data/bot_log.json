@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-03T09:07:00Z",
+  "ts": "2026-07-03T10:07:01Z",
   "mode": "testnet",
   "equity": 486.0,
   "day_pnl_pct": 0.0,
@@ -9,13 +9,13 @@
       "symbol": "BTCUSDT",
       "source": "llm",
       "bias": "SHORT",
-      "confidence": 0.75,
+      "confidence": 0.65,
       "vetted": false,
       "reason": "做空但价在均线上，不逆势",
-      "rationale": "日线偏空，禁止做多；小时级动能偏弱（RSI中性，价格略高于EMA21但偏离不大），资金费率偏高暗示多头拥挤，Nvidia下跌及宏观不确定性压制风险偏好，恐惧指数极低但未形成反转信号。",
+      "rationale": "日线偏空，禁止做多；小时级动能中性偏弱，RSI 54未超买，资金费率略正但不高，恐惧情绪极值可能限制下跌空间。Nvidia下跌及宏观不确定性压制风险偏好，但短期反弹可能。",
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4108.12,
+  "testnet_usdt": 4108.28,
   "news_lines": 3
 }
