@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-03T10:07:01Z",
+  "ts": "2026-07-03T11:07:00Z",
   "mode": "testnet",
   "equity": 486.0,
   "day_pnl_pct": 0.0,
@@ -8,11 +8,11 @@
     {
       "symbol": "BTCUSDT",
       "source": "llm",
-      "bias": "SHORT",
-      "confidence": 0.65,
+      "bias": "FLAT",
+      "confidence": 0.6,
       "vetted": false,
-      "reason": "做空但价在均线上，不逆势",
-      "rationale": "日线偏空，禁止做多；小时级动能中性偏弱，RSI 54未超买，资金费率略正但不高，恐惧情绪极值可能限制下跌空间。Nvidia下跌及宏观不确定性压制风险偏好，但短期反弹可能。",
+      "reason": "决策为 FLAT/观望",
+      "rationale": "日线震荡，允许多空但需谨慎。小时级动能偏多（站上30小时均线），但RSI中性，资金费率中性，恐惧指数极低（21）显示市场恐慌，可能反弹但动能不足。Nvidia下跌及宏观不确定性压制风险偏好，观望为主。",
       "action": "skip"
     }
   ],
