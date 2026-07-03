@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-03T02:07:01Z",
+  "ts": "2026-07-03T03:07:01Z",
   "mode": "testnet",
   "equity": 486.0,
   "day_pnl_pct": 0.0,
@@ -12,10 +12,10 @@
       "confidence": 0.75,
       "vetted": false,
       "reason": "做空但价在均线上，不逆势",
-      "rationale": "日线偏空，禁止做多；小时级动能偏多但RSI中性，资金费率偏高，Nvidia利空及宏观不确定性压制风险偏好，反弹至30小时均线附近可试空。",
+      "rationale": "日线偏空，禁止做多；小时级RSI中性偏低，价格略高于EMA21但动能不足，资金费率略正但情绪极度恐惧，Nvidia利空及宏观不确定性压制风险资产，顺势做空。",
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4108.14,
+  "testnet_usdt": 4108.25,
   "news_lines": 3
 }
