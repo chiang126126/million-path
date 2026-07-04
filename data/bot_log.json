@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-04T22:07:01Z",
+  "ts": "2026-07-04T23:07:01Z",
   "mode": "testnet",
   "equity": 486.0,
   "day_pnl_pct": 0.0,
@@ -11,11 +11,11 @@
       "bias": "LONG",
       "confidence": 0.65,
       "vetted": true,
-      "reason": "408 Client Error: Request Timeout for url: https://testnet.binancefuture.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.0051&newOrderRespType=RESULT&timestamp=1783202832451&recvWindow=5000&signature=d1b1f396fad0b4fcb38ad317f3c6bfdc0da0954e43207bed700e09185be49f83",
-      "rationale": "日线偏多，小时级动能向上（价格站上30小时均线且EMA21>EMA50），RSI 73.5未超买，资金费率正常，恐惧指数22显示极端恐惧可能反弹。但Nvidia下跌和宏观不确定性限制上行空间。",
+      "reason": "408 Client Error: Request Timeout for url: https://testnet.binancefuture.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.0051&newOrderRespType=RESULT&timestamp=1783206431894&recvWindow=5000&signature=3f172eefe9d87a127a2bacb5f8fbd4be06a73562de30de958f8b38cff4d0b7e8",
+      "rationale": "日线偏多，禁止做空；小时级动能向上（价格站上30小时均线，EMA21>EMA50），RSI 73.4未超买，资金费率中性偏低，恐惧指数22显示极端恐惧可能反弹。但需注意Nvidia下跌及宏观不确定性，控制仓位。",
       "action": "testnet-open-failed"
     }
   ],
-  "testnet_usdt": 4108.25,
+  "testnet_usdt": 4108.18,
   "news_lines": 3
 }
