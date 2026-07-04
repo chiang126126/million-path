@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-04T20:07:01Z",
+  "ts": "2026-07-04T21:07:00Z",
   "mode": "testnet",
   "equity": 486.0,
   "day_pnl_pct": 0.0,
@@ -8,12 +8,12 @@
     {
       "symbol": "BTCUSDT",
       "source": "llm",
-      "bias": "FLAT",
-      "confidence": 0.7,
-      "vetted": false,
-      "reason": "决策为 FLAT/观望",
-      "rationale": "日线偏多允许做多，但RSI 78.5超买，资金费率偏高，且Nvidia下跌、宏观不确定性增加，短期动能不足，建议观望。",
-      "action": "skip"
+      "bias": "LONG",
+      "confidence": 0.65,
+      "vetted": true,
+      "reason": "408 Client Error: Request Timeout for url: https://testnet.binancefuture.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.0051&newOrderRespType=RESULT&timestamp=1783199230094&recvWindow=5000&signature=2ca8fcce89ca51ea46792d2e5498920adaec223bea8aa93e0bad5014e7b8362b",
+      "rationale": "日线偏多，小时级动能向上（价格站上EMA21/50，RSI偏强），资金费率中性，恐惧情绪可能反弹。但NVDA下跌和宏观不确定性限制上行空间。",
+      "action": "testnet-open-failed"
     }
   ],
   "testnet_usdt": 4108.25,
