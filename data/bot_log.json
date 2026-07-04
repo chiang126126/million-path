@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-04T05:07:01Z",
+  "ts": "2026-07-04T06:07:01Z",
   "mode": "testnet",
   "equity": 486.0,
   "day_pnl_pct": 0.0,
@@ -9,13 +9,13 @@
       "symbol": "BTCUSDT",
       "source": "llm",
       "bias": "FLAT",
-      "confidence": 0.7,
+      "confidence": 0.6,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "日线震荡，允许多空但需谨慎。小时级RSI 68.6接近超买，资金费率偏高（0.01%），且Nvidia下跌、宏观不确定性（鲍威尔讲话前）可能压制风险资产。虽站上30小时均线，但动能不足，建议观望。",
+      "rationale": "日线震荡，允许多空但需谨慎。小时级动能中性，RSI 61.4未超买，但资金费率偏高（0.01%），恐惧指数22显示极端恐惧，Nvidia下跌及宏观不确定性压制风险偏好。缺乏明确方向，观望为主。",
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4108.21,
+  "testnet_usdt": 4108.23,
   "news_lines": 3
 }
