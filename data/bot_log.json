@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-04T10:07:00Z",
+  "ts": "2026-07-04T11:07:00Z",
   "mode": "testnet",
   "equity": 486.0,
   "day_pnl_pct": 0.0,
@@ -12,10 +12,10 @@
       "confidence": 0.6,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "日线震荡，允许多空但需谨慎。小时级RSI 38.4偏弱，但价格站上EMA21和EMA50，动能中性。资金费率略正，恐惧贪婪极低，市场情绪悲观。Nvidia下跌和宏观不确定性压制风险偏好，但无明确方向信号。建议观望。",
+      "rationale": "日线震荡，允许多空但需谨慎。小时级RSI 40.5偏弱，但价格站上EMA21和EMA50，动能中性。资金费率中性，恐惧情绪极端，NVDA下跌和宏观不确定性压制风险偏好。缺乏明确方向，观望为主。",
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4108.25,
+  "testnet_usdt": 4107.82,
   "news_lines": 3
 }
