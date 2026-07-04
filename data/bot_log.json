@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-04T19:07:01Z",
+  "ts": "2026-07-04T20:07:01Z",
   "mode": "testnet",
   "equity": 486.0,
   "day_pnl_pct": 0.0,
@@ -12,10 +12,10 @@
       "confidence": 0.7,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "日线偏多允许做多，但RSI 77.2超买，且恐惧指数22极端恐惧，Nvidia下跌及宏观不确定性压制风险偏好，小时级动能不明，观望为宜。",
+      "rationale": "日线偏多允许做多，但RSI 78.5超买，资金费率偏高，且Nvidia下跌、宏观不确定性增加，短期动能不足，建议观望。",
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4108.01,
+  "testnet_usdt": 4108.25,
   "news_lines": 3
 }
