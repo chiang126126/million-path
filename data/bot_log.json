@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-04T12:07:01Z",
+  "ts": "2026-07-04T13:07:01Z",
   "mode": "testnet",
   "equity": 486.0,
   "day_pnl_pct": 0.0,
@@ -9,13 +9,13 @@
       "symbol": "BTCUSDT",
       "source": "llm",
       "bias": "FLAT",
-      "confidence": 0.3,
+      "confidence": 0.6,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "日线震荡，多空皆可但需谨慎。小时级RSI中性，价格在EMA21与EMA50之间，动能不明。资金费率中性，恐惧指数极低但未形成明确反转信号。Nvidia下跌及宏观不确定性压制风险偏好。建议观望。",
+      "rationale": "日线震荡，多空均可但需谨慎。小时级动能中性（RSI 50.7，价格贴近均线），资金费率中性，恐惧指数极低但未形成明确反转信号。Nvidia下跌及宏观不确定性压制风险偏好，等待更明确方向。",
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4107.93,
+  "testnet_usdt": 4108.23,
   "news_lines": 3
 }
