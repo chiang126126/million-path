@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-05T06:07:01Z",
+  "ts": "2026-07-05T07:07:01Z",
   "mode": "testnet",
   "equity": 486.0,
   "day_pnl_pct": 0.0,
@@ -12,10 +12,10 @@
       "confidence": 0.7,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "日线震荡，允许多空但需谨慎。小时级动能向下（价格低于EMA21），RSI偏弱，但资金费率略正且恐惧指数极低，可能超卖反弹。Nvidia利空与宏观不确定性压制，但Powell讲话前市场观望。方向不明确，建议空仓。",
+      "rationale": "日线震荡，允许多空但需谨慎。小时级动能向下（RSI14=29.2超卖但未反转），资金费率中性，恐惧指数极低但新闻偏空（NVDA下跌、宏观担忧）。无明确顺势信号，观望。",
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4108.22,
+  "testnet_usdt": 4108.25,
   "news_lines": 3
 }
