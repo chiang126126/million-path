@@ -5,6 +5,21 @@
   "day": "2026-07-05",
   "day_start_equity": 486.0016385699999,
   "peak_equity": 510.43661593299987,
-  "positions": [],
-  "updated_at": "2026-07-05T16:07:08Z"
+  "positions": [
+    {
+      "symbol": "ETHUSDT",
+      "side": "LONG",
+      "entry": 1776.59,
+      "stop": 1749.94,
+      "target": 1821.0,
+      "qty": 0.185,
+      "notional": 330.14,
+      "risk_usdt": 4.95,
+      "fee_in": 0.33014,
+      "confidence": 0.65,
+      "opened_at": "2026-07-05T17:07:14Z",
+      "opened_kline_t": 1783270800000
+    }
+  ],
+  "updated_at": "2026-07-05T17:07:14Z"
 }
