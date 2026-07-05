@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-05T05:07:01Z",
+  "ts": "2026-07-05T06:07:01Z",
   "mode": "testnet",
   "equity": 486.0,
   "day_pnl_pct": 0.0,
@@ -9,13 +9,13 @@
       "symbol": "BTCUSDT",
       "source": "llm",
       "bias": "FLAT",
-      "confidence": 0.6,
+      "confidence": 0.7,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "日线震荡，允许多空但需谨慎。小时级动能向下（价格低于EMA21），RSI 43偏弱，但恐惧贪婪23极端恐惧可能酝酿反弹。Nvidia下跌及宏观不确定性压制风险偏好，资金费率中性。方向不明确，观望为主。",
+      "rationale": "日线震荡，允许多空但需谨慎。小时级动能向下（价格低于EMA21），RSI偏弱，但资金费率略正且恐惧指数极低，可能超卖反弹。Nvidia利空与宏观不确定性压制，但Powell讲话前市场观望。方向不明确，建议空仓。",
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4108.02,
+  "testnet_usdt": 4108.22,
   "news_lines": 3
 }
