@@ -1,10 +1,16 @@
 {
-  "ts": "2026-07-05T15:07:01Z",
+  "ts": "2026-07-05T16:07:01Z",
   "mode": "testnet",
   "equity": 486.0,
   "day_pnl_pct": 0.0,
   "total_dd_pct": 4.79,
   "items": [
+    {
+      "symbol": "ETHUSDT",
+      "action": "CLOSE TARGET",
+      "price": 1777.94,
+      "pnl": 9.21
+    },
     {
       "symbol": "BTCUSDT",
       "source": "llm",
@@ -12,10 +18,10 @@
       "confidence": 0.6,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "日线震荡，允许多空但需谨慎。小时级动能不明（30小时均线偏离仅0.07%），RSI中性，资金费率正常，但恐惧贪婪指数极低（23）显示市场恐慌。Nvidia下跌及宏观不确定性压制风险偏好，但比特币触及7.2万后回调，缺乏明确方向。建议观望。",
+      "rationale": "日线震荡，允许多空但需谨慎。小时级动能中性（RSI 52，价格在EMA21/50之间），资金费率中性，恐惧指数极低但未形成明确反转信号。Nvidia下跌及宏观不确定性压制风险偏好，建议观望。",
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4108.17,
+  "testnet_usdt": 4108.22,
   "news_lines": 3
 }
