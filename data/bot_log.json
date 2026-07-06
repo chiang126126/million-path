@@ -1,21 +1,27 @@
 {
-  "ts": "2026-07-06T15:07:00Z",
+  "ts": "2026-07-06T16:07:01Z",
   "mode": "testnet",
   "equity": 484.11,
   "day_pnl_pct": -2.24,
   "total_dd_pct": 5.16,
   "items": [
     {
+      "symbol": "BTCUSDT",
+      "action": "CLOSE STOP",
+      "price": 62901.59,
+      "pnl": -5.48
+    },
+    {
       "symbol": "ETHUSDT",
       "source": "llm",
-      "bias": "FLAT",
-      "confidence": 0.7,
+      "bias": "LONG",
+      "confidence": 0.65,
       "vetted": false,
       "reason": "当日亏损 -2.2% 触发停手",
-      "rationale": "日线偏多允许做多，但小时级动能向下（价格低于EMA21/50，RSI<40），且宏观情绪偏空（NVDA下跌、比特币回调、鲍威尔讲话前谨慎），资金费率中性，恐惧指数极低。多空信号矛盾，观望等待小时级动能转多或更明确信号。",
+      "rationale": "日线偏多，禁止做空；小时级RSI中性偏多，价格站上EMA21/50，资金费率正常，恐惧情绪可能反转。但宏观新闻偏空（Nvidia下跌、比特币回调），限制上行空间，故谨慎做多。",
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4028.62,
+  "testnet_usdt": 4016.37,
   "news_lines": 3
 }
