@@ -18,8 +18,9 @@
       "fee_in": 0.32274,
       "confidence": 0.75,
       "opened_at": "2026-07-06T12:07:11Z",
-      "opened_kline_t": 1783339200000
+      "opened_kline_t": 1783339200000,
+      "mfe_price": 61589.0
     }
   ],
-  "updated_at": "2026-07-06T12:07:11Z"
+  "updated_at": "2026-07-06T13:07:09Z"
 }
