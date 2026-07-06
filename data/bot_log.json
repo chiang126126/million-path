@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-06T13:07:01Z",
+  "ts": "2026-07-06T14:07:01Z",
   "mode": "testnet",
   "equity": 484.11,
   "day_pnl_pct": -2.24,
@@ -8,14 +8,14 @@
     {
       "symbol": "ETHUSDT",
       "source": "llm",
-      "bias": "FLAT",
-      "confidence": 0.7,
+      "bias": "LONG",
+      "confidence": 0.65,
       "vetted": false,
       "reason": "当日亏损 -2.2% 触发停手",
-      "rationale": "日线偏多但小时级动能向下（RSI 24.4超卖，价格低于EMA21/50），且宏观风险（NVIDIA下跌、日本股市暴跌、比特币波动）压制情绪，不宜追空或抄底，等待明确信号。",
+      "rationale": "日线偏多，禁止做空；小时级RSI超卖（22），价格远离EMA，有反弹需求；资金费率中性偏多；恐惧指数极低，可能反转。但宏观偏空（NVDA下跌、比特币回调）限制上行空间，故谨慎做多。",
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4032.95,
+  "testnet_usdt": 4031.67,
   "news_lines": 3
 }
