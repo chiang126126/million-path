@@ -1,21 +1,22 @@
 {
-  "ts": "2026-07-05T23:07:01Z",
+  "ts": "2026-07-06T00:07:01Z",
   "mode": "testnet",
   "equity": 495.22,
-  "day_pnl_pct": 1.9,
+  "day_pnl_pct": 0.0,
   "total_dd_pct": 2.98,
   "items": [
     {
       "symbol": "BTCUSDT",
       "source": "llm",
-      "bias": "FLAT",
-      "confidence": 0.7,
-      "vetted": false,
-      "reason": "决策为 FLAT/观望",
-      "rationale": "日线偏多，但RSI 81超买，资金费率偏高，NVIDIA下跌及宏观不确定性压制情绪，小时级动能不明，观望为宜。",
-      "action": "skip"
+      "bias": "LONG",
+      "confidence": 0.65,
+      "vetted": true,
+      "reason": "通过风控",
+      "rationale": "日线偏多，小时级动能向上（价格站上EMA21/50，RSI 73.9但未超买），资金费率正常，恐惧情绪提供潜在反弹空间。但需警惕NVDA下跌及宏观不确定性。",
+      "action": "OPEN LONG",
+      "price": 63632.0
     }
   ],
-  "testnet_usdt": 4031.43,
+  "testnet_usdt": 4031.41,
   "news_lines": 3
 }
