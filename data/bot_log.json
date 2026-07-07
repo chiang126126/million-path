@@ -1,33 +1,10 @@
 {
-  "ts": "2026-07-07T00:07:01Z",
+  "ts": "2026-07-07T01:07:01Z",
   "mode": "testnet",
   "equity": 478.63,
   "day_pnl_pct": 0.0,
   "total_dd_pct": 6.23,
-  "items": [
-    {
-      "symbol": "BTCUSDT",
-      "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.65,
-      "vetted": true,
-      "reason": "通过风控",
-      "rationale": "日线偏多，价格站上30日线，小时级动能向上（站上30小时均线且EMA21>EMA50），RSI中性偏强，资金费率正常，恐惧情绪提供潜在反弹空间。但宏观新闻偏空（Nvidia下跌、日本股市下跌），需谨慎。",
-      "action": "OPEN LONG",
-      "price": 64083.2
-    },
-    {
-      "symbol": "ETHUSDT",
-      "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.65,
-      "vetted": true,
-      "reason": "通过风控",
-      "rationale": "日线偏多，禁止做空；小时级动能向上（站上30小时均线，RSI 61.3），资金费率中性偏低，恐惧情绪提供潜在反弹空间。但宏观新闻偏空（Nvidia下跌、比特币回调），限制上行空间，故低多为主。",
-      "action": "OPEN LONG",
-      "price": 1800.03
-    }
-  ],
-  "testnet_usdt": 4345.96,
+  "items": [],
+  "testnet_usdt": 3713.1,
   "news_lines": 3
 }
