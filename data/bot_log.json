@@ -1,17 +1,27 @@
 {
-  "ts": "2026-07-07T04:07:01Z",
+  "ts": "2026-07-07T05:07:01Z",
   "mode": "testnet",
-  "equity": 478.63,
-  "day_pnl_pct": 0.0,
-  "total_dd_pct": 6.23,
+  "equity": 473.22,
+  "day_pnl_pct": -1.13,
+  "total_dd_pct": 7.29,
   "items": [
     {
-      "symbol": "ETHUSDT",
+      "symbol": "BTCUSDT",
       "action": "CLOSE STOP",
-      "price": 1773.03,
-      "pnl": -5.41
+      "price": 63121.95,
+      "pnl": -5.34
+    },
+    {
+      "symbol": "ETHUSDT",
+      "source": "llm",
+      "bias": "FLAT",
+      "confidence": 0.6,
+      "vetted": false,
+      "reason": "决策为 FLAT/观望",
+      "rationale": "日线偏多允许做多，但小时级动能向下（价格低于EMA21/50，RSI<40），且宏观新闻偏空（Nvidia下跌、市场回调），恐惧指数27显示极度恐慌，不宜追空或做多，建议观望。",
+      "action": "skip"
     }
   ],
-  "testnet_usdt": 3713.13,
+  "testnet_usdt": 4026.5,
   "news_lines": 3
 }
