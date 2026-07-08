@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-08T15:07:01Z",
+  "ts": "2026-07-08T16:07:01Z",
   "mode": "testnet",
   "equity": 467.88,
   "day_pnl_pct": 0.0,
@@ -9,13 +9,13 @@
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "FLAT",
-      "confidence": 0.0,
+      "confidence": 0.6,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "日线偏多但小时级动能向下（RSI 30.5，价格低于EMA21/50），且宏观利空（NVDA下跌、日本股市下跌、比特币下跌），恐惧指数极低，方向矛盾，观望。",
+      "rationale": "日线偏多但小时级动能向下（价格低于EMA21/50，RSI<30），且宏观情绪偏空（NVDA下跌、BTC回调、鲍威尔讲话前市场谨慎），多空矛盾，建议观望。",
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4037.11,
+  "testnet_usdt": 4037.35,
   "news_lines": 3
 }
