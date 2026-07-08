@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-08T10:07:01Z",
+  "ts": "2026-07-08T11:07:01Z",
   "mode": "testnet",
   "equity": 467.88,
   "day_pnl_pct": 0.0,
@@ -8,14 +8,14 @@
     {
       "symbol": "ETHUSDT",
       "source": "llm",
-      "bias": "FLAT",
-      "confidence": 0.7,
+      "bias": "SHORT",
+      "confidence": 0.75,
       "vetted": false,
-      "reason": "决策为 FLAT/观望",
-      "rationale": "日线偏多但价格跌破30小时均线且RSI超卖，小时级动能向下，但极端恐惧和超卖可能引发反弹，方向不明确，观望为主。",
+      "reason": "日线趋势向上(+3.0%)，禁止逆势做空",
+      "rationale": "日线偏多但小时级动能向下，RSI超卖但价格跌破EMA21/50，资金费率中性偏正，NVDA利空及宏观不确定性压制风险偏好，极端恐惧情绪可能延续抛售。",
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4035.88,
+  "testnet_usdt": 4033.96,
   "news_lines": 3
 }
