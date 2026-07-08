@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-08T16:07:01Z",
+  "ts": "2026-07-08T17:07:01Z",
   "mode": "testnet",
   "equity": 467.88,
   "day_pnl_pct": 0.0,
@@ -12,10 +12,10 @@
       "confidence": 0.6,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "日线偏多但小时级动能向下（价格低于EMA21/50，RSI<30），且宏观情绪偏空（NVDA下跌、BTC回调、鲍威尔讲话前市场谨慎），多空矛盾，建议观望。",
+      "rationale": "日线偏多允许做多，但小时级动能向下（价格低于EMA21/50，RSI<50），且宏观情绪偏空（Nvidia下跌、比特币回调、市场等待鲍威尔讲话），恐惧指数极低，不宜追空或做多，建议观望。",
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4037.35,
+  "testnet_usdt": 4034.33,
   "news_lines": 3
 }
