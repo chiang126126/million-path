@@ -31,8 +31,10 @@
         "daily_dev_pct": -0.86,
         "source": "llm",
         "confidence": 0.7
-      }
+      },
+      "mfe_price": 61956.0,
+      "managed_t": 1783544400000
     }
   ],
-  "updated_at": "2026-07-08T21:35:44Z"
+  "updated_at": "2026-07-08T22:07:09Z"
 }
