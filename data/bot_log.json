@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-08T03:07:01Z",
+  "ts": "2026-07-08T04:07:01Z",
   "mode": "testnet",
   "equity": 467.88,
   "day_pnl_pct": 0.0,
@@ -8,21 +8,22 @@
     {
       "symbol": "BTCUSDT",
       "source": "llm",
-      "bias": "FLAT",
-      "confidence": 0.6,
-      "vetted": false,
-      "reason": "决策为 FLAT/观望",
-      "rationale": "日线震荡，允许多空但需谨慎。小时级动能向下（价格低于EMA21/50，RSI中性偏弱），但资金费率中性，恐惧指数极低可能酝酿反弹。Nvidia下跌及宏观不确定性压制风险偏好，但无明确方向信号。建议观望。",
-      "action": "skip"
+      "bias": "SHORT",
+      "confidence": 0.65,
+      "vetted": true,
+      "reason": "通过风控",
+      "rationale": "日线震荡但贴近30日线，未明确偏多；小时级动能向下（价格低于EMA21/50，RSI 37.3偏弱），资金费率中性偏低，恐惧指数20极度恐慌，NVDA下跌及宏观担忧压制风险偏好。顺势做空，止损设于EMA21上方。",
+      "action": "OPEN SHORT",
+      "price": 62781.05
     },
     {
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "FLAT",
-      "confidence": 0.6,
+      "confidence": 0.7,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "日线偏多允许做多，但小时级动能向下（价格低于EMA21/50，RSI<50），且宏观情绪偏空（Nvidia下跌、比特币回调、鲍威尔讲话前谨慎），恐惧指数极低，不宜追多。建议观望等待小时级动能转多或更明确信号。",
+      "rationale": "日线偏多但小时级动能向下（RSI 33.4，价格低于EMA21/50），且宏观情绪偏空（NVDA下跌、比特币回调、鲍威尔讲话前谨慎），资金费率极低，波动率中等。多空信号矛盾，建议观望。",
       "action": "skip"
     }
   ],
