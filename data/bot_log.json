@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-08T08:07:01Z",
+  "ts": "2026-07-08T09:07:01Z",
   "mode": "testnet",
   "equity": 467.88,
   "day_pnl_pct": 0.0,
@@ -8,14 +8,14 @@
     {
       "symbol": "ETHUSDT",
       "source": "llm",
-      "bias": "FLAT",
-      "confidence": 0.7,
+      "bias": "LONG",
+      "confidence": 0.65,
       "vetted": false,
-      "reason": "决策为 FLAT/观望",
-      "rationale": "日线偏多允许做多，但小时级动能向下（价格低于EMA21/50，RSI<50），且宏观情绪偏空（NVDA下跌、比特币回调、鲍威尔讲话前谨慎），恐惧指数极低，不宜追空或做多，建议观望。",
+      "reason": "做多但价在均线下，不接飞刀",
+      "rationale": "日线偏多，禁止做空；小时级RSI超卖（22.9），存在反弹动能；资金费率极低，情绪极端恐惧，可能反转。但近期宏观与AI叙事偏空，NVDA下跌拖累，需谨慎。",
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4026.55,
+  "testnet_usdt": 4034.19,
   "news_lines": 3
 }
