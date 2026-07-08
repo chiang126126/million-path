@@ -683,5 +683,31 @@
     "hold_hours": 5.0,
     "analysis": "做多·入场后即走反，触发止损（方向判断偏差）",
     "closed_at": "2026-07-07T05:07:03Z"
+  },
+  {
+    "symbol": "BTCUSDT",
+    "side": "SHORT",
+    "entry": 62781.05,
+    "stop": 62150.38,
+    "target": 61211.52,
+    "qty": 0.0049,
+    "notional": 311.92,
+    "risk_usdt": 4.68,
+    "fee_in": 0.31192000000000003,
+    "confidence": 0.65,
+    "opened_at": "2026-07-08T04:07:10Z",
+    "opened_kline_t": 1783483200000,
+    "mfe_price": 61544.56,
+    "stop_kind": "TRAIL",
+    "exit": 62150.38,
+    "exit_reason": "STOP_TRAIL",
+    "pnl": 2.6261,
+    "r": 0.56,
+    "outcome": "WIN",
+    "fee_total": 0.4642,
+    "mfe_pct": 2.01,
+    "hold_hours": 17.2,
+    "analysis": "做空·跟踪止盈离场（最佳浮盈 2.0%，锁定过半利润）",
+    "closed_at": "2026-07-08T21:16:19Z"
   }
 ]
