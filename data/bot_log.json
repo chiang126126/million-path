@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-08T22:07:01Z",
+  "ts": "2026-07-08T23:07:01Z",
   "mode": "testnet",
   "equity": 470.51,
   "day_pnl_pct": 0.56,
@@ -12,10 +12,10 @@
       "confidence": 0.6,
       "vetted": false,
       "reason": "做多但价在均线下，不接飞刀",
-      "rationale": "日线偏多，禁止做空；小时级动能偏弱但RSI中性，资金费率正常，恐惧情绪可能反弹。Nvidia下跌和宏观不确定性压制，但ETH未破关键支撑，可轻仓做多博弈反弹。",
+      "rationale": "日线偏多，禁止做空；小时级RSI中性，价格略低于EMA21但接近，资金费率正常，恐惧情绪可能提供反弹机会。新闻偏空但未直接冲击ETH，等待小时级动能确认。",
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4026.62,
+  "testnet_usdt": 4025.88,
   "news_lines": 3
 }
