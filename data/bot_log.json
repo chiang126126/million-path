@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-09T14:07:01Z",
+  "ts": "2026-07-09T14:20:13Z",
   "mode": "testnet",
   "equity": 465.54,
   "day_pnl_pct": -1.06,
@@ -9,13 +9,24 @@
       "symbol": "BTCUSDT",
       "source": "llm",
       "bias": "FLAT",
-      "confidence": 0.6,
+      "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "日线震荡，允许多空但需谨慎。小时级动能中性，RSI 66.5未超买，但资金费率略正，恐惧指数极低。Nvidia利空与宏观不确定性压制风险偏好，缺乏明确方向。",
+      "rationale": "第一层：纳指期货+1.2%但MSTR-3.1%弱于BTC，风险偏好mixed；第二层：BTC站上EMA21但ETH/BTC和SOL/BTC走弱，OI降1.59%但资费中性，无明确方向；第三层：日线震荡，无明确入场区间，空间不足，禁止交易。",
+      "market_state": "mixed",
+      "entry_low": 0,
+      "entry_high": 0,
+      "invalidation": "",
+      "max_hold_hours": 0,
+      "risk_flags": [
+        "日线震荡无趋势",
+        "信号冲突（美股强但币弱）",
+        "追高追空风险"
+      ],
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4201.56,
-  "news_lines": 3
+  "testnet_usdt": 4201.57,
+  "news_lines": 3,
+  "global_risk": "mixed"
 }
