@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-09T14:20:13Z",
+  "ts": "2026-07-09T14:48:42Z",
   "mode": "testnet",
   "equity": 465.54,
   "day_pnl_pct": -1.06,
@@ -8,25 +8,41 @@
     {
       "symbol": "BTCUSDT",
       "source": "llm",
-      "bias": "FLAT",
-      "confidence": 0.0,
-      "vetted": false,
-      "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：纳指期货+1.2%但MSTR-3.1%弱于BTC，风险偏好mixed；第二层：BTC站上EMA21但ETH/BTC和SOL/BTC走弱，OI降1.59%但资费中性，无明确方向；第三层：日线震荡，无明确入场区间，空间不足，禁止交易。",
-      "market_state": "mixed",
-      "entry_low": 0,
-      "entry_high": 0,
-      "invalidation": "",
-      "max_hold_hours": 0,
+      "bias": "LONG",
+      "confidence": 0.65,
+      "vetted": true,
+      "reason": "通过风控",
+      "rationale": "第一层纳指期货与NVDA走强显示risk-on，MSTR无显著背离；第二层BTC站上EMA21/50，OI下降表明杠杆清理，资费中性，恐惧情绪提供安全边际；第三层现价接近关键位，回踩确认后入场，止损1%目标2%覆盖成本。",
+      "market_state": "risk-on",
+      "entry_low": 62800,
+      "entry_high": 63200,
+      "invalidation": "BTC跌破62400或纳指期货转跌超0.5%",
+      "max_hold_hours": 48,
       "risk_flags": [
-        "日线震荡无趋势",
-        "信号冲突（美股强但币弱）",
-        "追高追空风险"
+        "美股盘中波动大",
+        "ETH/SOL相对弱势限制全面risk-on",
+        "恐惧指数22可能反弹但需警惕假突破"
       ],
-      "action": "skip"
+      "action": "OPEN LONG",
+      "price": 62961.89
     }
   ],
-  "testnet_usdt": 4201.57,
+  "testnet_usdt": 4201.52,
   "news_lines": 3,
-  "global_risk": "mixed"
+  "global_risk": "risk-on",
+  "xm": {
+    "nq": 29751.0,
+    "nq_chg": 0.96,
+    "tnx": 0.46,
+    "tnx_chg": -0.22,
+    "dxy": null,
+    "dxy_chg": null,
+    "mstr_chg": -2.36,
+    "nvda_chg": 2.06,
+    "coin_chg": -3.11,
+    "btc_chg": 1.849,
+    "ethbtc_chg": -0.931,
+    "solbtc_chg": -0.651
+  },
+  "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
