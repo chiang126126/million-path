@@ -1,22 +1,17 @@
 {
-  "ts": "2026-07-09T06:07:01Z",
+  "ts": "2026-07-09T07:07:01Z",
   "mode": "testnet",
   "equity": 470.51,
   "day_pnl_pct": 0.0,
   "total_dd_pct": 7.82,
   "items": [
     {
-      "symbol": "ETHUSDT",
-      "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.65,
-      "vetted": true,
-      "reason": "通过风控",
-      "rationale": "日线偏多，允许做多；价格站上30小时均线且RSI 60，小时级动能向上；资金费率中性偏低，恐惧情绪可能反转。但宏观新闻偏空（NVDA下跌、BTC回调），限制上行空间，需谨慎。",
-      "action": "OPEN LONG",
-      "price": 1748.76
+      "symbol": "BTCUSDT",
+      "action": "CLOSE STOP",
+      "price": 62990.7,
+      "pnl": -4.97
     }
   ],
-  "testnet_usdt": 4022.66,
+  "testnet_usdt": 3887.41,
   "news_lines": 3
 }
