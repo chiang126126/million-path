@@ -1,48 +1,26 @@
 {
-  "ts": "2026-07-09T14:48:42Z",
+  "ts": "2026-07-09T15:07:01Z",
   "mode": "testnet",
   "equity": 465.54,
   "day_pnl_pct": -1.06,
   "total_dd_pct": 8.8,
-  "items": [
-    {
-      "symbol": "BTCUSDT",
-      "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.65,
-      "vetted": true,
-      "reason": "通过风控",
-      "rationale": "第一层纳指期货与NVDA走强显示risk-on，MSTR无显著背离；第二层BTC站上EMA21/50，OI下降表明杠杆清理，资费中性，恐惧情绪提供安全边际；第三层现价接近关键位，回踩确认后入场，止损1%目标2%覆盖成本。",
-      "market_state": "risk-on",
-      "entry_low": 62800,
-      "entry_high": 63200,
-      "invalidation": "BTC跌破62400或纳指期货转跌超0.5%",
-      "max_hold_hours": 48,
-      "risk_flags": [
-        "美股盘中波动大",
-        "ETH/SOL相对弱势限制全面risk-on",
-        "恐惧指数22可能反弹但需警惕假突破"
-      ],
-      "action": "OPEN LONG",
-      "price": 62961.89
-    }
-  ],
-  "testnet_usdt": 4201.52,
+  "items": [],
+  "testnet_usdt": 3892.85,
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29751.0,
-    "nq_chg": 0.96,
+    "nq": 29766.75,
+    "nq_chg": 1.01,
     "tnx": 0.46,
-    "tnx_chg": -0.22,
+    "tnx_chg": -0.26,
     "dxy": null,
     "dxy_chg": null,
-    "mstr_chg": -2.36,
-    "nvda_chg": 2.06,
-    "coin_chg": -3.11,
-    "btc_chg": 1.849,
-    "ethbtc_chg": -0.931,
-    "solbtc_chg": -0.651
+    "mstr_chg": -1.73,
+    "nvda_chg": 2.4,
+    "coin_chg": -1.79,
+    "btc_chg": 2.032,
+    "ethbtc_chg": -0.932,
+    "solbtc_chg": -0.883
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
