@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-09T04:07:00Z",
+  "ts": "2026-07-09T05:07:01Z",
   "mode": "testnet",
   "equity": 470.51,
   "day_pnl_pct": 0.0,
@@ -9,13 +9,13 @@
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "LONG",
-      "confidence": 0.55,
+      "confidence": 0.6,
       "vetted": false,
       "reason": "做多但价在均线下，不接飞刀",
-      "rationale": "日线偏多，禁止做空；小时级动能偏弱但RSI中性，资金费率正常，恐惧指数极低可能反弹。新闻偏空但未直接冲击ETH，谨慎做多。",
+      "rationale": "日线偏多，允许做多。小时级价格在EMA21附近，RSI中性，资金费率正常，恐惧情绪可能提供反弹空间。但宏观新闻偏空，需谨慎。",
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4028.57,
+  "testnet_usdt": 4025.11,
   "news_lines": 3
 }
