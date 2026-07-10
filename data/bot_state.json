@@ -10,7 +10,7 @@
       "symbol": "ETHUSDT",
       "side": "LONG",
       "entry": 1748.76,
-      "stop": 1750.51,
+      "stop": 1761.88,
       "target": 1792.48,
       "qty": 0.076,
       "notional": 133.31,
@@ -19,7 +19,7 @@
       "confidence": 0.65,
       "opened_at": "2026-07-09T06:07:11Z",
       "opened_kline_t": 1783576800000,
-      "stop_kind": "BE",
+      "stop_kind": "TRAIL",
       "snapshot": {
         "dev_pct": 0.41,
         "rsi14": 60.0,
@@ -32,7 +32,7 @@
         "source": "llm",
         "confidence": 0.65
       },
-      "mfe_price": 1772.8,
+      "mfe_price": 1775.0,
       "managed_t": 1783641600000
     },
     {
@@ -70,10 +70,10 @@
         "market_state": "risk-on"
       },
       "max_hold_hours": 48.0,
-      "mfe_price": 63839.48,
+      "mfe_price": 63880.01,
       "managed_t": 1783641600000
     }
   ],
   "updated_at": "2026-07-10T01:07:08Z",
-  "guardian_at": "2026-07-10T01:51:03Z"
+  "guardian_at": "2026-07-10T01:54:02Z"
 }
