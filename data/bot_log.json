@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-10T16:07:00Z",
+  "ts": "2026-07-10T17:07:01Z",
   "mode": "testnet",
   "equity": 468.6,
   "day_pnl_pct": 0.66,
@@ -9,19 +9,18 @@
       "symbol": "BTCUSDT",
       "source": "llm",
       "bias": "LONG",
-      "confidence": 0.65,
+      "confidence": 0.75,
       "vetted": false,
-      "reason": "组合名义余额不足(剩余 0U < 10%本金)",
-      "rationale": "第一层：NVDA领涨，MSTR无背离，全球risk-on；第二层：BTC站上EMA21/50，ETH/BTC走强确认资金下沉，OI增但资费中性，未过热；第三层：现价接近昨高，回踩63500附近入场，止损设于昨低下方，目标看65500，空间覆盖成本。",
+      "reason": "现价 64078.06 不在行动卡入场区间 [63500.00,64078.00]，不追单",
+      "rationale": "第一层：NVDA+2.8%带动纳指期货+0.27%，MSTR无背离，风险偏好偏多；第二层：BTC站上EMA21/50且ETH/BTC走强确认资金下沉，OI增但费率中性，未过热；第三层：现价接近昨高63500，回踩该位可入场，止损设于昨低下方，目标看66000，空间覆盖成本。",
       "market_state": "risk-on",
       "entry_low": 63500,
-      "entry_high": 64000,
-      "invalidation": "跌破昨低61705且无法快速收回，或纳指期货转跌超0.5%",
+      "entry_high": 64078,
+      "invalidation": "BTC跌破昨低61705或纳指期货转跌超0.5%",
       "max_hold_hours": 48,
       "risk_flags": [
         "美股盘中波动大，警惕开盘噪音与插针",
-        "恐惧贪婪23极端恐惧，反弹可能不持续",
-        "OI增加若伴随价格下跌则新空进场，需监控"
+        "恐惧贪婪23极端恐惧，反弹可能不持续"
       ],
       "action": "skip"
     }
@@ -30,18 +29,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29932.5,
-    "nq_chg": -0.02,
-    "tnx": 4.54,
-    "tnx_chg": 0.13,
-    "dxy": 100.776,
-    "dxy_chg": -0.16,
-    "mstr_chg": 0.52,
-    "nvda_chg": 2.62,
-    "coin_chg": 0.03,
-    "btc_chg": 1.754,
-    "ethbtc_chg": 1.084,
-    "solbtc_chg": -1.312
+    "nq": 30016.75,
+    "nq_chg": 0.27,
+    "tnx": 4.56,
+    "tnx_chg": 0.48,
+    "dxy": 100.806,
+    "dxy_chg": -0.13,
+    "mstr_chg": 0.91,
+    "nvda_chg": 2.78,
+    "coin_chg": 0.62,
+    "btc_chg": 2.139,
+    "ethbtc_chg": 1.045,
+    "solbtc_chg": -1.767
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
