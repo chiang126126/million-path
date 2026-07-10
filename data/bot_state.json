@@ -33,7 +33,7 @@
         "confidence": 0.65
       },
       "mfe_price": 1762.36,
-      "managed_t": 1783638000000
+      "managed_t": 1783641600000
     },
     {
       "symbol": "BTCUSDT",
@@ -71,8 +71,8 @@
       },
       "max_hold_hours": 48.0,
       "mfe_price": 63500.0,
-      "managed_t": 1783638000000
+      "managed_t": 1783641600000
     }
   ],
-  "updated_at": "2026-07-10T00:07:20Z"
+  "updated_at": "2026-07-10T01:07:08Z"
 }
