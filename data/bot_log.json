@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-11T21:07:00Z",
+  "ts": "2026-07-11T22:07:01Z",
   "mode": "testnet",
   "equity": 474.8,
   "day_pnl_pct": 1.32,
@@ -11,21 +11,22 @@
       "bias": "LONG",
       "confidence": 0.75,
       "vetted": false,
-      "reason": "RSI 81 超买区，不追多",
-      "rationale": "第一层：纳指期货+0.32%、NVDA+3.35%显示风险偏好偏多，MSTR与BTC同步无背离；第二层：ETH/BTC+1.25%显示资金下沉，OI温和上升但费率中性，日线偏多且站上30日线；第三层：现价接近昨高1812，回踩该位可入场，止损设于昨低下方，目标看3%空间覆盖成本。",
+      "reason": "RSI 73 超买区，不追多",
+      "rationale": "第一层: NVDA领涨，纳指期货+0.32%，MSTR无背离，风险偏好偏多。第二层: ETH站上30日线，ETH/BTC走强，OI温和上升，资费中性，确认资金流入。第三层: 现价接近昨高1812，回踩1810附近可入场，止损设于昨低下方，目标3%空间覆盖成本。",
       "market_state": "risk-on",
-      "entry_low": 1812,
-      "entry_high": 1828,
+      "entry_low": 1810,
+      "entry_high": 1822,
       "invalidation": "跌破昨低1737.68或ETH/BTC转弱",
-      "max_hold_hours": 48,
+      "max_hold_hours": 24,
       "risk_flags": [
-        "RSI 81.5偏高，短期超买可能回调",
-        "恐惧贪婪26仍处恐惧，情绪未过热"
+        "RSI偏高72.8，短期超买",
+        "恐惧指数26，情绪偏弱",
+        "亚洲时段流动性低，波动可能放大"
       ],
       "action": "skip"
     }
   ],
-  "testnet_usdt": 3898.38,
+  "testnet_usdt": 3898.37,
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
@@ -38,9 +39,9 @@
     "mstr_chg": 0.82,
     "nvda_chg": 3.35,
     "coin_chg": -0.18,
-    "btc_chg": 0.833,
-    "ethbtc_chg": 1.248,
-    "solbtc_chg": -0.312
+    "btc_chg": 0.515,
+    "ethbtc_chg": 0.998,
+    "solbtc_chg": -0.402
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
