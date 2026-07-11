@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-11T13:07:00Z",
+  "ts": "2026-07-11T14:07:01Z",
   "mode": "testnet",
   "equity": 468.6,
   "day_pnl_pct": 0.0,
@@ -12,21 +12,20 @@
       "confidence": 0.65,
       "vetted": false,
       "reason": "组合名义余额不足(剩余 0U < 10%本金)",
-      "rationale": "第一层：纳指期货+0.32%、NVDA+3.35%显示risk-on，MSTR+0.82%无背离；第二层：BTC站上EMA21/50，ETH/BTC走强确认资金下沉，OI微降杠杆温和，资费中性；第三层：现价接近EMA21，回踩可入场，止损设于昨低下方，空间覆盖成本，无重大数据事件。",
+      "rationale": "第一层：NVDA大涨3.4%带动纳指期货+0.32%，风险偏好risk-on；第二层：BTC站上EMA21/50，ETH/BTC走强确认资金流入，OI微降杠杆健康；第三层：现价接近EMA21支撑，距昨高64692有0.8%空间，止损设于昨低下方，盈亏比约1.7:1，无重大数据事件。",
       "market_state": "risk-on",
-      "entry_low": 63900,
-      "entry_high": 64200,
+      "entry_low": 64100,
+      "entry_high": 64300,
       "invalidation": "BTC跌破昨低62926且无法快速收回，或纳指期货转跌超0.5%",
-      "max_hold_hours": 48,
+      "max_hold_hours": 24,
       "risk_flags": [
-        "美股盘前流动性低",
-        "恐惧指数26显示情绪脆弱",
-        "若BTC跌破昨低则转空"
+        "美股盘中波动大，警惕开盘噪音与插针",
+        "MSTR涨幅小于BTC，若持续背离需降低信心"
       ],
       "action": "skip"
     }
   ],
-  "testnet_usdt": 3898.98,
+  "testnet_usdt": 3899.01,
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
@@ -39,9 +38,9 @@
     "mstr_chg": 0.82,
     "nvda_chg": 3.35,
     "coin_chg": -0.18,
-    "btc_chg": -0.174,
-    "ethbtc_chg": 0.322,
-    "solbtc_chg": -1.001
+    "btc_chg": -0.152,
+    "ethbtc_chg": 0.465,
+    "solbtc_chg": -0.327
   },
-  "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
+  "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
