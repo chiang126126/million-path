@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-11T05:07:01Z",
+  "ts": "2026-07-11T06:07:01Z",
   "mode": "testnet",
   "equity": 468.6,
   "day_pnl_pct": 0.0,
@@ -11,20 +11,21 @@
       "bias": "LONG",
       "confidence": 0.65,
       "vetted": false,
-      "reason": "组合名义余额不足(剩余 0U < 10%本金)",
-      "rationale": "第一层：NVDA大涨3.4%带动纳指期货+0.44%，美债收益率上行但美元平稳，MSTR无背离，风险偏好偏多；第二层：BTC站上EMA21/50，ETH/BTC走强确认资金下沉，OI温和上升但资费中性，恐惧指数26未过热；第三层：现价接近EMA21支撑，昨高64693为阻力，空间约2.5%可覆盖成本，无重大数据事件。",
+      "reason": "现价 64176.04 不在行动卡入场区间 [64036.00,64176.00]，不追单",
+      "rationale": "第一层：NVDA大涨3.4%带动纳指期货+0.44%，风险偏好risk-on；第二层：BTC站稳EMA21/50，ETH/BTC走强确认资金下沉，OI温和上升无杠杆清理信号；第三层：现价接近EMA21支撑，距昨高1%空间，止损设于昨低下方1%可覆盖成本，无重大事件。",
       "market_state": "risk-on",
-      "entry_low": 64000,
-      "entry_high": 64200,
-      "invalidation": "BTC跌破昨低62926且无法快速收回，或纳指期货转跌超0.5%",
-      "max_hold_hours": 48,
+      "entry_low": 64036,
+      "entry_high": 64176,
+      "invalidation": "跌破昨低62926或纳指期货转跌超0.5%",
+      "max_hold_hours": 24,
       "risk_flags": [
-        "日线偏离仅2.24%但RSI中性，追高需谨慎；若BTC跌破EMA21（64022）则转弱"
+        "日线偏离仅2.25%但RSI中性，追高需谨慎",
+        "资金费率中性，未过热"
       ],
       "action": "skip"
     }
   ],
-  "testnet_usdt": 3899.04,
+  "testnet_usdt": 3899.0,
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
@@ -37,9 +38,9 @@
     "mstr_chg": 0.82,
     "nvda_chg": 3.35,
     "coin_chg": -0.18,
-    "btc_chg": 0.247,
-    "ethbtc_chg": 1.01,
-    "solbtc_chg": -1.856
+    "btc_chg": 0.209,
+    "ethbtc_chg": 0.973,
+    "solbtc_chg": -1.797
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }

@@ -41,10 +41,10 @@
         "market_state": "mixed"
       },
       "max_hold_hours": 24.0,
-      "mfe_price": 1800.18,
-      "managed_t": 1783742400000
+      "mfe_price": 1802.27,
+      "managed_t": 1783746000000
     }
   ],
-  "updated_at": "2026-07-11T05:07:16Z",
+  "updated_at": "2026-07-11T06:07:14Z",
   "guardian_at": "2026-07-10T14:21:03Z"
 }
