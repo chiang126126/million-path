@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-11T03:07:01Z",
+  "ts": "2026-07-11T04:07:01Z",
   "mode": "testnet",
   "equity": 468.6,
   "day_pnl_pct": 0.0,
@@ -11,17 +11,16 @@
       "bias": "LONG",
       "confidence": 0.65,
       "vetted": false,
-      "reason": "现价 64144.05 不在行动卡入场区间 [63992.00,64144.00]，不追单",
-      "rationale": "第一层：纳指期货+0.44%，NVDA+3.35%，MSTR+0.82%无背离，全球risk-on；第二层：BTC站上EMA21/50，ETH/BTC走强+1.05%，OI上升但费率中性，恐惧26未极端；第三层：现价接近EMA21，回踩可入场，止损设于昨低下方，目标看昨高附近，空间覆盖成本。",
+      "reason": "组合名义余额不足(剩余 0U < 10%本金)",
+      "rationale": "第一层：纳指期货+0.44%，NVDA+3.35%，MSTR+0.82%无背离，全球risk-on；第二层：BTC站上EMA21/50，ETH/BTC走强，OI升但费率中性，恐惧26未过热；第三层：现价接近EMA21，回踩可入场，止损设昨低下方，空间1.5%覆盖成本，无重大事件。",
       "market_state": "risk-on",
-      "entry_low": 63992,
-      "entry_high": 64144,
+      "entry_low": 64000,
+      "entry_high": 64200,
       "invalidation": "跌破昨低62926且无法快速收回",
       "max_hold_hours": 24,
       "risk_flags": [
         "亚洲时段流动性低",
-        "无重大事件驱动",
-        "OI上升可能增加波动"
+        "OI上升若伴随价格下跌则新空压力"
       ],
       "action": "skip"
     }
@@ -39,9 +38,9 @@
     "mstr_chg": 0.82,
     "nvda_chg": 3.35,
     "coin_chg": -0.18,
-    "btc_chg": 0.367,
-    "ethbtc_chg": 1.047,
-    "solbtc_chg": -1.759
+    "btc_chg": 0.221,
+    "ethbtc_chg": 0.864,
+    "solbtc_chg": -1.893
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
