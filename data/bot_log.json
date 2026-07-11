@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-11T06:07:01Z",
+  "ts": "2026-07-11T07:07:01Z",
   "mode": "testnet",
   "equity": 468.6,
   "day_pnl_pct": 0.0,
@@ -11,21 +11,22 @@
       "bias": "LONG",
       "confidence": 0.65,
       "vetted": false,
-      "reason": "现价 64176.04 不在行动卡入场区间 [64036.00,64176.00]，不追单",
-      "rationale": "第一层：NVDA大涨3.4%带动纳指期货+0.44%，风险偏好risk-on；第二层：BTC站稳EMA21/50，ETH/BTC走强确认资金下沉，OI温和上升无杠杆清理信号；第三层：现价接近EMA21支撑，距昨高1%空间，止损设于昨低下方1%可覆盖成本，无重大事件。",
+      "reason": "RSI 71 超买区，不追多",
+      "rationale": "第一层：NVDA大涨3.4%带动纳指期货+0.44%，风险偏好risk-on；MSTR与BTC同步，无背离。第二层：BTC站上EMA21/50，ETH/BTC走强确认资金下沉，OI温和上升但资费中性，恐惧指数26未过热。第三层：现价接近EMA21（64055），回踩可入场，止损设于昨低下方1%，目标看昨高64693上方，盈亏比1.5:1，无重大事件。",
       "market_state": "risk-on",
-      "entry_low": 64036,
-      "entry_high": 64176,
+      "entry_low": 64055,
+      "entry_high": 64200,
       "invalidation": "跌破昨低62926或纳指期货转跌超0.5%",
       "max_hold_hours": 24,
       "risk_flags": [
-        "日线偏离仅2.25%但RSI中性，追高需谨慎",
-        "资金费率中性，未过热"
+        "RSI 70.7接近超买",
+        "恐惧指数26可能反弹后回落",
+        "欧洲上午流动性低"
       ],
       "action": "skip"
     }
   ],
-  "testnet_usdt": 3899.0,
+  "testnet_usdt": 3899.04,
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
@@ -38,9 +39,9 @@
     "mstr_chg": 0.82,
     "nvda_chg": 3.35,
     "coin_chg": -0.18,
-    "btc_chg": 0.209,
-    "ethbtc_chg": 0.973,
-    "solbtc_chg": -1.797
+    "btc_chg": 0.571,
+    "ethbtc_chg": 1.046,
+    "solbtc_chg": -1.771
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
