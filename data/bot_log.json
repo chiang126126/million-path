@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-11T08:07:00Z",
+  "ts": "2026-07-11T09:07:01Z",
   "mode": "testnet",
   "equity": 468.6,
   "day_pnl_pct": 0.0,
@@ -11,22 +11,22 @@
       "bias": "LONG",
       "confidence": 0.65,
       "vetted": false,
-      "reason": "组合名义余额不足(剩余 0U < 10%本金)",
-      "rationale": "第一层：纳指期货+0.44%，NVDA+3.35%，风险偏好risk-on；第二层：BTC站上EMA21/50，ETH/BTC走强，OI温和上升，资费中性；第三层：现价接近EMA21，回踩可入场，止损设于昨低下方，目标看昨高上方，空间充足。",
+      "reason": "现价 64275.01 不在行动卡入场区间 [64089.00,64275.00]，不追单",
+      "rationale": "第一层：NVDA大涨3.4%带动纳指期货上涨，风险偏好risk-on；第二层：BTC站上EMA21/50，ETH/BTC走强确认资金下沉，OI温和上升无异常，资费中性；第三层：现价接近EMA21支撑，回踩可入场，止损设于昨低下方，目标看昨高上方，空间充足，无重大事件。",
       "market_state": "risk-on",
-      "entry_low": 64000,
-      "entry_high": 64200,
+      "entry_low": 64089,
+      "entry_high": 64275,
       "invalidation": "跌破昨低62926且无法快速收回",
       "max_hold_hours": 48,
       "risk_flags": [
-        "日线偏离仅2.23%，追高空间有限",
+        "日线偏离仅2.4%，追高空间有限",
         "恐惧指数26，情绪偏弱",
-        "近期无重大事件，但需关注Powell讲话"
+        "若BTC跌破EMA21需警惕转弱"
       ],
       "action": "skip"
     }
   ],
-  "testnet_usdt": 3899.01,
+  "testnet_usdt": 3898.98,
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
@@ -39,9 +39,9 @@
     "mstr_chg": 0.82,
     "nvda_chg": 3.35,
     "coin_chg": -0.18,
-    "btc_chg": 0.246,
-    "ethbtc_chg": 1.19,
-    "solbtc_chg": -1.347
+    "btc_chg": 0.098,
+    "ethbtc_chg": 0.9,
+    "solbtc_chg": -1.281
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
