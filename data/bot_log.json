@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-11T11:07:01Z",
+  "ts": "2026-07-11T12:07:01Z",
   "mode": "testnet",
   "equity": 468.6,
   "day_pnl_pct": 0.0,
@@ -11,20 +11,21 @@
       "bias": "LONG",
       "confidence": 0.65,
       "vetted": false,
-      "reason": "现价 64207.99 不在行动卡入场区间 [63800.00,64200.00]，不追单",
-      "rationale": "第一层：NVDA大涨3.4%带动纳指期货+0.44%，风险偏好risk-on；MSTR+0.8%与BTC-0.4%无背离。第二层：BTC站上EMA21/50，日线偏多，ETH/BTC走强确认资金下沉，OI微增但费率中性，恐惧26未过热。第三层：现价64207接近昨高64692，但回踩EMA21(64101)附近可入场，止损设于昨低62926下方1.5%，目标看前高66000，空间覆盖成本。",
+      "reason": "组合名义余额不足(剩余 0U < 10%本金)",
+      "rationale": "第一层：纳指期货+0.44%、NVDA+3.35%显示risk-on，MSTR+0.82%无背离；第二层：BTC站上EMA21/50，ETH/BTC走强，OI微增但费率中性，恐惧26未过热；第三层：现价接近EMA21，回踩可入场，止损设于昨低下方，目标看昨高上方，空间覆盖成本。",
       "market_state": "risk-on",
       "entry_low": 63800,
       "entry_high": 64200,
       "invalidation": "BTC跌破昨低62926且无法快速收回，或纳指期货转跌超0.5%",
-      "max_hold_hours": 48,
+      "max_hold_hours": 24,
       "risk_flags": [
-        "欧洲上午流动性低，避免追高；若BTC跌破EMA21且ETH/BTC转弱则放弃多单"
+        "美股盘前流动性低，开盘可能反转",
+        "MSTR盘前涨幅小于NVDA，若开盘转弱需警惕"
       ],
       "action": "skip"
     }
   ],
-  "testnet_usdt": 3898.97,
+  "testnet_usdt": 3898.91,
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
@@ -37,9 +38,9 @@
     "mstr_chg": 0.82,
     "nvda_chg": 3.35,
     "coin_chg": -0.18,
-    "btc_chg": -0.364,
+    "btc_chg": -0.279,
     "ethbtc_chg": 0.358,
-    "solbtc_chg": -1.283
+    "solbtc_chg": -1.162
   },
-  "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
+  "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
 }
