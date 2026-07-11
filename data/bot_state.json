@@ -41,10 +41,10 @@
         "market_state": "risk-on"
       },
       "max_hold_hours": 24.0,
-      "mfe_price": 64338.0,
-      "managed_t": 1783796400000
+      "mfe_price": 64463.83,
+      "managed_t": 1783800000000
     }
   ],
-  "updated_at": "2026-07-11T20:07:13Z",
+  "updated_at": "2026-07-11T21:07:17Z",
   "guardian_at": "2026-07-10T14:21:03Z"
 }
