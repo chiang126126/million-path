@@ -2,8 +2,8 @@
   "mode": "testnet",
   "equity0": 500.0,
   "equity": 468.60026852399994,
-  "day": "2026-07-10",
-  "day_start_equity": 465.537568524,
+  "day": "2026-07-11",
+  "day_start_equity": 468.60026852399994,
   "peak_equity": 510.43661593299987,
   "positions": [
     {
@@ -42,9 +42,9 @@
       },
       "max_hold_hours": 24.0,
       "mfe_price": 1799.53,
-      "managed_t": 1783720800000
+      "managed_t": 1783724400000
     }
   ],
-  "updated_at": "2026-07-10T23:07:13Z",
+  "updated_at": "2026-07-11T00:07:17Z",
   "guardian_at": "2026-07-10T14:21:03Z"
 }
