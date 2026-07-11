@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-11T17:07:01Z",
+  "ts": "2026-07-11T18:07:01Z",
   "mode": "testnet",
   "equity": 474.8,
   "day_pnl_pct": 1.32,
@@ -9,18 +9,19 @@
       "symbol": "BTCUSDT",
       "source": "llm",
       "bias": "LONG",
-      "confidence": 0.65,
+      "confidence": 0.75,
       "vetted": false,
-      "reason": "现价 64220.52 不在行动卡入场区间 [63893.00,64220.00]，不追单",
-      "rationale": "第一层：NVDA大涨3.4%带动纳指期货+0.32%，MSTR无背离，风险偏好risk-on；第二层：BTC站上EMA21/50，ETH/BTC走强确认资金下沉，OI下降杠杆已清理，资费中性；第三层：现价接近EMA50支撑，入场区间合理，目标昨高64693附近，止损设于EMA50下方，空间覆盖成本。",
+      "reason": "现价 64324.63 不在行动卡入场区间 [64177.00,64324.00]，不追单",
+      "rationale": "第一层：NVDA大涨3.4%带动纳指期货上涨，风险偏好risk-on；第二层：BTC站上EMA21/50，ETH/BTC走强确认资金下沉，OI下降杠杆已清理；第三层：现价接近EMA21支撑，止损设于昨低下方，目标看昨高上方，空间覆盖成本。",
       "market_state": "risk-on",
-      "entry_low": 63893,
-      "entry_high": 64220,
-      "invalidation": "BTC跌破昨低62926且无法快速收回，或纳指期货转跌超0.5%",
-      "max_hold_hours": 48,
+      "entry_low": 64177,
+      "entry_high": 64324,
+      "invalidation": "BTC跌破昨低62926或纳指期货转跌超0.5%",
+      "max_hold_hours": 24,
       "risk_flags": [
-        "美股盘中波动大，警惕开盘噪音与插针",
-        "恐惧指数26仍低，情绪未过热"
+        "美股盘中波动大",
+        "资金费率中性",
+        "恐惧指数26可能反弹"
       ],
       "action": "skip"
     },
@@ -30,17 +31,16 @@
       "bias": "LONG",
       "confidence": 0.75,
       "vetted": false,
-      "reason": "RSI 83 超买区，不追多",
-      "rationale": "第一层：NVDA+3.4%领涨，纳指期货+0.32%，MSTR无背离，风险偏好risk-on；第二层：ETH/BTC+1.25%相对走强，OI温和上升，资金费率中性，日线偏多；第三层：现价接近昨高，但回踩EMA21(1802.62)可入场，止损设于昨低下方，目标看前高1880，空间充足。",
+      "reason": "RSI 85 超买区，不追多",
+      "rationale": "第一层: NVDA大涨3.4%带动纳指期货+0.32%，MSTR无背离，全球risk-on；第二层: ETH/BTC+1.28%显示资金下沉，OI温和上升但费率正常，RSI84.5偏高但趋势偏多；第三层: 现价接近昨高1812，回踩EMA21(1804.86)可入场，止损1.5%低于ATR，目标2.5%覆盖成本，无重大事件。",
       "market_state": "risk-on",
-      "entry_low": 1802.62,
-      "entry_high": 1822.82,
-      "invalidation": "跌破昨低1737.68或纳指期货转跌超1%",
-      "max_hold_hours": 48,
+      "entry_low": 1804.86,
+      "entry_high": 1825.42,
+      "invalidation": "跌破昨低1737.68或ETH/BTC转弱",
+      "max_hold_hours": 24,
       "risk_flags": [
-        "RSI14=82.6超买",
-        "恐惧指数26可能反弹后回调",
-        "美股盘中开盘噪音"
+        "RSI超买可能回调",
+        "美股开盘噪音插针"
       ],
       "action": "skip"
     }
@@ -58,9 +58,9 @@
     "mstr_chg": 0.82,
     "nvda_chg": 3.35,
     "coin_chg": -0.18,
-    "btc_chg": 0.213,
-    "ethbtc_chg": 1.249,
-    "solbtc_chg": -0.345
+    "btc_chg": 0.643,
+    "ethbtc_chg": 1.285,
+    "solbtc_chg": -0.247
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
