@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-11T16:07:00Z",
+  "ts": "2026-07-11T17:07:01Z",
   "mode": "testnet",
   "equity": 474.8,
   "day_pnl_pct": 1.32,
@@ -11,17 +11,16 @@
       "bias": "LONG",
       "confidence": 0.65,
       "vetted": false,
-      "reason": "做多但价在均线下，不接飞刀",
-      "rationale": "第一层：NVDA大涨3.4%带动纳指期货上涨，风险偏好risk-on；第二层：ETH/BTC走强确认资金下沉，OI下降表明杠杆清理完毕，资费中性；第三层：现价接近EMA21/50支撑，回踩可入场，目标昨高64692.83，止损设于EMA50下方，空间足够覆盖成本。",
+      "reason": "现价 64220.52 不在行动卡入场区间 [63893.00,64220.00]，不追单",
+      "rationale": "第一层：NVDA大涨3.4%带动纳指期货+0.32%，MSTR无背离，风险偏好risk-on；第二层：BTC站上EMA21/50，ETH/BTC走强确认资金下沉，OI下降杠杆已清理，资费中性；第三层：现价接近EMA50支撑，入场区间合理，目标昨高64693附近，止损设于EMA50下方，空间覆盖成本。",
       "market_state": "risk-on",
-      "entry_low": 63877.94,
-      "entry_high": 64142.67,
-      "invalidation": "跌破昨低62926.01或纳指期货转跌超0.5%",
-      "max_hold_hours": 24,
+      "entry_low": 63893,
+      "entry_high": 64220,
+      "invalidation": "BTC跌破昨低62926且无法快速收回，或纳指期货转跌超0.5%",
+      "max_hold_hours": 48,
       "risk_flags": [
-        "美股盘中波动大",
-        "恐惧指数26显示情绪偏弱",
-        "MSTR涨幅弱于NVDA需警惕"
+        "美股盘中波动大，警惕开盘噪音与插针",
+        "恐惧指数26仍低，情绪未过热"
       ],
       "action": "skip"
     },
@@ -29,18 +28,19 @@
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "LONG",
-      "confidence": 0.65,
+      "confidence": 0.75,
       "vetted": false,
-      "reason": "RSI 75 超买区，不追多",
-      "rationale": "第一层：NVDA+3.4%领涨，纳指期货+0.32%，MSTR无背离，全球risk-on；第二层：ETH/BTC+1.11%相对走强，OI增但资费温和，日线偏多；第三层：现价接近昨高1812，回踩1800附近可入场，止损1.5%低于EMA21，目标3%覆盖成本，无重大数据事件。",
+      "reason": "RSI 83 超买区，不追多",
+      "rationale": "第一层：NVDA+3.4%领涨，纳指期货+0.32%，MSTR无背离，风险偏好risk-on；第二层：ETH/BTC+1.25%相对走强，OI温和上升，资金费率中性，日线偏多；第三层：现价接近昨高，但回踩EMA21(1802.62)可入场，止损设于昨低下方，目标看前高1880，空间充足。",
       "market_state": "risk-on",
-      "entry_low": 1800,
-      "entry_high": 1812,
-      "invalidation": "跌破1799（EMA21）或纳指期货转跌超0.5%",
+      "entry_low": 1802.62,
+      "entry_high": 1822.82,
+      "invalidation": "跌破昨低1737.68或纳指期货转跌超1%",
       "max_hold_hours": 48,
       "risk_flags": [
-        "RSI 75.3偏高，警惕超买回调",
-        "美股盘中波动可能放大"
+        "RSI14=82.6超买",
+        "恐惧指数26可能反弹后回调",
+        "美股盘中开盘噪音"
       ],
       "action": "skip"
     }
@@ -58,9 +58,9 @@
     "mstr_chg": 0.82,
     "nvda_chg": 3.35,
     "coin_chg": -0.18,
-    "btc_chg": 0.218,
-    "ethbtc_chg": 1.108,
-    "solbtc_chg": 0.14
+    "btc_chg": 0.213,
+    "ethbtc_chg": 1.249,
+    "solbtc_chg": -0.345
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
