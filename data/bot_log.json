@@ -1,26 +1,33 @@
 {
-  "ts": "2026-07-11T14:07:01Z",
+  "ts": "2026-07-11T15:07:00Z",
   "mode": "testnet",
   "equity": 468.6,
   "day_pnl_pct": 0.0,
   "total_dd_pct": 8.2,
   "items": [
     {
+      "symbol": "ETHUSDT",
+      "action": "CLOSE TARGET",
+      "price": 1814.77,
+      "pnl": 6.2
+    },
+    {
       "symbol": "BTCUSDT",
       "source": "llm",
       "bias": "LONG",
       "confidence": 0.65,
       "vetted": false,
-      "reason": "组合名义余额不足(剩余 0U < 10%本金)",
-      "rationale": "第一层：NVDA大涨3.4%带动纳指期货+0.32%，风险偏好risk-on；第二层：BTC站上EMA21/50，ETH/BTC走强确认资金流入，OI微降杠杆健康；第三层：现价接近EMA21支撑，距昨高64692有0.8%空间，止损设于昨低下方，盈亏比约1.7:1，无重大数据事件。",
+      "reason": "RSI 76 超买区，不追多",
+      "rationale": "第一层：NVDA+3.4%带动纳指期货+0.32%，MSTR无背离，风险偏好偏多；第二层：BTC站上EMA21/50，ETH/BTC+0.9%确认资金下沉，OI微增但费率中性，恐惧26未过热；第三层：现价接近EMA21支撑，目标昨高64692.83，空间约0.5%覆盖成本，无重大事件。",
       "market_state": "risk-on",
-      "entry_low": 64100,
-      "entry_high": 64300,
-      "invalidation": "BTC跌破昨低62926且无法快速收回，或纳指期货转跌超0.5%",
+      "entry_low": 64161.7,
+      "entry_high": 64366.01,
+      "invalidation": "跌破昨低62926.01或纳指期货转跌1%",
       "max_hold_hours": 24,
       "risk_flags": [
-        "美股盘中波动大，警惕开盘噪音与插针",
-        "MSTR涨幅小于BTC，若持续背离需降低信心"
+        "RSI 75.8偏高",
+        "量能不足",
+        "美股盘中波动"
       ],
       "action": "skip"
     }
@@ -38,9 +45,9 @@
     "mstr_chg": 0.82,
     "nvda_chg": 3.35,
     "coin_chg": -0.18,
-    "btc_chg": -0.152,
-    "ethbtc_chg": 0.465,
-    "solbtc_chg": -0.327
+    "btc_chg": 0.562,
+    "ethbtc_chg": 0.895,
+    "solbtc_chg": 0.09
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
