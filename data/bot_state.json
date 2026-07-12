@@ -1,7 +1,7 @@
 {
   "mode": "testnet",
   "equity0": 500.0,
-  "equity": 469.22676852399997,
+  "equity": 468.85296852399995,
   "day": "2026-07-12",
   "day_start_equity": 471.988468524,
   "peak_equity": 510.43661593299987,
@@ -43,46 +43,8 @@
       "max_hold_hours": 24.0,
       "mfe_price": 1826.92,
       "managed_t": 1783886400000
-    },
-    {
-      "symbol": "BTCUSDT",
-      "side": "LONG",
-      "entry": 64146.55,
-      "stop": 63825.82,
-      "target": 64659.72,
-      "qty": 0.0008,
-      "notional": 54.75,
-      "risk_usdt": 0.27,
-      "fee_in": 0.027375,
-      "confidence": 0.65,
-      "opened_at": "2026-07-12T17:07:16Z",
-      "opened_kline_t": 1783875600000,
-      "stop_kind": "INIT",
-      "snapshot": {
-        "dev_pct": 0.06,
-        "rsi14": 46.8,
-        "atr_pct": 0.3,
-        "funding_pct": 0.0071,
-        "fng": 26,
-        "fng_label": "Fear",
-        "regime": "risk-on",
-        "daily_dev_pct": 2.2,
-        "source": "llm",
-        "confidence": 0.65,
-        "global_risk": "risk-on",
-        "nq_chg": 0.0,
-        "dxy_chg": -0.0,
-        "mstr_chg": 0.82,
-        "ethbtc_chg": 0.0,
-        "solbtc_chg": -0.48,
-        "oi_chg_pct": -1.26,
-        "market_state": "risk-on"
-      },
-      "max_hold_hours": 12.0,
-      "mfe_price": 64270.0,
-      "managed_t": 1783886400000
     }
   ],
   "updated_at": "2026-07-12T21:07:08Z",
-  "guardian_at": "2026-07-12T06:06:03Z"
+  "guardian_at": "2026-07-12T22:03:04Z"
 }
