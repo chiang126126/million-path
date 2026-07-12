@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-12T16:07:01Z",
+  "ts": "2026-07-12T17:07:01Z",
   "mode": "testnet",
   "equity": 469.23,
   "day_pnl_pct": -0.59,
@@ -10,19 +10,20 @@
       "source": "llm",
       "bias": "LONG",
       "confidence": 0.65,
-      "vetted": false,
-      "reason": "现价 64157.24 不在行动卡入场区间 [64067.00,64157.00]，不追单",
-      "rationale": "第一层：NVDA大涨3.4%显示AI风向偏多，MSTR无背离；第二层：BTC站上EMA21/50，ETH/BTC走强，OI下降杠杆清理，资费中性；第三层：现价接近EMA21支撑，空间足够，无重大事件，但confidence中等因美股盘中波动。",
+      "vetted": true,
+      "reason": "通过风控",
+      "rationale": "第一层：NVDA领涨，风险偏好偏多；第二层：BTC站上EMA21/50，OI下降杠杆清理，资费中性；第三层：现价接近EMA21支撑，空间可覆盖成本，无重大事件。",
       "market_state": "risk-on",
-      "entry_low": 64067,
-      "entry_high": 64157,
-      "invalidation": "跌破昨低63819且无法快速收回",
+      "entry_low": 64076,
+      "entry_high": 64150,
+      "invalidation": "跌破昨低63819或纳指期货转跌超0.5%",
       "max_hold_hours": 12,
       "risk_flags": [
-        "美股盘中波动大",
-        "BTC未突破昨高64504前可能震荡"
+        "美股盘中波动大，警惕开盘噪音插针",
+        "MSTR未显著弱于BTC，但COIN微跌需观察"
       ],
-      "action": "skip"
+      "action": "OPEN LONG",
+      "price": 64146.55
     }
   ],
   "testnet_usdt": 3953.73,
@@ -38,9 +39,9 @@
     "mstr_chg": 0.82,
     "nvda_chg": 3.35,
     "coin_chg": -0.18,
-    "btc_chg": 0.052,
-    "ethbtc_chg": 0.424,
-    "solbtc_chg": -0.984
+    "btc_chg": -0.115,
+    "ethbtc_chg": 0.0,
+    "solbtc_chg": -0.478
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
