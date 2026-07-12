@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-12T09:07:00Z",
+  "ts": "2026-07-12T10:07:01Z",
   "mode": "testnet",
   "equity": 469.23,
   "day_pnl_pct": -0.59,
@@ -12,15 +12,15 @@
       "confidence": 0.65,
       "vetted": false,
       "reason": "做多但价在均线下，不接飞刀",
-      "rationale": "第一层：NVDA大涨3.35%带动风险偏好，MSTR无背离；第二层：BTC站稳EMA21/50，OI下降2.67%显示杠杆清理，ETH/BTC走强确认资金流入；第三层：现价接近EMA21/50支撑，昨低63819为明确失效位，目标看昨高64504，盈亏比约2:1。",
+      "rationale": "第一层：NVDA大涨3.4%带动风险偏好，MSTR无背离；第二层：BTC站稳EMA50，OI下降2.6%显示杠杆清理，ETH/BTC走强确认资金流入；第三层：现价接近昨低，入场空间充足，止损0.5%覆盖成本，无重大事件",
       "market_state": "risk-on",
       "entry_low": 63819,
-      "entry_high": 64052,
+      "entry_high": 63940,
       "invalidation": "跌破昨低63819且无法快速收回，或纳指期货转跌超0.5%",
       "max_hold_hours": 24,
       "risk_flags": [
-        "恐惧指数26仍偏低，若情绪恶化可能引发抛售",
-        "欧洲上午流动性低，需等待亚盘确认信号"
+        "日线偏多但RSI仅37.8，反弹力度可能有限",
+        "资金费率中性，未过热"
       ],
       "action": "skip"
     },
@@ -31,16 +31,15 @@
       "confidence": 0.65,
       "vetted": false,
       "reason": "做多但价在均线下，不接飞刀",
-      "rationale": "第一层：NVDA大涨3.4%显示AI风向偏多，美债收益率上升但美元持平，风险偏好改善；第二层：ETH/BTC走强，OI微降表明杠杆清理充分，资金费率中性，恐惧指数26提供安全边际；第三层：现价接近EMA21和昨低，回踩支撑可入场，目标看1830昨高，止损设于1786.58下方，盈亏比约1.67，覆盖成本。",
+      "rationale": "第一层：NVDA大涨3.4%显示AI风向risk-on；第二层：ETH/BTC走强，OI微降杠杆清理，资费中性；第三层：现价接近EMA50支撑，空间足够，无重大事件。",
       "market_state": "risk-on",
-      "entry_low": 1790,
-      "entry_high": 1804,
-      "invalidation": "跌破1786.58且无法快速收回，或纳指期货转跌超1%",
-      "max_hold_hours": 48,
+      "entry_low": 1797.49,
+      "entry_high": 1804.3,
+      "invalidation": "跌破1786.58或纳指期货转跌1%",
+      "max_hold_hours": 24,
       "risk_flags": [
-        "日线偏离5.72%可能回调",
-        "欧洲上午流动性低",
-        "近期无重大事件但需关注Powell讲话"
+        "日线偏多但RSI偏低，反弹可能不持续",
+        "欧洲上午流动性低，需等待美盘确认"
       ],
       "action": "skip"
     }
@@ -58,9 +57,9 @@
     "mstr_chg": 0.82,
     "nvda_chg": 3.35,
     "coin_chg": -0.18,
-    "btc_chg": -0.462,
-    "ethbtc_chg": 0.606,
-    "solbtc_chg": -1.512
+    "btc_chg": -0.352,
+    "ethbtc_chg": 0.679,
+    "solbtc_chg": -1.022
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
