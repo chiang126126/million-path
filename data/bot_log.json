@@ -1,30 +1,10 @@
 {
-  "ts": "2026-07-12T04:07:01Z",
+  "ts": "2026-07-12T05:07:01Z",
   "mode": "testnet",
   "equity": 471.99,
   "day_pnl_pct": 0.0,
   "total_dd_pct": 7.53,
   "items": [
-    {
-      "symbol": "BTCUSDT",
-      "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.65,
-      "vetted": true,
-      "reason": "通过风控",
-      "rationale": "第一层NVDA领涨风险偏好偏多；第二层BTC站上EMA21/50且ETH/BTC走强确认资金流入，OI下降杠杆已清；第三层现价接近EMA21可入场，止损设昨低下方，空间覆盖成本。",
-      "market_state": "risk-on",
-      "entry_low": 64150,
-      "entry_high": 64250,
-      "invalidation": "BTC跌破63819或纳指期货转跌1%",
-      "max_hold_hours": 24,
-      "risk_flags": [
-        "亚洲时段流动性低",
-        "恐惧贪婪26情绪偏弱"
-      ],
-      "action": "OPEN LONG",
-      "price": 64195.77
-    },
     {
       "symbol": "ETHUSDT",
       "source": "llm",
@@ -32,20 +12,21 @@
       "confidence": 0.65,
       "vetted": false,
       "reason": "组合名义余额不足(剩余 0U < 10%本金)",
-      "rationale": "第一层：NVDA领涨，MSTR无背离，风险偏好偏正；第二层：ETH站上EMA21/50，ETH/BTC走强，OI温和上升，资费中性，情绪恐惧但未极端；第三层：现价接近EMA21，回踩可入场，止损设昨低下方，空间覆盖成本，无重大事件。",
+      "rationale": "第一层：NVDA大涨3.4%显示AI风向偏多，MSTR无背离；第二层：ETH/BTC走强确认资金下沉，OI微增但费率中性，日线偏多；第三层：现价接近EMA21，回踩1795-1810区间入场，止损设于昨低下方，目标看1830上方，盈亏比合理。",
       "market_state": "risk-on",
-      "entry_low": 1800,
-      "entry_high": 1815,
-      "invalidation": "跌破1786.58或ETH/BTC转弱",
-      "max_hold_hours": 24,
+      "entry_low": 1795,
+      "entry_high": 1810,
+      "invalidation": "跌破1786.58且无法快速收回，或纳指期货转跌超0.5%",
+      "max_hold_hours": 48,
       "risk_flags": [
-        "亚洲时段流动性低",
-        "恐惧情绪可能压制反弹"
+        "欧洲上午流动性低",
+        "恐惧指数26显示情绪脆弱",
+        "需等待回踩确认支撑"
       ],
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4346.41,
+  "testnet_usdt": 3903.51,
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
@@ -58,9 +39,9 @@
     "mstr_chg": 0.82,
     "nvda_chg": 3.35,
     "coin_chg": -0.18,
-    "btc_chg": 0.112,
-    "ethbtc_chg": 0.642,
-    "solbtc_chg": -1.072
+    "btc_chg": -0.234,
+    "ethbtc_chg": 0.785,
+    "solbtc_chg": -0.941
   },
-  "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
+  "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
