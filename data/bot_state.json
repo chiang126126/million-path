@@ -2,10 +2,10 @@
   "mode": "testnet",
   "equity0": 500.0,
   "equity": 471.988468524,
-  "day": "2026-07-11",
-  "day_start_equity": 468.60026852399994,
+  "day": "2026-07-12",
+  "day_start_equity": 471.988468524,
   "peak_equity": 510.43661593299987,
   "positions": [],
-  "updated_at": "2026-07-11T23:07:13Z",
+  "updated_at": "2026-07-12T00:07:20Z",
   "guardian_at": "2026-07-11T23:24:03Z"
 }
