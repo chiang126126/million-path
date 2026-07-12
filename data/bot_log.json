@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-12T01:07:01Z",
+  "ts": "2026-07-12T02:07:01Z",
   "mode": "testnet",
   "equity": 471.99,
   "day_pnl_pct": 0.0,
@@ -12,15 +12,15 @@
       "confidence": 0.65,
       "vetted": false,
       "reason": "做多但价在均线下，不接飞刀",
-      "rationale": "第一层：NVDA领涨，纳指期货微涨，风险偏好偏正；第二层：BTC站稳EMA50，OI下降表明杠杆清理，ETH/BTC走强确认资金流入；第三层：现价接近昨低和EMA50支撑，入场区间合理，止损0.5%覆盖成本，目标1%空间充足。",
+      "rationale": "第一层：NVDA领涨，纳指期货微涨，MSTR无背离，风险偏好偏正；第二层：BTC站上30日线偏多，ETH/BTC走强确认资金下沉，OI下降表明杠杆清理完毕，追空风险高；第三层：现价接近EMA50和昨低支撑，入场区间合理，止损0.5%覆盖成本，目标0.8%有空间，无重大事件干扰。",
       "market_state": "risk-on",
-      "entry_low": 63819.0,
-      "entry_high": 63958.3,
+      "entry_low": 63971,
+      "entry_high": 64140,
       "invalidation": "跌破昨低63819且无法快速收回，或纳指期货转跌超0.5%",
       "max_hold_hours": 24,
       "risk_flags": [
         "亚洲时段流动性低，波动可能放大",
-        "恐惧贪婪指数26仍偏恐慌，需警惕情绪恶化"
+        "若BTC跌破昨低63819则转为FLAT"
       ],
       "action": "skip"
     },
@@ -31,15 +31,15 @@
       "confidence": 0.65,
       "vetted": false,
       "reason": "做多但价在均线下，不接飞刀",
-      "rationale": "第一层：NVDA大涨3.4%带动纳指期货+0.32%，全球risk-on；第二层：ETH/BTC走强+0.36%，OI微增但费率中性，日线偏多；第三层：现价接近昨低支撑，止损明确，盈亏比>2.5，无重大数据事件。",
+      "rationale": "第一层：NVDA大涨3.4%带动纳指期货+0.32%，MSTR+0.82%无背离，全球risk-on；第二层：ETH/BTC+0.64%显示资金下沉，OI微增但费率中性，日线偏多；第三层：现价接近EMA21支撑，昨低1786.58为失效位，空间1.5%覆盖成本，无重大数据事件。",
       "market_state": "risk-on",
-      "entry_low": 1786.58,
-      "entry_high": 1793.02,
-      "invalidation": "跌破昨低1786.58且无法快速收回，或纳指期货转跌超0.5%",
+      "entry_low": 1795,
+      "entry_high": 1805,
+      "invalidation": "跌破1786.58且无法快速收回",
       "max_hold_hours": 24,
       "risk_flags": [
-        "亚洲时段流动性低易异动",
-        "MSTR未显著弱于BTC但需监控",
+        "亚洲时段流动性低",
+        "恐惧指数26情绪偏空",
         "若ETH跌破昨低则转空"
       ],
       "action": "skip"
@@ -58,9 +58,9 @@
     "mstr_chg": 0.82,
     "nvda_chg": 3.35,
     "coin_chg": -0.18,
-    "btc_chg": -0.346,
-    "ethbtc_chg": 0.358,
-    "solbtc_chg": -1.739
+    "btc_chg": 0.027,
+    "ethbtc_chg": 0.644,
+    "solbtc_chg": -1.205
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
