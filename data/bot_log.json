@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-12T12:07:00Z",
+  "ts": "2026-07-12T13:07:01Z",
   "mode": "testnet",
   "equity": 469.23,
   "day_pnl_pct": -0.59,
@@ -12,15 +12,15 @@
       "confidence": 0.65,
       "vetted": false,
       "reason": "做多但价在均线下，不接飞刀",
-      "rationale": "第一层：NVDA大涨3.4%带动风险偏好，MSTR小幅跟涨无背离；第二层：BTC日线偏多，OI下降2.47%表明杠杆清理充分，ETH/BTC走强确认资金下沉；第三层：现价接近EMA50支撑，昨低63819为明确失效位，目标看昨高64504，盈亏比约2:1，无重大数据事件。",
+      "rationale": "第一层：NVDA大涨3.4%显示AI风向偏多，MSTR小幅跟涨无背离，全球risk-on；第二层：BTC站上30日线偏多，ETH/BTC走强确认资金下沉，OI下降2.35%表明杠杆已清理，追空危险；第三层：现价接近EMA21/50支撑，入场区间围绕昨低至现价，止损设于昨低下方0.5%，目标1%空间覆盖成本，无重大数据事件。",
       "market_state": "risk-on",
       "entry_low": 63819,
-      "entry_high": 64028,
+      "entry_high": 64033,
       "invalidation": "跌破昨低63819且无法快速收回，或纳指期货转跌超0.5%",
       "max_hold_hours": 24,
       "risk_flags": [
-        "美股盘前流动性低，避免重仓",
-        "若BTC跌破63819且纳指期货转跌，立即止损"
+        "美股盘前流动性低，需等开盘确认",
+        "恐惧贪婪26仍处恐惧，情绪未过热"
       ],
       "action": "skip"
     },
@@ -31,15 +31,16 @@
       "confidence": 0.65,
       "vetted": false,
       "reason": "做多但价在均线下，不接飞刀",
-      "rationale": "第一层NVDA+3.4%指向risk-on；第二层ETH/BTC走强确认资金下沉，OI微增但费率中性，日线偏多；第三层现价接近EMA21，回踩1795-1805可入场，止损设昨低下方，目标1830，空间覆盖成本。",
+      "rationale": "第一层：NVDA+3.4%领涨，美债收益率上行但美元持平，风险偏好偏正；第二层：ETH站上EMA21/50，ETH/BTC走强，OI微增但资费中性，情绪Fear未过热；第三层：现价接近EMA21支撑，回踩可入场，止损设昨低下方，目标看1830，空间覆盖成本。",
       "market_state": "risk-on",
-      "entry_low": 1795,
-      "entry_high": 1805,
-      "invalidation": "跌破1786.58或纳指期货转跌1%",
+      "entry_low": 1798,
+      "entry_high": 1810,
+      "invalidation": "跌破1786.58或纳指期货转跌超0.5%",
       "max_hold_hours": 24,
       "risk_flags": [
         "美股盘前流动性低",
-        "MSTR未显著弱于BTC"
+        "MSTR与BTC无背离但需监控",
+        "日线偏离5.88%不宜追高"
       ],
       "action": "skip"
     }
@@ -57,9 +58,9 @@
     "mstr_chg": 0.82,
     "nvda_chg": 3.35,
     "coin_chg": -0.18,
-    "btc_chg": -0.337,
-    "ethbtc_chg": 0.463,
-    "solbtc_chg": -1.29
+    "btc_chg": -0.233,
+    "ethbtc_chg": 0.678,
+    "solbtc_chg": -0.65
   },
   "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
 }
