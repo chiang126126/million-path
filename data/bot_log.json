@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-12T10:07:01Z",
+  "ts": "2026-07-12T11:07:01Z",
   "mode": "testnet",
   "equity": 469.23,
   "day_pnl_pct": -0.59,
@@ -12,14 +12,14 @@
       "confidence": 0.65,
       "vetted": false,
       "reason": "做多但价在均线下，不接飞刀",
-      "rationale": "第一层：NVDA大涨3.4%带动风险偏好，MSTR无背离；第二层：BTC站稳EMA50，OI下降2.6%显示杠杆清理，ETH/BTC走强确认资金流入；第三层：现价接近昨低，入场空间充足，止损0.5%覆盖成本，无重大事件",
+      "rationale": "第一层：NVDA大涨3.4%显示AI风向偏多，MSTR无背离；第二层：BTC在昨低附近获支撑，OI下降2.7%表明杠杆清理，ETH/BTC走强确认资金下沉；第三层：现价接近昨低，入场风险可控，目标看昨高64504，空间约1%，覆盖成本。",
       "market_state": "risk-on",
       "entry_low": 63819,
-      "entry_high": 63940,
-      "invalidation": "跌破昨低63819且无法快速收回，或纳指期货转跌超0.5%",
+      "entry_high": 64022,
+      "invalidation": "跌破昨低63819且无法快速收回",
       "max_hold_hours": 24,
       "risk_flags": [
-        "日线偏多但RSI仅37.8，反弹力度可能有限",
+        "日线偏多但RSI偏低，需警惕假突破",
         "资金费率中性，未过热"
       ],
       "action": "skip"
@@ -31,15 +31,15 @@
       "confidence": 0.65,
       "vetted": false,
       "reason": "做多但价在均线下，不接飞刀",
-      "rationale": "第一层：NVDA大涨3.4%显示AI风向risk-on；第二层：ETH/BTC走强，OI微降杠杆清理，资费中性；第三层：现价接近EMA50支撑，空间足够，无重大事件。",
+      "rationale": "第一层：NVDA大涨3.35%显示AI风向偏多，全球风险偏好risk-on；第二层：ETH/BTC走强表明资金下沉，OI微降杠杆已清理，资费中性，恐惧情绪提供安全边际；第三层：现价接近EMA50支撑，距昨低仅0.75%，止损可控，目标看1830昨高，盈亏比约2:1。",
       "market_state": "risk-on",
-      "entry_low": 1797.49,
-      "entry_high": 1804.3,
-      "invalidation": "跌破1786.58或纳指期货转跌1%",
+      "entry_low": 1790,
+      "entry_high": 1800,
+      "invalidation": "跌破1786.58（昨低）且无法快速收回",
       "max_hold_hours": 24,
       "risk_flags": [
-        "日线偏多但RSI偏低，反弹可能不持续",
-        "欧洲上午流动性低，需等待美盘确认"
+        "日线偏多但RSI仅37.5，反弹可能受阻",
+        "欧洲上午流动性低，需等待确认信号"
       ],
       "action": "skip"
     }
@@ -57,9 +57,9 @@
     "mstr_chg": 0.82,
     "nvda_chg": 3.35,
     "coin_chg": -0.18,
-    "btc_chg": -0.352,
-    "ethbtc_chg": 0.679,
-    "solbtc_chg": -1.022
+    "btc_chg": -0.483,
+    "ethbtc_chg": 0.535,
+    "solbtc_chg": -1.266
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
