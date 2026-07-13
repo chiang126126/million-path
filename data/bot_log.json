@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-13T18:07:00Z",
+  "ts": "2026-07-13T19:07:00Z",
   "mode": "testnet",
   "equity": 458.48,
   "day_pnl_pct": -1.06,
@@ -9,39 +9,39 @@
       "symbol": "BTCUSDT",
       "source": "llm",
       "bias": "SHORT",
-      "confidence": 0.75,
+      "confidence": 0.65,
       "vetted": false,
-      "reason": "现价 62030.02 不在行动卡入场区间 [63640.00,64290.00]，不追单",
-      "rationale": "第一层：纳指期货-1.83%且美债收益率上行，风险偏好risk-off；第二层：BTC跌破昨低63640，OI上升6.45%显示新空进场，ETH/SOL相对走弱，日线偏空；第三层：现价62030已低于昨低，可于昨低63640-昨高64290区间入场做空，止损1.5%覆盖成本，目标3%至60000附近，空间充足。",
+      "reason": "现价 62026.22 不在行动卡入场区间 [63640.00,64290.00]，不追单",
+      "rationale": "第一层：纳指期货-1.75%且美债收益率上行，风险偏好下降；第二层：BTC跌破昨低63640，OI上升6.49%表明新空进场，但资金费率仍为正，追空需谨慎；第三层：现价62026已低于昨低，不宜追空，等待反弹至63640-64290区间入场，止损设在昨高64290上方，目标看60000附近，空间覆盖成本。",
       "market_state": "risk-off",
       "entry_low": 63640,
       "entry_high": 64290,
-      "invalidation": "BTC重新站上昨高64290并站稳，或纳指期货转涨，或MSTR/BTC比值回升",
+      "invalidation": "BTC重新站上64290并站稳，或纳指期货转涨，或MSTR/BTC比值回升",
       "max_hold_hours": 48,
       "risk_flags": [
-        "美股盘中波动大，警惕开盘噪音与插针",
-        "OI上升但资金费率仍为正，空头拥挤可能反弹",
-        "恐惧指数28，极端情绪可能反转"
+        "OI上升但资金费率未转负，空头拥挤可能反弹",
+        "日线偏空但RSI接近超卖，短期有修复风险",
+        "美股盘中波动大，警惕开盘噪音与插针"
       ],
       "action": "skip"
     },
     {
       "symbol": "ETHUSDT",
       "source": "llm",
-      "bias": "FLAT",
-      "confidence": 0.0,
+      "bias": "SHORT",
+      "confidence": 0.65,
       "vetted": false,
-      "reason": "决策为 FLAT/观望",
-      "rationale": "第一层: 纳指期货-1.83%且美债收益率上升，全球risk-off；第二层: ETH跌破昨低1779.46，OI下降但未极端，资金费率中性，ETH/BTC未走强，确认偏弱；第三层: 日线偏多但短期破位，空间不足且无明确入场点，风险回报比差。",
+      "reason": "日线趋势向上(+3.3%)，禁止逆势做空",
+      "rationale": "纳指期货-1.75%确认risk-off；ETH跌破昨低1779.46且OI降但资费未极端偏空，追空需谨慎；日线偏多限制做空，但短期动能向下，反弹至1785附近入场，止损1.5%",
       "market_state": "risk-off",
-      "entry_low": 0,
-      "entry_high": 0,
-      "invalidation": "",
-      "max_hold_hours": 0,
+      "entry_low": 1779.46,
+      "entry_high": 1785.0,
+      "invalidation": "价格突破1826.92或纳指期货转涨",
+      "max_hold_hours": 24,
       "risk_flags": [
-        "日线偏多但短期破位，方向冲突",
-        "美股盘中波动大，开盘噪音",
-        "无明确入场区间"
+        "日线偏多禁止重仓做空",
+        "OI下降显示杠杆清理，追空空间有限",
+        "近期无重大数据事件"
       ],
       "action": "skip"
     }
@@ -50,18 +50,18 @@
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 29481.75,
-    "nq_chg": -1.83,
+    "nq": 29508.0,
+    "nq_chg": -1.75,
     "tnx": 4.61,
     "tnx_chg": 0.98,
-    "dxy": 101.249,
-    "dxy_chg": 0.29,
-    "mstr_chg": -1.7,
-    "nvda_chg": 0.74,
-    "coin_chg": -2.03,
-    "btc_chg": -3.19,
-    "ethbtc_chg": -0.035,
-    "solbtc_chg": -0.132
+    "dxy": 101.239,
+    "dxy_chg": 0.28,
+    "mstr_chg": -1.86,
+    "nvda_chg": 0.62,
+    "coin_chg": -1.33,
+    "btc_chg": -3.356,
+    "ethbtc_chg": 0.317,
+    "solbtc_chg": -0.215
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
