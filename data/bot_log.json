@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-13T22:07:01Z",
+  "ts": "2026-07-13T23:07:01Z",
   "mode": "testnet",
   "equity": 458.48,
   "day_pnl_pct": -1.06,
@@ -8,21 +8,22 @@
     {
       "symbol": "BTCUSDT",
       "source": "llm",
-      "bias": "FLAT",
-      "confidence": 0.0,
-      "vetted": false,
-      "reason": "决策为 FLAT/观望",
-      "rationale": "第一层: 美元走强、美债收益率上升、纳指期货下跌，全球风险偏好risk-off；MSTR跌幅小于BTC，无背离。第二层: BTC跌破昨低63640.83，OI上升5.98%显示新空进场，但RSI 32.5接近超卖，资金费率中性，ETH/BTC小幅走强但SOL/BTC走弱，信号混合。第三层: 当前价格62152已远离昨低，追空空间有限且风险大，做多缺乏确认信号，高周期震荡，故FLAT。",
+      "bias": "SHORT",
+      "confidence": 0.65,
+      "vetted": true,
+      "reason": "通过风控",
+      "rationale": "第一层：纳指期货下跌、美债收益率上行、MSTR走弱，风险偏好下降；第二层：BTC跌破昨低63640，OI上升显示新空进场，RSI32偏空，日线偏空；第三层：现价接近昨低，追空空间有限，但反弹至62500附近可入场，止损设于昨高上方，目标看60000，盈亏比约2:1。",
       "market_state": "risk-off",
-      "entry_low": 0,
-      "entry_high": 0,
-      "invalidation": "",
-      "max_hold_hours": 0,
+      "entry_low": 62000,
+      "entry_high": 62500,
+      "invalidation": "价格突破昨高64290并站稳，或纳指期货转涨且MSTR不再弱于BTC",
+      "max_hold_hours": 48,
       "risk_flags": [
-        "禁止追空：下跌中OI升但RSI低，反弹风险大",
-        "禁止做多：未站回关键位且风险偏好未改善"
+        "OI上升但若突然下降则空头拥挤需警惕反弹",
+        "恐惧指数28已较低，过度做空可能被轧"
       ],
-      "action": "skip"
+      "action": "OPEN SHORT",
+      "price": 62010.0
     },
     {
       "symbol": "ETHUSDT",
@@ -31,36 +32,36 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层: 美元走强、美债收益率上升、纳指期货下跌，全球风险偏好risk-off；第二层: ETH跌破昨低1779.46，OI下降但资金费率仍为负，情绪偏空但杠杆已部分清理，ETH/BTC相对走强但不足以逆转；第三层: 当前价格1763.57低于昨低，追空空间有限且日线偏多，做多条件不满足，故FLAT。",
-      "market_state": "risk-off",
+      "rationale": "第一层：纳指期货-0.27%，MSTR-1.91%弱于BTC，风险偏好偏弱；第二层：ETH现价1759.8低于昨低1779.46，日线偏多但RSI36.3偏弱，OI降3.74%杠杆清理，资费负但未极端；第三层：价格已跌破昨低，追空空间有限且OI降追空危险，做多需等重新站回关键位，当前无明确入场信号，信号冲突，FLAT。",
+      "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "日线偏多但短期破位，方向冲突",
-        "无明确入场区间",
-        "空间不足以覆盖成本"
+        "价格跌破昨低但OI下降，追空危险",
+        "日线偏多但短期偏弱，方向不明",
+        "无明确入场区间"
       ],
       "action": "skip"
     }
   ],
   "testnet_usdt": 4335.37,
   "news_lines": 3,
-  "global_risk": "risk-off",
+  "global_risk": "unknown",
   "xm": {
-    "nq": 29428.75,
-    "nq_chg": -0.16,
+    "nq": 29395.5,
+    "nq_chg": -0.27,
     "tnx": 4.61,
     "tnx_chg": 0.88,
-    "dxy": 101.286,
-    "dxy_chg": 0.33,
+    "dxy": 101.277,
+    "dxy_chg": 0.04,
     "mstr_chg": -1.91,
     "nvda_chg": 0.37,
     "coin_chg": -0.68,
-    "btc_chg": -2.515,
-    "ethbtc_chg": 0.531,
-    "solbtc_chg": -0.241
+    "btc_chg": -2.924,
+    "ethbtc_chg": 0.496,
+    "solbtc_chg": -0.05
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
