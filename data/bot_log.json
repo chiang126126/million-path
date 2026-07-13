@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-13T11:07:01Z",
+  "ts": "2026-07-13T12:07:01Z",
   "mode": "testnet",
   "equity": 458.48,
   "day_pnl_pct": -1.06,
@@ -12,15 +12,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：纳指期货跌但NVDA涨，风险偏好mixed；第二层：BTC跌破昨低63640，OI升但资费中性，ETH/SOL相对走强但未确认全面risk-on；第三层：现价63057距昨低63640已破，追空空间不足且OI升追空危险，做多需等站回昨低，条件不满足，FLAT。",
+      "rationale": "第一层：纳指期货跌但NVDA涨，美债收益率升，风险偏好mixed；第二层：BTC跌破昨低63640，OI升显示新空进场，但ETH/SOL相对走强，资费中性，情绪恐惧，信号冲突；第三层：现价62900低于昨低，追空风险大，做多需等站回关键位，空间不足，无明确入场区间，故FLAT。",
       "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "纳指期货持续下跌可能拖累BTC",
-        "OI上升但价格下跌，空头拥挤但未到极限"
+        "禁止追空",
+        "禁止抄底",
+        "信号冲突"
       ],
       "action": "skip"
     },
@@ -31,16 +32,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：纳指期货跌但NVDA涨，风险偏好mixed；第二层：ETH/BTC和SOL/BTC走强但OI降，杠杆清理中，日线偏多但RSI中性，信号冲突；第三层：现价接近昨低，但无明确入场信号，空间不足，故FLAT。",
+      "rationale": "第一层: 纳指期货跌但NVDA涨，风险偏好mixed；第二层: ETH/BTC和SOL/BTC走强但OI下降，杠杆清理中，方向不明；第三层: 现价接近昨低，追空空间不足，做多需等确认，条件不满足。",
       "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "信号冲突",
-        "无明确入场点",
-        "空间不足"
+        "纳指期货下跌但NVDA上涨，信号冲突",
+        "OI下降但价格未企稳，方向不明",
+        "恐惧贪婪28，情绪偏空但未极端"
       ],
       "action": "skip"
     }
@@ -49,18 +50,18 @@
   "news_lines": 3,
   "global_risk": "mixed",
   "xm": {
-    "nq": 29750.75,
-    "nq_chg": -0.94,
+    "nq": 29740.5,
+    "nq_chg": -0.97,
     "tnx": 4.57,
     "tnx_chg": 0.66,
-    "dxy": 100.882,
-    "dxy_chg": -0.07,
+    "dxy": 100.914,
+    "dxy_chg": -0.04,
     "mstr_chg": 0.82,
     "nvda_chg": 3.35,
     "coin_chg": -0.18,
-    "btc_chg": -1.315,
-    "ethbtc_chg": 0.355,
-    "solbtc_chg": 1.099
+    "btc_chg": -1.701,
+    "ethbtc_chg": 0.461,
+    "solbtc_chg": 0.924
   },
-  "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
+  "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
 }
