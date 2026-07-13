@@ -1,10 +1,16 @@
 {
-  "ts": "2026-07-13T02:07:01Z",
+  "ts": "2026-07-13T03:07:00Z",
   "mode": "testnet",
   "equity": 463.41,
   "day_pnl_pct": 0.0,
   "total_dd_pct": 9.21,
   "items": [
+    {
+      "symbol": "ETHUSDT",
+      "action": "CLOSE STOP",
+      "price": 1797.31,
+      "pnl": -4.93
+    },
     {
       "symbol": "BTCUSDT",
       "source": "llm",
@@ -12,16 +18,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：纳指期货跌但NVDA涨，风险偏好mixed；第二层：BTC跌破昨低，OI降但资费中性，ETH/SOL相对走强但未确认全面risk-on；第三层：方向不明，空间不足，不满足进场条件。",
+      "rationale": "第一层: 纳指期货跌但NVDA涨，风险偏好mixed；第二层: BTC跌破昨低63640.83，OI降但资费中性，ETH/SOL相对走强但未确认全面risk-on；第三层: 日线震荡，现价接近昨低，空间不足，无明确入场信号。",
       "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "纳指期货下跌但NVDA上涨信号冲突",
-        "BTC跌破昨低但OI下降显示去杠杆",
-        "ETH/SOL相对走强但未带动BTC"
+        "日线震荡无方向",
+        "现价接近昨低不宜追空",
+        "空间不足"
       ],
       "action": "skip"
     }
@@ -30,18 +36,18 @@
   "news_lines": 3,
   "global_risk": "mixed",
   "xm": {
-    "nq": 29765.75,
-    "nq_chg": -0.89,
+    "nq": 29733.25,
+    "nq_chg": -1.0,
     "tnx": 4.57,
     "tnx_chg": 0.66,
-    "dxy": 101.135,
-    "dxy_chg": 0.16,
+    "dxy": 101.144,
+    "dxy_chg": 0.17,
     "mstr_chg": 0.82,
     "nvda_chg": 3.35,
     "coin_chg": -0.18,
-    "btc_chg": -1.152,
-    "ethbtc_chg": 1.136,
-    "solbtc_chg": 0.651
+    "btc_chg": -1.471,
+    "ethbtc_chg": 0.887,
+    "solbtc_chg": 0.35
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
