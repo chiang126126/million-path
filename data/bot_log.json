@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-14T14:07:00Z",
+  "ts": "2026-07-14T15:07:01Z",
   "mode": "testnet",
   "equity": 453.43,
   "day_pnl_pct": -1.1,
@@ -11,17 +11,17 @@
       "bias": "LONG",
       "confidence": 0.75,
       "vetted": false,
-      "reason": "RSI 76 超买区，不追多",
-      "rationale": "第一层：纳指期货+0.95%、美元走弱、MSTR无背离，风险偏好risk-on；第二层：BTC站上30日线偏多，ETH/BTC走强确认资金下沉，OI降杠杆清理，追空危险；第三层：现价距昨高64425约1.1%，空间可覆盖成本，但RSI偏高需谨慎，入场区间63500-63900，止损1.2%",
+      "reason": "RSI 82 超买区，不追多",
+      "rationale": "第一层：纳指期货+0.96%，美元走弱，MSTR无背离，风险偏好risk-on；第二层：BTC站上30日线，ETH/BTC走强，OI下降杠杆清理，资费中性，确认risk-on；第三层：现价接近昨高64425，不宜追高，等待回踩63800-64000入场，止损1.5%低于昨低，目标2.5%至65800，空间覆盖成本。",
       "market_state": "risk-on",
-      "entry_low": 63500,
-      "entry_high": 63900,
-      "invalidation": "BTC跌破昨低61824.97或纳指期货转跌超0.5%",
-      "max_hold_hours": 48,
+      "entry_low": 63800,
+      "entry_high": 64425,
+      "invalidation": "BTC跌破昨低61825或纳指期货转跌超0.5%",
+      "max_hold_hours": 24,
       "risk_flags": [
-        "RSI 76.4超买",
-        "NVDA持续下跌可能拖累情绪",
-        "恐惧贪婪22极端恐惧可能引发抛售"
+        "RSI 82超买",
+        "恐惧指数22极端恐惧可能反转",
+        "美股盘中开盘噪音"
       ],
       "action": "skip"
     },
@@ -31,17 +31,17 @@
       "bias": "LONG",
       "confidence": 0.75,
       "vetted": false,
-      "reason": "RSI 84 超买区，不追多",
-      "rationale": "第一层：纳指期货+0.95%、美元走弱、MSTR无背离，风险偏好偏多；第二层：ETH/BTC+3.13%显示资金下沉，OI升但费率中性，RSI84偏高但趋势偏多；第三层：现价接近昨高1846，回踩该位可入场，止损设于昨低下方，目标3%空间覆盖成本。",
+      "reason": "RSI 88 超买区，不追多",
+      "rationale": "第一层:纳指期货+0.96%美元走弱，MSTR无背离，风险偏好risk-on；第二层:ETH/BTC+3.03%资金下沉，OI增但费率温和，多头健康；第三层:现价已超昨高，追高需谨慎，但回踩昨高1846可入场，止损1.5%覆盖成本，目标3%空间充足。",
       "market_state": "risk-on",
       "entry_low": 1846.0,
-      "entry_high": 1865.0,
-      "invalidation": "跌破昨低1750.20或纳指期货转跌超1%",
+      "entry_high": 1876.55,
+      "invalidation": "跌破昨低1750.2或纳指期货转跌超1%",
       "max_hold_hours": 24,
       "risk_flags": [
-        "RSI超买84.4",
-        "NVDA持续下跌可能拖累情绪",
-        "美股盘中波动大"
+        "RSI14=87.9超买",
+        "恐惧指数22极端恐惧可能反转",
+        "NVDA-1.46%科技股分化"
       ],
       "action": "skip"
     }
@@ -50,18 +50,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29755.75,
-    "nq_chg": 0.95,
+    "nq": 29759.0,
+    "nq_chg": 0.96,
     "tnx": 4.57,
-    "tnx_chg": -0.82,
-    "dxy": 100.691,
-    "dxy_chg": -0.58,
-    "mstr_chg": 0.89,
-    "nvda_chg": -2.95,
-    "coin_chg": -0.12,
-    "btc_chg": 2.255,
-    "ethbtc_chg": 3.135,
-    "solbtc_chg": -0.618
+    "tnx_chg": -0.78,
+    "dxy": 100.75,
+    "dxy_chg": -0.52,
+    "mstr_chg": 2.25,
+    "nvda_chg": -1.46,
+    "coin_chg": -0.5,
+    "btc_chg": 2.376,
+    "ethbtc_chg": 3.032,
+    "solbtc_chg": -0.742
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
