@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-14T06:07:01Z",
+  "ts": "2026-07-14T07:07:01Z",
   "mode": "testnet",
   "equity": 458.48,
   "day_pnl_pct": 0.0,
@@ -12,7 +12,7 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：纳指期货+0.39%偏多但MSTR-1.91%弱于BTC，风险偏好不明；第二层：ETH站上30日线偏多但OI降、资费中性，ETH/BTC走强但SOL/BTC走弱，信号冲突；第三层：当前无明确入场区间，空间不足，且近期有鲍威尔讲话等事件，不宜交易。",
+      "rationale": "第一层：纳指期货+0.31%偏多，但美债收益率上升、MSTR-1.91%弱于BTC，风险偏好不明确。第二层：ETH日线偏多，但OI下降、资金费率中性，ETH/BTC走强但SOL/BTC走弱，信号冲突。第三层：当前价格1782接近EMA21，无明确入场区间，空间不足，且无重大事件驱动，不宜交易。",
       "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
@@ -20,28 +20,28 @@
       "max_hold_hours": 0,
       "risk_flags": [
         "信号冲突",
-        "事件风险",
-        "空间不足"
+        "量能不足",
+        "无明确入场位"
       ],
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4024.64,
+  "testnet_usdt": 4025.61,
   "news_lines": 3,
   "global_risk": "unknown",
   "xm": {
-    "nq": 29591.75,
-    "nq_chg": 0.39,
+    "nq": 29567.0,
+    "nq_chg": 0.31,
     "tnx": 4.61,
     "tnx_chg": 0.88,
-    "dxy": 101.186,
-    "dxy_chg": -0.09,
+    "dxy": 101.231,
+    "dxy_chg": -0.05,
     "mstr_chg": -1.91,
     "nvda_chg": 0.37,
     "coin_chg": -0.68,
-    "btc_chg": -0.205,
-    "ethbtc_chg": 0.459,
-    "solbtc_chg": -1.347
+    "btc_chg": -0.322,
+    "ethbtc_chg": 0.53,
+    "solbtc_chg": -1.398
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
