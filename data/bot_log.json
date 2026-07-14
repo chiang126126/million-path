@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-14T02:07:01Z",
+  "ts": "2026-07-14T03:07:01Z",
   "mode": "testnet",
   "equity": 458.48,
   "day_pnl_pct": 0.0,
@@ -12,7 +12,7 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：全球风险偏好数据不可用，MSTR与BTC无显著背离，无法判断risk-on/off。第二层：ETH日线偏多但偏离仅4.4%，OI下降1.93%显示杠杆清理，但资金费率中性，恐惧贪婪22极端恐惧，信号冲突。第三层：当前处于昨低1750.20与昨高1846.00之间，无明确入场区间，空间不足，且无重大事件驱动，不符合进场纪律。",
+      "rationale": "第一层: 纳指期货-0.30%偏弱，MSTR-1.91%弱于BTC，风险偏好不明。第二层: ETH/BTC+0.32%相对走强，但OI降2.39%杠杆清理，恐惧22极端，方向不明。第三层: 日线偏多但现价贴近EMA50，无明确入场区间，空间不足，信号冲突，强制FLAT。",
       "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
@@ -20,28 +20,28 @@
       "max_hold_hours": 0,
       "risk_flags": [
         "信号冲突",
-        "无明确方向",
+        "无明确入场区间",
         "空间不足"
       ],
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4026.48,
+  "testnet_usdt": 4026.46,
   "news_lines": 3,
   "global_risk": "unknown",
   "xm": {
-    "nq": 29445.25,
-    "nq_chg": -0.1,
+    "nq": 29387.75,
+    "nq_chg": -0.3,
     "tnx": 4.61,
     "tnx_chg": 0.88,
-    "dxy": 101.236,
-    "dxy_chg": 0.0,
+    "dxy": 101.2,
+    "dxy_chg": -0.03,
     "mstr_chg": -1.91,
     "nvda_chg": 0.37,
     "coin_chg": -0.68,
-    "btc_chg": -1.208,
-    "ethbtc_chg": 0.246,
-    "solbtc_chg": -0.216
+    "btc_chg": -0.973,
+    "ethbtc_chg": 0.317,
+    "solbtc_chg": -0.457
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
