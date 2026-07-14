@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-14T22:07:01Z",
+  "ts": "2026-07-14T23:07:01Z",
   "mode": "testnet",
   "equity": 453.43,
   "day_pnl_pct": -1.1,
@@ -11,17 +11,16 @@
       "bias": "LONG",
       "confidence": 0.75,
       "vetted": false,
-      "reason": "RSI 85 超买区，不追多",
-      "rationale": "第一层：纳指期货+1.1%、美元走弱、MSTR+3.1%无背离，全球risk-on；第二层：BTC站上昨高64425，ETH/BTC走强确认资金下沉，OI降3.33%杠杆已清，资费中性；第三层：现价接近昨高，但日线偏多且偏离不大，入场区间64200-64632，止损设于昨低下方，目标看66000，空间覆盖成本。",
+      "reason": "RSI 89 超买区，不追多",
+      "rationale": "第一层：纳指期货涨、美元跌、MSTR涨，全球risk-on；第二层：BTC站上昨高64425，ETH/BTC走强确认资金下沉，OI降杠杆已清，资费中性；第三层：现价略高于昨高，可围绕昨高入场，止损设于昨低下方，目标看前高67000，空间充足，无重大事件。",
       "market_state": "risk-on",
-      "entry_low": 64200,
-      "entry_high": 64632,
-      "invalidation": "跌破昨低61824.97或纳指期货转跌超0.5%",
-      "max_hold_hours": 24,
+      "entry_low": 64425,
+      "entry_high": 64834,
+      "invalidation": "BTC跌破昨低61824.97或纳指期货转跌超0.5%",
+      "max_hold_hours": 48,
       "risk_flags": [
-        "RSI 84.7超买",
-        "恐惧指数22极端恐惧可能反弹后回落",
-        "亚洲时段流动性低"
+        "RSI 88.7超买，追高需谨慎",
+        "恐惧贪婪22极端恐惧，情绪可能反转"
       ],
       "action": "skip"
     },
@@ -31,17 +30,16 @@
       "bias": "LONG",
       "confidence": 0.75,
       "vetted": false,
-      "reason": "RSI 88 超买区，不追多",
-      "rationale": "第一层：纳指期货+1.08%，美元走弱，MSTR+3.11%无背离，全球risk-on；第二层：ETH/BTC+2.18%确认资金下沉，OI+11.3%但费率温和，RSI88.3但趋势偏多；第三层：现价已突破昨高1846，回踩不破可入场，止损设于昨低下方，目标看前高1930附近，空间覆盖成本。",
+      "reason": "RSI 89 超买区，不追多",
+      "rationale": "纳指期货+1%美元弱，风险偏好risk-on；ETH站上昨高1846且ETH/BTC走强，OI增但资费中性，确认多头；现价已高但回踩1846可入场，目标昨高上3%约1940，止损1.5%约1854，空间覆盖成本。",
       "market_state": "risk-on",
       "entry_low": 1846.0,
-      "entry_high": 1875.67,
-      "invalidation": "跌破昨低1750.20或纳指期货转跌超1%",
+      "entry_high": 1882.53,
+      "invalidation": "跌破昨低1750.20或ETH/BTC转弱",
       "max_hold_hours": 24,
       "risk_flags": [
-        "RSI超买可能回调",
-        "亚洲时段流动性低",
-        "无重大事件驱动"
+        "RSI 89.4超买",
+        "恐惧指数22极端恐惧可能反转"
       ],
       "action": "skip"
     }
@@ -50,18 +48,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29793.5,
-    "nq_chg": 1.08,
+    "nq": 29768.75,
+    "nq_chg": 0.99,
     "tnx": 4.58,
     "tnx_chg": -0.52,
-    "dxy": 100.938,
-    "dxy_chg": -0.34,
+    "dxy": 100.941,
+    "dxy_chg": -0.33,
     "mstr_chg": 3.11,
     "nvda_chg": 0.4,
     "coin_chg": 1.53,
-    "btc_chg": 3.982,
-    "ethbtc_chg": 2.184,
-    "solbtc_chg": -0.367
+    "btc_chg": 4.554,
+    "ethbtc_chg": 2.326,
+    "solbtc_chg": -0.3
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
