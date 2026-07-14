@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-14T15:07:01Z",
+  "ts": "2026-07-14T16:07:01Z",
   "mode": "testnet",
   "equity": 453.43,
   "day_pnl_pct": -1.1,
@@ -9,19 +9,19 @@
       "symbol": "BTCUSDT",
       "source": "llm",
       "bias": "LONG",
-      "confidence": 0.75,
+      "confidence": 0.65,
       "vetted": false,
-      "reason": "RSI 82 超买区，不追多",
-      "rationale": "第一层：纳指期货+0.96%，美元走弱，MSTR无背离，风险偏好risk-on；第二层：BTC站上30日线，ETH/BTC走强，OI下降杠杆清理，资费中性，确认risk-on；第三层：现价接近昨高64425，不宜追高，等待回踩63800-64000入场，止损1.5%低于昨低，目标2.5%至65800，空间覆盖成本。",
+      "reason": "RSI 87 超买区，不追多",
+      "rationale": "第一层：纳指期货+1.06%、美元走弱，MSTR无背离，风险偏好risk-on；第二层：BTC站上昨高64425，ETH/BTC走强确认资金下沉，OI降2.08%杠杆已清理，资费中性；第三层：现价接近昨高，追高空间有限，但回踩64200附近可入场，止损1.5%覆盖成本，目标2.5%至66300附近，近期无重大数据。",
       "market_state": "risk-on",
-      "entry_low": 63800,
-      "entry_high": 64425,
-      "invalidation": "BTC跌破昨低61825或纳指期货转跌超0.5%",
+      "entry_low": 64200,
+      "entry_high": 64734,
+      "invalidation": "BTC跌破昨低61824.97或纳指期货转跌超0.5%",
       "max_hold_hours": 24,
       "risk_flags": [
-        "RSI 82超买",
+        "RSI 86.7超买",
         "恐惧指数22极端恐惧可能反转",
-        "美股盘中开盘噪音"
+        "美股开盘噪音"
       ],
       "action": "skip"
     },
@@ -31,17 +31,16 @@
       "bias": "LONG",
       "confidence": 0.75,
       "vetted": false,
-      "reason": "RSI 88 超买区，不追多",
-      "rationale": "第一层:纳指期货+0.96%美元走弱，MSTR无背离，风险偏好risk-on；第二层:ETH/BTC+3.03%资金下沉，OI增但费率温和，多头健康；第三层:现价已超昨高，追高需谨慎，但回踩昨高1846可入场，止损1.5%覆盖成本，目标3%空间充足。",
+      "reason": "RSI 87 超买区，不追多",
+      "rationale": "纳指期货涨、美元跌，风险偏好risk-on；ETH/BTC走强确认资金流入；OI增但资费中性，未过热，可做多。",
       "market_state": "risk-on",
       "entry_low": 1846.0,
-      "entry_high": 1876.55,
-      "invalidation": "跌破昨低1750.2或纳指期货转跌超1%",
+      "entry_high": 1872.54,
+      "invalidation": "跌破昨低1750.2或纳指期货转跌超0.5%",
       "max_hold_hours": 24,
       "risk_flags": [
-        "RSI14=87.9超买",
-        "恐惧指数22极端恐惧可能反转",
-        "NVDA-1.46%科技股分化"
+        "RSI 86.6超买",
+        "近期无重大事件但警惕Powell讲话"
       ],
       "action": "skip"
     }
@@ -50,18 +49,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29759.0,
-    "nq_chg": 0.96,
-    "tnx": 4.57,
-    "tnx_chg": -0.78,
-    "dxy": 100.75,
-    "dxy_chg": -0.52,
-    "mstr_chg": 2.25,
-    "nvda_chg": -1.46,
-    "coin_chg": -0.5,
-    "btc_chg": 2.376,
-    "ethbtc_chg": 3.032,
-    "solbtc_chg": -0.742
+    "nq": 29788.5,
+    "nq_chg": 1.06,
+    "tnx": 4.59,
+    "tnx_chg": -0.43,
+    "dxy": 100.89,
+    "dxy_chg": -0.39,
+    "mstr_chg": 2.84,
+    "nvda_chg": -1.06,
+    "coin_chg": 0.28,
+    "btc_chg": 3.519,
+    "ethbtc_chg": 1.866,
+    "solbtc_chg": -1.435
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
