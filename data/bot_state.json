@@ -2,8 +2,8 @@
   "mode": "testnet",
   "equity0": 500.0,
   "equity": 458.482568524,
-  "day": "2026-07-13",
-  "day_start_equity": 463.414468524,
+  "day": "2026-07-14",
+  "day_start_equity": 458.482568524,
   "peak_equity": 510.43661593299987,
   "positions": [
     {
@@ -40,9 +40,11 @@
         "oi_chg_pct": 6.5,
         "market_state": "risk-off"
       },
-      "max_hold_hours": 48.0
+      "max_hold_hours": 48.0,
+      "mfe_price": 61882.88,
+      "managed_t": 1783983600000
     }
   ],
-  "updated_at": "2026-07-13T23:07:23Z",
+  "updated_at": "2026-07-14T00:07:13Z",
   "guardian_at": "2026-07-12T22:06:03Z"
 }
