@@ -42,9 +42,45 @@
       },
       "max_hold_hours": 24.0,
       "mfe_price": 65277.37,
-      "managed_t": 1784095200000
+      "managed_t": 1784098800000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "side": "LONG",
+      "entry": 1872.2,
+      "stop": 1844.12,
+      "target": 1919.0,
+      "qty": 0.068,
+      "notional": 128.4,
+      "risk_usdt": 1.93,
+      "fee_in": 0.06420000000000001,
+      "confidence": 0.65,
+      "opened_at": "2026-07-15T08:07:15Z",
+      "opened_kline_t": 1784102400000,
+      "stop_kind": "INIT",
+      "snapshot": {
+        "dev_pct": 1.25,
+        "rsi14": 48.4,
+        "atr_pct": 0.62,
+        "funding_pct": 0.0052,
+        "fng": 25,
+        "fng_label": "Extreme Fear",
+        "regime": "risk-on",
+        "daily_dev_pct": 8.99,
+        "source": "llm",
+        "confidence": 0.65,
+        "global_risk": "risk-on",
+        "nq_chg": 0.66,
+        "dxy_chg": -0.04,
+        "mstr_chg": 3.11,
+        "ethbtc_chg": 1.72,
+        "solbtc_chg": -0.03,
+        "oi_chg_pct": 8.18,
+        "market_state": "risk-on"
+      },
+      "max_hold_hours": 24.0
     }
   ],
-  "updated_at": "2026-07-15T07:07:08Z",
+  "updated_at": "2026-07-15T08:07:15Z",
   "guardian_at": "2026-07-15T07:27:03Z"
 }
