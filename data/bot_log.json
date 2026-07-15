@@ -1,54 +1,48 @@
 {
-  "ts": "2026-07-15T13:07:01Z",
+  "ts": "2026-07-15T14:07:01Z",
   "mode": "testnet",
-  "equity": 456.7,
+  "equity": 456.69,
   "day_pnl_pct": 0.72,
   "total_dd_pct": 10.53,
   "items": [
     {
       "symbol": "BTCUSDT",
-      "action": "CLOSE STOP_BE",
-      "price": 64718.66,
-      "pnl": -0.0
-    },
-    {
-      "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "LONG",
       "confidence": 0.75,
       "vetted": true,
       "reason": "通过风控",
-      "rationale": "第一层:纳指期货+0.67%且MSTR+3.11%强于BTC，风险偏好risk-on；第二层:ETH/BTC+1.58%显示资金下沉，OI增4.1%但费率温和，趋势偏多；第三层:现价距昨高1896仅2%，但日线偏多且无追高信号，可轻仓做多，止损设于昨低下方。",
+      "rationale": "第一层：NVDA+3.7%及MSTR+6.8%显示风险偏好恢复；第二层：BTC站上30日线且ETH/BTC走强确认资金流入，OI上升但资费中性；第三层：现价接近昨高65100，回踩64800可入场，止损1.5%覆盖成本，目标3%至67300，无重大事件。",
       "market_state": "risk-on",
-      "entry_low": 1920,
-      "entry_high": 1940,
-      "invalidation": "跌破昨低1773.41或纳指期货转跌超1%",
+      "entry_low": 64800,
+      "entry_high": 65346,
+      "invalidation": "BTC跌破昨低62272或纳指期货转跌1%",
       "max_hold_hours": 48,
       "risk_flags": [
-        "美股盘前波动大",
-        "RSI 67接近超买",
-        "恐惧指数25可能情绪反转"
+        "美股开盘噪音",
+        "追高后快速回落",
+        "MSTR若转弱需警惕"
       ],
       "action": "OPEN LONG",
-      "price": 1935.26
+      "price": 65346.0
     }
   ],
-  "testnet_usdt": 4035.87,
+  "testnet_usdt": 4153.89,
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29990.25,
-    "nq_chg": 0.67,
-    "tnx": 4.57,
-    "tnx_chg": -0.35,
-    "dxy": 100.862,
-    "dxy_chg": -0.08,
-    "mstr_chg": 3.11,
-    "nvda_chg": 0.4,
-    "coin_chg": 1.53,
-    "btc_chg": 2.374,
-    "ethbtc_chg": 1.578,
-    "solbtc_chg": 0.449
+    "nq": 29803.0,
+    "nq_chg": 0.04,
+    "tnx": 4.56,
+    "tnx_chg": -0.48,
+    "dxy": 100.829,
+    "dxy_chg": -0.11,
+    "mstr_chg": 6.81,
+    "nvda_chg": 3.67,
+    "coin_chg": 3.49,
+    "btc_chg": 2.558,
+    "ethbtc_chg": 1.059,
+    "solbtc_chg": -0.531
   },
-  "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
+  "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
