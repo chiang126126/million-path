@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-15T01:07:01Z",
+  "ts": "2026-07-15T02:07:00Z",
   "mode": "testnet",
   "equity": 453.43,
   "day_pnl_pct": 0.0,
@@ -10,58 +10,58 @@
       "source": "llm",
       "bias": "LONG",
       "confidence": 0.75,
-      "vetted": false,
-      "reason": "RSI 82 超买区，不追多",
-      "rationale": "第一层纳指期货+1.48%、美元走弱、MSTR+3.11%无背离，全球risk-on；第二层BTC站上30日线偏多，ETH/BTC走强确认资金下沉，OI降1.2%杠杆已清理，资费0.01%未过热；第三层现价64783接近昨高65100，但日线偏多且RSI81.8未极端，可轻仓低吸，止损设于EMA21下方1.5%约64136，目标前高66500附近，空间覆盖成本。",
+      "vetted": true,
+      "reason": "通过风控",
+      "rationale": "第一层：纳指期货+1.6%、美元走弱、MSTR与BTC同步上涨，风险偏好risk-on；第二层：BTC站上30日线偏多，ETH/BTC走强确认资金下沉，OI下降杠杆已清理，资费中性；第三层：现价接近昨高但未超买，入场区间64200-64700，止损1.5%低于昨低，目标2.5%空间覆盖成本，无重大事件。",
       "market_state": "risk-on",
-      "entry_low": 64136,
-      "entry_high": 64783,
-      "invalidation": "BTC跌破昨低62272.2或纳指期货转跌超1%",
+      "entry_low": 64200,
+      "entry_high": 64700,
+      "invalidation": "跌破昨低62272且无法快速收回，或纳指期货转跌超1%",
       "max_hold_hours": 24,
       "risk_flags": [
-        "RSI偏高81.8存在回调风险",
-        "亚洲时段流动性低",
-        "近期无重大数据但需关注Powell讲话"
+        "追高需谨慎，若现价直接突破65100则不宜追入",
+        "恐惧指数25极端恐惧，情绪可能反转"
       ],
-      "action": "skip"
+      "action": "OPEN LONG",
+      "price": 64654.01
     },
     {
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "LONG",
       "confidence": 0.75,
-      "vetted": false,
-      "reason": "RSI 80 超买区，不追多",
-      "rationale": "纳指期货+1.48%美元走弱，全球risk-on；ETH站上30日线且ETH/BTC走强，OI增但费率中性，多头健康；现价接近EMA21支撑，回踩可入场，目标前高1896，止损设于EMA21下方1.5%",
+      "vetted": true,
+      "reason": "通过风控",
+      "rationale": "第一层：纳指期货+1.6%、美元走弱、MSTR与BTC同步上涨，全球risk-on；第二层：ETH站上EMA21/50，ETH/BTC走强确认资金下沉，OI上升但费率中性，无过热；第三层：现价接近EMA21支撑，止损设于昨低下方，目标看昨高1896，盈亏比>1.5，无重大事件。",
       "market_state": "risk-on",
-      "entry_low": 1853.39,
-      "entry_high": 1876.51,
-      "invalidation": "跌破昨低1773.41或ETH/BTC转弱",
+      "entry_low": 1854.21,
+      "entry_high": 1868.18,
+      "invalidation": "跌破昨低1773.41或纳指期货转跌超1%",
       "max_hold_hours": 24,
       "risk_flags": [
-        "RSI79.9超买",
-        "恐惧贪婪25极端恐惧可能反转",
-        "亚洲时段流动性低"
+        "亚洲时段流动性低",
+        "OI上升可能积累空头挤压风险"
       ],
-      "action": "skip"
+      "action": "OPEN LONG",
+      "price": 1868.18
     }
   ],
   "testnet_usdt": 4330.62,
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29912.5,
-    "nq_chg": 1.48,
+    "nq": 29940.0,
+    "nq_chg": 1.58,
     "tnx": 4.58,
     "tnx_chg": -0.52,
-    "dxy": 100.823,
+    "dxy": 100.822,
     "dxy_chg": -0.45,
     "mstr_chg": 3.11,
     "nvda_chg": 0.4,
     "coin_chg": 1.53,
-    "btc_chg": 3.702,
-    "ethbtc_chg": 1.471,
-    "solbtc_chg": -0.572
+    "btc_chg": 3.336,
+    "ethbtc_chg": 1.155,
+    "solbtc_chg": -0.607
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
