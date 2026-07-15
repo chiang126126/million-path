@@ -1,26 +1,26 @@
 {
-  "ts": "2026-07-15T04:07:01Z",
+  "ts": "2026-07-15T05:07:00Z",
   "mode": "testnet",
   "equity": 453.43,
   "day_pnl_pct": 0.0,
   "total_dd_pct": 11.17,
   "items": [],
-  "testnet_usdt": 3906.19,
+  "testnet_usdt": 3906.16,
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 30018.0,
-    "nq_chg": 0.76,
+    "nq": 30010.75,
+    "nq_chg": 0.74,
     "tnx": 4.58,
     "tnx_chg": -0.52,
-    "dxy": 100.798,
-    "dxy_chg": -0.14,
+    "dxy": 100.808,
+    "dxy_chg": -0.13,
     "mstr_chg": 3.11,
     "nvda_chg": 0.4,
     "coin_chg": 1.53,
-    "btc_chg": 3.521,
-    "ethbtc_chg": 1.542,
-    "solbtc_chg": -0.166
+    "btc_chg": 3.012,
+    "ethbtc_chg": 1.72,
+    "solbtc_chg": 0.442
   },
-  "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
+  "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
