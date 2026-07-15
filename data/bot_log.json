@@ -1,67 +1,26 @@
 {
-  "ts": "2026-07-15T02:07:00Z",
+  "ts": "2026-07-15T03:07:00Z",
   "mode": "testnet",
   "equity": 453.43,
   "day_pnl_pct": 0.0,
   "total_dd_pct": 11.17,
-  "items": [
-    {
-      "symbol": "BTCUSDT",
-      "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.75,
-      "vetted": true,
-      "reason": "通过风控",
-      "rationale": "第一层：纳指期货+1.6%、美元走弱、MSTR与BTC同步上涨，风险偏好risk-on；第二层：BTC站上30日线偏多，ETH/BTC走强确认资金下沉，OI下降杠杆已清理，资费中性；第三层：现价接近昨高但未超买，入场区间64200-64700，止损1.5%低于昨低，目标2.5%空间覆盖成本，无重大事件。",
-      "market_state": "risk-on",
-      "entry_low": 64200,
-      "entry_high": 64700,
-      "invalidation": "跌破昨低62272且无法快速收回，或纳指期货转跌超1%",
-      "max_hold_hours": 24,
-      "risk_flags": [
-        "追高需谨慎，若现价直接突破65100则不宜追入",
-        "恐惧指数25极端恐惧，情绪可能反转"
-      ],
-      "action": "OPEN LONG",
-      "price": 64654.01
-    },
-    {
-      "symbol": "ETHUSDT",
-      "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.75,
-      "vetted": true,
-      "reason": "通过风控",
-      "rationale": "第一层：纳指期货+1.6%、美元走弱、MSTR与BTC同步上涨，全球risk-on；第二层：ETH站上EMA21/50，ETH/BTC走强确认资金下沉，OI上升但费率中性，无过热；第三层：现价接近EMA21支撑，止损设于昨低下方，目标看昨高1896，盈亏比>1.5，无重大事件。",
-      "market_state": "risk-on",
-      "entry_low": 1854.21,
-      "entry_high": 1868.18,
-      "invalidation": "跌破昨低1773.41或纳指期货转跌超1%",
-      "max_hold_hours": 24,
-      "risk_flags": [
-        "亚洲时段流动性低",
-        "OI上升可能积累空头挤压风险"
-      ],
-      "action": "OPEN LONG",
-      "price": 1868.18
-    }
-  ],
-  "testnet_usdt": 4330.62,
+  "items": [],
+  "testnet_usdt": 3906.19,
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29940.0,
-    "nq_chg": 1.58,
+    "nq": 29971.75,
+    "nq_chg": 1.68,
     "tnx": 4.58,
     "tnx_chg": -0.52,
-    "dxy": 100.822,
-    "dxy_chg": -0.45,
+    "dxy": 100.77,
+    "dxy_chg": -0.5,
     "mstr_chg": 3.11,
     "nvda_chg": 0.4,
     "coin_chg": 1.53,
-    "btc_chg": 3.336,
-    "ethbtc_chg": 1.155,
-    "solbtc_chg": -0.607
+    "btc_chg": 3.265,
+    "ethbtc_chg": 1.615,
+    "solbtc_chg": -0.117
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
