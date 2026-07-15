@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-15T00:07:01Z",
+  "ts": "2026-07-15T01:07:01Z",
   "mode": "testnet",
   "equity": 453.43,
   "day_pnl_pct": 0.0,
@@ -11,17 +11,17 @@
       "bias": "LONG",
       "confidence": 0.75,
       "vetted": false,
-      "reason": "RSI 88 超买区，不追多",
-      "rationale": "第一层：纳指期货+1.4%、美元走弱、MSTR+3.1%无背离，全球risk-on；第二层：BTC站上30日线偏多，ETH/BTC+2.18%资金下沉，OI降杠杆清理，资费中性；第三层：现价接近昨高65100，回踩64500-65100区间可入场，止损1.5%低于昨低，目标3%空间覆盖成本。",
+      "reason": "RSI 82 超买区，不追多",
+      "rationale": "第一层纳指期货+1.48%、美元走弱、MSTR+3.11%无背离，全球risk-on；第二层BTC站上30日线偏多，ETH/BTC走强确认资金下沉，OI降1.2%杠杆已清理，资费0.01%未过热；第三层现价64783接近昨高65100，但日线偏多且RSI81.8未极端，可轻仓低吸，止损设于EMA21下方1.5%约64136，目标前高66500附近，空间覆盖成本。",
       "market_state": "risk-on",
-      "entry_low": 64500,
-      "entry_high": 65100,
-      "invalidation": "跌破昨低62272.20或纳指期货转跌超1%",
-      "max_hold_hours": 48,
+      "entry_low": 64136,
+      "entry_high": 64783,
+      "invalidation": "BTC跌破昨低62272.2或纳指期货转跌超1%",
+      "max_hold_hours": 24,
       "risk_flags": [
-        "RSI14=88超买",
-        "恐惧贪婪25极端恐惧可能反弹后回落",
-        "亚洲时段流动性低"
+        "RSI偏高81.8存在回调风险",
+        "亚洲时段流动性低",
+        "近期无重大数据但需关注Powell讲话"
       ],
       "action": "skip"
     },
@@ -31,16 +31,16 @@
       "bias": "LONG",
       "confidence": 0.75,
       "vetted": false,
-      "reason": "RSI 88 超买区，不追多",
-      "rationale": "第一层:纳指期货+1.4%美元走弱，MSTR+3.1%无背离，全球risk-on；第二层:ETH站上30日线偏多，ETH/BTC+2.18%资金下沉，OI+9.12%但费率中性，情绪极端恐惧有修复空间；第三层:现价接近昨高1896，回踩1880-1896区间可入场，止损1.5%覆盖成本，目标3%至1950附近，无重大数据事件。",
+      "reason": "RSI 80 超买区，不追多",
+      "rationale": "纳指期货+1.48%美元走弱，全球risk-on；ETH站上30日线且ETH/BTC走强，OI增但费率中性，多头健康；现价接近EMA21支撑，回踩可入场，目标前高1896，止损设于EMA21下方1.5%",
       "market_state": "risk-on",
-      "entry_low": 1880,
-      "entry_high": 1896,
-      "invalidation": "跌破昨低1773.41或纳指期货转跌超1%",
+      "entry_low": 1853.39,
+      "entry_high": 1876.51,
+      "invalidation": "跌破昨低1773.41或ETH/BTC转弱",
       "max_hold_hours": 24,
       "risk_flags": [
-        "RSI 87.6超买",
-        "OI大增可能短期过热",
+        "RSI79.9超买",
+        "恐惧贪婪25极端恐惧可能反转",
         "亚洲时段流动性低"
       ],
       "action": "skip"
@@ -50,18 +50,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29889.5,
-    "nq_chg": 1.4,
+    "nq": 29912.5,
+    "nq_chg": 1.48,
     "tnx": 4.58,
     "tnx_chg": -0.52,
-    "dxy": 100.89,
-    "dxy_chg": -0.39,
+    "dxy": 100.823,
+    "dxy_chg": -0.45,
     "mstr_chg": 3.11,
     "nvda_chg": 0.4,
     "coin_chg": 1.53,
-    "btc_chg": 4.319,
-    "ethbtc_chg": 2.177,
-    "solbtc_chg": -0.341
+    "btc_chg": 3.702,
+    "ethbtc_chg": 1.471,
+    "solbtc_chg": -0.572
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
