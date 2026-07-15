@@ -1,26 +1,54 @@
 {
-  "ts": "2026-07-15T12:07:01Z",
+  "ts": "2026-07-15T13:07:01Z",
   "mode": "testnet",
-  "equity": 453.36,
-  "day_pnl_pct": -0.02,
-  "total_dd_pct": 11.18,
-  "items": [],
-  "testnet_usdt": 3905.8,
+  "equity": 456.7,
+  "day_pnl_pct": 0.72,
+  "total_dd_pct": 10.53,
+  "items": [
+    {
+      "symbol": "BTCUSDT",
+      "action": "CLOSE STOP_BE",
+      "price": 64718.66,
+      "pnl": -0.0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "source": "llm",
+      "bias": "LONG",
+      "confidence": 0.75,
+      "vetted": true,
+      "reason": "通过风控",
+      "rationale": "第一层:纳指期货+0.67%且MSTR+3.11%强于BTC，风险偏好risk-on；第二层:ETH/BTC+1.58%显示资金下沉，OI增4.1%但费率温和，趋势偏多；第三层:现价距昨高1896仅2%，但日线偏多且无追高信号，可轻仓做多，止损设于昨低下方。",
+      "market_state": "risk-on",
+      "entry_low": 1920,
+      "entry_high": 1940,
+      "invalidation": "跌破昨低1773.41或纳指期货转跌超1%",
+      "max_hold_hours": 48,
+      "risk_flags": [
+        "美股盘前波动大",
+        "RSI 67接近超买",
+        "恐惧指数25可能情绪反转"
+      ],
+      "action": "OPEN LONG",
+      "price": 1935.26
+    }
+  ],
+  "testnet_usdt": 4035.87,
   "news_lines": 3,
-  "global_risk": "unknown",
+  "global_risk": "risk-on",
   "xm": {
-    "nq": 29920.75,
-    "nq_chg": 0.44,
-    "tnx": 4.58,
-    "tnx_chg": -0.52,
-    "dxy": 100.983,
-    "dxy_chg": 0.04,
+    "nq": 29990.25,
+    "nq_chg": 0.67,
+    "tnx": 4.57,
+    "tnx_chg": -0.35,
+    "dxy": 100.862,
+    "dxy_chg": -0.08,
     "mstr_chg": 3.11,
     "nvda_chg": 0.4,
     "coin_chg": 1.53,
-    "btc_chg": 2.914,
-    "ethbtc_chg": 1.678,
-    "solbtc_chg": -0.342
+    "btc_chg": 2.374,
+    "ethbtc_chg": 1.578,
+    "solbtc_chg": 0.449
   },
   "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
 }
