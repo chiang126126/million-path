@@ -1,46 +1,26 @@
 {
-  "ts": "2026-07-15T08:07:00Z",
+  "ts": "2026-07-15T09:07:01Z",
   "mode": "testnet",
   "equity": 453.36,
   "day_pnl_pct": -0.02,
   "total_dd_pct": 11.18,
-  "items": [
-    {
-      "symbol": "ETHUSDT",
-      "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.65,
-      "vetted": true,
-      "reason": "通过风控",
-      "rationale": "第一层：纳指期货+0.66%，MSTR+3.11%无背离，风险偏好偏多；第二层：ETH/BTC+1.72%显示资金下沉，OI+8.18%但费率中性，日线偏多；第三层：现价1872接近EMA21，回踩入场空间可覆盖成本，无重大数据事件。",
-      "market_state": "risk-on",
-      "entry_low": 1863,
-      "entry_high": 1875,
-      "invalidation": "跌破昨低1773.41或纳指期货转跌超0.5%",
-      "max_hold_hours": 24,
-      "risk_flags": [
-        "OI上升但费率未极端，需警惕新空压力；恐惧指数25，情绪极端可能反转"
-      ],
-      "action": "OPEN LONG",
-      "price": 1872.2
-    }
-  ],
-  "testnet_usdt": 4033.2,
+  "items": [],
+  "testnet_usdt": 3905.9,
   "news_lines": 3,
-  "global_risk": "risk-on",
+  "global_risk": "unknown",
   "xm": {
-    "nq": 29986.0,
-    "nq_chg": 0.66,
+    "nq": 29931.0,
+    "nq_chg": 0.47,
     "tnx": 4.58,
     "tnx_chg": -0.52,
-    "dxy": 100.9,
-    "dxy_chg": -0.04,
+    "dxy": 100.927,
+    "dxy_chg": -0.01,
     "mstr_chg": 3.11,
     "nvda_chg": 0.4,
     "coin_chg": 1.53,
-    "btc_chg": 3.277,
-    "ethbtc_chg": 1.72,
-    "solbtc_chg": -0.025
+    "btc_chg": 3.36,
+    "ethbtc_chg": 1.788,
+    "solbtc_chg": -0.092
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
