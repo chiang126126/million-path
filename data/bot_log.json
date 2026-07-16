@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-16T16:07:01Z",
+  "ts": "2026-07-16T17:07:01Z",
   "mode": "testnet",
   "equity": 447.83,
   "day_pnl_pct": -1.94,
@@ -9,19 +9,18 @@
       "symbol": "BTCUSDT",
       "source": "llm",
       "bias": "SHORT",
-      "confidence": 0.65,
+      "confidence": 0.75,
       "vetted": false,
-      "reason": "日线趋势向上(+3.2%)，禁止逆势做空",
-      "rationale": "第一层：纳指期货、NVDA、MSTR共振下跌，系统性risk-off；第二层：BTC跌破EMA21，ETH/BTC走弱，但OI下降5.47%显示杠杆清理，追空需谨慎；第三层：现价接近昨低64485，空间约2.5%目标，止损1.5%，风险回报比可接受，但高周期偏多限制confidence。",
+      "reason": "日线趋势向上(+2.8%)，禁止逆势做空",
+      "rationale": "第一层：纳指期货-1.2%、NVDA-2.2%、MSTR-3.7%共振risk-off；第二层：BTC跌破昨低64485，OI降3.95%但资费仍正，ETH/SOL相对弱势；第三层：现价接近昨低，可小止损试空，目标看63200，空间覆盖成本。",
       "market_state": "risk-off",
-      "entry_low": 64500,
-      "entry_high": 64800,
-      "invalidation": "BTC重新站上65600或纳指期货转涨",
+      "entry_low": 64300,
+      "entry_high": 64500,
+      "invalidation": "BTC重新站上昨高65600或纳指期货转涨",
       "max_hold_hours": 24,
       "risk_flags": [
-        "OI大幅下降，追空危险",
-        "日线偏多，禁止重仓做空",
-        "恐惧指数25，可能超卖反弹"
+        "OI下降追空需谨慎，若快速反弹至64500以上则离场",
+        "日线偏多限制跌幅，不宜重仓"
       ],
       "action": "skip"
     },
@@ -31,17 +30,17 @@
       "bias": "SHORT",
       "confidence": 0.75,
       "vetted": false,
-      "reason": "日线趋势向上(+9.1%)，禁止逆势做空",
-      "rationale": "第一层：纳指期货、NVDA、MSTR共振下跌，系统性risk-off；第二层：ETH跌破EMA21/50，OI下降但资费未极端偏空，追空需谨慎；第三层：现价接近昨低，反弹至1885-1895区间入场，止损设于1920上方，目标1860-1820，空间覆盖成本。",
+      "reason": "日线趋势向上(+8.9%)，禁止逆势做空",
+      "rationale": "第一层：纳指期货、NVDA、MSTR共振下跌，系统性risk-off；第二层：ETH/BTC走弱，OI下降但资费中性，追空风险可控；第三层：现价接近昨低，但日线偏多限制跌幅，入场区间1875-1893，止损1.5%覆盖成本，目标3%至昨低下方。",
       "market_state": "risk-off",
       "entry_low": 1875,
-      "entry_high": 1895,
-      "invalidation": "ETH价格突破并站稳1947（昨高）或纳指期货转涨0.5%以上",
+      "entry_high": 1893,
+      "invalidation": "价格突破并站稳昨高1946.52，或纳指期货转涨、MSTR相对BTC走强",
       "max_hold_hours": 48,
       "risk_flags": [
-        "OI下降可能预示去杠杆尾声，追空需等待反弹确认",
-        "恐惧指数25极端恐惧，短期反弹风险",
-        "日线偏多，高周期限制做空空间"
+        "日线偏多，禁止重仓",
+        "OI下降中，追空需谨慎",
+        "恐惧贪婪25，反弹可能剧烈"
       ],
       "action": "skip"
     }
@@ -50,18 +49,18 @@
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 29389.0,
-    "nq_chg": -1.02,
-    "tnx": 4.57,
-    "tnx_chg": 0.53,
-    "dxy": 100.695,
-    "dxy_chg": 0.19,
-    "mstr_chg": -3.19,
-    "nvda_chg": -2.22,
-    "coin_chg": 2.02,
-    "btc_chg": -0.883,
-    "ethbtc_chg": -1.391,
-    "solbtc_chg": -0.763
+    "nq": 29337.25,
+    "nq_chg": -1.2,
+    "tnx": 4.58,
+    "tnx_chg": 0.7,
+    "dxy": 100.791,
+    "dxy_chg": 0.29,
+    "mstr_chg": -3.66,
+    "nvda_chg": -2.18,
+    "coin_chg": 0.93,
+    "btc_chg": -1.182,
+    "ethbtc_chg": -1.287,
+    "solbtc_chg": -0.972
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
