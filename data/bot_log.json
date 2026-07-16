@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-16T11:07:01Z",
+  "ts": "2026-07-16T12:07:01Z",
   "mode": "testnet",
   "equity": 447.83,
   "day_pnl_pct": -1.94,
@@ -12,7 +12,7 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层: 纳指期货跌但NVDA涨，风险偏好mixed；第二层: BTC跌但ETH/BTC走强，OI降但资费中性，日线偏多但RSI低；第三层: 信号冲突，无明确方向，条件不满足，应FLAT。",
+      "rationale": "第一层：纳指期货跌但NVDA涨，MSTR涨，风险偏好mixed；第二层：BTC未跌破昨低，OI降但RSI低，ETH/BTC走强但SOL/BTC弱，信号冲突；第三层：日线偏多但现价接近EMA21，空间不足，无明确入场位，故FLAT。",
       "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
@@ -20,8 +20,8 @@
       "max_hold_hours": 0,
       "risk_flags": [
         "信号冲突",
-        "日线偏多但短期偏弱",
-        "无明确入场区间"
+        "空间不足",
+        "无明确入场位"
       ],
       "action": "skip"
     },
@@ -32,16 +32,17 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：纳指期货跌但NVDA涨，风险偏好mixed；第二层：ETH/BTC走强但OI降，杠杆清理中，RSI28超卖但未确认反转；第三层：日线偏多但现价低于EMA21，无明确入场信号，空间不足，不满足做多严格条件，做空违背高周期偏多，故FLAT。",
+      "rationale": "第一层: 纳指期货跌但NVDA涨，MSTR涨，风险偏好mixed；第二层: ETH/BTC走强但OI降、资费负，杠杆清理中，日线偏多但RSI低，信号冲突；第三层: 盘前流动性差，无明确入场区间，空间不足，条件不满足。",
       "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "日线偏多禁做空",
-        "OI降追空危险",
-        "RSI超卖但未确认底部"
+        "盘前流动性差",
+        "信号冲突",
+        "RSI超卖但日线偏多",
+        "无明确失效位"
       ],
       "action": "skip"
     }
@@ -50,18 +51,18 @@
   "news_lines": 3,
   "global_risk": "mixed",
   "xm": {
-    "nq": 29521.5,
-    "nq_chg": -0.58,
+    "nq": 29428.0,
+    "nq_chg": -0.89,
     "tnx": 4.54,
     "tnx_chg": -0.87,
-    "dxy": 100.555,
-    "dxy_chg": 0.05,
+    "dxy": 100.534,
+    "dxy_chg": 0.03,
     "mstr_chg": 5.83,
     "nvda_chg": 4.41,
     "coin_chg": 6.25,
-    "btc_chg": -0.903,
-    "ethbtc_chg": 1.204,
-    "solbtc_chg": -0.853
+    "btc_chg": -0.733,
+    "ethbtc_chg": 0.86,
+    "solbtc_chg": -0.719
   },
-  "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
+  "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
 }
