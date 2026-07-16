@@ -1,26 +1,47 @@
 {
-  "ts": "2026-07-16T07:07:01Z",
+  "ts": "2026-07-16T08:07:00Z",
   "mode": "testnet",
-  "equity": 456.69,
-  "day_pnl_pct": 0.0,
-  "total_dd_pct": 10.53,
-  "items": [],
-  "testnet_usdt": 3905.71,
+  "equity": 452.58,
+  "day_pnl_pct": -0.9,
+  "total_dd_pct": 11.34,
+  "items": [
+    {
+      "symbol": "BTCUSDT",
+      "source": "llm",
+      "bias": "LONG",
+      "confidence": 0.65,
+      "vetted": false,
+      "reason": "做多但价在均线下，不接飞刀",
+      "rationale": "第一层：NVDA大涨4.4%显示AI风向偏多，美债收益率下行支持风险偏好；第二层：BTC虽微跌但ETH/BTC走强表明资金下沉，OI下降4%说明杠杆清理充分，追空危险；第三层：现价接近昨低64485支撑，入场区间合理，目标看至65600昨高附近，止损设于昨低下方，空间覆盖成本。",
+      "market_state": "risk-on",
+      "entry_low": 64100,
+      "entry_high": 64485,
+      "invalidation": "BTC跌破昨低64485且无法快速收回，或纳指期货转跌超1%",
+      "max_hold_hours": 24,
+      "risk_flags": [
+        "欧洲上午流动性低",
+        "恐惧指数25极端恐惧可能引发抛售",
+        "需等待纳指期货企稳确认"
+      ],
+      "action": "skip"
+    }
+  ],
+  "testnet_usdt": 4150.63,
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29688.5,
-    "nq_chg": -0.02,
+    "nq": 29554.25,
+    "nq_chg": -0.47,
     "tnx": 4.54,
     "tnx_chg": -0.87,
-    "dxy": 100.479,
-    "dxy_chg": -0.02,
+    "dxy": 100.467,
+    "dxy_chg": -0.03,
     "mstr_chg": 5.83,
     "nvda_chg": 4.41,
     "coin_chg": 6.25,
-    "btc_chg": -0.072,
-    "ethbtc_chg": 2.522,
-    "solbtc_chg": -0.641
+    "btc_chg": -0.665,
+    "ethbtc_chg": 2.657,
+    "solbtc_chg": -0.643
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
