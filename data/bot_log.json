@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-17T16:07:02Z",
+  "ts": "2026-07-17T17:07:01Z",
   "mode": "testnet",
   "equity": 447.83,
   "day_pnl_pct": 0.0,
@@ -12,36 +12,37 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：纳指期货-1.05%，NVDA-3.89%，全球risk-off；第二层：BTC跌破昨低63748.74，ETH/BTC和SOL/BTC走弱，OI微降但未明显去杠杆，资费中性，情绪Fear；第三层：日线偏多但当前价格已跌破EMA50，且美股盘中波动大，信号冲突，不宜入场。",
+      "rationale": "第一层：纳指期货-0.83%、NVDA-2.89%显示风险偏好下降；第二层：BTC现价63781接近昨低63748，OI微增0.04%但未显著放量，资金费率中性，ETH/SOL相对走弱，未确认全面risk-off传导；第三层：日线偏多但当前价格接近支撑，追空空间有限且风险回报不佳，需等待更明确信号。",
       "market_state": "risk-off",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "美股盘中波动大，警惕开盘噪音与插针",
-        "日线偏多但短期偏空，方向不明",
-        "无明确入场区间和失效位"
+        "禁止因纳指下跌立即追空",
+        "禁止把下跌中快速反弹当底部",
+        "当前价格接近昨低，追空空间不足"
       ],
       "action": "skip"
     },
     {
       "symbol": "ETHUSDT",
       "source": "llm",
-      "bias": "SHORT",
-      "confidence": 0.65,
+      "bias": "FLAT",
+      "confidence": 0.0,
       "vetted": false,
-      "reason": "日线趋势向上(+6.1%)，禁止逆势做空",
-      "rationale": "第一层：纳指期货-1.05%、NVDA-3.89%显示risk-off；第二层：ETH跌破EMA21/50，OI微降但未大幅去杠杆，资费中性，ETH/BTC走弱；第三层：现价接近昨低1857.54，但日线偏多限制跌幅，空间有限，轻仓试空。",
+      "reason": "决策为 FLAT/观望",
+      "rationale": "第一层：纳指期货-0.83%，NVDA-2.89%，全球risk-off；第二层：ETH跌破昨低1857.54，OI降但资费中性，ETH/BTC走弱，无确认信号；第三层：现价1844.45接近昨低，但未形成有效突破或反弹，且日线偏多与短期risk-off冲突，空间不足，条件不满足，强制FLAT。",
       "market_state": "risk-off",
-      "entry_low": 1825,
-      "entry_high": 1835,
-      "invalidation": "价格突破昨高1929.48或纳指期货转涨",
-      "max_hold_hours": 24,
+      "entry_low": 0,
+      "entry_high": 0,
+      "invalidation": "",
+      "max_hold_hours": 0,
       "risk_flags": [
-        "日线偏多禁止重仓做空",
-        "OI未大幅下降追空风险大",
-        "近期无重大数据事件"
+        "美股盘中噪音大",
+        "日线偏多但短期risk-off",
+        "ETH/BTC走弱",
+        "无明确入场区间"
       ],
       "action": "skip"
     }
@@ -50,18 +51,18 @@
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 28917.75,
-    "nq_chg": -1.05,
+    "nq": 28983.25,
+    "nq_chg": -0.83,
     "tnx": 4.54,
-    "tnx_chg": -0.74,
-    "dxy": 100.749,
-    "dxy_chg": 0.02,
-    "mstr_chg": -3.23,
-    "nvda_chg": -3.89,
-    "coin_chg": -6.01,
-    "btc_chg": -1.807,
-    "ethbtc_chg": -0.825,
-    "solbtc_chg": -0.439
+    "tnx_chg": -0.53,
+    "dxy": 100.756,
+    "dxy_chg": 0.03,
+    "mstr_chg": -2.43,
+    "nvda_chg": -2.89,
+    "coin_chg": -4.78,
+    "btc_chg": -0.829,
+    "ethbtc_chg": -0.789,
+    "solbtc_chg": -0.228
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
