@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-17T18:07:01Z",
+  "ts": "2026-07-17T19:07:01Z",
   "mode": "testnet",
   "equity": 447.83,
   "day_pnl_pct": 0.0,
@@ -11,17 +11,17 @@
       "bias": "SHORT",
       "confidence": 0.75,
       "vetted": false,
-      "reason": "日线趋势向上(+2.3%)，禁止逆势做空",
-      "rationale": "第一层：纳指期货、NVDA、MSTR共振下跌，系统性risk-off；第二层：BTC虽稳但ETH/BTC走弱，OI微降但未极端，资费中性，情绪恐惧；第三层：现价接近昨低，追空空间有限，但若跌破63748.74可加仓，目标看62400，止损设于64900上方。",
+      "reason": "日线趋势向上(+2.6%)，禁止逆势做空",
+      "rationale": "第一层：纳指期货、NVDA、MSTR共振下跌，系统性risk-off；第二层：BTC未独立走强，ETH/BTC、SOL/BTC走弱，OI微降但未极端，资费中性，情绪恐惧；第三层：现价接近昨低，追空空间有限，但若跌破63748可加仓，目标看62000，止损设于65000上方。",
       "market_state": "risk-off",
-      "entry_low": 63900,
-      "entry_high": 64100,
-      "invalidation": "BTC重新站上昨高64997.52或纳指期货转涨",
-      "max_hold_hours": 48,
+      "entry_low": 64100,
+      "entry_high": 64400,
+      "invalidation": "BTC重新站上65000且纳指期货转涨",
+      "max_hold_hours": 24,
       "risk_flags": [
-        "日线偏多，禁止重仓做空",
-        "OI下降中，追空需谨慎",
-        "恐惧情绪下可能反弹"
+        "美股盘中波动大，警惕开盘噪音与插针",
+        "OI下降显示杠杆清理，追空需谨慎",
+        "日线偏多，高周期冲突降低confidence"
       ],
       "action": "skip"
     },
@@ -31,17 +31,17 @@
       "bias": "SHORT",
       "confidence": 0.75,
       "vetted": false,
-      "reason": "日线趋势向上(+6.8%)，禁止逆势做空",
-      "rationale": "第一层：纳指期货、NVDA、MSTR共振下跌，系统性risk-off；第二层：ETH跌破EMA50，ETH/BTC走弱，OI微降但未充分去杠杆，资费中性偏空；第三层：现价接近昨低1857，可轻仓试空，止损设于昨高上方，目标看至1800附近，空间覆盖成本。",
+      "reason": "日线趋势向上(+6.9%)，禁止逆势做空",
+      "rationale": "第一层：纳指期货、NVDA、MSTR共振下跌，系统性risk-off；第二层：ETH/BTC走弱，OI微降但未充分清理，资费中性，日线偏多但偏离不大，可短空；第三层：现价接近昨低，反弹至1857-1860入场，止损1.5%，目标3%，空间覆盖成本。",
       "market_state": "risk-off",
-      "entry_low": 1840,
-      "entry_high": 1857,
-      "invalidation": "ETH价格重新站上昨高1929.48或纳指期货转涨",
+      "entry_low": 1857.54,
+      "entry_high": 1860.0,
+      "invalidation": "价格突破昨高1929.48或纳指期货转涨",
       "max_hold_hours": 48,
       "risk_flags": [
-        "日线偏多限制跌幅空间",
-        "OI下降可能预示空头衰竭",
-        "恐惧指数27显示市场情绪悲观，反弹风险"
+        "日线偏多限制跌幅",
+        "OI下降可能接近底部",
+        "恐惧指数27不宜过度追空"
       ],
       "action": "skip"
     }
@@ -50,18 +50,18 @@
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 28892.75,
-    "nq_chg": -1.14,
-    "tnx": 4.55,
-    "tnx_chg": -0.48,
-    "dxy": 100.78,
-    "dxy_chg": 0.05,
-    "mstr_chg": -2.84,
-    "nvda_chg": -3.97,
-    "coin_chg": -4.87,
-    "btc_chg": -0.215,
-    "ethbtc_chg": -1.439,
-    "solbtc_chg": -0.381
+    "nq": 28869.5,
+    "nq_chg": -1.22,
+    "tnx": 4.54,
+    "tnx_chg": -0.61,
+    "dxy": 100.759,
+    "dxy_chg": 0.03,
+    "mstr_chg": -3.05,
+    "nvda_chg": -4.49,
+    "coin_chg": -5.79,
+    "btc_chg": -0.126,
+    "ethbtc_chg": -1.508,
+    "solbtc_chg": -0.543
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
