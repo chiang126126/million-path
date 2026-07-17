@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-17T11:07:01Z",
+  "ts": "2026-07-17T12:07:01Z",
   "mode": "testnet",
   "equity": 447.83,
   "day_pnl_pct": 0.0,
@@ -9,18 +9,19 @@
       "symbol": "BTCUSDT",
       "source": "llm",
       "bias": "SHORT",
-      "confidence": 0.65,
+      "confidence": 0.75,
       "vetted": false,
-      "reason": "日线趋势向上(+1.0%)，禁止逆势做空",
-      "rationale": "第一层：纳指期货、NVDA、MSTR共振下跌，系统性risk-off；第二层：BTC跌破昨低63748.74，OI微增显示新空入场，ETH/SOL相对弱势，资费偏空但未极端；第三层：现价接近昨低，可轻仓试空，止损设于昨高上方，目标看至62000附近，空间覆盖成本。",
+      "reason": "日线趋势向上(+1.3%)，禁止逆势做空",
+      "rationale": "第一层：纳指期货、NVDA、MSTR共振下跌，系统性risk-off；第二层：BTC跌破昨低63748，ETH/SOL相对弱势，OI微降但未大幅清理，资费中性偏空；第三层：现价接近昨低，可轻仓试空，止损设于昨高上方，目标看至63000下方，空间覆盖成本。",
       "market_state": "risk-off",
-      "entry_low": 63748.74,
-      "entry_high": 64100,
-      "invalidation": "BTC重新站上昨高64997.52或纳指期货转涨",
-      "max_hold_hours": 48,
+      "entry_low": 63748,
+      "entry_high": 63900,
+      "invalidation": "BTC重新站上昨高64997或纳指期货转涨",
+      "max_hold_hours": 24,
       "risk_flags": [
-        "日线偏多，做空为逆势，需严格止损",
-        "若BTC在昨低附近企稳反弹，可能形成假突破"
+        "日线偏多限制跌幅",
+        "OI未大降可能反弹",
+        "恐惧指数27不宜过度追空"
       ],
       "action": "skip"
     },
@@ -28,19 +29,19 @@
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "SHORT",
-      "confidence": 0.65,
+      "confidence": 0.75,
       "vetted": false,
-      "reason": "日线趋势向上(+6.4%)，禁止逆势做空",
-      "rationale": "第一层：纳指期货、NVDA、MSTR共振下跌，系统性risk-off；第二层：ETH跌破昨低1857.54，OI下降但未极端，资金费率中性，ETH/BTC走弱；第三层：现价接近EMA50和昨低，可入场，止损设于EMA21上方，目标看前低1780附近，空间覆盖成本。",
+      "reason": "日线趋势向上(+6.5%)，禁止逆势做空",
+      "rationale": "第一层：纳指期货、NVDA、MSTR共振下跌，系统性risk-off；第二层：ETH跌破昨低1857.54，OI下降但资费未极端偏空，追空风险可控；第三层：入场区间靠近现价，止损设于昨低上方，目标看前低1780，空间覆盖成本。",
       "market_state": "risk-off",
-      "entry_low": 1857.54,
-      "entry_high": 1865.86,
-      "invalidation": "价格重新站上昨高1929.48或纳指期货转涨",
+      "entry_low": 1835.0,
+      "entry_high": 1845.0,
+      "invalidation": "ETH价格突破昨高1929.48或纳指期货转涨",
       "max_hold_hours": 48,
       "risk_flags": [
-        "日线偏多限制跌幅",
-        "OI下降追空需谨慎",
-        "恐惧指数27可能反弹"
+        "日线偏多限制跌幅空间",
+        "OI下降可能接近底部",
+        "恐惧指数27不宜过度追空"
       ],
       "action": "skip"
     }
@@ -49,18 +50,18 @@
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 28800.75,
-    "nq_chg": -1.45,
+    "nq": 28739.25,
+    "nq_chg": -1.66,
     "tnx": 4.57,
     "tnx_chg": 0.53,
-    "dxy": 100.844,
-    "dxy_chg": 0.11,
+    "dxy": 100.8,
+    "dxy_chg": 0.07,
     "mstr_chg": -3.64,
     "nvda_chg": -2.08,
     "coin_chg": -0.63,
-    "btc_chg": -1.578,
-    "ethbtc_chg": -1.122,
-    "solbtc_chg": -0.194
+    "btc_chg": -1.37,
+    "ethbtc_chg": -0.989,
+    "solbtc_chg": -0.455
   },
-  "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
+  "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
 }
