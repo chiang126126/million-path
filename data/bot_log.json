@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-17T12:07:01Z",
+  "ts": "2026-07-17T13:07:01Z",
   "mode": "testnet",
   "equity": 447.83,
   "day_pnl_pct": 0.0,
@@ -8,40 +8,41 @@
     {
       "symbol": "BTCUSDT",
       "source": "llm",
-      "bias": "SHORT",
-      "confidence": 0.75,
+      "bias": "FLAT",
+      "confidence": 0.0,
       "vetted": false,
-      "reason": "日线趋势向上(+1.3%)，禁止逆势做空",
-      "rationale": "第一层：纳指期货、NVDA、MSTR共振下跌，系统性risk-off；第二层：BTC跌破昨低63748，ETH/SOL相对弱势，OI微降但未大幅清理，资费中性偏空；第三层：现价接近昨低，可轻仓试空，止损设于昨高上方，目标看至63000下方，空间覆盖成本。",
+      "reason": "决策为 FLAT/观望",
+      "rationale": "第一层: 纳指期货-1.85%, NVDA-2.08%, 美债收益率下行, 美元微涨, 全球risk-off; 第二层: BTC-1.8%跟随下跌, 昨低63748已破, OI微降(-0.81%)但未显著去杠杆, 资金费率中性, ETH/SOL相对走弱, 无加密独立走强信号; 第三层: 当前价62855低于昨低63748, 追空空间有限且可能反弹, 做多需等站回关键位, 信号冲突且高周期震荡, 不满足任何方向条件, 必须FLAT。",
       "market_state": "risk-off",
-      "entry_low": 63748,
-      "entry_high": 63900,
-      "invalidation": "BTC重新站上昨高64997或纳指期货转涨",
-      "max_hold_hours": 24,
+      "entry_low": 0,
+      "entry_high": 0,
+      "invalidation": "",
+      "max_hold_hours": 0,
       "risk_flags": [
-        "日线偏多限制跌幅",
-        "OI未大降可能反弹",
-        "恐惧指数27不宜过度追空"
+        "禁止追空: 已破昨低但OI未大增, 追空风险高",
+        "禁止做多: 纳指未企稳, BTC未站回关键位",
+        "高周期震荡, 方向不明"
       ],
       "action": "skip"
     },
     {
       "symbol": "ETHUSDT",
       "source": "llm",
-      "bias": "SHORT",
-      "confidence": 0.75,
+      "bias": "FLAT",
+      "confidence": 0.0,
       "vetted": false,
-      "reason": "日线趋势向上(+6.5%)，禁止逆势做空",
-      "rationale": "第一层：纳指期货、NVDA、MSTR共振下跌，系统性risk-off；第二层：ETH跌破昨低1857.54，OI下降但资费未极端偏空，追空风险可控；第三层：入场区间靠近现价，止损设于昨低上方，目标看前低1780，空间覆盖成本。",
+      "reason": "决策为 FLAT/观望",
+      "rationale": "第一层: 纳指期货-1.85%, NVDA-2.08%, 美债收益率下行, 美元微涨, 全球risk-off; 第二层: ETH现价1816低于昨低1857, 但OI降0.85%显示杠杆清理, 资费中性, 恐惧27, 日线偏多但30小时均线偏离-2.31%, 信号冲突; 第三层: 现价已破昨低, 但追空风险大(日线偏多, OI降), 做多需等站回关键位, 当前无明确入场点, 空间不足, 故FLAT。",
       "market_state": "risk-off",
-      "entry_low": 1835.0,
-      "entry_high": 1845.0,
-      "invalidation": "ETH价格突破昨高1929.48或纳指期货转涨",
-      "max_hold_hours": 48,
+      "entry_low": 0,
+      "entry_high": 0,
+      "invalidation": "",
+      "max_hold_hours": 0,
       "risk_flags": [
-        "日线偏多限制跌幅空间",
-        "OI下降可能接近底部",
-        "恐惧指数27不宜过度追空"
+        "日线偏多但短期破位",
+        "OI下降追空危险",
+        "美股盘前波动大",
+        "无明确入场区间"
       ],
       "action": "skip"
     }
@@ -50,18 +51,18 @@
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 28739.25,
-    "nq_chg": -1.66,
-    "tnx": 4.57,
-    "tnx_chg": 0.53,
-    "dxy": 100.8,
-    "dxy_chg": 0.07,
+    "nq": 28683.75,
+    "nq_chg": -1.85,
+    "tnx": 4.54,
+    "tnx_chg": -0.7,
+    "dxy": 100.825,
+    "dxy_chg": 0.09,
     "mstr_chg": -3.64,
     "nvda_chg": -2.08,
     "coin_chg": -0.63,
-    "btc_chg": -1.37,
-    "ethbtc_chg": -0.989,
-    "solbtc_chg": -0.455
+    "btc_chg": -1.8,
+    "ethbtc_chg": -1.162,
+    "solbtc_chg": -1.103
   },
   "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
 }
