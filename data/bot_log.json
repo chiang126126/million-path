@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-17T23:07:01Z",
+  "ts": "2026-07-18T00:07:00Z",
   "mode": "testnet",
   "equity": 447.83,
   "day_pnl_pct": 0.0,
@@ -8,40 +8,42 @@
     {
       "symbol": "BTCUSDT",
       "source": "llm",
-      "bias": "SHORT",
-      "confidence": 0.75,
+      "bias": "FLAT",
+      "confidence": 0.0,
       "vetted": false,
-      "reason": "日线趋势向上(+2.2%)，禁止逆势做空",
-      "rationale": "第一层：纳指期货/NVDA/MSTR共振下跌，系统性risk-off；第二层：BTC虽稳但ETH/BTC走弱，OI下降但资费中性，未出现极端情绪；第三层：现价接近昨低，追空空间有限，但若跌破63748.74可加仓，止损设于昨高上方。",
+      "reason": "决策为 FLAT/观望",
+      "rationale": "第一层: 纳指期货-1.57%, NVDA-4.56%, MSTR超额弱势-2.7pp, 全球risk-off; 第二层: BTC稳+0.21%但ETH/BTC-1.47%, SOL/BTC-0.53%, OI降-1.56%杠杆清理, 资费中性, 情绪极端恐惧; 第三层: 日线偏多但美股弱势未传导至BTC, 信号冲突, 无明确入场区间, 空间不足, 故FLAT。",
       "market_state": "risk-off",
-      "entry_low": 63800,
-      "entry_high": 64100,
-      "invalidation": "BTC重新站上昨高64997.52或纳指期货转涨",
-      "max_hold_hours": 24,
+      "entry_low": 0,
+      "entry_high": 0,
+      "invalidation": "",
+      "max_hold_hours": 0,
       "risk_flags": [
-        "日线偏多限制跌幅",
-        "OI下降暗示去杠杆尾声",
-        "恐惧指数27可能反弹"
+        "美股弱势但BTC稳, 不可追空",
+        "MSTR弱但BTC稳, 不可做空BTC",
+        "OI降杠杆清理, 追空危险",
+        "日线偏多, 禁止做空"
       ],
       "action": "skip"
     },
     {
       "symbol": "ETHUSDT",
       "source": "llm",
-      "bias": "SHORT",
-      "confidence": 0.75,
+      "bias": "FLAT",
+      "confidence": 0.0,
       "vetted": false,
-      "reason": "日线趋势向上(+6.5%)，禁止逆势做空",
-      "rationale": "第一层：纳指期货、NVDA、MSTR共振下跌，系统性risk-off；第二层：ETH/BTC走弱，OI下降但幅度小，资费中性，未充分去杠杆；第三层：现价接近昨低1857.54，可轻仓试空，止损设于1865上方，目标1800附近，空间覆盖成本。",
+      "reason": "决策为 FLAT/观望",
+      "rationale": "第一层: 纳指期货-1.6%, NVDA-4.6%, MSTR超额弱势-2.9pp, 全球risk-off; 第二层: ETH/BTC-1.47%, SOL/BTC-0.53%, 资金未下沉, 加密未独立走强, OI微降但资费中性, 恐惧25; 第三层: 日线偏多但当前risk-off冲突, 无明确入场区间, 空间不足, 信号冲突应FLAT。",
       "market_state": "risk-off",
-      "entry_low": 1857.54,
-      "entry_high": 1865.0,
-      "invalidation": "价格突破昨高1929.48或纳指期货转涨",
-      "max_hold_hours": 48,
+      "entry_low": 0,
+      "entry_high": 0,
+      "invalidation": "",
+      "max_hold_hours": 0,
       "risk_flags": [
-        "日线偏多，做空需谨慎",
-        "OI下降幅度小，追空风险大",
-        "恐惧指数27，情绪偏空但可能反转"
+        "日线偏多但全球risk-off, 方向冲突",
+        "MSTR弱但BTC稳, 不可做空BTC",
+        "ETH/BTC走弱, 山寨未跟涨",
+        "当前时段流动性低, 易被操纵"
       ],
       "action": "skip"
     }
@@ -59,9 +61,9 @@
     "mstr_chg": -2.69,
     "nvda_chg": -4.56,
     "coin_chg": -6.03,
-    "btc_chg": -0.063,
-    "ethbtc_chg": -1.541,
-    "solbtc_chg": -0.458
+    "btc_chg": 0.215,
+    "ethbtc_chg": -1.472,
+    "solbtc_chg": -0.534
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
