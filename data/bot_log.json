@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-18T22:07:00Z",
+  "ts": "2026-07-18T23:07:01Z",
   "mode": "testnet",
   "equity": 447.83,
   "day_pnl_pct": 0.0,
@@ -12,16 +12,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层: 纳指期货-1.6%, NVDA-4.6%, 全球risk-off; 第二层: BTC现价64781站上昨高64387, 但OI+1.05%显示新空进场, 资费中性, 恐惧25极端; 第三层: 日线偏多但RSI87.2超买, 追多风险大, 且美股弱势未传导至BTC, 信号冲突, 应FLAT。",
+      "rationale": "第一层：纳指期货-1.6%，NVDA-4.6%，全球risk-off；第二层：BTC虽站上30日线但RSI 86过热，OI微增+0.97%无去杠杆信号，资金费率近零，ETH/BTC微涨但SOL/BTC下跌，非全面risk-on；第三层：现价64767已高于昨高64387，追多风险大，且无明确入场区间，空间不足，故FLAT。",
       "market_state": "risk-off",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "日线偏多但RSI超买",
-        "美股弱势但BTC强势",
-        "OI上升新空进场"
+        "RSI超买86",
+        "美股盘后流动性低",
+        "无明确入场区间"
       ],
       "action": "skip"
     },
@@ -32,17 +32,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：纳指期货-1.55%，NVDA-4.56%，全球risk-off；第二层：ETH现价1863.52，昨高1871.08，昨低1803.05，OI+0.85%显示新空进场但未确认，RSI 73偏高，恐惧贪婪25极端恐惧，ETH/BTC微涨但SOL/BTC微跌，非全面risk-on；第三层：现价接近昨高，追多风险大，追空需等跌破支撑，空间不足，且无明确入场信号，故FLAT。",
+      "rationale": "第一层: 纳指期货-1.55%, NVDA-4.56%, 全球risk-off; 第二层: ETH现价1862, 昨高1871, 昨低1803, OI微增+0.80%, 资费-0.0011%, 日线偏多但RSI 75.8偏高; 第三层: 现价接近昨高1871, 追多空间小, 追空与日线偏多矛盾, 且无明确入场区间, 空间无法覆盖成本, 故FLAT。",
       "market_state": "risk-off",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
+        "日线偏多但RSI超买",
         "纳指期货持续下跌",
-        "NVDA未止跌",
-        "OI上升但价格未破位",
-        "RSI偏高不宜追多"
+        "OI未降杠杆未清"
       ],
       "action": "skip"
     }
@@ -60,9 +59,9 @@
     "mstr_chg": -2.69,
     "nvda_chg": -4.56,
     "coin_chg": -6.03,
-    "btc_chg": 1.114,
+    "btc_chg": 1.351,
     "ethbtc_chg": 0.104,
-    "solbtc_chg": -0.367
+    "solbtc_chg": -0.614
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
