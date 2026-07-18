@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-18T14:07:01Z",
+  "ts": "2026-07-18T15:07:01Z",
   "mode": "testnet",
   "equity": 447.83,
   "day_pnl_pct": 0.0,
@@ -12,16 +12,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：纳指期货-1.55%，NVDA-4.56%，MSTR-2.69%弱于BTC，全球risk-off；第二层：BTC日线偏多但ETH/BTC和SOL/BTC走弱，OI降但资费中性，情绪极恐，无明确方向；第三层：现价64128接近昨高64388，追多空间小且风险偏好未改善，做空需等跌破昨低62537后反抽确认，当前条件不满足，故FLAT。",
+      "rationale": "第一层: 纳指期货-1.6%, NVDA-4.6%, 全球risk-off; 第二层: BTC虽站上30日线但ETH/BTC和SOL/BTC走弱, OI微增, 资费中性, 情绪极恐, 无确认; 第三层: 信号冲突(美股弱但BTC稳), 高周期偏多但risk-off压制, 无明确入场区间, 空间不足, 故FLAT。",
       "market_state": "risk-off",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "美股盘中波动大，警惕开盘噪音与插针",
-        "日线偏多但短期risk-off，方向冲突",
-        "资金费率中性，无极端情绪信号"
+        "禁止追空: 日线偏多且OI未大增",
+        "禁止做多: 美股risk-off未传导完毕",
+        "警惕开盘噪音与插针"
       ],
       "action": "skip"
     },
@@ -32,16 +32,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：纳指期货-1.6%，NVDA-4.6%，MSTR-2.7%弱于BTC+1.4%，全球risk-off。第二层：ETH/BTC-0.66%，SOL/BTC-1.09%，资金未下沉；OI降0.44%但资费中性，无极端信号；日线偏多但偏离6.55%限制追空。第三层：信号冲突（美股弱但BTC稳），且当前时段美股盘中噪音大，无明确入场区间，空间不足，故FLAT。",
+      "rationale": "第一层: 纳指期货-1.6%, NVDA-4.6%, 全球risk-off; 第二层: ETH/BTC走弱, OI微降但资费中性, 情绪极恐; 第三层: 日线偏多但美股弱势, 信号冲突, 无明确入场点, 空间不足, 强制FLAT。",
       "market_state": "risk-off",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "美股盘中噪音与插针风险",
-        "日线偏多禁止做空",
-        "信号冲突降低confidence"
+        "美股盘中波动大",
+        "信号冲突",
+        "追空风险高"
       ],
       "action": "skip"
     }
@@ -59,9 +59,9 @@
     "mstr_chg": -2.69,
     "nvda_chg": -4.56,
     "coin_chg": -6.03,
-    "btc_chg": 1.353,
-    "ethbtc_chg": -0.657,
-    "solbtc_chg": -1.086
+    "btc_chg": 1.833,
+    "ethbtc_chg": -0.104,
+    "solbtc_chg": -0.528
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
