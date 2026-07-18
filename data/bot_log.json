@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-18T07:07:01Z",
+  "ts": "2026-07-18T08:07:01Z",
   "mode": "testnet",
   "equity": 447.83,
   "day_pnl_pct": 0.0,
@@ -12,16 +12,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：纳指期货-1.55%，NVDA-4.56%，MSTR-2.69%弱于BTC，全球risk-off。第二层：BTC现价63981，日线偏多但OI降2.34%显示去杠杆，ETH/BTC和SOL/BTC走弱，资金未下沉。第三层：信号冲突（美股弱但BTC日线偏多且OI降），无明确入场区间，空间不足，保持FLAT。",
+      "rationale": "第一层：纳指期货、NVDA、MSTR均下跌，全球risk-off；第二层：BTC虽涨但ETH/BTC和SOL/BTC走弱，OI下降但资金费率中性，情绪极恐，信号冲突；第三层：日线偏多但全球risk-off，无明确入场区间，空间不足，故FLAT。",
       "market_state": "risk-off",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "禁止追空：OI降且BTC未破昨低62537",
-        "禁止做多：美股风险偏好未改善",
-        "信号冲突降低confidence"
+        "全球风险偏好下降",
+        "山寨币相对走弱",
+        "无明确入场位"
       ],
       "action": "skip"
     },
@@ -32,15 +32,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：纳指期货-1.55%，NVDA-4.56%，全球risk-off；第二层：ETH/BTC-1%，SOL/BTC-1.21%，资金未下沉，OI降0.95%但资费中性，情绪极恐；第三层：日线偏多但全球风险偏好差，信号冲突，无明确入场条件。",
+      "rationale": "第一层：纳指期货-1.55%，NVDA-4.56%，全球risk-off；第二层：ETH现价1843，昨高1871昨低1803，OI降1.18%杠杆清理，但ETH/BTC-1.03%弱，资金费率中性，恐惧25；第三层：日线偏多但全球risk-off冲突，无明确入场区间，空间不足，信号冲突FLAT。",
       "market_state": "risk-off",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "全球risk-off未传导至BTC，但ETH相对弱势",
-        "日线偏多但短期风险偏好差，不宜追空或抄底"
+        "全球risk-off与日线偏多冲突",
+        "ETH相对BTC弱势",
+        "无明确入场位"
       ],
       "action": "skip"
     }
@@ -58,9 +59,9 @@
     "mstr_chg": -2.69,
     "nvda_chg": -4.56,
     "coin_chg": -6.03,
-    "btc_chg": 1.746,
-    "ethbtc_chg": -0.996,
-    "solbtc_chg": -1.214
+    "btc_chg": 1.76,
+    "ethbtc_chg": -1.031,
+    "solbtc_chg": -1.457
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
