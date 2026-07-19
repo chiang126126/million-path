@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-19T18:07:01Z",
+  "ts": "2026-07-19T19:07:00Z",
   "mode": "testnet",
   "equity": 447.83,
   "day_pnl_pct": 0.0,
@@ -12,16 +12,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：NVDA大跌4.6%，MSTR超额弱势2.7pp，全球risk-off；第二层：BTC虽稳但OI微增，资费中性，ETH/SOL相对走强但未确认全面risk-on，日线偏多但短期无明确信号；第三层：方向不明，空间不足，不满足任何进场条件，必须FLAT。",
+      "rationale": "第一层: NVDA大跌4.6%且MSTR超额弱势2.5pp，全球risk-off；第二层: BTC虽稳但OI升1.08%显示新空进场，资费中性，ETH/SOL相对走强但未扭转风险偏好；第三层: 信号冲突（美股弱但BTC稳且日线偏多），高周期偏多但短期risk-off，无法满足做多或做空条件，必须FLAT。",
       "market_state": "risk-off",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "美股盘中波动大",
-        "MSTR弱势非BTC本身",
-        "无明确入场位"
+        "禁止追空：BTC未跌破昨低63886.65且日线偏多",
+        "禁止做多：纳指风险偏好未改善且MSTR持续弱势",
+        "警惕开盘噪音与插针"
       ],
       "action": "skip"
     },
@@ -32,16 +32,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层: 全球risk-off，NVDA大跌，MSTR超额弱势，但MSTR弱势源于自身融资担忧，不能做空BTC；第二层: ETH/BTC和SOL/BTC相对走强，但OI上升显示新空进场，资金费率中性，情绪恐惧，方向不明；第三层: 信号冲突，美股弱但ETH相对走强，且日线偏多，禁止追空，做多条件不满足，故FLAT。",
+      "rationale": "第一层: NVDA大跌4.6%且MSTR超额弱势2.5pp，全球risk-off明确；第二层: ETH虽稳但OI上升1.49%显示新空进场，资金费率中性，恐惧指数28，未出现杠杆清理信号；第三层: 日线偏多但当前无入场条件，做空需等跌破昨低1837.58后反抽失败，做多需等纳指改善且MSTR不再弱于BTC，两者均不满足，故FLAT。",
       "market_state": "risk-off",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "禁止因纳指下跌追空",
-        "禁止把反弹当底部",
-        "MSTR弱但BTC稳，不据此做空"
+        "禁止追空",
+        "禁止因纳指下跌直接做空",
+        "MSTR弱势不构成做空BTC理由"
       ],
       "action": "skip"
     }
@@ -59,9 +59,9 @@
     "mstr_chg": -2.69,
     "nvda_chg": -4.56,
     "coin_chg": -6.03,
-    "btc_chg": -0.025,
-    "ethbtc_chg": 0.627,
-    "solbtc_chg": 0.47
+    "btc_chg": -0.192,
+    "ethbtc_chg": 0.139,
+    "solbtc_chg": 0.797
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
