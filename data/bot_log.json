@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-19T13:07:01Z",
+  "ts": "2026-07-19T14:07:01Z",
   "mode": "testnet",
   "equity": 447.83,
   "day_pnl_pct": 0.0,
@@ -12,16 +12,14 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层: 纳指期货持平但NVDA大跌4.6%且MSTR超额弱势，全球risk-off；第二层: BTC稳于昨低上方但OI上升显示新空进场，ETH/SOL相对走强但资费中性，信号冲突；第三层: 日线偏多但盘前风险偏好弱，无明确入场区间，空间不足，故FLAT。",
+      "rationale": "第一层：NVDA大跌4.6%，MSTR超额弱势，全球risk-off；第二层：BTC虽稳但OI上升显示新空进场，资费中性，ETH/SOL相对走强但未确认全面risk-on；第三层：信号冲突（美股弱但BTC稳且ETH/SOL走强），高周期偏多但当前risk-off，无明确入场区间，空间不足，故FLAT。",
       "market_state": "risk-off",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "禁止追空BTC因MSTR弱势不代表BTC弱",
-        "禁止做多因美股风险未释放完毕",
-        "信号冲突降低confidence"
+        "禁止追空：MSTR弱但BTC稳，ETH/SOL相对走强；禁止做多：美股risk-off未改善；信号冲突，降低confidence"
       ],
       "action": "skip"
     },
@@ -32,16 +30,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层: 纳指期货持平但NVDA大跌4.6%、MSTR超额弱势，全球risk-off；第二层: ETH现价1867.61紧贴昨高1867.58，OI升1.67%显示新空进场但资费中性，ETH/BTC和SOL/BTC相对走强与risk-off矛盾；第三层: 信号冲突（美股弱但ETH/BTC走强），高周期日线偏多但盘前无明确方向，空间不足，无法满足进场纪律，强制FLAT。",
+      "rationale": "第一层: NVDA大跌4.6%且MSTR超额弱势，全球risk-off；第二层: ETH虽站上昨高但OI上升暗示新空进场，资费中性，ETH/BTC走强但整体风险偏好未确认；第三层: 信号冲突（美股弱但ETH稳），且当前价格已高于昨高，追多空间不足，做空缺乏确认条件，故FLAT。",
       "market_state": "risk-off",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "信号冲突（美股弱但ETH/BTC走强）",
-        "现价紧贴昨高，无安全入场区间",
-        "盘前流动性低，滑点风险大"
+        "美股盘中波动大",
+        "NVDA持续下跌可能拖累",
+        "MSTR弱势但非BTC本身问题"
       ],
       "action": "skip"
     }
@@ -59,9 +57,9 @@
     "mstr_chg": -2.69,
     "nvda_chg": -4.56,
     "coin_chg": -6.03,
-    "btc_chg": 0.349,
-    "ethbtc_chg": 0.975,
-    "solbtc_chg": 1.131
+    "btc_chg": 0.611,
+    "ethbtc_chg": 1.079,
+    "solbtc_chg": 1.477
   },
-  "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
+  "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
