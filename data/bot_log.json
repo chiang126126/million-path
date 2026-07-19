@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-19T08:07:01Z",
+  "ts": "2026-07-19T09:07:01Z",
   "mode": "testnet",
   "equity": 447.83,
   "day_pnl_pct": 0.0,
@@ -12,16 +12,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：NVDA大跌4.6%且MSTR超额弱势，全球risk-off；第二层：BTC虽站上30日线但OI上升2.06%显示新空进场，资金费率中性，ETH/SOL相对走强但量能不足；第三层：现价距昨高仅0.3%，追多空间不足，且无明确失效位，条件不满足，必须FLAT。",
+      "rationale": "第一层：NVDA大跌4.6%且MSTR超额弱势，全球risk-off；第二层：BTC虽涨但量能不足，OI上升暗示新空进场，但日线偏多且ETH/SOL相对走强，信号冲突；第三层：现价接近昨高64865阻力，追多空间不足，且无明确入场区间，故FLAT。",
       "market_state": "risk-off",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "NVDA持续弱势",
-        "MSTR未恢复",
-        "OI上升追空危险"
+        "信号冲突",
+        "量能不足",
+        "接近阻力位"
       ],
       "action": "skip"
     },
@@ -32,17 +32,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层: NVDA大跌4.6%及MSTR弱势显示风险偏好下降; 第二层: ETH虽站上昨高但OI上升暗示新空进场，资金费率中性，情绪恐惧，ETH/BTC及SOL/BTC走强但量能不足; 第三层: 现价已突破昨高，追多空间有限且风险偏好未改善，做空需等跌破支撑确认，当前无明确入场点，空间不足，故FLAT。",
+      "rationale": "第一层：NVDA大跌4.6%且MSTR弱势，全球risk-off；第二层：ETH虽站上昨高但量能不足，OI微增暗示新空有限，资费中性，情绪Fear，无明确方向；第三层：现价1873已高于昨高1867，追多空间不足，且日线偏多但RSI70接近超买，风险回报不佳，故FLAT。",
       "market_state": "risk-off",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "NVDA持续弱势",
-        "MSTR未恢复",
-        "OI上升追空风险大",
-        "追高空间不足"
+        "追高风险",
+        "量能不足",
+        "RSI接近超买"
       ],
       "action": "skip"
     }
@@ -60,9 +59,9 @@
     "mstr_chg": -2.69,
     "nvda_chg": -4.56,
     "coin_chg": -6.03,
-    "btc_chg": 1.14,
-    "ethbtc_chg": 0.278,
-    "solbtc_chg": 0.598
+    "btc_chg": 1.104,
+    "ethbtc_chg": 0.312,
+    "solbtc_chg": 0.683
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
