@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-20T06:07:01Z",
+  "ts": "2026-07-20T07:07:01Z",
   "mode": "testnet",
   "equity": 447.83,
   "day_pnl_pct": 0.0,
@@ -12,36 +12,36 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：NVDA大跌4.6%指向risk-off，但纳指期货微涨、美债收益率下行，信号矛盾；第二层：BTC日线偏多但RSI仅39.4，OI下降但未极端，ETH/SOL相对走强但BTC未跟涨，确认不足；第三层：现价64131接近昨低64280，但未破，方向不明，空间不足，且无明确入场信号，故FLAT。",
+      "rationale": "第一层：NVDA大跌4.6%明确risk-off，但纳指期货微涨、美债收益率下行，信号混合；第二层：BTC日线偏多但RSI 37偏弱，OI下降表明杠杆清理，ETH/SOL相对走强暗示资金未全面撤退，但BTC未站回昨低64280；第三层：现价63986低于昨低64280，但日线偏多禁止做空，做多条件不满足（未站回关键位且风险偏好未改善），信号冲突，主动FLAT。",
       "market_state": "risk-off",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "信号冲突（美股弱但BTC稳且OI降）",
-        "日线偏多但短期偏空，不宜强行做空",
-        "无明确入场区间"
+        "日线偏多但现价低于昨低，方向矛盾",
+        "NVDA大跌但纳指期货微涨，风险偏好未一致",
+        "OI下降但资金费率中性，无极端情绪"
       ],
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4030.66,
+  "testnet_usdt": 4030.63,
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 28815.0,
-    "nq_chg": 0.15,
+    "nq": 28808.5,
+    "nq_chg": 0.12,
     "tnx": 4.54,
     "tnx_chg": -0.61,
-    "dxy": 100.718,
-    "dxy_chg": -0.05,
+    "dxy": 100.744,
+    "dxy_chg": -0.02,
     "mstr_chg": -2.69,
     "nvda_chg": -4.56,
     "coin_chg": -6.03,
-    "btc_chg": -0.883,
-    "ethbtc_chg": 0.104,
-    "solbtc_chg": 0.868
+    "btc_chg": -1.113,
+    "ethbtc_chg": 0.312,
+    "solbtc_chg": 0.655
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
