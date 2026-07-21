@@ -10,7 +10,7 @@
       "symbol": "BTCUSDT",
       "side": "LONG",
       "entry": 65436.0,
-      "stop": 66190.2,
+      "stop": 66196.07,
       "target": 67071.9,
       "qty": 0.0056,
       "notional": 369.22,
@@ -41,8 +41,8 @@
         "market_state": "risk-on"
       },
       "max_hold_hours": 48.0,
-      "mfe_price": 66944.4,
-      "managed_t": 1784638800000
+      "mfe_price": 66956.15,
+      "managed_t": 1784642400000
     },
     {
       "symbol": "ETHUSDT",
@@ -79,9 +79,10 @@
         "market_state": "risk-on"
       },
       "max_hold_hours": 24.0,
-      "mfe_price": 1941.67
+      "mfe_price": 1944.0,
+      "managed_t": 1784642400000
     }
   ],
-  "updated_at": "2026-07-21T14:07:16Z",
+  "updated_at": "2026-07-21T15:07:08Z",
   "guardian_at": "2026-07-21T14:15:03Z"
 }

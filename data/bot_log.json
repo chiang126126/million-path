@@ -1,48 +1,26 @@
 {
-  "ts": "2026-07-21T14:07:01Z",
+  "ts": "2026-07-21T15:07:00Z",
   "mode": "testnet",
   "equity": 443.73,
   "day_pnl_pct": 0.15,
   "total_dd_pct": 13.07,
-  "items": [
-    {
-      "symbol": "ETHUSDT",
-      "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.75,
-      "vetted": true,
-      "reason": "通过风控",
-      "rationale": "第一层:纳指期货+1.13%且MSTR+9.6%显示机构风险偏好恢复;第二层:ETH/BTC走强+OI温和上升+资费中性,确认资金流入;第三层:现价接近EMA21(1923.31)可入场,止损设于昨低下方,目标看前高2000附近,空间覆盖成本。",
-      "market_state": "risk-on",
-      "entry_low": 1923.31,
-      "entry_high": 1941.41,
-      "invalidation": "跌破昨低1843.14或纳指期货转跌超0.5%",
-      "max_hold_hours": 24,
-      "risk_flags": [
-        "美股开盘噪音插针",
-        "RSI接近70超买",
-        "恐惧指数25极端"
-      ],
-      "action": "OPEN LONG",
-      "price": 1941.41
-    }
-  ],
-  "testnet_usdt": 3964.23,
+  "items": [],
+  "testnet_usdt": 3913.6,
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29103.25,
-    "nq_chg": 1.13,
-    "tnx": 4.64,
-    "tnx_chg": 0.87,
-    "dxy": 101.083,
-    "dxy_chg": 0.09,
-    "mstr_chg": 9.6,
-    "nvda_chg": 0.96,
-    "coin_chg": 13.91,
-    "btc_chg": 3.787,
-    "ethbtc_chg": 0.346,
-    "solbtc_chg": -0.886
+    "nq": 29219.75,
+    "nq_chg": 1.53,
+    "tnx": 4.62,
+    "tnx_chg": 0.52,
+    "dxy": 101.151,
+    "dxy_chg": 0.16,
+    "mstr_chg": 8.42,
+    "nvda_chg": 1.57,
+    "coin_chg": 13.39,
+    "btc_chg": 3.285,
+    "ethbtc_chg": -0.379,
+    "solbtc_chg": -1.351
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
