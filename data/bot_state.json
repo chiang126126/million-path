@@ -41,14 +41,14 @@
         "market_state": "risk-on"
       },
       "max_hold_hours": 48.0,
-      "mfe_price": 66300.0,
+      "mfe_price": 66344.99,
       "managed_t": 1784617200000
     },
     {
       "symbol": "ETHUSDT",
       "side": "LONG",
       "entry": 1900.09,
-      "stop": 1923.17,
+      "stop": 1924.74,
       "target": 1957.09,
       "qty": 0.027,
       "notional": 51.69,
@@ -79,10 +79,10 @@
         "market_state": "mixed"
       },
       "max_hold_hours": 24.0,
-      "mfe_price": 1946.26,
+      "mfe_price": 1949.39,
       "managed_t": 1784617200000
     }
   ],
   "updated_at": "2026-07-21T08:07:08Z",
-  "guardian_at": "2026-07-21T08:21:03Z"
+  "guardian_at": "2026-07-21T08:24:03Z"
 }
