@@ -42,7 +42,7 @@
       },
       "max_hold_hours": 48.0,
       "mfe_price": 65799.0,
-      "managed_t": 1784599200000
+      "managed_t": 1784602800000
     },
     {
       "symbol": "ETHUSDT",
@@ -80,9 +80,9 @@
       },
       "max_hold_hours": 24.0,
       "mfe_price": 1930.02,
-      "managed_t": 1784599200000
+      "managed_t": 1784602800000
     }
   ],
-  "updated_at": "2026-07-21T03:07:09Z",
+  "updated_at": "2026-07-21T04:07:08Z",
   "guardian_at": "2026-07-21T04:06:03Z"
 }
