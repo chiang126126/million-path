@@ -42,7 +42,7 @@
       },
       "max_hold_hours": 24.0,
       "mfe_price": 1944.0,
-      "managed_t": 1784653200000
+      "managed_t": 1784656800000
     },
     {
       "symbol": "BTCUSDT",
@@ -78,9 +78,11 @@
         "oi_chg_pct": 0.92,
         "market_state": "risk-on"
       },
-      "max_hold_hours": 48.0
+      "max_hold_hours": 48.0,
+      "mfe_price": 66358.0,
+      "managed_t": 1784656800000
     }
   ],
-  "updated_at": "2026-07-21T18:07:15Z",
+  "updated_at": "2026-07-21T19:07:08Z",
   "guardian_at": "2026-07-21T17:48:03Z"
 }
