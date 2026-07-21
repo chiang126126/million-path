@@ -48,7 +48,7 @@
       "symbol": "ETHUSDT",
       "side": "LONG",
       "entry": 1900.09,
-      "stop": 1914.54,
+      "stop": 1915.05,
       "target": 1957.09,
       "qty": 0.027,
       "notional": 51.69,
@@ -79,10 +79,10 @@
         "market_state": "mixed"
       },
       "max_hold_hours": 24.0,
-      "mfe_price": 1929.0,
+      "mfe_price": 1930.02,
       "managed_t": 1784599200000
     }
   ],
   "updated_at": "2026-07-21T03:07:09Z",
-  "guardian_at": "2026-07-21T04:03:03Z"
+  "guardian_at": "2026-07-21T04:06:03Z"
 }
