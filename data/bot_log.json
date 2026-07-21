@@ -1,33 +1,47 @@
 {
-  "ts": "2026-07-21T12:07:01Z",
+  "ts": "2026-07-21T13:07:01Z",
   "mode": "testnet",
-  "equity": 443.06,
-  "day_pnl_pct": 0.0,
-  "total_dd_pct": 13.2,
+  "equity": 443.73,
+  "day_pnl_pct": 0.15,
+  "total_dd_pct": 13.07,
   "items": [
     {
       "symbol": "ETHUSDT",
-      "action": "CLOSE STOP_TRAIL",
-      "price": 1926.55,
-      "pnl": 0.66
+      "source": "llm",
+      "bias": "FLAT",
+      "confidence": 0.0,
+      "vetted": false,
+      "reason": "决策为 FLAT/观望",
+      "rationale": "第一层：纳指期货+1.4%但NVDA-2.0%，风险偏好mixed；第二层：ETH站上昨高1918且RSI 75.4过热，OI升+3.74%但资费低，情绪极端恐惧，信号冲突；第三层：现价偏离日线11%且RSI高位，无安全入场区间，空间不足，故FLAT。",
+      "market_state": "mixed",
+      "entry_low": 0,
+      "entry_high": 0,
+      "invalidation": "",
+      "max_hold_hours": 0,
+      "risk_flags": [
+        "RSI超买",
+        "OI上升但资费低",
+        "NVDA下跌拖累AI情绪"
+      ],
+      "action": "skip"
     }
   ],
-  "testnet_usdt": 3911.75,
+  "testnet_usdt": 3964.18,
   "news_lines": 3,
   "global_risk": "mixed",
   "xm": {
-    "nq": 29152.0,
-    "nq_chg": 1.3,
+    "nq": 29172.75,
+    "nq_chg": 1.37,
     "tnx": 4.6,
-    "tnx_chg": 1.26,
-    "dxy": 100.986,
-    "dxy_chg": -0.0,
+    "tnx_chg": 0.09,
+    "dxy": 101.018,
+    "dxy_chg": 0.03,
     "mstr_chg": 4.03,
     "nvda_chg": -1.99,
     "coin_chg": -0.04,
-    "btc_chg": 2.365,
-    "ethbtc_chg": 0.448,
-    "solbtc_chg": -0.43
+    "btc_chg": 2.913,
+    "ethbtc_chg": 0.759,
+    "solbtc_chg": -0.514
   },
   "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
 }
