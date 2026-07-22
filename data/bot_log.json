@@ -1,10 +1,30 @@
 {
-  "ts": "2026-07-22T12:07:01Z",
+  "ts": "2026-07-22T13:07:01Z",
   "mode": "testnet",
-  "equity": 446.71,
-  "day_pnl_pct": -0.18,
-  "total_dd_pct": 12.48,
+  "equity": 442.32,
+  "day_pnl_pct": -1.16,
+  "total_dd_pct": 13.34,
   "items": [
+    {
+      "symbol": "BTCUSDT",
+      "source": "llm",
+      "bias": "FLAT",
+      "confidence": 0.0,
+      "vetted": false,
+      "reason": "决策为 FLAT/观望",
+      "rationale": "第一层：纳指期货-1.1%偏空，但NVDA+2.2%和MSTR+7.5%偏多，风险偏好mixed。第二层：BTC日线偏多但RSI 25.5超卖，OI降杠杆清理，但资金费率中性，ETH/BTC微涨但SOL/BTC微跌，确认信号冲突。第三层：现价65600接近昨低65148，但纳指期货未企稳，且无明确入场区间和失效位，空间不足，故FLAT。",
+      "market_state": "mixed",
+      "entry_low": 0,
+      "entry_high": 0,
+      "invalidation": "",
+      "max_hold_hours": 0,
+      "risk_flags": [
+        "纳指期货持续下跌可能拖累BTC",
+        "RSI超卖但未确认反转",
+        "无明确入场区间"
+      ],
+      "action": "skip"
+    },
     {
       "symbol": "ETHUSDT",
       "source": "llm",
@@ -12,35 +32,36 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "纳指期货下跌但NVDA上涨，风险偏好mixed；ETH日线偏多但价格在EMA21附近震荡，OI微降，资金费率中性；无明确入场信号，空间不足，保持观望。",
+      "rationale": "第一层: 纳指期货-1.1%偏空但NVDA+2.2%偏多，MSTR+7.5%无背离，风险偏好mixed。第二层: ETH现价1918，昨低1900.74支撑，昨高1953阻力，OI降1.12%杠杆清理，资费中性，ETH/BTC微涨但SOL/BTC微跌，非全面risk-on。第三层: 日线偏多但盘前信号冲突，无明确入场区间，空间不足，故FLAT。",
       "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "纳指期货下跌可能拖累加密",
-        "ETH未突破昨高1953或跌破昨低1900.74前方向不明"
+        "信号冲突",
+        "盘前流动性低",
+        "追空风险高"
       ],
       "action": "skip"
     }
   ],
-  "testnet_usdt": 3961.65,
+  "testnet_usdt": 4329.3,
   "news_lines": 3,
   "global_risk": "mixed",
   "xm": {
-    "nq": 29052.5,
-    "nq_chg": -0.9,
-    "tnx": 4.63,
-    "tnx_chg": 0.65,
-    "dxy": 101.153,
-    "dxy_chg": -0.03,
+    "nq": 28989.25,
+    "nq_chg": -1.11,
+    "tnx": 4.64,
+    "tnx_chg": 0.3,
+    "dxy": 101.168,
+    "dxy_chg": -0.01,
     "mstr_chg": 7.49,
     "nvda_chg": 2.21,
     "coin_chg": 11.92,
-    "btc_chg": -0.687,
-    "ethbtc_chg": 0.103,
-    "solbtc_chg": -0.584
+    "btc_chg": -1.412,
+    "ethbtc_chg": 0.171,
+    "solbtc_chg": -0.339
   },
   "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
 }
