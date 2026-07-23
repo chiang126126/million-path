@@ -1,48 +1,26 @@
 {
-  "ts": "2026-07-23T01:07:01Z",
+  "ts": "2026-07-23T02:07:01Z",
   "mode": "testnet",
   "equity": 442.32,
   "day_pnl_pct": 0.0,
   "total_dd_pct": 13.34,
-  "items": [
-    {
-      "symbol": "BTCUSDT",
-      "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.65,
-      "vetted": true,
-      "reason": "通过风控",
-      "rationale": "第一层：NVDA大涨4.3%带动风险偏好，MSTR跟随上涨无背离；第二层：BTC站稳EMA21和EMA50，ETH/BTC和SOL/BTC相对走强确认资金下沉，OI下降表明杠杆清理完毕，资费中性；第三层：现价接近EMA21支撑，入场区间合理，止损设于昨低下方，目标1.5%空间覆盖成本。",
-      "market_state": "risk-on",
-      "entry_low": 66000,
-      "entry_high": 66200,
-      "invalidation": "跌破昨低65553.67且无法快速收回",
-      "max_hold_hours": 24,
-      "risk_flags": [
-        "亚洲时段流动性低",
-        "恐惧指数31显示情绪偏弱",
-        "若纳指期货转跌需警惕"
-      ],
-      "action": "OPEN LONG",
-      "price": 66172.68
-    }
-  ],
-  "testnet_usdt": 4035.5,
+  "items": [],
+  "testnet_usdt": 3916.39,
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29270.25,
-    "nq_chg": -0.16,
+    "nq": 29211.5,
+    "nq_chg": -0.36,
     "tnx": 4.66,
     "tnx_chg": 0.63,
-    "dxy": 101.094,
-    "dxy_chg": -0.08,
+    "dxy": 101.06,
+    "dxy_chg": -0.12,
     "mstr_chg": 2.24,
     "nvda_chg": 4.32,
     "coin_chg": 3.55,
-    "btc_chg": -0.677,
-    "ethbtc_chg": 0.55,
-    "solbtc_chg": 0.518
+    "btc_chg": -0.938,
+    "ethbtc_chg": 0.722,
+    "solbtc_chg": 0.221
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
