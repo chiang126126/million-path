@@ -1,26 +1,47 @@
 {
-  "ts": "2026-07-23T03:07:01Z",
+  "ts": "2026-07-23T04:07:00Z",
   "mode": "testnet",
-  "equity": 442.32,
-  "day_pnl_pct": 0.0,
-  "total_dd_pct": 13.34,
-  "items": [],
-  "testnet_usdt": 3916.39,
+  "equity": 437.42,
+  "day_pnl_pct": -1.11,
+  "total_dd_pct": 14.31,
+  "items": [
+    {
+      "symbol": "ETHUSDT",
+      "source": "llm",
+      "bias": "LONG",
+      "confidence": 0.65,
+      "vetted": false,
+      "reason": "做多但价在均线下，不接飞刀",
+      "rationale": "第一层：NVDA大涨4.3%带动AI板块，MSTR跟随上涨无背离，全球risk-on；第二层：ETH/BTC与SOL/BTC相对走强确认资金下沉，OI微增但费率中性偏空，恐惧指数31提供安全边际；第三层：现价接近昨低1910.68支撑，入场区间合理，止损1%目标2%覆盖成本，无重大事件干扰。",
+      "market_state": "risk-on",
+      "entry_low": 1910.68,
+      "entry_high": 1920.54,
+      "invalidation": "跌破昨低1910.68且无法快速收回，或纳指期货转跌超0.5%",
+      "max_hold_hours": 24,
+      "risk_flags": [
+        "亚洲时段流动性低易异动",
+        "日线偏离8.91%需警惕回调",
+        "若ETH跌破1910则转空"
+      ],
+      "action": "skip"
+    }
+  ],
+  "testnet_usdt": 4205.88,
   "news_lines": 3,
-  "global_risk": "mixed",
+  "global_risk": "risk-on",
   "xm": {
-    "nq": 29088.0,
-    "nq_chg": -0.78,
+    "nq": 29118.75,
+    "nq_chg": -0.21,
     "tnx": 4.66,
     "tnx_chg": 0.63,
-    "dxy": 100.998,
-    "dxy_chg": -0.18,
+    "dxy": 100.976,
+    "dxy_chg": -0.16,
     "mstr_chg": 2.24,
     "nvda_chg": 4.32,
     "coin_chg": 3.55,
-    "btc_chg": -0.918,
-    "ethbtc_chg": 0.515,
-    "solbtc_chg": 0.221
+    "btc_chg": -1.053,
+    "ethbtc_chg": 0.377,
+    "solbtc_chg": 0.416
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
