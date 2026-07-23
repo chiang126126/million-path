@@ -5,7 +5,44 @@
   "day": "2026-07-23",
   "day_start_equity": 442.31926852400005,
   "peak_equity": 510.43661593299987,
-  "positions": [],
-  "updated_at": "2026-07-23T08:07:18Z",
+  "positions": [
+    {
+      "symbol": "ETHUSDT",
+      "side": "LONG",
+      "entry": 1929.29,
+      "stop": 1910.0,
+      "target": 1958.23,
+      "qty": 0.214,
+      "notional": 414.09,
+      "risk_usdt": 4.14,
+      "fee_in": 0.20704499999999998,
+      "confidence": 0.65,
+      "opened_at": "2026-07-23T09:07:21Z",
+      "opened_kline_t": 1784797200000,
+      "stop_kind": "INIT",
+      "snapshot": {
+        "dev_pct": 0.04,
+        "rsi14": 53.4,
+        "atr_pct": 0.51,
+        "funding_pct": -0.0013,
+        "fng": 31,
+        "fng_label": "Fear",
+        "regime": "risk-on",
+        "daily_dev_pct": 9.39,
+        "source": "llm",
+        "confidence": 0.65,
+        "global_risk": "risk-on",
+        "nq_chg": -0.29,
+        "dxy_chg": -0.0,
+        "mstr_chg": 2.24,
+        "ethbtc_chg": 0.79,
+        "solbtc_chg": 0.53,
+        "oi_chg_pct": 1.58,
+        "market_state": "risk-on"
+      },
+      "max_hold_hours": 24.0
+    }
+  ],
+  "updated_at": "2026-07-23T09:07:21Z",
   "guardian_at": "2026-07-23T07:12:02Z"
 }

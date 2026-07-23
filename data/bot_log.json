@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-23T08:07:01Z",
+  "ts": "2026-07-23T09:07:01Z",
   "mode": "testnet",
   "equity": 435.88,
   "day_pnl_pct": -1.46,
@@ -8,60 +8,59 @@
     {
       "symbol": "BTCUSDT",
       "source": "llm",
-      "bias": "FLAT",
-      "confidence": 0.0,
+      "bias": "LONG",
+      "confidence": 0.65,
       "vetted": false,
-      "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：纳指期货跌但NVDA涨，风险偏好mixed；第二层：BTC未破昨低，OI降但资费中性，ETH/SOL相对走强但BTC偏弱；第三层：方向不明，空间不足，无明确入场信号。",
-      "market_state": "mixed",
-      "entry_low": 0,
-      "entry_high": 0,
-      "invalidation": "",
-      "max_hold_hours": 0,
+      "reason": "做多但价在均线下，不接飞刀",
+      "rationale": "第一层：NVDA大涨4.3%带动AI风向，MSTR温和上涨无背离，全球risk-on；第二层：BTC站稳EMA21/50，ETH/SOL相对走强确认资金下沉，OI下降杠杆已清理，资费中性偏多；第三层：现价接近昨低支撑，入场区间合理，目标看昨高66740，止损设于昨低下方，盈亏比>2:1，无重大事件干扰。",
+      "market_state": "risk-on",
+      "entry_low": 65553,
+      "entry_high": 65850,
+      "invalidation": "跌破昨低65553且无法快速收回，或纳指期货转跌超0.5%",
+      "max_hold_hours": 24,
       "risk_flags": [
-        "纳指期货下跌但NVDA上涨信号冲突",
-        "BTC未破昨低但反弹无力",
-        "OI下降但资费未极端"
+        "若BTC跌破65553且放量，则多头失效；若纳指期货转跌，需警惕风险偏好逆转"
       ],
       "action": "skip"
     },
     {
       "symbol": "ETHUSDT",
       "source": "llm",
-      "bias": "FLAT",
-      "confidence": 0.0,
-      "vetted": false,
-      "reason": "决策为 FLAT/观望",
-      "rationale": "第一层: 纳指期货跌但NVDA涨，风险偏好mixed；第二层: ETH/BTC和SOL/BTC走强但OI升且资费负，多空信号冲突；第三层: 日线偏多但RSI低，无明确入场区间，空间不足，不满足执行条件。",
-      "market_state": "mixed",
-      "entry_low": 0,
-      "entry_high": 0,
-      "invalidation": "",
-      "max_hold_hours": 0,
+      "bias": "LONG",
+      "confidence": 0.65,
+      "vetted": true,
+      "reason": "通过风控",
+      "rationale": "第一层：NVDA大涨4.3%带动风险偏好，MSTR无背离；第二层：ETH/BTC和SOL/BTC走强确认资金流入，OI温和上升但费率中性，日线偏多；第三层：现价接近EMA21/50支撑，距昨低1910仅1%，止损可控，目标看1956昨高，盈亏比约1.5:1。",
+      "market_state": "risk-on",
+      "entry_low": 1920,
+      "entry_high": 1930,
+      "invalidation": "跌破1910.68或纳指期货转跌超0.5%",
+      "max_hold_hours": 24,
       "risk_flags": [
-        "信号冲突",
-        "量能不足",
-        "无明确入场位"
+        "欧洲上午流动性低",
+        "恐惧指数31可能反复",
+        "无重大事件但需关注Powell讲话"
       ],
-      "action": "skip"
+      "action": "OPEN LONG",
+      "price": 1929.29
     }
   ],
   "testnet_usdt": 4323.87,
   "news_lines": 3,
-  "global_risk": "mixed",
+  "global_risk": "risk-on",
   "xm": {
-    "nq": 28977.0,
-    "nq_chg": -0.7,
+    "nq": 29095.75,
+    "nq_chg": -0.29,
     "tnx": 4.66,
     "tnx_chg": 0.63,
-    "dxy": 101.062,
-    "dxy_chg": -0.08,
+    "dxy": 101.139,
+    "dxy_chg": -0.0,
     "mstr_chg": 2.24,
     "nvda_chg": 4.32,
     "coin_chg": 3.55,
-    "btc_chg": -0.878,
-    "ethbtc_chg": 0.653,
-    "solbtc_chg": 0.838
+    "btc_chg": -0.391,
+    "ethbtc_chg": 0.79,
+    "solbtc_chg": 0.528
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
