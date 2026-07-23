@@ -40,9 +40,11 @@
         "oi_chg_pct": 1.58,
         "market_state": "risk-on"
       },
-      "max_hold_hours": 24.0
+      "max_hold_hours": 24.0,
+      "mfe_price": 1931.66,
+      "managed_t": 1784797200000
     }
   ],
-  "updated_at": "2026-07-23T09:07:21Z",
+  "updated_at": "2026-07-23T10:07:13Z",
   "guardian_at": "2026-07-23T07:12:02Z"
 }
