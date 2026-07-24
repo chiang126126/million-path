@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-24T03:07:01Z",
+  "ts": "2026-07-24T04:07:02Z",
   "mode": "testnet",
   "equity": 430.64,
   "day_pnl_pct": 0.0,
@@ -9,19 +9,19 @@
       "symbol": "BTCUSDT",
       "source": "llm",
       "bias": "SHORT",
-      "confidence": 0.75,
+      "confidence": 0.65,
       "vetted": false,
-      "reason": "日线趋势向上(+3.4%)，禁止逆势做空",
-      "rationale": "第一层：纳指期货-2.2%且MSTR超额弱势-7.4pp，系统性risk-off；第二层：下跌中OI增2.1%表明新空进场，但ETH/BTC和SOL/BTC均走弱，无相对强势；第三层：现价接近昨低64650，但未跌破，入场区间65200-65500，止损1.5%可覆盖成本，目标3%至63300附近。",
+      "reason": "日线趋势向上(+3.7%)，禁止逆势做空",
+      "rationale": "第一层：MSTR超额弱势-7.8pp与纳指走弱共振，系统性risk-off；第二层：BTC下跌中OI升2.32%新空进场，ETH/SOL相对走弱，确认风险传导；第三层：现价接近EMA50，但日线偏多限制空间，入场区间65400-65800，止损1.2%覆盖成本，目标2.5%至昨低附近。",
       "market_state": "risk-off",
-      "entry_low": 65200,
-      "entry_high": 65500,
-      "invalidation": "BTC重新站上昨高66313且纳指期货转涨",
-      "max_hold_hours": 48,
+      "entry_low": 65400,
+      "entry_high": 65800,
+      "invalidation": "BTC重新站上66313.14（昨高）或纳指期货转涨",
+      "max_hold_hours": 24,
       "risk_flags": [
-        "日线偏多限制跌幅空间",
-        "恐惧指数28可能引发反弹",
-        "亚洲时段流动性低波动大"
+        "日线偏多禁止过度做空",
+        "资金费率未极端偏空",
+        "近期无重大数据事件"
       ],
       "action": "skip"
     },
@@ -29,18 +29,18 @@
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "SHORT",
-      "confidence": 0.75,
+      "confidence": 0.65,
       "vetted": false,
-      "reason": "日线趋势向上(+5.9%)，禁止逆势做空",
-      "rationale": "第一层：纳指期货-2.2%且MSTR-8.2%共振risk-off；第二层：ETH/BTC走弱，OI微降但未极端，资金费率中性，日线偏多但短线下行压力大；第三层：现价接近昨低1869.44，追空空间有限，但反弹至1890附近可入场，止损1.5%覆盖成本，目标3%至1818附近。",
+      "reason": "日线趋势向上(+6.2%)，禁止逆势做空",
+      "rationale": "第一层：MSTR超额弱势-7.8pp与纳指期货-0.47%共振，系统性risk-off；第二层：ETH/BTC与SOL/BTC均走弱，确认资金撤离，OI微降但未极端，资费中性，追空风险可控；第三层：现价接近昨低1869.44，入场区间1880-1890，止损1.2%覆盖成本，目标2.5%至1830附近，空间充足。",
       "market_state": "risk-off",
-      "entry_low": 1870,
+      "entry_low": 1880,
       "entry_high": 1890,
-      "invalidation": "价格突破昨高1941.5或纳指期货转涨",
+      "invalidation": "ETH价格突破昨高1941.50或纳指期货转涨且MSTR跌幅收窄至-3%以内",
       "max_hold_hours": 24,
       "risk_flags": [
-        "日线偏多限制跌幅",
-        "OI下降显示杠杆清理，追空需谨慎",
+        "日线偏多限制跌幅空间",
+        "OI下降可能预示去杠杆尾声",
         "亚洲时段流动性低易异动"
       ],
       "action": "skip"
@@ -50,18 +50,18 @@
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 28537.75,
-    "nq_chg": -2.21,
+    "nq": 28485.25,
+    "nq_chg": -0.47,
     "tnx": 4.7,
     "tnx_chg": 0.99,
-    "dxy": 101.407,
-    "dxy_chg": 0.26,
+    "dxy": 101.421,
+    "dxy_chg": -0.01,
     "mstr_chg": -8.16,
     "nvda_chg": 0.71,
     "coin_chg": -8.35,
-    "btc_chg": -0.776,
-    "ethbtc_chg": -1.776,
-    "solbtc_chg": -1.71
+    "btc_chg": -0.361,
+    "ethbtc_chg": -1.709,
+    "solbtc_chg": -1.996
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
