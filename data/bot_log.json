@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-26T19:07:01Z",
+  "ts": "2026-07-26T20:07:01Z",
   "mode": "testnet",
   "equity": 430.64,
   "day_pnl_pct": 0.0,
@@ -8,21 +8,20 @@
     {
       "symbol": "BTCUSDT",
       "source": "llm",
-      "bias": "FLAT",
-      "confidence": 0.0,
+      "bias": "LONG",
+      "confidence": 0.65,
       "vetted": false,
-      "reason": "决策为 FLAT/观望",
-      "rationale": "第一层: NVDA和MSTR大跌指向risk-off，但MSTR弱势源于自身融资担忧，不能做空BTC；第二层: BTC稳于昨高之上，ETH/SOL相对走强，OI微降，资费中性，未确认风险传导；第三层: 信号冲突，美股弱但BTC稳且山寨走强，高周期偏多但当前risk-off，无明确入场区间，空间不足，强制FLAT。",
+      "reason": "现价 64703.36 不在行动卡入场区间 [63810.00,64475.00]，不追单",
+      "rationale": "第一层：NVDA和MSTR大跌但BTC稳，MSTR弱势为自身问题，不构成做空理由；第二层：BTC站上30日线偏多，ETH/SOL相对走强确认资金下沉，OI下降杠杆已清理，追空危险；第三层：现价接近昨高64475，回踩昨低63810附近可入场，空间足够覆盖成本，无重大数据事件。",
       "market_state": "risk-off",
-      "entry_low": 0,
-      "entry_high": 0,
-      "invalidation": "",
-      "max_hold_hours": 0,
+      "entry_low": 63810,
+      "entry_high": 64475,
+      "invalidation": "BTC跌破昨低63810且无法快速收回，或纳指期货转跌超1%",
+      "max_hold_hours": 48,
       "risk_flags": [
-        "美股弱势但BTC未跟跌",
-        "MSTR弱势非BTC信号",
-        "高周期偏多限制做空",
-        "当前无明确入场位"
+        "MSTR持续弱势可能拖累情绪",
+        "亚洲时段流动性低波动大",
+        "若BTC跌破昨低需止损"
       ],
       "action": "skip"
     },
@@ -33,17 +32,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：美股risk-off，NVDA和MSTR大跌，但MSTR弱势源于自身融资担忧，不能做空BTC；第二层：ETH虽站上关键位且ETH/BTC走强，但OI上升、资费为正、RSI超买，追多风险大；第三层：现价已偏离昨高，无安全入场位，且美股盘中波动大，条件不满足，强制FLAT。",
+      "rationale": "第一层: 全球risk-off，NVDA和MSTR大跌，但MSTR弱势源于自身，不能做空BTC；第二层: ETH/BTC和SOL/BTC相对走强，OI微增，资费中性，但RSI 80过热，日线偏多但偏离6.8%，追多风险大；第三层: 现价1913高于昨高1877，追高空间不足，且无明确入场区间，条件不满足，必须FLAT。",
       "market_state": "risk-off",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "RSI超买81.7",
-        "OI上升新空进场",
-        "美股盘中噪音大",
-        "MSTR弱势非BTC信号"
+        "RSI 80过热",
+        "现价高于昨高，追高风险大",
+        "美股盘后流动性低"
       ],
       "action": "skip"
     }
@@ -61,9 +59,9 @@
     "mstr_chg": -8.34,
     "nvda_chg": -2.46,
     "coin_chg": -4.71,
-    "btc_chg": 0.455,
+    "btc_chg": 0.539,
     "ethbtc_chg": 1.615,
-    "solbtc_chg": 0.423
+    "solbtc_chg": 0.665
   },
-  "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
+  "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
