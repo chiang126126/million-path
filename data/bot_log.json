@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-28T19:07:01Z",
+  "ts": "2026-07-28T20:07:01Z",
   "mode": "testnet",
   "equity": 430.64,
   "day_pnl_pct": 0.0,
@@ -12,36 +12,36 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层: 纳指期货-0.8%, NVDA-4.5%显示risk-off; 第二层: BTC下跌但OI降0.54%杠杆已清理, 资金费率中性, 恐惧29, 无明确方向; 第三层: 信号冲突(美股弱但BTC稳, MSTR强于BTC), 高周期震荡, 无可靠入场区间, 空间不足, 故FLAT。",
+      "rationale": "第一层：纳指期货-0.88%，NVDA-4.75%，全球risk-off；第二层：BTC-1.65%，OI降0.6%杠杆清理，但资金费率0.01%未极端，ETH/BTC微涨但SOL/BTC跌，非全面risk-on；第三层：日线震荡，无明确方向，信号冲突（美股弱但BTC未大跌），不符合做多或做空条件，必须FLAT。",
       "market_state": "risk-off",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "禁止追空: OI降追空危险",
-        "禁止做多: 美股risk-off未改善",
-        "信号冲突: MSTR强但BTC弱"
+        "禁止因纳指下跌追空",
+        "禁止把反弹当底部",
+        "信号冲突时FLAT"
       ],
       "action": "skip"
     },
     {
       "symbol": "ETHUSDT",
       "source": "llm",
-      "bias": "SHORT",
-      "confidence": 0.65,
+      "bias": "FLAT",
+      "confidence": 0.0,
       "vetted": false,
-      "reason": "日线趋势向上(+5.5%)，禁止逆势做空",
-      "rationale": "第一层：纳指期货-0.8%、NVDA-4.5%明确risk-off，MSTR+4.7%未背离；第二层：ETH现价1914.76，昨低1882.49，OI降2.49%但资费仍正，下跌中OI降说明杠杆清理但未极端，ETH/BTC微涨0.2%显示相对抗跌但非全面risk-on；第三层：现价接近EMA21/50（1902-1906），可入场，止损设于昨高1981.24上方1.5%约1943，目标看昨低1882.49下方3%约1857，空间覆盖成本，无重大数据事件。",
+      "reason": "决策为 FLAT/观望",
+      "rationale": "第一层: 纳指期货-0.88%, NVDA-4.75%显示risk-off; 第二层: ETH现价1920, 昨低1882未破, OI降2.1%杠杆清理, 但资金费率0.0061%中性, 情绪29恐惧, 无明确方向; 第三层: 日线偏多但偏离5.8%不宜追多, 美股盘后流动性差, 信号冲突(美股弱但ETH未破关键支撑), 无法满足做多或做空条件, 故FLAT。",
       "market_state": "risk-off",
-      "entry_low": 1910,
-      "entry_high": 1920,
-      "invalidation": "ETH价格突破1981.24（昨高）或纳指期货转涨且NVDA止跌回升",
-      "max_hold_hours": 24,
+      "entry_low": 0,
+      "entry_high": 0,
+      "invalidation": "",
+      "max_hold_hours": 0,
       "risk_flags": [
-        "日线偏多禁止过度做空",
-        "OI下降可能预示短期底部",
-        "ETH/BTC相对走强可能限制跌幅"
+        "美股盘后流动性低易异动",
+        "日线偏多但短期risk-off",
+        "无明确入场区间"
       ],
       "action": "skip"
     }
@@ -50,18 +50,18 @@
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 27965.25,
-    "nq_chg": -0.8,
+    "nq": 27941.25,
+    "nq_chg": -0.88,
     "tnx": 4.6,
     "tnx_chg": -0.8,
-    "dxy": 101.411,
-    "dxy_chg": -0.1,
-    "mstr_chg": 4.68,
-    "nvda_chg": -4.51,
-    "coin_chg": 4.42,
-    "btc_chg": -1.694,
-    "ethbtc_chg": 0.2,
-    "solbtc_chg": -0.668
+    "dxy": 101.399,
+    "dxy_chg": -0.11,
+    "mstr_chg": 4.9,
+    "nvda_chg": -4.75,
+    "coin_chg": 6.07,
+    "btc_chg": -1.647,
+    "ethbtc_chg": 0.234,
+    "solbtc_chg": -0.685
   },
-  "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
+  "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
