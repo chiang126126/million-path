@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-26T20:07:01Z",
+  "ts": "2026-07-28T08:07:02Z",
   "mode": "testnet",
   "equity": 430.64,
   "day_pnl_pct": 0.0,
@@ -8,20 +8,20 @@
     {
       "symbol": "BTCUSDT",
       "source": "llm",
-      "bias": "LONG",
+      "bias": "SHORT",
       "confidence": 0.65,
       "vetted": false,
-      "reason": "现价 64703.36 不在行动卡入场区间 [63810.00,64475.00]，不追单",
-      "rationale": "第一层：NVDA和MSTR大跌但BTC稳，MSTR弱势为自身问题，不构成做空理由；第二层：BTC站上30日线偏多，ETH/SOL相对走强确认资金下沉，OI下降杠杆已清理，追空危险；第三层：现价接近昨高64475，回踩昨低63810附近可入场，空间足够覆盖成本，无重大数据事件。",
+      "reason": "RSI 23 超卖区，不追空",
+      "rationale": "第一层：纳指期货-0.87%、NVDA-5.87%显示risk-off；第二层：BTC跌破昨低63605.56，OI上升1.64%表明新空进场，ETH/BTC和SOL/BTC走弱确认资金撤离；第三层：现价接近昨低，追空空间有限，但若反弹至64000附近可入场，止损设于65000上方，目标看62000，风险回报比约1:2。",
       "market_state": "risk-off",
-      "entry_low": 63810,
-      "entry_high": 64475,
-      "invalidation": "BTC跌破昨低63810且无法快速收回，或纳指期货转跌超1%",
+      "entry_low": 63600,
+      "entry_high": 64000,
+      "invalidation": "BTC重新站上65744.60（昨高）或纳指期货转涨",
       "max_hold_hours": 48,
       "risk_flags": [
-        "MSTR持续弱势可能拖累情绪",
-        "亚洲时段流动性低波动大",
-        "若BTC跌破昨低需止损"
+        "OI上升但资费中性，追空需谨慎",
+        "日线震荡未明确破位，高周期不支持重仓",
+        "MSTR逆势上涨可能预示BTC韧性"
       ],
       "action": "skip"
     },
@@ -32,16 +32,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层: 全球risk-off，NVDA和MSTR大跌，但MSTR弱势源于自身，不能做空BTC；第二层: ETH/BTC和SOL/BTC相对走强，OI微增，资费中性，但RSI 80过热，日线偏多但偏离6.8%，追多风险大；第三层: 现价1913高于昨高1877，追高空间不足，且无明确入场区间，条件不满足，必须FLAT。",
+      "rationale": "第一层：纳指期货跌0.87%，NVDA跌5.87%，全球风险偏好risk-off。第二层：ETH现价1883.54，已跌破昨低1882.49，但OI降3%显示杠杆清理，追空危险；资金费率-0.0036%未极端偏空；日线仍偏多，高周期不支持做空。第三层：现价接近昨低，追空空间有限且风险大，做多条件不满足（纳指弱、未站回关键位），信号冲突，宜FLAT。",
       "market_state": "risk-off",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "RSI 80过热",
-        "现价高于昨高，追高风险大",
-        "美股盘后流动性低"
+        "纳指期货持续下跌",
+        "ETH跌破昨低1882.49后无反抽",
+        "资金费率未极端偏空"
       ],
       "action": "skip"
     }
@@ -50,18 +50,18 @@
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 28282.25,
-    "nq_chg": 0.0,
-    "tnx": 4.68,
-    "tnx_chg": -0.51,
-    "dxy": 101.465,
-    "dxy_chg": -0.0,
-    "mstr_chg": -8.34,
-    "nvda_chg": -2.46,
-    "coin_chg": -4.71,
-    "btc_chg": 0.539,
-    "ethbtc_chg": 1.615,
-    "solbtc_chg": 0.665
+    "nq": 27945.5,
+    "nq_chg": -0.87,
+    "tnx": 4.64,
+    "tnx_chg": -0.81,
+    "dxy": 101.537,
+    "dxy_chg": 0.03,
+    "mstr_chg": 5.36,
+    "nvda_chg": -5.87,
+    "coin_chg": 3.93,
+    "btc_chg": -2.587,
+    "ethbtc_chg": -1.56,
+    "solbtc_chg": -1.417
   },
-  "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
+  "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
