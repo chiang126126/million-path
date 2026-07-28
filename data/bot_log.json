@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-28T22:07:00Z",
+  "ts": "2026-07-28T23:07:00Z",
   "mode": "testnet",
   "equity": 430.64,
   "day_pnl_pct": 0.0,
@@ -12,16 +12,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：纳指期货-0.81%，NVDA-4.75%，全球risk-off；第二层：BTC-1.12%，OI降0.89%显示杠杆清理，但资金费率0.01%未极端，ETH/BTC微涨0.5%但SOL/BTC跌0.57%，非全面risk-on；第三层：日线震荡，方向不明，且当前时段流动性低，风险收益比不佳，不宜交易。",
+      "rationale": "第一层: 纳指期货-1.4%, NVDA-4.8%显示risk-off; 第二层: BTC未跟跌但OI降1.4%杠杆清理, ETH/BTC走强但SOL/BTC走弱, 信号冲突; 第三层: 日线震荡, 无明确方向, 空间不足, 风险大于收益.",
       "market_state": "risk-off",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "美股盘后流动性低",
-        "日线震荡无明确方向",
-        "NVDA持续下跌可能拖累加密"
+        "日线震荡禁止追涨杀跌",
+        "信号冲突降低confidence",
+        "美股盘后流动性低易异动"
       ],
       "action": "skip"
     },
@@ -32,7 +32,7 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层: 纳指期货-0.81%, NVDA-4.75%显示risk-off; 第二层: ETH现价1925.88, 昨低1882.49, 昨高1981.24, OI降1.95%杠杆已清理但资费0.0067%中性, 日线偏多但偏离6.1%不宜追多; 第三层: 当前无明确入场区间, 空间不足, 且美股盘后波动不确定, 故FLAT。",
+      "rationale": "第一层: 纳指期货-1.4%, NVDA-4.8%显示risk-off; 第二层: ETH现价1906.68, 昨低1882.49未破, OI降0.62%杠杆已清理, 但资金费率0.0064%中性, 恐惧29; 第三层: 日线偏多但美股弱, 信号冲突, 且当前亚洲时段流动性低, 无明确入场区间, 空间不足, 故FLAT。",
       "market_state": "risk-off",
       "entry_low": 0,
       "entry_high": 0,
@@ -40,7 +40,7 @@
       "max_hold_hours": 0,
       "risk_flags": [
         "美股盘后流动性低",
-        "日线偏多但短期risk-off冲突",
+        "信号冲突",
         "无明确入场位"
       ],
       "action": "skip"
@@ -50,18 +50,18 @@
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 27960.5,
-    "nq_chg": -0.81,
+    "nq": 27793.75,
+    "nq_chg": -1.41,
     "tnx": 4.6,
     "tnx_chg": -0.8,
-    "dxy": 101.386,
+    "dxy": 101.393,
     "dxy_chg": -0.12,
     "mstr_chg": 4.9,
     "nvda_chg": -4.75,
     "coin_chg": 6.07,
-    "btc_chg": -1.119,
-    "ethbtc_chg": 0.501,
-    "solbtc_chg": -0.566
+    "btc_chg": -0.225,
+    "ethbtc_chg": 1.08,
+    "solbtc_chg": -0.784
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
