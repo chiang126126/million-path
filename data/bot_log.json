@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-28T16:07:01Z",
+  "ts": "2026-07-28T17:07:01Z",
   "mode": "testnet",
   "equity": 430.64,
   "day_pnl_pct": 0.0,
@@ -12,16 +12,17 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层: 纳指期货-0.5%且NVDA-4.2%明确risk-off; 第二层: BTC跌破EMA50且OI降但资费中性,ETH/BTC微强但SOL/BTC弱,信号冲突; 第三层: 日线震荡,现价贴近昨低63605,追空空间不足且风险回报差,做多缺乏risk-on确认,故FLAT。",
+      "rationale": "第一层：NVDA大跌4.5%引领risk-off，纳指期货下跌，风险偏好下降。第二层：BTC下跌1.3%但ETH/BTC微涨，OI下降0.68%显示杠杆清理，但资金费率仍为正，情绪Fear，未出现极端偏空。第三层：日线震荡，方向不明，且当前处于美股盘中，开盘噪音大，不宜追空或抄底。信号冲突：美股弱但BTC未大幅下跌，MSTR逆势上涨，无背离，但整体风险偏好下降，缺乏明确方向。",
       "market_state": "risk-off",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "纳指期货持续下跌",
-        "NVDA未止跌",
-        "BTC跌破昨低63605可能加速"
+        "美股盘中噪音大，警惕插针",
+        "日线震荡，高周期无明确方向",
+        "NVDA持续下跌可能拖累加密",
+        "禁止追空或抄底"
       ],
       "action": "skip"
     },
@@ -32,15 +33,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层:纳指期货-0.52%,NVDA-4.23%显示risk-off;第二层:ETH现价1917,昨低1882未破,OI降2%但资费中性,ETH/BTC走强但SOL/BTC走弱,信号冲突;第三层:日线偏多但美股弱,无明确入场区间,空间不足,故FLAT。",
+      "rationale": "第一层：纳指期货-0.41%且NVDA-4.5%显示risk-off；第二层：ETH虽站上30日线但OI降1.93%显示杠杆清理，资金费率中性，ETH/BTC微涨但SOL/BTC下跌，非全面risk-on；第三层：当前价1920.85接近昨高1981.24与昨低1882.49中间，无明确入场区间，且日线偏多与短期risk-off冲突，空间不足，故FLAT。",
       "market_state": "risk-off",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "禁止追空:日线偏多且OI降",
-        "禁止做多:美股risk-off未改善"
+        "日线偏多但短期risk-off，信号冲突",
+        "OI下降但价格未破关键位，方向不明",
+        "无明确入场区间，追多追空风险大"
       ],
       "action": "skip"
     }
@@ -49,18 +51,18 @@
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 28043.5,
-    "nq_chg": -0.52,
-    "tnx": 4.59,
-    "tnx_chg": -1.01,
-    "dxy": 101.306,
-    "dxy_chg": -0.2,
-    "mstr_chg": 6.46,
-    "nvda_chg": -4.23,
-    "coin_chg": 5.01,
-    "btc_chg": -1.173,
-    "ethbtc_chg": 0.637,
-    "solbtc_chg": -0.18
+    "nq": 28074.0,
+    "nq_chg": -0.41,
+    "tnx": 4.6,
+    "tnx_chg": -0.97,
+    "dxy": 101.314,
+    "dxy_chg": -0.19,
+    "mstr_chg": 6.8,
+    "nvda_chg": -4.54,
+    "coin_chg": 5.85,
+    "btc_chg": -1.349,
+    "ethbtc_chg": 0.535,
+    "solbtc_chg": -0.684
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
