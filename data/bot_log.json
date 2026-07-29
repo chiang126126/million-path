@@ -1,26 +1,33 @@
 {
-  "ts": "2026-07-29T16:07:01Z",
+  "ts": "2026-07-29T17:07:01Z",
   "mode": "testnet",
   "equity": 430.64,
   "day_pnl_pct": 0.0,
   "total_dd_pct": 15.63,
-  "items": [],
-  "testnet_usdt": 3915.29,
+  "items": [
+    {
+      "symbol": "BTCUSDT",
+      "action": "CLOSE STOP",
+      "price": 63679.09,
+      "pnl": -4.55
+    }
+  ],
+  "testnet_usdt": 3915.28,
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 27484.5,
-    "nq_chg": -1.57,
-    "tnx": 4.64,
-    "tnx_chg": 0.85,
-    "dxy": 101.443,
-    "dxy_chg": 0.03,
-    "mstr_chg": -3.7,
-    "nvda_chg": -2.84,
-    "coin_chg": -2.37,
-    "btc_chg": 0.179,
-    "ethbtc_chg": -1.465,
-    "solbtc_chg": -1.78
+    "nq": 27580.5,
+    "nq_chg": -1.22,
+    "tnx": 4.65,
+    "tnx_chg": 0.98,
+    "dxy": 101.44,
+    "dxy_chg": 0.02,
+    "mstr_chg": -2.29,
+    "nvda_chg": -2.02,
+    "coin_chg": -1.75,
+    "btc_chg": -0.328,
+    "ethbtc_chg": -0.932,
+    "solbtc_chg": -1.033
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
