@@ -1,48 +1,26 @@
 {
-  "ts": "2026-07-29T12:07:01Z",
+  "ts": "2026-07-29T13:07:00Z",
   "mode": "testnet",
   "equity": 430.64,
   "day_pnl_pct": 0.0,
   "total_dd_pct": 15.63,
-  "items": [
-    {
-      "symbol": "ETHUSDT",
-      "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.65,
-      "vetted": true,
-      "reason": "通过风控",
-      "rationale": "第一层：NVDA大跌但MSTR转强+纳指企稳，机构风险偏好恢复早期信号；第二层：ETH站上EMA21/50，OI下降杠杆清理，资金费率中性，ETH/BTC走强；第三层：现价接近EMA支撑，回踩1900-1915可入场，止损设于昨低下方，目标看昨高1929上方，空间覆盖成本。",
-      "market_state": "risk-off",
-      "entry_low": 1900,
-      "entry_high": 1915,
-      "invalidation": "跌破昨低1856.88或纳指期货转跌超1%",
-      "max_hold_hours": 48,
-      "risk_flags": [
-        "NVDA持续下跌拖累纳指",
-        "BTC未能站稳72000",
-        "ETH/BTC转弱"
-      ],
-      "action": "OPEN LONG",
-      "price": 1912.66
-    }
-  ],
-  "testnet_usdt": 4035.86,
+  "items": [],
+  "testnet_usdt": 3915.31,
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 27988.25,
-    "nq_chg": 0.24,
-    "tnx": 4.6,
-    "tnx_chg": -0.8,
-    "dxy": 101.427,
-    "dxy_chg": 0.01,
+    "nq": 27921.0,
+    "nq_chg": -0.0,
+    "tnx": 4.63,
+    "tnx_chg": 0.56,
+    "dxy": 101.466,
+    "dxy_chg": 0.05,
     "mstr_chg": 4.9,
     "nvda_chg": -4.75,
     "coin_chg": 6.07,
-    "btc_chg": 1.494,
-    "ethbtc_chg": 0.406,
-    "solbtc_chg": -0.668
+    "btc_chg": 1.107,
+    "ethbtc_chg": -0.503,
+    "solbtc_chg": -0.944
   },
   "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
 }
