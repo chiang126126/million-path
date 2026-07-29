@@ -1,54 +1,67 @@
 {
-  "ts": "2026-07-29T19:07:00Z",
+  "ts": "2026-07-29T20:07:01Z",
   "mode": "testnet",
-  "equity": 426.09,
-  "day_pnl_pct": -1.06,
-  "total_dd_pct": 16.52,
+  "equity": 420.67,
+  "day_pnl_pct": -2.32,
+  "total_dd_pct": 17.59,
   "items": [
-    {
-      "symbol": "ETHUSDT",
-      "action": "CLOSE STOP_BE",
-      "price": 1914.57,
-      "pnl": -0.0
-    },
     {
       "symbol": "BTCUSDT",
       "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.65,
-      "vetted": true,
-      "reason": "通过风控",
-      "rationale": "第一层:美元走弱纳指期货上涨，风险偏好偏多；第二层:BTC站稳昨高64100，OI下降杠杆清理，资费中性；第三层:现价接近昨高可轻仓入场，止损设于昨低下方，目标看至65000上方，空间覆盖成本。",
-      "market_state": "risk-on",
-      "entry_low": 64100,
-      "entry_high": 64400,
-      "invalidation": "BTC跌破昨低62742或纳指期货转跌超0.5%",
+      "bias": "SHORT",
+      "confidence": 0.75,
+      "vetted": false,
+      "reason": "当日亏损 -2.3% 触发停手",
+      "rationale": "第一层：纳指期货、NVDA、MSTR共振下跌，系统性risk-off；第二层：BTC跌破EMA21/50，ETH/BTC、SOL/BTC走弱，OI下降但资费仍正，空头未极端；第三层：现价接近昨高64100可入场，止损设于昨高上方，目标昨低62742下方，空间覆盖成本",
+      "market_state": "risk-off",
+      "entry_low": 63600,
+      "entry_high": 64100,
+      "invalidation": "BTC重新站上64100并站稳，或纳指期货转涨，或MSTR相对BTC走强",
+      "max_hold_hours": 48,
+      "risk_flags": [
+        "OI下降中追空需谨慎，若OI快速回升则空头拥挤",
+        "亚洲时段流动性低，滑点可能较大",
+        "若BTC在63600附近横盘不跌，可能酝酿反弹"
+      ],
+      "action": "skip"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "source": "llm",
+      "bias": "SHORT",
+      "confidence": 0.75,
+      "vetted": false,
+      "reason": "当日亏损 -2.3% 触发停手",
+      "rationale": "第一层：纳指期货、NVDA、MSTR同步下跌，系统性risk-off；第二层：ETH/BTC走弱，OI下降但幅度小，资费中性，确认偏空但非极端；第三层：现价接近昨低，但未破，可小仓位试空，止损设于昨高上方，目标看1856.88附近，空间覆盖成本。",
+      "market_state": "risk-off",
+      "entry_low": 1885,
+      "entry_high": 1895,
+      "invalidation": "价格突破1929.67（昨高）或纳指期货转涨",
       "max_hold_hours": 24,
       "risk_flags": [
-        "美股盘中波动大",
-        "NVDA持续下跌可能拖累情绪",
-        "ETH/SOL相对弱势表明非全面risk-on"
+        "日线偏多，做空需谨慎",
+        "OI下降，追空风险大",
+        "亚洲时段流动性低，波动可能放大"
       ],
-      "action": "OPEN LONG",
-      "price": 64377.56
+      "action": "skip"
     }
   ],
-  "testnet_usdt": 4195.65,
+  "testnet_usdt": 4311.71,
   "news_lines": 3,
-  "global_risk": "risk-on",
+  "global_risk": "risk-off",
   "xm": {
-    "nq": 28038.5,
-    "nq_chg": 0.42,
+    "nq": 27366.25,
+    "nq_chg": -1.99,
     "tnx": 4.62,
-    "tnx_chg": 0.3,
-    "dxy": 100.92,
+    "tnx_chg": 0.39,
+    "dxy": 100.926,
     "dxy_chg": -0.45,
-    "mstr_chg": 0.12,
-    "nvda_chg": -0.71,
-    "coin_chg": -1.46,
-    "btc_chg": 0.888,
-    "ethbtc_chg": -0.933,
-    "solbtc_chg": -0.863
+    "mstr_chg": -5.39,
+    "nvda_chg": -3.31,
+    "coin_chg": -4.42,
+    "btc_chg": -0.498,
+    "ethbtc_chg": -1.165,
+    "solbtc_chg": -1.404
   },
-  "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
+  "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
