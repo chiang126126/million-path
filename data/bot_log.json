@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-29T07:07:01Z",
+  "ts": "2026-07-29T08:07:01Z",
   "mode": "testnet",
   "equity": 430.64,
   "day_pnl_pct": 0.0,
@@ -8,20 +8,20 @@
     {
       "symbol": "BTCUSDT",
       "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.65,
+      "bias": "FLAT",
+      "confidence": 0.0,
       "vetted": false,
-      "reason": "现价 64438.51 不在行动卡入场区间 [63958.00,64438.00]，不追单",
-      "rationale": "第一层：NVDA大跌但MSTR转强+纳指企稳，机构风险偏好恢复早期信号；第二层：BTC站上30日线偏多，OI降杠杆已清理，ETH/BTC走强确认资金下沉；第三层：现价接近EMA21/50支撑，入场区间合理，止损1.2%覆盖成本，目标2.5%空间充足。",
+      "reason": "决策为 FLAT/观望",
+      "rationale": "第一层：NVDA大跌4.8%指向risk-off，但MSTR+4.9%与BTC+1.5%无背离，风险偏好矛盾；第二层：BTC站上30日线偏多，但OI下降(-1.31%)显示杠杆清理，资金费率中性，ETH/BTC微涨但SOL/BTC下跌，非全面risk-on；第三层：信号冲突，日线偏多但宏观risk-off，无明确入场区间，空间不足，故FLAT。",
       "market_state": "risk-off",
-      "entry_low": 63958,
-      "entry_high": 64438,
-      "invalidation": "BTC跌破昨低62742或纳指期货转跌超0.5%",
-      "max_hold_hours": 48,
+      "entry_low": 0,
+      "entry_high": 0,
+      "invalidation": "",
+      "max_hold_hours": 0,
       "risk_flags": [
-        "NVDA持续下跌拖累科技股",
-        "BTC跌破昨低62742",
-        "资金费率转负"
+        "信号冲突：美股弱但BTC稳且OI降=去杠杆尾声，不可追空",
+        "日线偏多禁做空",
+        "NVDA持续下跌可能拖累BTC"
       ],
       "action": "skip"
     },
@@ -32,16 +32,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：NVDA大跌但MSTR转强+纳指企稳，风险偏好信号矛盾；第二层：ETH站上均线但OI下降、资费中性，未确认全面risk-on；第三层：方向不明，条件不满足，强制FLAT。",
-      "market_state": "mixed",
+      "rationale": "第一层：NVDA大跌4.8%指向risk-off，但MSTR和COIN逆势上涨，信号矛盾；第二层：ETH站上30日线偏多，但OI下降、资金费率中性，恐惧指数29，无明确方向；第三层：现价接近昨高1929，追多空间不足，且NVDA弱势未传导至币圈，信号冲突，强制FLAT。",
+      "market_state": "risk-off",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "信号冲突",
-        "高周期偏多但第一层risk-off",
-        "缺乏明确入场区间"
+        "NVDA持续下跌可能拖累币圈",
+        "ETH接近昨高阻力",
+        "恐惧指数低但未极端"
       ],
       "action": "skip"
     }
@@ -50,18 +50,18 @@
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 27935.75,
-    "nq_chg": 0.05,
+    "nq": 27912.75,
+    "nq_chg": -0.03,
     "tnx": 4.6,
     "tnx_chg": -0.8,
-    "dxy": 101.36,
-    "dxy_chg": -0.06,
+    "dxy": 101.33,
+    "dxy_chg": -0.09,
     "mstr_chg": 4.9,
     "nvda_chg": -4.75,
     "coin_chg": 6.07,
-    "btc_chg": 1.36,
-    "ethbtc_chg": 0.371,
-    "solbtc_chg": -0.511
+    "btc_chg": 1.49,
+    "ethbtc_chg": 0.303,
+    "solbtc_chg": -0.407
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
