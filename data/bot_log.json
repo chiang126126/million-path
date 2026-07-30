@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-30T09:07:01Z",
+  "ts": "2026-07-30T10:07:01Z",
   "mode": "testnet",
   "equity": 420.67,
   "day_pnl_pct": 0.0,
@@ -12,36 +12,36 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层: 全球risk-off，NVDA和MSTR大跌，但MSTR弱势源于自身融资担忧，不能做空BTC；第二层: ETH/BTC和SOL/BTC未走弱，OI微降，资费中性，日线偏多但偏离不大，信号冲突；第三层: 方向不明，条件不满足，必须FLAT。",
+      "rationale": "第一层: 纳指期货涨但NVDA/MSTR大跌，风险偏好偏risk-off；第二层: ETH/BTC和SOL/BTC相对走强但OI未降，资金费率中性，情绪Fear，信号冲突；第三层: 高周期偏多但当前risk-off，条件不满足，宜FLAT。",
       "market_state": "risk-off",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "全球risk-off但加密未确认传导",
-        "MSTR弱势非BTC本身",
-        "日线偏多与宏观偏空冲突"
+        "禁止因纳指下跌追空",
+        "禁止把快速反弹当底部",
+        "MSTR弱但BTC稳不构成做空BTC理由"
       ],
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4032.94,
+  "testnet_usdt": 4030.36,
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 27463.0,
-    "nq_chg": 0.44,
+    "nq": 27551.5,
+    "nq_chg": 0.77,
     "tnx": 4.62,
     "tnx_chg": 0.39,
-    "dxy": 100.946,
-    "dxy_chg": 0.14,
+    "dxy": 100.794,
+    "dxy_chg": -0.01,
     "mstr_chg": -5.39,
     "nvda_chg": -3.31,
     "coin_chg": -4.42,
-    "btc_chg": -0.122,
-    "ethbtc_chg": 0.0,
-    "solbtc_chg": 0.087
+    "btc_chg": -0.067,
+    "ethbtc_chg": 0.101,
+    "solbtc_chg": 0.227
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
