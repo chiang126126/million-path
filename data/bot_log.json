@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-30T07:08:11Z",
+  "ts": "2026-07-30T08:07:00Z",
   "mode": "testnet",
   "equity": 420.67,
   "day_pnl_pct": 0.0,
@@ -12,34 +12,34 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：NVDA和MSTR大跌，美债收益率和美元上涨，全球risk-off；第二层：ETH跟随BTC小幅下跌，OI微增但资费中性，ETH/BTC走弱，SOL/BTC微强但不足以确认全面risk-on；第三层：日线偏多但短期信号冲突，缺乏明确入场点，空间不足，故FLAT。",
+      "rationale": "第一层：NVDA和MSTR大跌，MSTR超额弱势，全球risk-off；第二层：ETH跟随BTC小幅下跌，OI微增但量能不足，ETH/BTC和SOL/BTC均走弱，无全面risk-on信号；第三层：日线偏多但短期偏弱，信号冲突，且无明确入场区间和失效位，空间不足，故FLAT。",
       "market_state": "risk-off",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "禁止追空：日线偏多且OI未大增；禁止做多：全球risk-off且ETH/BTC走弱"
+        "信号冲突：美股弱但BTC未大跌，MSTR弱但BTC稳；日线偏多但短期偏弱；无明确入场点"
       ],
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4034.78,
+  "testnet_usdt": 4035.34,
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 27431.0,
-    "nq_chg": 0.33,
+    "nq": 27404.25,
+    "nq_chg": 0.23,
     "tnx": 4.62,
     "tnx_chg": 0.39,
-    "dxy": 100.978,
-    "dxy_chg": 0.18,
+    "dxy": 101.061,
+    "dxy_chg": 0.26,
     "mstr_chg": -5.39,
     "nvda_chg": -3.31,
     "coin_chg": -4.42,
-    "btc_chg": -0.629,
-    "ethbtc_chg": -0.134,
-    "solbtc_chg": 0.174
+    "btc_chg": -0.709,
+    "ethbtc_chg": -0.034,
+    "solbtc_chg": -0.374
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
