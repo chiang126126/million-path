@@ -1,68 +1,48 @@
 {
-  "ts": "2026-07-30T01:07:01Z",
+  "ts": "2026-07-30T02:07:01Z",
   "mode": "testnet",
   "equity": 420.67,
   "day_pnl_pct": 0.0,
   "total_dd_pct": 17.59,
   "items": [
     {
-      "symbol": "BTCUSDT",
-      "source": "llm",
-      "bias": "SHORT",
-      "confidence": 0.75,
-      "vetted": true,
-      "reason": "通过风控",
-      "rationale": "第一层：纳指期货、NVDA、MSTR共振下跌，系统性risk-off；第二层：BTC跌破EMA21/50，OI上升显示新空进场，ETH/BTC走弱；第三层：现价接近昨低63267，但尚未跌破，入场区间63800-64000，止损设于昨高上方，目标看63267下方，空间覆盖成本。",
-      "market_state": "risk-off",
-      "entry_low": 63800,
-      "entry_high": 64000,
-      "invalidation": "BTC重新站上64744.81（昨高）或纳指期货转涨",
-      "max_hold_hours": 24,
-      "risk_flags": [
-        "下跌中OI升但若突然降则空头拥挤需警惕",
-        "亚洲时段流动性低易异动",
-        "恐惧指数28已接近极端，追空需谨慎"
-      ],
-      "action": "OPEN SHORT",
-      "price": 63834.0
-    },
-    {
       "symbol": "ETHUSDT",
       "source": "llm",
-      "bias": "SHORT",
-      "confidence": 0.75,
+      "bias": "FLAT",
+      "confidence": 0.0,
       "vetted": false,
-      "reason": "日线趋势向上(+3.8%)，禁止逆势做空",
-      "rationale": "第一层：纳指期货、NVDA、MSTR同步走弱，系统性risk-off；第二层：ETH/BTC走弱，OI下降但幅度小，资费中性，未出现极端恐慌，仍有下行空间；第三层：现价接近EMA21/50，可入场，止损设于昨高1936上方，目标看至昨低1872附近，盈亏比约1.7，空间覆盖成本。",
+      "reason": "决策为 FLAT/观望",
+      "rationale": "第一层：纳指期货-0.84%，NVDA-3.31%，MSTR-5.39%但BTC稳，显示risk-off但MSTR弱势为自身问题；第二层：ETH/BTC走弱，OI微降但资费中性，日线偏多但偏离4.41%，无明确方向；第三层：信号冲突，美股弱但BTC稳，ETH未跟跌但未确认走强，无可靠入场点，空间不足。",
       "market_state": "risk-off",
-      "entry_low": 1900,
-      "entry_high": 1915,
-      "invalidation": "ETH价格突破1936且站稳，或纳指期货转涨，或MSTR跌幅收窄至BTC跌幅以内",
-      "max_hold_hours": 24,
+      "entry_low": 0,
+      "entry_high": 0,
+      "invalidation": "",
+      "max_hold_hours": 0,
       "risk_flags": [
-        "日线偏多，高周期限制做空力度",
-        "OI下降幅度小，追空需谨慎",
-        "亚洲时段流动性低，波动可能放大"
+        "美股盘后流动性低",
+        "MSTR弱势非BTC信号",
+        "ETH/BTC走弱",
+        "无明确失效位"
       ],
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4311.71,
+  "testnet_usdt": 4032.79,
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 27515.0,
-    "nq_chg": -1.46,
+    "nq": 27686.5,
+    "nq_chg": -0.84,
     "tnx": 4.62,
     "tnx_chg": 0.39,
-    "dxy": 100.888,
-    "dxy_chg": -0.49,
+    "dxy": 100.914,
+    "dxy_chg": -0.46,
     "mstr_chg": -5.39,
     "nvda_chg": -3.31,
     "coin_chg": -4.42,
-    "btc_chg": -0.172,
-    "ethbtc_chg": -0.367,
-    "solbtc_chg": 0.069
+    "btc_chg": 0.808,
+    "ethbtc_chg": -0.268,
+    "solbtc_chg": 0.217
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
