@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-31T08:07:00Z",
+  "ts": "2026-07-31T09:07:01Z",
   "mode": "testnet",
   "equity": 411.58,
   "day_pnl_pct": -1.06,
@@ -12,38 +12,38 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：纳指期货上涨但NVDA下跌，MSTR转强但COIN下跌，风险偏好信号矛盾。第二层：BTC在昨低附近企稳，但ETH/BTC走弱，SOL/BTC走强，OI微增，资金费率正常，情绪极度恐惧，方向不明。第三层：现价接近昨低，但未确认支撑，且无明确入场信号，空间不足。",
-      "market_state": "mixed",
+      "rationale": "第一层：纳指期货上涨但NVDA下跌，MSTR转强，风险偏好初步恢复但未全面确认。第二层：BTC贴近昨低，RSI超卖但未反转，ETH/SOL相对强弱分化，OI微增，杠杆未清理。第三层：现价接近昨低，但未跌破，无明确入场信号，且RSI超卖追空风险大，做多需等待站回关键位，故FLAT。",
+      "market_state": "risk-on",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "信号冲突，禁止交易",
-        "NVDA下跌可能拖累风险资产",
-        "BTC未站上EMA21，日线震荡，不宜追多",
-        "OI微增，若下跌可能新空进场，追空危险"
+        "RSI超卖但未确认反转，禁止追空",
+        "OI未降，杠杆未清理，追空危险",
+        "NVDA下跌，AI风向未稳",
+        "等待站回EMA21或昨高再考虑做多"
       ],
       "action": "skip"
     },
     {
       "symbol": "ETHUSDT",
       "source": "llm",
-      "bias": "FLAT",
-      "confidence": 0.0,
+      "bias": "LONG",
+      "confidence": 0.55,
       "vetted": false,
-      "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：纳指期货+1.16%但NVDA-1.00%，MSTR+1.64%显示机构风险偏好恢复早期信号，但美债收益率上行和美元走强构成压制，风险判定为mixed。第二层：ETH现价1892低于昨低1893.99，跌破关键支撑，但OI仅+1.29%未显示新空进场，资金费率0.0011%中性，RSI31.7接近超卖，ETH/BTC走弱而SOL/BTC走强，信号冲突。第三层：价格处于昨低下方，追空风险高（杠杆未清理），做多需等待重新站回关键位，当前无明确入场区间，空间不足，且临近Powell讲话，事件风险高。",
-      "market_state": "mixed",
-      "entry_low": 0,
-      "entry_high": 0,
-      "invalidation": "",
-      "max_hold_hours": 0,
+      "reason": "做多但价在均线下，不接飞刀",
+      "rationale": "第一层：纳指期货+1.3%且MSTR率先转强，风险偏好恢复；第二层：ETH虽跌但SOL/BTC走强，OI微增但资费极低，RSI超卖，日线偏多；第三层：现价接近昨低支撑，入场区间合理，止损1%可覆盖成本，目标2%空间足够。",
+      "market_state": "risk-on",
+      "entry_low": 1893.99,
+      "entry_high": 1906.91,
+      "invalidation": "跌破昨低1893.99且无法快速收回，或纳指期货转跌，或MSTR转弱",
+      "max_hold_hours": 24,
       "risk_flags": [
-        "禁止追空：价格已跌破昨低但OI未显著增加，杠杆未清理，反弹风险高",
-        "禁止做多：价格未站回关键位，且ETH相对BTC走弱，风险偏好未全面恢复",
-        "临近Powell讲话，事件风险高，避免持仓过夜",
-        "NVDA下跌与纳指期货上涨背离，AI叙事不确定性大"
+        "RSI超卖但可能继续超卖",
+        "资金费率极低但未极端偏空",
+        "若跌破昨低则止损",
+        "禁止追空，因日线偏多且超卖"
       ],
       "action": "skip"
     }
@@ -52,18 +52,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 28566.0,
-    "nq_chg": 1.16,
+    "nq": 28600.75,
+    "nq_chg": 1.29,
     "tnx": 4.66,
     "tnx_chg": 0.89,
-    "dxy": 100.145,
-    "dxy_chg": 0.13,
+    "dxy": 99.975,
+    "dxy_chg": -0.03,
     "mstr_chg": 1.64,
     "nvda_chg": -1.0,
     "coin_chg": -2.57,
-    "btc_chg": -0.172,
-    "ethbtc_chg": -0.37,
-    "solbtc_chg": 0.584
+    "btc_chg": -0.804,
+    "ethbtc_chg": -0.571,
+    "solbtc_chg": 0.426
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
