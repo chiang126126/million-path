@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-31T09:07:01Z",
+  "ts": "2026-07-31T10:07:01Z",
   "mode": "testnet",
   "equity": 411.58,
   "day_pnl_pct": -1.06,
@@ -12,38 +12,36 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：纳指期货上涨但NVDA下跌，MSTR转强，风险偏好初步恢复但未全面确认。第二层：BTC贴近昨低，RSI超卖但未反转，ETH/SOL相对强弱分化，OI微增，杠杆未清理。第三层：现价接近昨低，但未跌破，无明确入场信号，且RSI超卖追空风险大，做多需等待站回关键位，故FLAT。",
-      "market_state": "risk-on",
+      "rationale": "第一层：纳指期货上涨但NVDA下跌，MSTR转强但COIN下跌，风险偏好信号矛盾。第二层：BTC接近昨低，RSI超卖但OI未降，ETH/SOL相对走弱，确认不足。第三层：现价接近昨低，追空风险大，做多缺乏确认，且无明确入场区间，空间不足。",
+      "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "RSI超卖但未确认反转，禁止追空",
-        "OI未降，杠杆未清理，追空危险",
-        "NVDA下跌，AI风向未稳",
-        "等待站回EMA21或昨高再考虑做多"
+        "禁止追空",
+        "禁止因超卖抄底",
+        "等待明确信号"
       ],
       "action": "skip"
     },
     {
       "symbol": "ETHUSDT",
       "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.55,
+      "bias": "FLAT",
+      "confidence": 0.0,
       "vetted": false,
-      "reason": "做多但价在均线下，不接飞刀",
-      "rationale": "第一层：纳指期货+1.3%且MSTR率先转强，风险偏好恢复；第二层：ETH虽跌但SOL/BTC走强，OI微增但资费极低，RSI超卖，日线偏多；第三层：现价接近昨低支撑，入场区间合理，止损1%可覆盖成本，目标2%空间足够。",
-      "market_state": "risk-on",
-      "entry_low": 1893.99,
-      "entry_high": 1906.91,
-      "invalidation": "跌破昨低1893.99且无法快速收回，或纳指期货转跌，或MSTR转弱",
-      "max_hold_hours": 24,
+      "reason": "决策为 FLAT/观望",
+      "rationale": "第一层：纳指期货+1.1%且MSTR+1.64%显示风险偏好回升，但NVDA-1%和COIN-2.57%显示科技分化，美债收益率上行压制估值。第二层：BTC-1.52%但ETH更弱，ETH/BTC-0.57%，OI微增但RSI18超卖，资金费率微负，恐惧贪婪25，信号矛盾。第三层：现价1879低于昨低1893.99，但日线偏多且偏离不大，缺乏明确入场信号，追空风险高，做多需等待企稳。",
+      "market_state": "mixed",
+      "entry_low": 0,
+      "entry_high": 0,
+      "invalidation": "",
+      "max_hold_hours": 0,
       "risk_flags": [
-        "RSI超卖但可能继续超卖",
-        "资金费率极低但未极端偏空",
-        "若跌破昨低则止损",
-        "禁止追空，因日线偏多且超卖"
+        "禁止追空：RSI超卖且OI未大增，杠杆未清理",
+        "禁止做多：未站回关键位，ETH相对弱势",
+        "警惕Powell讲话引发波动"
       ],
       "action": "skip"
     }
@@ -52,18 +50,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 28600.75,
-    "nq_chg": 1.29,
+    "nq": 28536.75,
+    "nq_chg": 1.06,
     "tnx": 4.66,
     "tnx_chg": 0.89,
-    "dxy": 99.975,
-    "dxy_chg": -0.03,
+    "dxy": 100.159,
+    "dxy_chg": 0.15,
     "mstr_chg": 1.64,
     "nvda_chg": -1.0,
     "coin_chg": -2.57,
-    "btc_chg": -0.804,
-    "ethbtc_chg": -0.571,
-    "solbtc_chg": 0.426
+    "btc_chg": -1.519,
+    "ethbtc_chg": -0.572,
+    "solbtc_chg": 0.383
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
