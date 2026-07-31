@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-31T16:07:00Z",
+  "ts": "2026-07-31T17:07:01Z",
   "mode": "testnet",
   "equity": 411.58,
   "day_pnl_pct": -1.06,
@@ -12,36 +12,37 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：纳指期货微涨、NVDA走强但美债收益率上行、MSTR相对抗跌，风险偏好改善但未全面确认。第二层：BTC跌破昨低且日线偏空，OI上升显示新空进场，但RSI超卖、资金费率中性，ETH/BTC持平、SOL/BTC走强，信号混合。第三层：现价低于昨低，追空风险高，做多缺乏确认，且空间不足，故FLAT。",
+      "rationale": "第一层：纳指期货和NVDA走强显示risk-on，但MSTR持平且COIN大跌，信号混杂。第二层：BTC跌破昨低且日线偏空，但RSI超卖、ETH/SOL相对走强，OI上升显示新空进场，资金费率中性，情绪极端恐惧，多空信号冲突。第三层：现价低于昨低，追空风险高，做多需等待企稳信号，当前无明确入场区间，空间不足，故FLAT。",
       "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "禁止追空：现价已低于昨低且RSI超卖，反弹风险高",
-        "禁止做多：日线偏空且未站回关键位，缺乏确认",
-        "警惕开盘噪音与插针，等待明确信号"
+        "禁止追空：RSI超卖且OI上升，可能反弹",
+        "禁止做多：日线偏空且未站回关键位",
+        "警惕美股开盘噪音和插针"
       ],
       "action": "skip"
     },
     {
       "symbol": "ETHUSDT",
       "source": "llm",
-      "bias": "FLAT",
-      "confidence": 0.0,
+      "bias": "LONG",
+      "confidence": 0.55,
       "vetted": false,
-      "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：纳指期货微涨但美债收益率上行，NVDA涨但COIN大跌，MSTR相对抗跌，风险偏好分化。第二层：ETH现价1862低于昨低1893，RSI17.5超卖，OI上升显示新空进场，但资金费率仍为负，ETH/BTC持平，SOL/BTC走强，信号冲突。第三层：现价已跌破昨低，但超卖且无明确企稳信号，追空风险大，做多缺乏确认，空间不足，故FLAT。",
-      "market_state": "mixed",
-      "entry_low": 0,
-      "entry_high": 0,
-      "invalidation": "",
-      "max_hold_hours": 0,
+      "reason": "做多但价在均线下，不接飞刀",
+      "rationale": "第一层：NVDA大涨、纳指期货上涨，MSTR企稳，风险偏好改善；第二层：ETH/BTC和SOL/BTC相对走强，资金费率极低，OI微增但未极端，RSI超卖，日线偏多；第三层：现价接近昨低支撑，入场区间合理，止损明确，目标空间覆盖成本。",
+      "market_state": "risk-on",
+      "entry_low": 1893.99,
+      "entry_high": 1900.0,
+      "invalidation": "小时收盘跌破1893.99（昨低）且无法快速收回，或BTC跌破关键支撑，或纳指期货转跌、MSTR走弱",
+      "max_hold_hours": 24,
       "risk_flags": [
-        "禁止追空：RSI超卖且OI上升，杠杆未清理",
-        "禁止做多：未站回关键位，纳指未确认",
-        "警惕开盘噪音与插针"
+        "RSI超卖但可能继续超卖，禁止追空",
+        "COIN大跌可能拖累加密情绪",
+        "美债收益率上行可能压制风险资产",
+        "开盘噪音大，避免追第一波，等待确认"
       ],
       "action": "skip"
     }
@@ -50,18 +51,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 28280.25,
-    "nq_chg": 0.15,
-    "tnx": 4.73,
-    "tnx_chg": 1.5,
-    "dxy": 100.031,
-    "dxy_chg": 0.02,
-    "mstr_chg": -1.32,
-    "nvda_chg": 3.34,
-    "coin_chg": -11.04,
-    "btc_chg": -3.176,
-    "ethbtc_chg": 0.0,
-    "solbtc_chg": 1.04
+    "nq": 28372.0,
+    "nq_chg": 0.48,
+    "tnx": 4.74,
+    "tnx_chg": 1.59,
+    "dxy": 100.053,
+    "dxy_chg": 0.04,
+    "mstr_chg": -0.03,
+    "nvda_chg": 4.38,
+    "coin_chg": -9.17,
+    "btc_chg": -3.128,
+    "ethbtc_chg": 0.236,
+    "solbtc_chg": 1.252
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
