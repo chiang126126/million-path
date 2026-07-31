@@ -1,26 +1,33 @@
 {
-  "ts": "2026-07-31T01:07:04Z",
+  "ts": "2026-07-31T02:07:00Z",
   "mode": "testnet",
   "equity": 416.01,
   "day_pnl_pct": 0.0,
   "total_dd_pct": 18.5,
-  "items": [],
-  "testnet_usdt": 3913.93,
+  "items": [
+    {
+      "symbol": "BTCUSDT",
+      "action": "CLOSE STOP_BE",
+      "price": 64806.74,
+      "pnl": -0.0
+    }
+  ],
+  "testnet_usdt": 3913.88,
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 28498.25,
-    "nq_chg": 4.23,
+    "nq": 28480.0,
+    "nq_chg": 4.16,
     "tnx": 4.66,
     "tnx_chg": 0.89,
-    "dxy": 100.119,
-    "dxy_chg": -0.68,
+    "dxy": 100.199,
+    "dxy_chg": -0.6,
     "mstr_chg": 1.64,
     "nvda_chg": -1.0,
     "coin_chg": -2.57,
-    "btc_chg": 1.797,
-    "ethbtc_chg": -0.703,
-    "solbtc_chg": -0.182
+    "btc_chg": 0.418,
+    "ethbtc_chg": -0.771,
+    "solbtc_chg": 0.078
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
