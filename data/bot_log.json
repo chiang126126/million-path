@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-31T12:07:01Z",
+  "ts": "2026-07-31T13:07:01Z",
   "mode": "testnet",
   "equity": 411.58,
   "day_pnl_pct": -1.06,
@@ -12,16 +12,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：纳指期货上涨但美元走强，MSTR转强但NVDA下跌，风险偏好混合。第二层：BTC下跌但OI下降，RSI超卖，ETH/BTC走弱但SOL/BTC走强，信号冲突。第三层：现价接近昨低，但未确认支撑，且缺乏明确方向，执行条件不满足。",
+      "rationale": "第一层：纳指期货上涨但美元走强，NVDA下跌，MSTR转强但整体风险偏好未明确改善。第二层：BTC下跌但OI下降显示杠杆清理，ETH/BTC走弱而SOL/BTC走强，信号冲突。第三层：RSI超卖但价格未站稳关键位，且缺乏明确方向，执行条件不满足。",
       "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "RSI超卖但未确认反转，禁止追空",
-        "OI下降但价格未企稳，禁止抄底",
-        "信号冲突，禁止强行交易"
+        "禁止追空",
+        "禁止因RSI超卖而抄底",
+        "等待方向明确"
       ],
       "action": "skip"
     },
@@ -32,7 +32,7 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：纳指期货上涨但美元走强、NVDA下跌，MSTR转强但BTC下跌，风险偏好信号矛盾。第二层：BTC下跌但ETH/BTC走弱，SOL/BTC走强，OI微增，资金费率负，RSI超卖但价格未企稳，日线偏多但短期偏空。第三层：价格低于昨低，追空风险大，做多缺乏确认，信号冲突，执行条件不满足。",
+      "rationale": "第一层：纳指期货上涨但美元走强，NVDA下跌，MSTR转强但整体风险偏好未明确；第二层：ETH跌破昨低，RSI超卖但OI微增，资金费率偏空，ETH/BTC走弱而SOL/BTC走强，信号冲突；第三层：现价低于昨低，追空风险大，做多缺乏确认，且空间不足，故FLAT。",
       "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
@@ -50,18 +50,18 @@
   "news_lines": 3,
   "global_risk": "mixed",
   "xm": {
-    "nq": 28549.5,
-    "nq_chg": 1.1,
-    "tnx": 4.66,
-    "tnx_chg": 0.89,
-    "dxy": 100.331,
-    "dxy_chg": 0.32,
+    "nq": 28482.0,
+    "nq_chg": 0.86,
+    "tnx": 4.7,
+    "tnx_chg": 0.79,
+    "dxy": 100.338,
+    "dxy_chg": 0.33,
     "mstr_chg": 1.64,
     "nvda_chg": -1.0,
     "coin_chg": -2.57,
-    "btc_chg": -1.745,
-    "ethbtc_chg": -0.607,
-    "solbtc_chg": 0.69
+    "btc_chg": -1.746,
+    "ethbtc_chg": -0.438,
+    "solbtc_chg": 0.846
   },
   "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
 }
