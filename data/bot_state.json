@@ -2,8 +2,8 @@
   "mode": "testnet",
   "equity0": 500.0,
   "equity": 416.0131685240001,
-  "day": "2026-07-30",
-  "day_start_equity": 420.6658685240001,
+  "day": "2026-07-31",
+  "day_start_equity": 416.0131685240001,
   "peak_equity": 510.43661593299987,
   "positions": [
     {
@@ -41,8 +41,8 @@
         "market_state": "risk-on"
       },
       "max_hold_hours": 48.0,
-      "mfe_price": 1933.41,
-      "managed_t": 1785448800000
+      "mfe_price": 1936.79,
+      "managed_t": 1785452400000
     },
     {
       "symbol": "BTCUSDT",
@@ -79,10 +79,10 @@
         "market_state": "risk-on"
       },
       "max_hold_hours": 24.0,
-      "mfe_price": 65029.29,
-      "managed_t": 1785448800000
+      "mfe_price": 65086.4,
+      "managed_t": 1785452400000
     }
   ],
-  "updated_at": "2026-07-30T23:07:08Z",
+  "updated_at": "2026-07-31T00:07:09Z",
   "guardian_at": "2026-07-30T11:51:05Z"
 }
