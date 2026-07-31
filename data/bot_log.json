@@ -1,5 +1,5 @@
 {
-  "ts": "2026-07-31T03:07:01Z",
+  "ts": "2026-07-31T04:07:00Z",
   "mode": "testnet",
   "equity": 416.01,
   "day_pnl_pct": -0.0,
@@ -8,41 +8,40 @@
     {
       "symbol": "BTCUSDT",
       "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.55,
+      "bias": "FLAT",
+      "confidence": 0.0,
       "vetted": false,
-      "reason": "做多但价在均线下，不接飞刀",
-      "rationale": "第一层：纳指期货大涨、美元走弱，MSTR转强显示风险偏好恢复；第二层：BTC贴近昨低但未破，OI微增但资费正常，SOL相对走强，恐惧贪婪极值暗示反弹可能；第三层：现价接近昨低支撑，入场区间合理，止损明确，目标空间覆盖成本。",
-      "market_state": "risk-on",
-      "entry_low": 63600,
-      "entry_high": 64200,
-      "invalidation": "BTC 4小时收盘跌破昨低63603.92，或纳指期货转跌，或MSTR转弱",
-      "max_hold_hours": 24,
+      "reason": "决策为 FLAT/观望",
+      "rationale": "第一层：纳指期货上涨但NVDA下跌，MSTR相对走强，风险偏好信号混合。第二层：BTC处于震荡区间，OI微增，资金费率正常，ETH/BTC走弱但SOL/BTC走强，方向不明。第三层：价格接近区间中部，缺乏明确入场点，且新闻标题矛盾，故选择观望。",
+      "market_state": "mixed",
+      "entry_low": 0,
+      "entry_high": 0,
+      "invalidation": "",
+      "max_hold_hours": 0,
       "risk_flags": [
-        "日线震荡，不宜重仓",
-        "RSI超卖但可能钝化",
-        "若跌破昨低立即止损",
-        "避免在美股开盘前追多"
+        "禁止追涨杀跌",
+        "禁止在震荡区间中部开仓",
+        "关注Powell讲话可能引发波动"
       ],
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4029.95,
+  "testnet_usdt": 4030.02,
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 28421.0,
-    "nq_chg": 3.95,
+    "nq": 28466.75,
+    "nq_chg": 0.81,
     "tnx": 4.66,
     "tnx_chg": 0.89,
-    "dxy": 100.178,
-    "dxy_chg": -0.62,
+    "dxy": 100.184,
+    "dxy_chg": 0.17,
     "mstr_chg": 1.64,
     "nvda_chg": -1.0,
     "coin_chg": -2.57,
-    "btc_chg": -0.048,
-    "ethbtc_chg": -0.504,
-    "solbtc_chg": 0.148
+    "btc_chg": 0.416,
+    "ethbtc_chg": -0.403,
+    "solbtc_chg": 0.244
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
