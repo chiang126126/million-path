@@ -1,8 +1,8 @@
 {
-  "ts": "2026-07-31T23:07:04Z",
+  "ts": "2026-08-01T00:07:01Z",
   "mode": "testnet",
   "equity": 411.58,
-  "day_pnl_pct": -1.06,
+  "day_pnl_pct": 0.0,
   "total_dd_pct": 19.37,
   "items": [
     {
@@ -12,18 +12,18 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：纳指期货微涨、NVDA大涨但COIN大跌，MSTR相对抗跌，风险偏好信号混杂；第二层：BTC跌破昨低且日线偏空，但OI上升显示新空进场，资金费率中性，ETH/SOL相对走强，信号冲突；第三层：现价接近昨低，追空风险高，做多缺乏确认，且无明确入场区间，空间不足。",
+      "rationale": "第一层：纳指期货微涨、NVDA大涨，但美债收益率上行、COIN大跌，风险偏好信号矛盾，MSTR相对走强但不足以确认risk-on。第二层：BTC跌破30日线，日线偏空，但RSI超卖、OI上升显示新空进场，ETH/BTC持平、SOL/BTC微涨，加密内部未全面走弱。第三层：现价接近昨低，但未跌破，且日线偏空禁做多，做空需等跌破支撑后反抽确认，当前条件不满足，故FLAT。",
       "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "日线偏空禁做多",
-        "下跌时OI升=新空进场，追空危险",
-        "信号冲突，主动降级",
-        "现价接近昨低，追空风险高",
-        "无明确入场区间，空间不足"
+        "日线偏空，禁止做多",
+        "未跌破昨低，禁止追空",
+        "RSI超卖，警惕反弹",
+        "美债收益率上行，压制风险资产",
+        "COIN大跌，加密相关股走弱"
       ],
       "action": "skip"
     },
@@ -31,19 +31,19 @@
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "FLAT",
-      "confidence": 0.0,
+      "confidence": 0.3,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：纳指期货微涨、NVDA大涨、美元走弱，但美债收益率上行，MSTR相对抗跌，风险偏好初步改善但未全面确认。第二层：BTC下跌但ETH/BTC和SOL/BTC相对走强，OI下降显示杠杆清理，但价格仍低于昨低，日线震荡偏空，RSI低位但未超卖，缺乏明确反转信号。第三层：价格在昨低下方，未出现企稳迹象，追空风险高，做多需等待站回关键位，当前无合适入场点，空间不足，故选择观望。",
+      "rationale": "第一层：纳指期货微涨、NVDA大涨、美元走弱，但美债收益率上行，MSTR相对BTC转强，风险偏好初步改善但未全面确认。第二层：ETH现价1863.9，昨低1848.7未破，RSI29.9超卖，OI微降，资金费率正常，ETH/BTC持平，SOL/BTC走强，但BTC下跌且量能不足，加密确认信号偏弱。第三层：现价接近昨低支撑，但未出现明确反转信号，追空风险大，做多需等待站回关键位，当前不满足入场条件，空间不足，故FLAT。",
       "market_state": "risk-on",
       "entry_low": 0,
       "entry_high": 0,
-      "invalidation": "",
+      "invalidation": "无",
       "max_hold_hours": 0,
       "risk_flags": [
-        "禁止在未站回昨低前追空",
-        "禁止因NVDA大涨而盲目做多，需等待加密市场确认",
-        "关注Powell讲话可能引发波动"
+        "禁止追空：OI未大增，杠杆未清理，且RSI超卖",
+        "禁止做多：未站回EMA21，且BTC弱势，需等待确认",
+        "警惕美债收益率上行压制风险资产"
       ],
       "action": "skip"
     }
@@ -61,9 +61,9 @@
     "mstr_chg": -0.05,
     "nvda_chg": 5.65,
     "coin_chg": -8.64,
-    "btc_chg": -2.951,
-    "ethbtc_chg": -0.337,
-    "solbtc_chg": 0.521
+    "btc_chg": -2.967,
+    "ethbtc_chg": 0.0,
+    "solbtc_chg": 0.713
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
