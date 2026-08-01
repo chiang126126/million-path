@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-01T13:07:01Z",
+  "ts": "2026-08-01T14:07:01Z",
   "mode": "testnet",
   "equity": 411.58,
   "day_pnl_pct": 0.0,
@@ -12,17 +12,17 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：纳指期货和NVDA走强显示风险偏好改善，但美债收益率上升和COIN大跌暗示分化，MSTR持平无背离。第二层：BTC日线偏空，价格在EMA21/50下方，OI上升但价格下跌表明新空进场，ETH/SOL相对持平，资金费率中性，情绪恐惧。第三层：方向不明，缺乏明确入场信号，且日线偏空限制做多，但风险偏好改善又不宜追空，故选择观望。",
+      "rationale": "第一层：纳指期货和NVDA走强显示risk-on，但美债收益率上升和COIN大跌带来不确定性，MSTR相对稳定。第二层：BTC站上EMA21但日线仍偏空，OI上升暗示新空进场，ETH/BTC微升但SOL/BTC走弱，资金费率中性，情绪恐惧。第三层：现价接近昨低，但日线偏空且缺乏量能，追多风险高，做空需等待跌破支撑，当前无明确入场点。",
       "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "日线偏空，禁止做多",
-        "风险偏好改善，禁止追空",
+        "日线偏空禁做多",
+        "量能不足，追多风险高",
         "COIN大跌可能拖累加密情绪",
-        "美债收益率上升可能压制风险资产"
+        "美债收益率上升压制风险资产"
       ],
       "action": "skip"
     },
@@ -31,21 +31,21 @@
       "source": "llm",
       "bias": "LONG",
       "confidence": 0.55,
-      "vetted": false,
-      "reason": "做多但价在均线下，不接飞刀",
-      "rationale": "第一层：纳指期货与NVDA走强显示风险偏好改善，但MSTR持平未确认；第二层：ETH/BTC相对走强，OI下降表明杠杆清理，资金费率中性，但恐惧贪婪指数低；第三层：现价接近EMA21，回踩至昨低附近可入场，止损设于昨低下方，目标看至1936昨高，空间覆盖成本。",
+      "vetted": true,
+      "reason": "通过风控",
+      "rationale": "第一层：纳指期货和NVDA走强，美元走弱，风险偏好改善；第二层：BTC和ETH均上涨，ETH/BTC相对走强，OI下降显示杠杆清理，资金费率中性，恐惧贪婪指数27显示情绪谨慎；第三层：现价接近EMA21和昨低附近，入场区间合理，止损设于昨低下方，目标空间约2%，覆盖成本。",
       "market_state": "risk-on",
-      "entry_low": 1855,
-      "entry_high": 1875,
-      "invalidation": "跌破昨低1848.70且无法快速收复，或纳指期货转跌、NVDA回吐涨幅",
+      "entry_low": 1865.0,
+      "entry_high": 1880.0,
+      "invalidation": "跌破昨低1848.70或日线收盘低于EMA50(1881.34)",
       "max_hold_hours": 24,
       "risk_flags": [
-        "美股盘前波动大，需确认开盘后风险偏好延续",
-        "若BTC跌破昨低，则做多失效",
-        "COIN大跌可能拖累加密情绪",
-        "恐惧贪婪指数低，反弹可能缺乏持续性"
+        "美股盘中波动大，警惕开盘噪音和插针",
+        "COIN大跌可能拖累加密相关股票情绪",
+        "若BTC未能站稳关键位或ETH相对走弱，则放弃做多"
       ],
-      "action": "skip"
+      "action": "OPEN LONG",
+      "price": 1871.0
     }
   ],
   "testnet_usdt": 4303.16,
@@ -61,9 +61,9 @@
     "mstr_chg": -0.05,
     "nvda_chg": 5.65,
     "coin_chg": -8.64,
-    "btc_chg": -1.077,
-    "ethbtc_chg": 0.169,
-    "solbtc_chg": -0.017
+    "btc_chg": 0.76,
+    "ethbtc_chg": 0.338,
+    "solbtc_chg": -0.601
   },
-  "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
+  "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
