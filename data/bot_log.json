@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-01T14:07:01Z",
+  "ts": "2026-08-01T15:07:01Z",
   "mode": "testnet",
   "equity": 411.58,
   "day_pnl_pct": 0.0,
@@ -12,43 +12,22 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：纳指期货和NVDA走强显示risk-on，但美债收益率上升和COIN大跌带来不确定性，MSTR相对稳定。第二层：BTC站上EMA21但日线仍偏空，OI上升暗示新空进场，ETH/BTC微升但SOL/BTC走弱，资金费率中性，情绪恐惧。第三层：现价接近昨低，但日线偏空且缺乏量能，追多风险高，做空需等待跌破支撑，当前无明确入场点。",
-      "market_state": "mixed",
+      "rationale": "第一层：纳指期货和NVDA走强显示risk-on，但MSTR持平且COIN大跌，科技股分化。第二层：BTC站上EMA21但日线仍偏空，OI下降显示杠杆清理，但量能极低，ETH/SOL相对走弱，确认不足。第三层：现价接近昨低，但日线偏空禁止做多，且未出现做空条件（未跌破支撑），故FLAT。",
+      "market_state": "risk-on",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
         "日线偏空禁做多",
-        "量能不足，追多风险高",
-        "COIN大跌可能拖累加密情绪",
-        "美债收益率上升压制风险资产"
+        "量能极低，方向不明",
+        "美股盘中波动大，警惕插针",
+        "COIN大跌可能拖累加密情绪"
       ],
       "action": "skip"
-    },
-    {
-      "symbol": "ETHUSDT",
-      "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.55,
-      "vetted": true,
-      "reason": "通过风控",
-      "rationale": "第一层：纳指期货和NVDA走强，美元走弱，风险偏好改善；第二层：BTC和ETH均上涨，ETH/BTC相对走强，OI下降显示杠杆清理，资金费率中性，恐惧贪婪指数27显示情绪谨慎；第三层：现价接近EMA21和昨低附近，入场区间合理，止损设于昨低下方，目标空间约2%，覆盖成本。",
-      "market_state": "risk-on",
-      "entry_low": 1865.0,
-      "entry_high": 1880.0,
-      "invalidation": "跌破昨低1848.70或日线收盘低于EMA50(1881.34)",
-      "max_hold_hours": 24,
-      "risk_flags": [
-        "美股盘中波动大，警惕开盘噪音和插针",
-        "COIN大跌可能拖累加密相关股票情绪",
-        "若BTC未能站稳关键位或ETH相对走弱，则放弃做多"
-      ],
-      "action": "OPEN LONG",
-      "price": 1871.0
     }
   ],
-  "testnet_usdt": 4303.16,
+  "testnet_usdt": 3914.36,
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
@@ -61,9 +40,9 @@
     "mstr_chg": -0.05,
     "nvda_chg": 5.65,
     "coin_chg": -8.64,
-    "btc_chg": 0.76,
-    "ethbtc_chg": 0.338,
-    "solbtc_chg": -0.601
+    "btc_chg": 0.722,
+    "ethbtc_chg": 0.067,
+    "solbtc_chg": -0.781
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
