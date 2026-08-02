@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-02T04:07:01Z",
+  "ts": "2026-08-02T05:07:02Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -8,22 +8,20 @@
     {
       "symbol": "BTCUSDT",
       "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.55,
+      "bias": "FLAT",
+      "confidence": 0.0,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：NVDA大涨5.65%显示AI风向偏多，但美债收益率上行和COIN大跌构成矛盾，整体risk-on但需谨慎；第二层：BTC站上昨高63150，ETH/SOL相对走弱显示非全面risk-on，OI持平且资金费率中性，恐惧贪婪27显示情绪偏冷但未极端；第三层：现价接近昨高，回踩63150附近可入场，止损设于昨低下方，目标看至64500，空间覆盖成本，但需警惕追高风险。",
-      "market_state": "risk-on",
-      "entry_low": 63150,
-      "entry_high": 63523,
-      "invalidation": "BTC跌破昨低62275且无法快速收回，或纳指期货转跌且NVDA回吐涨幅",
-      "max_hold_hours": 24,
+      "rationale": "第一层：纳指期货持平，美债收益率上行，NVDA大涨但COIN大跌，MSTR持平，风险偏好信号矛盾。第二层：BTC站上昨高但量能萎缩，ETH/SOL相对走弱，OI微降，资金费率中性，情绪恐惧，加密确认不足。第三层：现价高于昨高，追多风险大，且无明确回踩位，空间不足，故FLAT。",
+      "market_state": "mixed",
+      "entry_low": 0,
+      "entry_high": 0,
+      "invalidation": "",
+      "max_hold_hours": 0,
       "risk_flags": [
-        "禁止因纳指下跌或跌破均线立即追空",
-        "禁止把下跌中的快速反弹当底部",
-        "若BTC跌破昨低62275则多头失效",
-        "若ETH/SOL持续走弱且BTC独涨，可能为局部轮动，降低仓位",
-        "美债收益率上行可能压制风险资产，关注Powell讲话"
+        "禁止追多",
+        "禁止因NVDA大涨而做多",
+        "等待回踩昨高确认支撑"
       ],
       "action": "skip"
     },
@@ -31,20 +29,20 @@
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "LONG",
-      "confidence": 0.6,
+      "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：NVDA大涨5.65%显示AI风向偏多，但纳指期货持平、美债收益率上行，风险偏好整体risk-on但非全面。第二层：BTC站上关键位且ETH现价高于昨高，日线偏多，OI下降显示杠杆清理，资金费率中性，但ETH/BTC和SOL/BTC走弱显示资金未下沉，加密确认偏多但非全面。第三层：现价1879高于昨高1875，追高风险，但回踩至EMA21附近1862-1875可入场，止损设于昨低下方，目标空间约2.5%，覆盖成本。",
+      "rationale": "第一层：NVDA大涨5.65%显示AI风向偏多，但美债收益率上行和COIN大跌暗示风险偏好分化，整体risk-on但需谨慎；第二层：BTC站上关键位且ETH现价高于昨高，OI下降表明杠杆清理充分，资金费率中性，ETH/BTC和SOL/BTC小幅走弱但未显著背离，日线偏多；第三层：现价1878高于昨高1875，不宜追高，等待回踩EMA21/昨高附近入场，止损设于1860下方，目标看至1915，空间约2%覆盖成本。",
       "market_state": "risk-on",
-      "entry_low": 1862.0,
-      "entry_high": 1875.0,
-      "invalidation": "小时收盘跌破昨低1822.06",
+      "entry_low": 1863.85,
+      "entry_high": 1875.45,
+      "invalidation": "小时收盘跌破1860或日线收盘跌破昨低1822",
       "max_hold_hours": 24,
       "risk_flags": [
-        "禁止追高，等待回踩入场",
-        "若跌破昨低1822.06则止损离场",
-        "ETH/BTC和SOL/BTC走弱，若持续则降低仓位",
-        "美债收益率上行可能压制风险资产"
+        "美债收益率快速上行可能压制风险资产",
+        "COIN大跌可能反映加密相关股票疲软",
+        "若BTC未能站稳关键位，ETH可能跟随回落",
+        "当前量能不足，突破可能缺乏持续性"
       ],
       "action": "skip"
     }
@@ -62,9 +60,9 @@
     "mstr_chg": -0.05,
     "nvda_chg": 5.65,
     "coin_chg": -8.64,
-    "btc_chg": 0.841,
-    "ethbtc_chg": -0.303,
-    "solbtc_chg": -0.5
+    "btc_chg": 0.641,
+    "ethbtc_chg": -0.236,
+    "solbtc_chg": -0.198
   },
-  "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
+  "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
