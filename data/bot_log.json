@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-02T03:07:01Z",
+  "ts": "2026-08-02T04:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -12,18 +12,18 @@
       "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货与NVDA上涨显示风险偏好改善，但美债收益率上升和COIN下跌构成隐忧，MSTR与BTC无背离。第二层：BTC站上EMA21和EMA50，RSI中性，OI微降显示杠杆稳定，资金费率正常，但ETH/SOL相对走弱表明非全面risk-on。第三层：现价接近昨高，追高风险有限，止损设于昨低下方，目标空间约1.5%，覆盖成本，但日线趋势偏空，故降低信心。",
+      "rationale": "第一层：NVDA大涨5.65%显示AI风向偏多，但美债收益率上行和COIN大跌构成矛盾，整体risk-on但需谨慎；第二层：BTC站上昨高63150，ETH/SOL相对走弱显示非全面risk-on，OI持平且资金费率中性，恐惧贪婪27显示情绪偏冷但未极端；第三层：现价接近昨高，回踩63150附近可入场，止损设于昨低下方，目标看至64500，空间覆盖成本，但需警惕追高风险。",
       "market_state": "risk-on",
-      "entry_low": 63013,
-      "entry_high": 63437,
-      "invalidation": "BTC跌破昨低62275且无法快速收复，或纳指期货转跌、NVDA回吐涨幅",
+      "entry_low": 63150,
+      "entry_high": 63523,
+      "invalidation": "BTC跌破昨低62275且无法快速收回，或纳指期货转跌且NVDA回吐涨幅",
       "max_hold_hours": 24,
       "risk_flags": [
-        "日线趋势偏空，禁止重仓做多",
-        "若BTC跌破昨低62275，立即止损",
-        "若纳指期货转跌或NVDA回吐涨幅，平仓",
-        "若ETH/SOL持续走弱，可能为局部轮动，降低仓位",
-        "美债收益率上升可能压制风险资产"
+        "禁止因纳指下跌或跌破均线立即追空",
+        "禁止把下跌中的快速反弹当底部",
+        "若BTC跌破昨低62275则多头失效",
+        "若ETH/SOL持续走弱且BTC独涨，可能为局部轮动，降低仓位",
+        "美债收益率上行可能压制风险资产，关注Powell讲话"
       ],
       "action": "skip"
     },
@@ -31,20 +31,20 @@
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "LONG",
-      "confidence": 0.55,
+      "confidence": 0.6,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货和NVDA上涨显示风险偏好改善，但MSTR持平且COIN下跌，需谨慎；第二层：ETH站上30日线且偏离不大，OI下降表明杠杆清理，资金费率中性，但ETH/BTC和SOL/BTC相对走弱，缺乏全面risk-on确认；第三层：现价接近昨高，不宜追高，回踩EMA21附近入场，止损设于昨低下方，目标空间约2.5%，覆盖成本。",
+      "rationale": "第一层：NVDA大涨5.65%显示AI风向偏多，但纳指期货持平、美债收益率上行，风险偏好整体risk-on但非全面。第二层：BTC站上关键位且ETH现价高于昨高，日线偏多，OI下降显示杠杆清理，资金费率中性，但ETH/BTC和SOL/BTC走弱显示资金未下沉，加密确认偏多但非全面。第三层：现价1879高于昨高1875，追高风险，但回踩至EMA21附近1862-1875可入场，止损设于昨低下方，目标空间约2.5%，覆盖成本。",
       "market_state": "risk-on",
-      "entry_low": 1860.45,
-      "entry_high": 1875.45,
-      "invalidation": "若价格跌破昨低1822.06或日线收盘低于EMA21(1860.45)，则判断错误，立即止损离场。",
+      "entry_low": 1862.0,
+      "entry_high": 1875.0,
+      "invalidation": "小时收盘跌破昨低1822.06",
       "max_hold_hours": 24,
       "risk_flags": [
         "禁止追高，等待回踩入场",
-        "若ETH/BTC或SOL/BTC持续走弱，降低信心",
-        "若纳指期货转跌或NVDA回吐涨幅，立即离场",
-        "若价格跌破昨低1822.06，止损离场"
+        "若跌破昨低1822.06则止损离场",
+        "ETH/BTC和SOL/BTC走弱，若持续则降低仓位",
+        "美债收益率上行可能压制风险资产"
       ],
       "action": "skip"
     }
@@ -54,17 +54,17 @@
   "global_risk": "risk-on",
   "xm": {
     "nq": 28404.25,
-    "nq_chg": 0.59,
+    "nq_chg": 0.0,
     "tnx": 4.75,
     "tnx_chg": 1.76,
     "dxy": 99.803,
-    "dxy_chg": -0.21,
+    "dxy_chg": 0.0,
     "mstr_chg": -0.05,
     "nvda_chg": 5.65,
     "coin_chg": -8.64,
-    "btc_chg": 0.623,
-    "ethbtc_chg": -0.169,
-    "solbtc_chg": -0.535
+    "btc_chg": 0.841,
+    "ethbtc_chg": -0.303,
+    "solbtc_chg": -0.5
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
