@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-02T22:07:01Z",
+  "ts": "2026-08-02T23:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -8,21 +8,20 @@
     {
       "symbol": "BTCUSDT",
       "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.55,
+      "bias": "FLAT",
+      "confidence": 0.0,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：NVDA大涨5.65%显示AI风向偏多，但美债收益率上行和COIN大跌暗示分化，整体risk-on但需谨慎；第二层：BTC站上昨高63150，ETH/SOL相对走强确认全面risk-on，OI微增但资金费率正常，RSI偏高但未极端；第三层：现价接近昨高，回踩63150附近入场，止损设于昨低下方，目标看至65000上方，空间覆盖成本，但RSI超买且量能不足，故降低confidence。",
-      "market_state": "risk-on",
-      "entry_low": 63150,
-      "entry_high": 63668,
-      "invalidation": "BTC 4小时收盘跌破昨低62275，或纳指期货转跌且NVDA回吐涨幅",
-      "max_hold_hours": 24,
+      "rationale": "第一层：纳指期货和NVDA走强显示风险偏好改善，但美债收益率上升和COIN大跌构成矛盾，MSTR持平无背离。第二层：BTC站上昨高但日线偏空，ETH/SOL相对走强，OI微增，资费中性，情绪恐惧。第三层：方向不明，日线偏空限制做多，但风险偏好改善和相对强弱不支持做空，信号冲突，应FLAT。",
+      "market_state": "mixed",
+      "entry_low": 0,
+      "entry_high": 0,
+      "invalidation": "",
+      "max_hold_hours": 0,
       "risk_flags": [
-        "RSI 72.1超买，追高风险大",
-        "量能仅为常态0.5倍，上涨动能存疑",
-        "美债收益率上行可能压制风险资产",
-        "COIN大跌暗示加密相关股票走弱，需关注是否传导"
+        "日线偏空禁做多",
+        "信号冲突不强行选方向",
+        "量能不足，突破有效性存疑"
       ],
       "action": "skip"
     },
@@ -30,20 +29,20 @@
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "LONG",
-      "confidence": 0.6,
+      "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：NVDA大涨5.65%显示AI风向偏多，但美债收益率上行和COIN大跌构成混合信号，整体风险偏好偏多。第二层：ETH/BTC和SOL/BTC均走强，确认资金下沉，OI温和上升但费率正常，RSI接近超买但未极端，日线偏多。第三层：现价接近昨高，回踩1875附近可入场，止损设于昨高下方2%，目标看至1950附近，空间覆盖成本。",
+      "rationale": "第一层：纳指期货和NVDA走强显示风险偏好改善，但美债收益率上行和COIN大跌构成隐忧，MSTR与BTC无背离；第二层：BTC和ETH均站上关键均线，ETH/BTC和SOL/BTC相对走强确认风险偏好传导，OI温和上升但资金费率正常，情绪恐惧提供反向支撑；第三层：现价接近昨高1875，但未大幅偏离均线，入场区间合理，止损设于昨低下方，目标空间约2%，覆盖成本，但需警惕追高风险和Powell讲话。",
       "market_state": "risk-on",
-      "entry_low": 1875.45,
-      "entry_high": 1895.52,
-      "invalidation": "收盘价跌破1875.45（昨高）且无法快速收复，或BTC跌破72000美元，或纳指期货转跌且NVDA转跌",
+      "entry_low": 1871.0,
+      "entry_high": 1878.0,
+      "invalidation": "跌破昨低1822.06且无法快速收回，或纳指期货转跌、MSTR显著弱于BTC",
       "max_hold_hours": 24,
       "risk_flags": [
-        "RSI 70接近超买，追高风险大",
+        "现价已接近昨高，追多需谨慎，等待回踩或突破确认",
         "美债收益率上行可能压制风险资产",
-        "COIN大跌可能预示加密相关股票走弱",
-        "若跌破昨高1875且无法收复，多单失效"
+        "COIN大跌可能反映加密相关股票疲软",
+        "Powell讲话可能引发波动，注意仓位管理"
       ],
       "action": "skip"
     }
@@ -52,18 +51,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 28404.25,
-    "nq_chg": 0.0,
+    "nq": 28586.25,
+    "nq_chg": 0.64,
     "tnx": 4.75,
     "tnx_chg": 1.76,
-    "dxy": 99.803,
-    "dxy_chg": 0.0,
+    "dxy": 99.648,
+    "dxy_chg": -0.15,
     "mstr_chg": -0.05,
     "nvda_chg": 5.65,
     "coin_chg": -8.64,
-    "btc_chg": 1.347,
-    "ethbtc_chg": 1.293,
-    "solbtc_chg": 1.633
+    "btc_chg": 0.882,
+    "ethbtc_chg": 0.85,
+    "solbtc_chg": 1.274
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
