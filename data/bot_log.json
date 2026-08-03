@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-03T10:07:01Z",
+  "ts": "2026-08-03T11:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -12,17 +12,17 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货和NVDA走强显示风险偏好改善，但美债收益率上升和COIN大跌带来不确定性，MSTR与BTC无显著背离。第二层：BTC跌破昨低，日线偏空，OI上升表明新空进场，但RSI接近超卖，资金费率正常，ETH/SOL相对走弱，加密市场未确认全面risk-on。第三层：当前价格接近昨低，但未出现明确反转信号，且日线偏空，追空风险大，做多缺乏确认，空间不足，故选择观望。",
-      "market_state": "mixed",
+      "rationale": "第一层：纳指期货上涨、NVDA大涨，但美债收益率上升，风险偏好改善但利率压力存在。第二层：BTC跌破昨低，日线偏空，OI上升显示新空进场，但RSI超卖，ETH/SOL相对走弱，资金费率中性，市场信号矛盾。第三层：当前价格接近昨低，但未确认支撑，且日线偏空，追空风险高，做多缺乏确认，空间不足，故选择观望。",
+      "market_state": "risk-on",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
         "日线偏空，禁止做多",
-        "OI上升，追空需谨慎",
-        "价格接近昨低，但未跌破，等待明确信号",
-        "美债收益率上升，可能压制风险资产"
+        "OI上升，追空危险",
+        "RSI超卖，反弹风险",
+        "美债收益率上升，压制风险资产"
       ],
       "action": "skip"
     },
@@ -33,16 +33,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货和NVDA走强显示risk-on，但MSTR持平且COIN大跌，风险偏好传导存疑。第二层：ETH处于震荡，RSI超卖但OI上升显示新空进场，资金费率偏空，ETH/BTC和SOL/BTC均走弱，加密内部未确认risk-on。第三层：现价接近昨低，但未跌破，且量能不足，缺乏明确入场信号，空间不足，故FLAT。",
-      "market_state": "risk-on",
+      "rationale": "第一层：纳指期货上涨但美债收益率大幅上行，NVDA大涨但COIN大跌，风险偏好信号矛盾。第二层：ETH跌破昨低，RSI超卖但OI上升显示新空进场，ETH/BTC走弱，加密确认不足。第三层：现价接近昨低，追空风险高，做多缺乏确认，空间不足。",
+      "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "禁止追空，因OI上升但价格未破位",
-        "禁止做多，因ETH相对弱势且未站回关键位",
-        "关注Powell讲话可能引发波动"
+        "禁止追空",
+        "禁止抄底",
+        "等待明确信号"
       ],
       "action": "skip"
     }
@@ -51,18 +51,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 28556.25,
-    "nq_chg": 0.54,
+    "nq": 28542.5,
+    "nq_chg": 0.49,
     "tnx": 4.75,
     "tnx_chg": 1.76,
-    "dxy": 99.805,
-    "dxy_chg": -0.11,
+    "dxy": 99.822,
+    "dxy_chg": -0.09,
     "mstr_chg": -0.05,
     "nvda_chg": 5.65,
     "coin_chg": -8.64,
-    "btc_chg": -0.747,
-    "ethbtc_chg": -0.304,
-    "solbtc_chg": -0.138
+    "btc_chg": -0.849,
+    "ethbtc_chg": -0.575,
+    "solbtc_chg": -0.216
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
