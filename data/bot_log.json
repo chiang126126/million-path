@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-04T07:07:01Z",
+  "ts": "2026-08-04T08:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -8,21 +8,20 @@
     {
       "symbol": "BTCUSDT",
       "source": "llm",
-      "bias": "FLAT",
-      "confidence": 0.0,
+      "bias": "LONG",
+      "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货和NVDA走强显示风险偏好改善，但MSTR和COIN走弱暗示杠杆资金仍在撤退，信号混合。第二层：BTC站上EMA21但贴近昨高，ETH/SOL相对走弱，OI下降显示杠杆清理但资金费率仍为正，恐惧贪婪极低，市场情绪谨慎。第三层：当前处于昨高附近，缺乏明确突破或回踩确认，追多风险高，且无明确入场区间和失效位，空间不足，故选择观望。",
+      "rationale": "第一层：纳指期货和NVDA走强显示风险偏好改善，但MSTR相对弱势暗示杠杆资金仍谨慎；第二层：BTC站上EMA21和EMA50，但ETH/SOL相对走弱且OI下降，显示反弹力度有限；第三层：现价接近昨高，追多风险大，需等待回踩确认，止损设于昨低下方，目标空间约1.8%覆盖成本。",
       "market_state": "risk-on",
-      "entry_low": 0,
-      "entry_high": 0,
-      "invalidation": "",
-      "max_hold_hours": 0,
+      "entry_low": 63200,
+      "entry_high": 63800,
+      "invalidation": "BTC跌破昨低62300且无法快速收回，或纳指期货转跌、MSTR继续大幅弱于BTC",
+      "max_hold_hours": 24,
       "risk_flags": [
-        "禁止追多：价格接近昨高，未突破前不宜入场",
-        "禁止追空：OI下降显示杠杆已清理，追空危险",
-        "关注MSTR和COIN走势，若持续走弱可能拖累BTC",
-        "关注Powell讲话，可能引发波动"
+        "禁止追高，等待回踩入场",
+        "若跌破昨低62300则立即止损",
+        "若MSTR持续弱于BTC或纳指转跌，则降低仓位或离场"
       ],
       "action": "skip"
     },
@@ -33,16 +32,17 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货和NVDA走强显示风险偏好改善，但MSTR和COIN走弱暗示杠杆资金撤离，信号混杂。第二层：BTC上涨但ETH/BTC和SOL/BTC相对走弱，显示资金未全面下沉，OI微增但量能萎缩，市场方向不明。第三层：价格处于昨高昨低之间，无明确入场信号，且恐惧贪婪指数极低，不宜追单。",
+      "rationale": "第一层：纳指期货和NVDA走强显示风险偏好改善，但MSTR和COIN走弱暗示杠杆资金仍在撤退，信号混合。第二层：BTC站上30小时均线，但ETH/BTC和SOL/BTC相对走弱，OI微降，资金费率中性，恐惧贪婪指数25显示极度恐惧，市场缺乏方向性确认。第三层：价格位于昨高昨低之间，量能不足，无明确入场区间，且近期有Powell讲话等事件风险，空间不足以覆盖成本。",
       "market_state": "risk-on",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "禁止追空，因NVDA和纳指期货走强",
-        "禁止追多，因ETH相对BTC走弱且量能不足",
-        "等待明确突破或回踩关键位再行动"
+        "禁止追空：OI下降显示杠杆已清理，追空危险",
+        "禁止做多：ETH/SOL相对走弱，非全面risk-on",
+        "事件风险：Powell讲话可能引发波动",
+        "量能不足：0.7x常态，方向不明"
       ],
       "action": "skip"
     }
@@ -51,18 +51,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29055.75,
-    "nq_chg": 0.57,
+    "nq": 29068.5,
+    "nq_chg": 0.61,
     "tnx": 4.69,
     "tnx_chg": -1.24,
-    "dxy": 100.036,
-    "dxy_chg": 0.14,
+    "dxy": 100.0,
+    "dxy_chg": 0.1,
     "mstr_chg": -2.95,
     "nvda_chg": 5.95,
     "coin_chg": -10.44,
-    "btc_chg": 1.638,
-    "ethbtc_chg": -1.017,
-    "solbtc_chg": -0.44
+    "btc_chg": 1.72,
+    "ethbtc_chg": -0.611,
+    "solbtc_chg": -0.147
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
