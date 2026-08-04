@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-04T21:07:01Z",
+  "ts": "2026-08-04T22:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -9,20 +9,19 @@
       "symbol": "BTCUSDT",
       "source": "llm",
       "bias": "LONG",
-      "confidence": 0.55,
+      "confidence": 0.65,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货、NVDA、MSTR均上涨，风险偏好改善，MSTR强于BTC显示机构信心恢复。第二层：BTC站上昨高64080，EMA21/50之上，RSI66.7，OI微降显示杠杆温和，资金费率正常，但ETH/SOL相对走弱，情绪仍恐惧，确认度有限。第三层：现价64309略高于昨高，回踩至63800-64300区间入场，止损设于昨低下方，目标看至65900，空间覆盖成本，但需警惕追高风险。",
+      "rationale": "第一层：纳指期货、NVDA、MSTR均走强，风险偏好回升；第二层：BTC站上昨高64080，OI微降显示杠杆未过度堆积，资金费率中性，但ETH/SOL相对走弱显示非全面risk-on；第三层：现价接近昨高，回踩至EMA21附近入场，止损设于昨低下方，目标看至前高，风险回报比合理。",
       "market_state": "risk-on",
-      "entry_low": 63800,
-      "entry_high": 64300,
-      "invalidation": "BTC跌破昨低62300或纳指期货转跌且MSTR转弱",
+      "entry_low": 63700,
+      "entry_high": 64204,
+      "invalidation": "BTC收盘跌破昨低62300或纳指期货转跌且MSTR转弱",
       "max_hold_hours": 24,
       "risk_flags": [
-        "现价已高于昨高，追多需谨慎，等待回踩",
-        "ETH/SOL相对走弱，全面risk-on未确认",
-        "恐惧贪婪25，情绪极端，反弹可能缺乏持续性",
-        "若BTC跌破昨低62300，则多头失效"
+        "ETH/SOL相对走弱，上涨可能不持续",
+        "恐惧贪婪指数25，情绪极端恐惧，反弹可能有限",
+        "若BTC未能站稳昨高，可能回落至区间下沿"
       ],
       "action": "skip"
     },
@@ -30,20 +29,20 @@
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "LONG",
-      "confidence": 0.55,
+      "confidence": 0.6,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货大涨、NVDA和MSTR走强，风险偏好回升；第二层：BTC企稳，ETH贴近昨高，OI平稳，资金费率中性，但ETH/SOL相对BTC走弱，确认度不足；第三层：现价接近昨高，追高风险大，回踩EMA21附近入场，止损设于昨低下方，目标看前高，空间可覆盖成本。",
+      "rationale": "第一层：纳指期货和NVDA大涨，MSTR转强，风险偏好回升；第二层：BTC上涨，ETH站上EMA21/50，OI平稳，资费正常，但ETH/BTC和SOL/BTC相对走弱，显示非全面risk-on；第三层：现价接近昨高，追高风险有限，但需等待回踩EMA21附近入场，止损设于昨低下方，目标看至前高附近。",
       "market_state": "risk-on",
-      "entry_low": 1869.0,
-      "entry_high": 1885.0,
-      "invalidation": "跌破昨低1828.62或纳指期货转跌且MSTR转弱",
+      "entry_low": 1869.27,
+      "entry_high": 1871.48,
+      "invalidation": "跌破昨低1828.62或BTC跌破关键支撑且MSTR转弱",
       "max_hold_hours": 24,
       "risk_flags": [
-        "追高风险：现价接近昨高，不宜直接追多",
-        "ETH/SOL相对BTC走弱，全面risk-on未确认",
-        "恐惧贪婪指数25，情绪极端，波动可能加大",
-        "若跌破昨低，多头失效，需立即离场"
+        "追高风险：现价接近昨高，若直接追多可能面临回调",
+        "相对强弱：ETH/BTC走弱，若BTC回调ETH可能跌幅更大",
+        "高周期震荡：日线震荡，不宜过度持仓",
+        "重大事件：关注Powell讲话，可能引发波动"
       ],
       "action": "skip"
     }
@@ -52,18 +51,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29805.0,
-    "nq_chg": 3.16,
+    "nq": 29818.25,
+    "nq_chg": 3.21,
     "tnx": 4.63,
     "tnx_chg": -1.26,
-    "dxy": 99.864,
-    "dxy_chg": -0.1,
+    "dxy": 99.881,
+    "dxy_chg": -0.08,
     "mstr_chg": 4.68,
     "nvda_chg": 5.57,
     "coin_chg": 3.06,
-    "btc_chg": 0.878,
-    "ethbtc_chg": -0.444,
-    "solbtc_chg": -0.406
+    "btc_chg": 1.197,
+    "ethbtc_chg": -0.376,
+    "solbtc_chg": -0.354
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
