@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-05T07:07:01Z",
+  "ts": "2026-08-05T08:07:00Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -12,17 +12,17 @@
       "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：NVDA大涨、纳指期货上涨、美元下跌，风险偏好改善，MSTR走强确认机构情绪恢复；第二层：BTC站稳EMA21/50，OI下降显示杠杆清理，资金费率中性，但ETH/SOL相对走弱，上涨动能有限；第三层：现价接近昨高，追高风险大，回踩EMA50附近入场，止损设于昨低下方，目标空间约1.5%，覆盖成本。",
+      "rationale": "第一层：NVDA大涨5.6%且MSTR转强，显示风险偏好恢复；第二层：BTC站稳EMA21/50，OI下降显示杠杆清理，资金费率中性，但ETH/SOL相对走弱，确认度有限；第三层：现价接近昨高，但未突破，回踩至EMA附近可入场，止损设于昨低下方，目标看至昨高上方，空间覆盖成本。",
       "market_state": "risk-on",
-      "entry_low": 63863,
-      "entry_high": 64229,
-      "invalidation": "BTC 4小时收盘跌破昨低63322，或纳指期货转跌且MSTR转弱",
+      "entry_low": 63800,
+      "entry_high": 64200,
+      "invalidation": "BTC跌破昨低63322且无法快速收回，或MSTR转弱跌破昨低，或纳指期货转跌",
       "max_hold_hours": 24,
       "risk_flags": [
-        "现价接近昨高，不宜直接追多，等待回踩",
-        "ETH/SOL未跟涨，全面risk-on未确认，降低仓位",
-        "若跌破昨低63322，多头失效，立即止损",
-        "恐惧贪婪指数27，市场情绪脆弱，警惕假突破"
+        "追高风险：现价接近昨高，若直接突破可能追高",
+        "ETH/SOL未跟涨，全面risk-on未确认",
+        "恐惧贪婪指数27，情绪仍弱",
+        "若BTC跌破昨低且MSTR走弱，则转为FLAT"
       ],
       "action": "skip"
     },
@@ -33,16 +33,16 @@
       "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：NVDA大涨、纳指期货上涨、MSTR走强显示风险偏好回升；第二层：BTC企稳，OI下降表明杠杆清理，资金费率中性，ETH/BTC未明显走弱；第三层：现价接近EMA21/EMA50，回踩至1865-1875区间可入场，止损设于昨低下方，目标看至1882上方，空间覆盖成本。",
+      "rationale": "第一层：NVDA大涨、纳指期货微涨、MSTR走强显示风险偏好回升；第二层：BTC站稳，ETH贴近EMA21，OI下降表明杠杆清理充分，资金费率中性，但ETH/BTC偏弱显示资金未全面下沉；第三层：现价接近昨高但未突破，回踩至EMA21附近入场，止损设于昨低下方，目标看至昨高上方，空间约1.5%覆盖成本。",
       "market_state": "risk-on",
       "entry_low": 1865.0,
       "entry_high": 1875.0,
       "invalidation": "小时收盘跌破1848.38（昨低）或纳指期货转跌且MSTR转弱",
       "max_hold_hours": 24,
       "risk_flags": [
-        "日线震荡，不宜重仓",
-        "量能不足，突破可能乏力",
-        "若跌破昨低立即止损，不扛单"
+        "ETH/BTC走弱，若BTC继续走强而ETH不跟，可能转为震荡",
+        "恐惧贪婪指数27，情绪仍偏弱，反弹可能乏力",
+        "若突破1882.44失败并快速回落，需警惕假突破"
       ],
       "action": "skip"
     }
@@ -51,18 +51,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29964.0,
-    "nq_chg": 0.34,
+    "nq": 29904.5,
+    "nq_chg": 0.14,
     "tnx": 4.63,
     "tnx_chg": -1.26,
-    "dxy": 99.779,
-    "dxy_chg": -0.11,
+    "dxy": 99.827,
+    "dxy_chg": -0.06,
     "mstr_chg": 4.68,
     "nvda_chg": 5.57,
     "coin_chg": 3.06,
-    "btc_chg": 0.9,
-    "ethbtc_chg": -0.274,
-    "solbtc_chg": -0.182
+    "btc_chg": 0.738,
+    "ethbtc_chg": -0.308,
+    "solbtc_chg": -0.164
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
