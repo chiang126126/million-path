@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-05T13:07:01Z",
+  "ts": "2026-08-05T14:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -9,20 +9,19 @@
       "symbol": "BTCUSDT",
       "source": "llm",
       "bias": "LONG",
-      "confidence": 0.55,
+      "confidence": 0.65,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货、NVDA、MSTR均走强，风险偏好回升；第二层：BTC站稳EMA21/50，OI下降显示杠杆清理，资金费率中性，但ETH/SOL相对走弱，确认度不足；第三层：现价接近昨高，追多空间有限，回踩入场更佳，止损设于昨低下方，风险回报比约1:1.5。",
+      "rationale": "第一层：NVDA大涨、纳指期货上涨、美元走弱，风险偏好回升，MSTR转强确认机构情绪恢复；第二层：BTC站上EMA21/EMA50，RSI 66.8未超买，OI下降显示杠杆清理充分，资金费率中性，但ETH/SOL相对走弱显示非全面risk-on；第三层：现价接近昨高，追高风险有限，入场区间参考EMA21至昨高，止损设1%以控制风险，目标空间1.5%覆盖成本。",
       "market_state": "risk-on",
-      "entry_low": 63800,
-      "entry_high": 64250,
-      "invalidation": "BTC 4小时收盘跌破昨低63322，或纳指期货转跌且MSTR转弱",
+      "entry_low": 64185,
+      "entry_high": 64549,
+      "invalidation": "小时收盘跌破EMA21（64185）且无法快速收复，或BTC跌破昨低63322",
       "max_hold_hours": 24,
       "risk_flags": [
-        "追高风险：现价接近昨高，不宜直接追多",
-        "ETH/SOL相对走弱，全面risk-on未确认",
-        "恐惧贪婪指数27，情绪偏弱，反弹可能乏力",
-        "若跌破昨低63322，多单立即失效"
+        "美股盘中波动大，警惕开盘噪音与插针",
+        "ETH/SOL未跟涨，可能为局部轮动而非全面risk-on",
+        "若MSTR转弱或纳指期货回落，需立即离场"
       ],
       "action": "skip"
     },
@@ -33,36 +32,37 @@
       "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货上涨、美债收益率下降、美元走弱，NVDA大涨，MSTR转强，全球风险偏好回升。第二层：BTC企稳，ETH站上EMA21和EMA50，RSI中性，OI下降显示杠杆清理，资金费率正常，但ETH/BTC走弱显示资金未全面下沉。第三层：现价接近昨高，不宜追高，等待回踩至EMA21附近入场，止损设于昨低下方，目标空间约1.5%，覆盖成本。",
+      "rationale": "第一层：NVDA大涨、纳指期货上涨、MSTR走强显示风险偏好回升；第二层：BTC上涨但ETH/SOL相对走弱，OI下降显示杠杆清理，资金费率中性；第三层：现价接近昨高，追高风险大，回踩EMA21附近入场，止损设昨低下方，目标看前高附近。",
       "market_state": "risk-on",
-      "entry_low": 1868.0,
-      "entry_high": 1876.0,
-      "invalidation": "若价格跌破昨低1848.38，或MSTR转弱且纳指期货下跌，则判断错误，立即离场。",
+      "entry_low": 1872.0,
+      "entry_high": 1882.0,
+      "invalidation": "跌破昨低1848.38或BTC跌破关键支撑且MSTR转弱",
       "max_hold_hours": 24,
       "risk_flags": [
-        "若价格快速拉升远离入场区间，禁止追多",
-        "若ETH/BTC持续走弱，降低多头信心",
-        "若MSTR盘前转跌或纳指期货跳水，立即离场"
+        "美股盘中波动大，警惕插针",
+        "ETH/BTC走弱，上涨可能不持续",
+        "OI下降但价格未大涨，多头动能不足",
+        "若跌破昨低立即止损"
       ],
       "action": "skip"
     }
   ],
   "testnet_usdt": 4297.01,
-  "news_lines": 3,
+  "news_lines": 0,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29913.5,
-    "nq_chg": 0.17,
-    "tnx": 4.62,
-    "tnx_chg": -0.13,
-    "dxy": 99.747,
-    "dxy_chg": -0.14,
-    "mstr_chg": 4.68,
-    "nvda_chg": 5.57,
-    "coin_chg": 3.06,
-    "btc_chg": 0.429,
-    "ethbtc_chg": -0.545,
-    "solbtc_chg": -0.121
+    "nq": 30005.75,
+    "nq_chg": 0.48,
+    "tnx": 4.64,
+    "tnx_chg": 0.22,
+    "dxy": 99.744,
+    "dxy_chg": -0.15,
+    "mstr_chg": 3.98,
+    "nvda_chg": 7.12,
+    "coin_chg": 4.58,
+    "btc_chg": 1.133,
+    "ethbtc_chg": -0.239,
+    "solbtc_chg": -0.623
   },
-  "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
+  "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
