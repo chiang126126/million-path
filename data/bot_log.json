@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-05T05:07:01Z",
+  "ts": "2026-08-05T06:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -12,17 +12,17 @@
       "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：NVDA大涨5.6%且MSTR转强，全球风险偏好回升；第二层：BTC站稳EMA21/EMA50，OI下降显示杠杆清理，资金费率中性，但ETH/SOL相对走弱限制全面risk-on；第三层：现价接近昨高，不宜追多，回踩至EMA21附近入场，止损设于昨低下方，目标看至64500上方，风险回报比尚可。",
+      "rationale": "第一层：NVDA大涨5.6%带动纳指期货上涨，美债收益率下行，MSTR转强显示机构风险偏好恢复；第二层：BTC站上EMA21和EMA50，RSI中性，OI下降显示杠杆清理，资金费率正常，但ETH/SOL相对走弱显示非全面risk-on；第三层：现价接近昨高，不宜追高，回踩EMA50附近入场，止损设于昨低下方，目标空间约1.5%覆盖成本，但需警惕追高风险。",
       "market_state": "risk-on",
-      "entry_low": 63800,
-      "entry_high": 64320,
-      "invalidation": "BTC 4小时收盘跌破昨低63322，或纳指期货转跌且MSTR转弱",
+      "entry_low": 63850,
+      "entry_high": 64300,
+      "invalidation": "BTC跌破昨低63322且无法快速收复，或纳指期货转跌且MSTR转弱",
       "max_hold_hours": 24,
       "risk_flags": [
-        "禁止追高，等待回踩",
-        "若BTC跌破昨低63322则多头失效",
-        "ETH/SOL相对走弱，若持续则降低多头信心",
-        "恐惧贪婪指数27，情绪偏冷，反弹可能有限"
+        "现价接近昨高，追高风险大，需等待回踩",
+        "ETH/SOL相对走弱，非全面risk-on，可能为局部轮动",
+        "恐惧贪婪指数27，市场情绪脆弱，警惕假突破",
+        "若跌破昨低63322，则多头失效，需立即止损"
       ],
       "action": "skip"
     },
@@ -33,17 +33,17 @@
       "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：NVDA大涨、纳指期货微涨、MSTR走强显示风险偏好回升；第二层：BTC站稳，ETH贴近EMA21/50，OI下降显示杠杆清理，资金费率中性，但ETH/BTC偏弱；第三层：现价接近昨高，但未突破，回踩至EMA21附近可轻仓试多，止损设于昨低下方，目标看至1900上方。",
+      "rationale": "第一层：NVDA大涨5.6%带动纳指期货走强，MSTR转强显示机构风险偏好恢复；第二层：BTC站稳关键位，OI下降显示杠杆清理，资金费率中性，但ETH/SOL相对走弱显示非全面risk-on；第三层：现价贴近EMA21/EMA50，回踩入场，止损设于昨低下方，目标看昨高上方，风险回报比约1:1.5。",
       "market_state": "risk-on",
-      "entry_low": 1869.0,
+      "entry_low": 1868.0,
       "entry_high": 1875.0,
-      "invalidation": "小时收盘跌破1848（昨低）或纳指期货转跌且MSTR转弱",
+      "invalidation": "小时收盘跌破昨低1848.38",
       "max_hold_hours": 24,
       "risk_flags": [
-        "ETH/BTC偏弱，若BTC回调ETH或跌幅更大",
-        "量能低迷，突破可能乏力",
-        "恐惧贪婪27，情绪仍弱",
-        "Powell讲话可能引发波动"
+        "ETH/BTC走弱，若持续可能拖累ETH",
+        "恐惧贪婪指数27仍处恐惧，反弹可能乏力",
+        "量能低迷，突破需放量确认",
+        "若跌破昨低1848.38立即止损"
       ],
       "action": "skip"
     }
@@ -52,18 +52,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29909.25,
-    "nq_chg": 0.15,
+    "nq": 29980.0,
+    "nq_chg": 0.39,
     "tnx": 4.63,
     "tnx_chg": -1.26,
-    "dxy": 99.837,
-    "dxy_chg": -0.05,
+    "dxy": 99.829,
+    "dxy_chg": -0.06,
     "mstr_chg": 4.68,
     "nvda_chg": 5.57,
     "coin_chg": 3.06,
-    "btc_chg": 0.562,
-    "ethbtc_chg": -0.24,
-    "solbtc_chg": -0.26
+    "btc_chg": 0.732,
+    "ethbtc_chg": -0.342,
+    "solbtc_chg": -0.337
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
