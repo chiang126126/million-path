@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-05T02:07:01Z",
+  "ts": "2026-08-05T03:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -12,16 +12,16 @@
       "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货、NVDA、MSTR均上涨，风险偏好改善；第二层：BTC站上EMA21/50，OI微降显示杠杆清理，但ETH/SOL相对走弱，资金未全面下沉；第三层：现价接近昨高，追高风险大，回踩EMA21附近入场，止损设昨低下方，目标看前高，空间覆盖成本。",
+      "rationale": "第一层：纳指期货大涨、NVDA和MSTR走强，风险偏好回升；第二层：BTC站上EMA21/50，OI微降显示杠杆健康，但ETH/SOL相对走弱，资金未全面下沉；第三层：现价接近昨高，追高风险有限，但需等待回踩确认，止损设于昨低下方，目标空间约1.5%覆盖成本。",
       "market_state": "risk-on",
-      "entry_low": 64051.24,
-      "entry_high": 64549.16,
+      "entry_low": 64078,
+      "entry_high": 64549,
       "invalidation": "BTC跌破昨低63322且无法快速收回，或纳指期货转跌、MSTR转弱",
       "max_hold_hours": 24,
       "risk_flags": [
-        "追高风险：现价接近昨高，不宜直接追多",
-        "ETH/SOL相对走弱，全面risk-on未确认",
-        "恐惧贪婪指数27，情绪仍偏弱，反弹可能乏力"
+        "追高风险：现价接近昨高，若直接突破可能回落",
+        "ETH/SOL相对走弱，风险偏好未全面扩散",
+        "恐惧贪婪指数27，情绪仍偏谨慎，反弹可能不持续"
       ],
       "action": "skip"
     },
@@ -32,16 +32,17 @@
       "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货大涨、NVDA强劲、MSTR转强，全球风险偏好回升；第二层：BTC企稳，ETH贴近关键位，OI平稳，资金费率中性，但ETH/BTC走弱显示资金未全面下沉；第三层：现价接近昨高但未突破，回踩至EMA21/50附近入场，止损设于昨低下方，目标空间约1.5%，覆盖成本，但需警惕追高风险。",
+      "rationale": "第一层：纳指期货、NVDA、MSTR均走强，风险偏好回升；第二层：BTC站稳，ETH贴近昨高，OI平稳，资金费率中性，但ETH/BTC偏弱显示非全面risk-on；第三层：现价接近昨高，追多风险大，回踩EMA21/50附近入场，止损设于昨低下方，目标看前高，空间覆盖成本。",
       "market_state": "risk-on",
-      "entry_low": 1867.0,
-      "entry_high": 1875.5,
-      "invalidation": "小时收盘跌破1848.38（昨低）或纳指期货转跌且MSTR转弱",
+      "entry_low": 1865.0,
+      "entry_high": 1882.0,
+      "invalidation": "跌破昨低1848.38且无法快速收回，或纳指期货转跌、MSTR转弱",
       "max_hold_hours": 24,
       "risk_flags": [
-        "若ETH/BTC持续走弱，可能仅为局部轮动，降低信心",
-        "若突破1882.44后快速回落，可能假突破，避免追多",
-        "若纳指期货回吐涨幅或MSTR转跌，立即离场"
+        "追高风险：现价接近昨高，不宜直接追多",
+        "ETH相对BTC偏弱，若BTC回调ETH可能更弱",
+        "恐惧贪婪指数27，情绪仍偏冷，反弹可能缺乏持续性",
+        "若跌破昨低1848.38，则多头失效，需立即止损"
       ],
       "action": "skip"
     }
@@ -50,18 +51,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29873.75,
-    "nq_chg": 3.4,
+    "nq": 29865.75,
+    "nq_chg": 3.37,
     "tnx": 4.63,
     "tnx_chg": -1.26,
-    "dxy": 99.887,
-    "dxy_chg": -0.07,
+    "dxy": 99.806,
+    "dxy_chg": -0.15,
     "mstr_chg": 4.68,
     "nvda_chg": 5.57,
     "coin_chg": 3.06,
-    "btc_chg": 1.023,
-    "ethbtc_chg": -0.513,
-    "solbtc_chg": -0.424
+    "btc_chg": 0.965,
+    "ethbtc_chg": -0.479,
+    "solbtc_chg": -0.467
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
