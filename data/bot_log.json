@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-07T11:07:01Z",
+  "ts": "2026-08-07T12:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -9,20 +9,20 @@
       "symbol": "BTCUSDT",
       "source": "llm",
       "bias": "LONG",
-      "confidence": 0.55,
+      "confidence": 0.6,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货上涨、NVDA大涨，风险偏好改善，MSTR未显著弱于BTC，无背离；第二层：BTC站上关键位，ETH/BTC微涨，OI下降显示杠杆清理，资费正常，但RSI偏高；第三层：现价接近昨高，回踩EMA21附近可入场，止损设于昨低下方，目标空间约1.2%，覆盖成本，但追高风险需谨慎。",
+      "rationale": "第一层：纳指期货上涨、NVDA大涨3.3%显示风险偏好改善，美元走弱，MSTR与BTC无背离；第二层：BTC站上昨高64999，日线偏多，OI下降显示杠杆清理，资金费率正常，但RSI超买且ETH/SOL未同步走强；第三层：现价接近昨高，追高风险大，回踩EMA21附近入场，止损设于昨低下方，目标空间约1.5%覆盖成本。",
       "market_state": "risk-on",
-      "entry_low": 64553,
+      "entry_low": 64500,
       "entry_high": 64999,
       "invalidation": "BTC跌破昨低64172且无法快速收回，或纳指期货转跌、NVDA回吐涨幅",
       "max_hold_hours": 24,
       "risk_flags": [
-        "RSI 72.4超买，追多需谨慎",
-        "量能不足，突破可能乏力",
-        "若跌破昨低64172则多头失效",
-        "避免在快速反弹后追多"
+        "RSI超买，短期回调风险",
+        "ETH/SOL未确认全面risk-on",
+        "恐惧贪婪指数29，情绪偏弱",
+        "若跌破昨低64172则转空"
       ],
       "action": "skip"
     },
@@ -33,16 +33,17 @@
       "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货+0.39%、NVDA+3.33%显示风险偏好改善，MSTR无显著背离；第二层：BTC+0.71%站稳关键位，ETH/BTC+0.24%相对走强，OI持平无新空进场，资金费率正常；第三层：现价1916接近昨高1920，但未过度偏离均线，回踩EMA21（1906.94）附近入场，止损设于昨低下方，目标看至1945附近，空间覆盖成本。",
+      "rationale": "第一层：纳指期货上涨、NVDA走强、美元走弱，风险偏好改善；第二层：BTC上涨，ETH/BTC持平，OI微增，资金费率正常，日线偏多，价格站上关键均线；第三层：现价接近昨高，追高风险有限，但RSI超买，需回踩入场，止损设于EMA21下方，目标空间约1.5%，覆盖成本。",
       "market_state": "risk-on",
-      "entry_low": 1906.94,
+      "entry_low": 1908.18,
       "entry_high": 1920.51,
-      "invalidation": "跌破昨低1892.04且无法快速收回，或纳指期货转跌、NVDA转跌，或ETH/BTC显著走弱",
+      "invalidation": "小时收盘跌破1908（EMA21）且无法快速收复，或跌破昨低1892",
       "max_hold_hours": 24,
       "risk_flags": [
-        "追高风险：现价已接近昨高，若直接突破可能追高，需等待回踩",
-        "恐惧贪婪指数29仍处恐惧，情绪脆弱",
-        "若跌破昨低1892.04则判断失效，立即止损"
+        "RSI超买，追高需谨慎",
+        "若跌破EMA21且无法收复，立即止损",
+        "若MSTR显著弱于BTC，降低仓位",
+        "若纳指期货转跌，取消做多计划"
       ],
       "action": "skip"
     }
@@ -51,18 +52,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29604.5,
-    "nq_chg": 0.39,
+    "nq": 29633.5,
+    "nq_chg": 0.49,
     "tnx": 4.67,
     "tnx_chg": 1.15,
-    "dxy": 99.917,
-    "dxy_chg": -0.05,
+    "dxy": 99.88,
+    "dxy_chg": -0.09,
     "mstr_chg": -0.82,
     "nvda_chg": 3.33,
     "coin_chg": -3.53,
-    "btc_chg": 0.707,
-    "ethbtc_chg": 0.238,
-    "solbtc_chg": -0.088
+    "btc_chg": 0.809,
+    "ethbtc_chg": 0.068,
+    "solbtc_chg": -0.352
   },
-  "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
+  "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
 }
