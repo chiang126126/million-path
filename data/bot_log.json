@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-08T10:07:01Z",
+  "ts": "2026-08-08T11:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -12,16 +12,17 @@
       "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货、NVDA上涨，美元走弱，风险偏好改善；第二层：BTC站上30日线，SOL/BTC走强，资金费率中性，OI温和增加，市场确认risk-on；第三层：现价接近EMA21/EMA50支撑，入场区间合理，止损设于昨低下方，风险回报比约1:1.5，可尝试做多。",
+      "rationale": "第一层：纳指期货、NVDA、MSTR齐涨，美元走弱，全球风险偏好回升；第二层：BTC站上均线，ETH/SOL相对走强，OI温和上升，资金费率正常，情绪恐惧但未极端；第三层：现价接近昨高但未突破，回踩至EMA21附近可入场，止损设于昨低下方，目标看至前高，风险回报比约1:1.5，但需警惕量能不足和追高风险。",
       "market_state": "risk-on",
-      "entry_low": 64700,
-      "entry_high": 65000,
-      "invalidation": "BTC 4小时收盘跌破64166（昨低）",
+      "entry_low": 64800,
+      "entry_high": 65100,
+      "invalidation": "BTC跌破昨低64166且无法快速收回，或纳指期货转跌、MSTR转弱，或ETH/SOL相对走弱",
       "max_hold_hours": 24,
       "risk_flags": [
-        "量能偏低，突破需放量确认",
-        "恐惧贪婪指数30，情绪偏弱",
-        "若MSTR转弱或纳指期货回落，需警惕"
+        "量能仅为常态0.4倍，突破有效性存疑",
+        "恐惧贪婪指数30，市场情绪脆弱",
+        "若BTC跌破昨低64166则多头失效",
+        "禁止在未回踩时追多，禁止因纳指下跌而立即追空"
       ],
       "action": "skip"
     },
@@ -29,20 +30,20 @@
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "LONG",
-      "confidence": 0.55,
+      "confidence": 0.6,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货、NVDA上涨，美元走弱，风险偏好改善；第二层：ETH站上EMA21和EMA50，日线偏多，SOL/BTC走强确认risk-on，OI平稳无杠杆风险；第三层：现价接近EMA21支撑，入场区间合理，止损设于昨低下方，风险回报比约1:1.5，但量能低迷且恐惧贪婪指数30，需谨慎。",
+      "rationale": "第一层：纳指期货、NVDA、MSTR齐涨且美元走弱，风险偏好回升；第二层：ETH站上EMA21/50，ETH/BTC和SOL/BTC走强，OI平稳，资金费率正常，情绪恐惧但未极端；第三层：现价接近昨高但未突破，回踩至1905-1921区间入场，止损设于昨低下方，目标看至1950上方，风险回报比约1:1.5，覆盖成本。",
       "market_state": "risk-on",
-      "entry_low": 1905.0,
-      "entry_high": 1920.0,
-      "invalidation": "小时收盘跌破昨低1894.35，或纳指期货转跌且MSTR走弱",
+      "entry_low": 1905,
+      "entry_high": 1921,
+      "invalidation": "小时收盘跌破1894（昨低）或纳指期货转跌且MSTR转弱",
       "max_hold_hours": 24,
       "risk_flags": [
-        "量能低迷，突破可能乏力",
-        "恐惧贪婪指数30，市场情绪脆弱",
-        "若跌破昨低1894.35，多头失效",
-        "避免追高，等待回踩入场"
+        "禁止追高，若现价直接突破1943则等待回踩",
+        "若跌破昨低1894则立即止损",
+        "若纳指期货转跌或MSTR走弱则降低仓位",
+        "若资金费率转负或OI大幅上升则警惕"
       ],
       "action": "skip"
     }
@@ -60,9 +61,9 @@
     "mstr_chg": 1.67,
     "nvda_chg": 2.16,
     "coin_chg": 2.48,
-    "btc_chg": 0.25,
-    "ethbtc_chg": 0.0,
-    "solbtc_chg": 1.416
+    "btc_chg": 0.058,
+    "ethbtc_chg": 0.237,
+    "solbtc_chg": 1.869
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
