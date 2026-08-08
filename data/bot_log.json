@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-08T06:07:01Z",
+  "ts": "2026-08-08T07:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -12,17 +12,17 @@
       "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货、NVDA、MSTR均上涨，美元走弱，全球风险偏好risk-on；第二层：BTC站上EMA21/50，SOL/BTC相对走强，OI温和增加但费率不高，情绪Fear但价格未破位；第三层：现价接近昨高，但未突破，回踩至64600-65000区间可入场，止损设于昨低下方，目标看至66000附近，风险回报比约1:1.5，满足条件。",
+      "rationale": "第一层：纳指期货、NVDA、MSTR均上涨，美元走弱，全球风险偏好risk-on；第二层：BTC站上30日线且RSI 70.8但未极端超买，SOL/BTC走强确认全面risk-on，OI温和上升但资费正常，恐惧贪婪30显示情绪未过热；第三层：现价接近昨高，回踩EMA21（64899）附近入场，止损设于昨低下方，目标1.5%空间覆盖成本，但RSI偏高且量能不足，故confidence中等。",
       "market_state": "risk-on",
-      "entry_low": 64600,
-      "entry_high": 65000,
-      "invalidation": "BTC 4小时收盘跌破昨低64166，或纳指期货转跌且MSTR走弱",
+      "entry_low": 64899,
+      "entry_high": 65391,
+      "invalidation": "BTC 4小时收盘跌破64166（昨低）或纳指期货转跌且MSTR相对BTC走弱",
       "max_hold_hours": 24,
       "risk_flags": [
-        "现价接近昨高，追高风险大，需等待回踩",
-        "日线震荡，不宜重仓",
-        "若BTC跌破昨低64166则多头失效",
-        "若纳指期货转跌或MSTR走弱，需警惕风险偏好逆转"
+        "RSI 70.8接近超买，追高风险大，需等待回踩",
+        "量能仅为常态0.5倍，突破有效性存疑",
+        "若MSTR转弱或纳指期货回落，立即离场",
+        "禁止在未回踩时追多"
       ],
       "action": "skip"
     },
@@ -33,17 +33,16 @@
       "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货、NVDA、MSTR均上涨，美元走弱，风险偏好改善；第二层：BTC站上关键位，SOL/BTC相对走强，OI下降显示杠杆清理，资金费率正常，恐惧贪婪指数30显示情绪未过热；第三层：现价接近EMA21，回踩至1905-1920区间入场，止损设于昨低下方，目标空间约2.5%，覆盖成本，但量能不足且临近Powell讲话，故降低信心。",
+      "rationale": "第一层：纳指期货、NVDA上涨，美元走弱，风险偏好改善；第二层：BTC站上30日线，SOL/BTC走强确认risk-on，OI下降显示杠杆健康，资费正常；第三层：现价接近EMA21/50支撑，回踩入场，止损设于昨低下方，目标前高，盈亏比合理。",
       "market_state": "risk-on",
-      "entry_low": 1905,
-      "entry_high": 1920,
-      "invalidation": "小时收盘跌破1894.35（昨低）或纳指期货转跌且MSTR走弱",
+      "entry_low": 1909.28,
+      "entry_high": 1916.06,
+      "invalidation": "小时收盘跌破昨低1894.35，或纳指期货转跌且MSTR相对BTC走弱",
       "max_hold_hours": 24,
       "risk_flags": [
-        "量能低迷，突破可能乏力",
-        "Powell讲话可能引发波动",
-        "若跌破昨低1894.35则止损离场",
-        "禁止追高，等待回踩入场"
+        "量能极低，突破可能乏力",
+        "恐惧贪婪30，情绪偏弱",
+        "若跌破昨低则趋势转弱，立即离场"
       ],
       "action": "skip"
     }
@@ -61,9 +60,9 @@
     "mstr_chg": 1.67,
     "nvda_chg": 2.16,
     "coin_chg": 2.48,
-    "btc_chg": 0.963,
-    "ethbtc_chg": -0.169,
-    "solbtc_chg": 1.306
+    "btc_chg": 1.087,
+    "ethbtc_chg": -0.473,
+    "solbtc_chg": 1.482
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
