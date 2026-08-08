@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-08T16:07:01Z",
+  "ts": "2026-08-08T17:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -12,17 +12,16 @@
       "confidence": 0.65,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货、NVDA、MSTR齐涨且美元走弱，风险偏好回升；第二层：BTC站上30日线，SOL/BTC走强确认全面risk-on，OI下降显示杠杆已清理，资费中性；第三层：现价接近昨高但未突破，回踩EMA21/50附近入场，止损设于昨低下方，目标看前高，空间覆盖成本。",
+      "rationale": "第一层：纳指期货、NVDA上涨，美元走弱，风险偏好改善；第二层：BTC站上30日线，SOL/BTC走强确认风险偏好，OI下降显示杠杆健康，资金费率中性；第三层：现价接近昨高，回踩至EMA21附近入场，止损设于昨低下方，目标看至前高，风险回报比合理。",
       "market_state": "risk-on",
       "entry_low": 64800,
-      "entry_high": 65100,
-      "invalidation": "BTC跌破昨低64166且无法快速收回，或纳指期货转跌、MSTR转弱",
+      "entry_high": 65200,
+      "invalidation": "BTC 4小时收盘跌破昨低64166，或纳指期货转跌且MSTR相对BTC走弱",
       "max_hold_hours": 24,
       "risk_flags": [
         "美股盘中波动大，警惕开盘噪音与插针",
-        "RSI 66接近超买，追高风险",
-        "量能偏低，突破需放量确认",
-        "若BTC跌破昨低64166则转空，立即止损"
+        "量能偏低，突破可能乏力",
+        "恐惧贪婪指数30，情绪仍弱，反弹可能不持续"
       ],
       "action": "skip"
     },
@@ -30,20 +29,19 @@
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "LONG",
-      "confidence": 0.65,
+      "confidence": 0.62,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货、NVDA、MSTR均走强，美元走弱，全球风险偏好回升；第二层：BTC企稳，SOL/BTC相对走强，OI下降显示杠杆清理，资金费率中性，恐惧情绪提供反向指标；第三层：现价接近EMA21支撑，未过度追高，入场区间合理，止损设于昨低下方，风险回报比约1:1.5，满足执行条件。",
+      "rationale": "第一层：纳指期货、NVDA、美元走弱均指向risk-on，MSTR无背离；第二层：ETH站上EMA21/50，SOL/BTC走强确认全面risk-on，OI微降显示杠杆健康，资费中性；第三层：现价接近EMA21支撑，回踩入场，止损设于昨低下方，目标空间约1.8%覆盖成本，但量能不足且恐惧贪婪30，故confidence中等。",
       "market_state": "risk-on",
       "entry_low": 1918.0,
-      "entry_high": 1930.0,
-      "invalidation": "若价格跌破昨低1894.35，或纳指期货转跌且MSTR转弱，则判断错误，立即止损离场。",
+      "entry_high": 1925.0,
+      "invalidation": "小时线收盘跌破昨低1894.35，或纳指期货转跌且MSTR相对BTC走弱",
       "max_hold_hours": 24,
       "risk_flags": [
-        "RSI 71.5接近超买，警惕回调",
         "量能低迷，突破可能乏力",
-        "美股盘中波动大，注意插针",
-        "若ETH/BTC持续走弱，则降低信心"
+        "美股盘中波动大，警惕插针",
+        "恐惧贪婪30，情绪偏弱，若跌破昨低立即止损"
       ],
       "action": "skip"
     }
@@ -61,9 +59,9 @@
     "mstr_chg": 1.67,
     "nvda_chg": 2.16,
     "coin_chg": 2.48,
-    "btc_chg": 0.144,
-    "ethbtc_chg": 0.0,
-    "solbtc_chg": 3.03
+    "btc_chg": 0.438,
+    "ethbtc_chg": 0.238,
+    "solbtc_chg": 3.366
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
