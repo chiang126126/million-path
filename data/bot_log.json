@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-08T21:07:01Z",
+  "ts": "2026-08-08T22:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -9,19 +9,19 @@
       "symbol": "BTCUSDT",
       "source": "llm",
       "bias": "LONG",
-      "confidence": 0.6,
+      "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货、NVDA、MSTR均上涨，美元走弱，全球风险偏好改善；第二层：BTC站上30日线，SOL/BTC走强确认风险偏好，资金费率中性，OI平稳；第三层：现价接近昨高，回踩至EMA21附近可入场，止损设于昨低下方，目标空间约1.5%，覆盖成本。",
+      "rationale": "第一层：纳指期货、NVDA、MSTR齐涨且美元走弱，全球风险偏好回升；第二层：BTC站稳30日线，SOL/BTC显著走强确认风险偏好，OI平稳且资费中性无过热；第三层：现价接近EMA21，回踩至64800-65200区间入场，止损设于昨低下方，目标看至昨高上方，风险回报比约1:1.5，满足执行条件。",
       "market_state": "risk-on",
       "entry_low": 64800,
       "entry_high": 65200,
-      "invalidation": "BTC跌破昨低64166且无法快速收回，或纳指期货转跌、MSTR转弱",
+      "invalidation": "BTC 4小时收盘跌破昨低64166，或纳指期货转跌且MSTR转弱",
       "max_hold_hours": 24,
       "risk_flags": [
-        "量能偏低，突破可能乏力",
-        "恐惧贪婪指数30，情绪仍弱",
-        "若BTC未能站稳昨高，可能回落至区间震荡"
+        "美股盘后流动性低，谨防假突破",
+        "恐惧贪婪指数30仍偏恐慌，反弹可能乏力",
+        "若BTC未能站稳65000且ETH/SOL转弱，则降级为FLAT"
       ],
       "action": "skip"
     },
@@ -29,20 +29,19 @@
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "LONG",
-      "confidence": 0.62,
+      "confidence": 0.65,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货、NVDA、MSTR齐涨且美元走弱，全球风险偏好回升；第二层：ETH站上EMA21/EMA50，SOL/BTC显著走强确认risk-on，OI微增但费率温和，恐惧贪婪30显示情绪未过热；第三层：现价接近EMA21支撑，入场区间1915-1925，止损设于昨低下方，目标空间约1.8%覆盖成本，但量能低迷且偏离30日线2.2%，追高需谨慎。",
+      "rationale": "第一层：纳指期货、NVDA、MSTR均走强，美元走弱，全球风险偏好回升；第二层：ETH站上EMA21/50，日线偏多，SOL/BTC走强确认risk-on，OI温和增加但费率正常，情绪恐惧提供修复空间；第三层：现价接近EMA21，回踩入场，止损设于昨低下方，目标看至昨高附近，风险回报比约1:1.5，覆盖成本。",
       "market_state": "risk-on",
       "entry_low": 1915.0,
       "entry_high": 1925.0,
-      "invalidation": "小时收盘跌破昨低1894.35，或纳指期货转跌且MSTR转弱",
+      "invalidation": "跌破昨低1894.35且无法快速收复，或纳指期货转跌、MSTR转弱",
       "max_hold_hours": 24,
       "risk_flags": [
-        "量能极低，突破可能乏力",
-        "偏离30日线2.2%，短期有回调风险",
-        "若跌破昨低1894.35则多头失效",
-        "禁止因纳指下跌或跌破均线立即追空"
+        "量能低迷，突破可能乏力",
+        "恐惧贪婪指数30，情绪脆弱",
+        "若跌破昨低则转空，需严格止损"
       ],
       "action": "skip"
     }
@@ -60,9 +59,9 @@
     "mstr_chg": 1.67,
     "nvda_chg": 2.16,
     "coin_chg": 2.48,
-    "btc_chg": 0.165,
-    "ethbtc_chg": 0.17,
-    "solbtc_chg": 3.24
+    "btc_chg": 0.153,
+    "ethbtc_chg": 0.102,
+    "solbtc_chg": 3.341
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
