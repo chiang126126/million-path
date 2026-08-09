@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-09T19:07:01Z",
+  "ts": "2026-08-09T20:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -12,17 +12,16 @@
       "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货持平但NVDA和COIN上涨，MSTR同步走强，风险偏好偏暖；第二层：BTC站上关键均线，SOL/BTC走强确认风险偏好，OI微增但资费正常，RSI超买但趋势偏多；第三层：现价接近昨高，回踩EMA21/EMA50附近可入场，止损设于昨低下方，目标空间约1%，覆盖成本。",
+      "rationale": "第一层：纳指期货企稳、NVDA上涨、MSTR转强，风险偏好改善；第二层：BTC站上30日线且偏离不大，SOL/BTC走强确认风险偏好，OI微增但费率中性，未过热；第三层：现价接近昨高，回踩EMA21附近可入场，止损昨低，目标前高，空间覆盖成本。",
       "market_state": "risk-on",
-      "entry_low": 65061.95,
-      "entry_high": 65192.54,
-      "invalidation": "BTC 4小时收盘跌破64784（昨低）或跌破EMA50（64957）且无法快速收回",
+      "entry_low": 65068,
+      "entry_high": 65193,
+      "invalidation": "小时收盘跌破64784（昨低）",
       "max_hold_hours": 24,
       "risk_flags": [
-        "RSI 83超买，警惕回调",
-        "美股盘中波动，警惕开盘噪音与插针",
-        "若跌破64784或EMA50，立即止损",
-        "禁止追高，等待回踩入场"
+        "RSI 75.6超买，追高风险",
+        "量能偏低，突破需放量确认",
+        "若跌破昨低立即止损，不扛单"
       ],
       "action": "skip"
     },
@@ -30,19 +29,20 @@
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "LONG",
-      "confidence": 0.6,
+      "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：NVDA和COIN上涨，MSTR无背离，风险偏好偏多；第二层：ETH站上30日线，SOL/BTC走强，OI微降，资金费率正常，情绪恐惧但未极端；第三层：现价接近昨高，但量能低，不宜追高，回踩昨低附近入场，止损设于昨低下方，目标空间约0.8%，覆盖成本。",
+      "rationale": "第一层：纳指期货企稳、NVDA和MSTR上涨，风险偏好改善；第二层：BTC站稳关键位，SOL/BTC走强，OI微降显示杠杆未堆积，资金费率中性，情绪偏恐惧但未极端；第三层：现价接近昨高，但未突破，回踩昨低附近入场，止损明确，目标空间约0.8%，覆盖成本。",
       "market_state": "risk-on",
       "entry_low": 1912.27,
-      "entry_high": 1922.01,
-      "invalidation": "跌破昨低1912.27且无法快速收回，或纳指期货转跌、NVDA转跌，或ETH/BTC显著走弱",
+      "entry_high": 1921.79,
+      "invalidation": "小时收盘跌破1912.27（昨低）且无法快速收回，或纳指期货转跌、MSTR转弱",
       "max_hold_hours": 24,
       "risk_flags": [
-        "美股盘中波动大，警惕开盘噪音与插针",
-        "量能低，突破可能乏力",
-        "恐惧指数31，情绪偏弱，若跌破昨低则转空"
+        "量能低迷，突破可能乏力",
+        "恐惧贪婪指数31，情绪偏弱",
+        "若跌破昨低且无法收回，立即止损",
+        "禁止追高，等待回踩入场"
       ],
       "action": "skip"
     }
@@ -60,9 +60,9 @@
     "mstr_chg": 1.67,
     "nvda_chg": 2.16,
     "coin_chg": 2.48,
-    "btc_chg": 0.247,
-    "ethbtc_chg": -0.169,
-    "solbtc_chg": 1.248
+    "btc_chg": 0.122,
+    "ethbtc_chg": -0.068,
+    "solbtc_chg": 1.161
   },
-  "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
+  "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
