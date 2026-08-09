@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-08T23:07:01Z",
+  "ts": "2026-08-09T00:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -12,17 +12,16 @@
       "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货上涨、美元走弱、NVDA和MSTR均走强，显示全球风险偏好回升；第二层：BTC企稳于关键位附近，SOL/BTC相对走强，资金费率正常，OI微增，市场情绪恐惧但未极端；第三层：现价接近昨低，入场区间合理，止损设于昨低下方，目标空间约1.5%，覆盖成本，但需警惕追高风险。",
+      "rationale": "第一层：纳指期货、NVDA、MSTR均上涨，美元走弱，风险偏好改善；第二层：SOL/BTC走强显示资金下沉，OI平稳无新空进场，费率中性，BTC贴近关键位；第三层：现价接近昨低，入场区间合理，止损明确，目标空间覆盖成本。",
       "market_state": "risk-on",
-      "entry_low": 64166.0,
-      "entry_high": 64944.81,
-      "invalidation": "若BTC跌破昨低64166且无法快速收回，或纳指期货转跌、MSTR转弱，则判断错误",
+      "entry_low": 64800,
+      "entry_high": 65000,
+      "invalidation": "跌破昨低64784且无法快速收回，或纳指期货转跌、MSTR转弱",
       "max_hold_hours": 24,
       "risk_flags": [
-        "若BTC跌破昨低64166则止损",
-        "若纳指期货转跌或MSTR走弱则离场",
-        "若ETH/BTC持续走弱则降低信心",
-        "若资金费率转负或OI大幅增加则警惕"
+        "日线震荡，不宜重仓",
+        "量能低迷，突破需放量确认",
+        "若跌破昨低立即止损，不扛单"
       ],
       "action": "skip"
     },
@@ -33,22 +32,22 @@
       "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货、NVDA、MSTR均上涨，美元走弱，风险偏好改善；第二层：BTC企稳，SOL/BTC走强，OI温和上升，资金费率正常，日线偏多；第三层：现价接近EMA21/50，回踩至支撑区间可入场，止损设于昨低下方，目标看至昨高附近，风险回报比约1:1.5。",
+      "rationale": "第一层：纳指期货、NVDA、MSTR均走强，美元走弱，全球风险偏好回升；第二层：ETH站稳EMA21/EMA50，SOL/BTC相对走强，资金费率中性，OI微增，恐惧贪婪31但未极端；第三层：现价接近昨低，入场区间合理，止损昨低下方，目标看昨高上方，空间约0.8%覆盖成本，但量能低迷，需谨慎。",
       "market_state": "risk-on",
-      "entry_low": 1905.0,
-      "entry_high": 1920.0,
-      "invalidation": "小时收盘跌破昨低1894.35，或纳指期货转跌且MSTR转弱",
+      "entry_low": 1912.27,
+      "entry_high": 1918.69,
+      "invalidation": "小时收盘跌破1912.27（昨低）且无法快速收复，或纳指期货转跌、MSTR转弱",
       "max_hold_hours": 24,
       "risk_flags": [
-        "量能低迷，突破可能乏力",
-        "恐惧贪婪30仍偏恐慌，反弹或有限",
-        "若跌破昨低则趋势转弱，立即止损"
+        "量能极低，突破可能乏力",
+        "恐惧贪婪31，情绪偏弱",
+        "若跌破昨低且无法收复，立即止损"
       ],
       "action": "skip"
     }
   ],
   "testnet_usdt": 4297.01,
-  "news_lines": 3,
+  "news_lines": 0,
   "global_risk": "risk-on",
   "xm": {
     "nq": 29834.75,
@@ -60,9 +59,9 @@
     "mstr_chg": 1.67,
     "nvda_chg": 2.16,
     "coin_chg": 2.48,
-    "btc_chg": 0.084,
-    "ethbtc_chg": -0.034,
-    "solbtc_chg": 2.86
+    "btc_chg": 0.029,
+    "ethbtc_chg": 0.068,
+    "solbtc_chg": 3.075
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
