@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-09T20:07:01Z",
+  "ts": "2026-08-09T21:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -9,19 +9,19 @@
       "symbol": "BTCUSDT",
       "source": "llm",
       "bias": "LONG",
-      "confidence": 0.55,
+      "confidence": 0.6,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货企稳、NVDA上涨、MSTR转强，风险偏好改善；第二层：BTC站上30日线且偏离不大，SOL/BTC走强确认风险偏好，OI微增但费率中性，未过热；第三层：现价接近昨高，回踩EMA21附近可入场，止损昨低，目标前高，空间覆盖成本。",
+      "rationale": "第一层：NVDA和MSTR走强，纳指企稳，风险偏好改善。第二层：BTC站上30日线，SOL/BTC走强，OI温和增加，资金费率正常，但RSI偏高。第三层：现价接近昨高，入场区间在EMA21附近，止损设于昨低下方，目标空间约1%，可覆盖成本。",
       "market_state": "risk-on",
-      "entry_low": 65068,
-      "entry_high": 65193,
-      "invalidation": "小时收盘跌破64784（昨低）",
+      "entry_low": 65072,
+      "entry_high": 65192,
+      "invalidation": "BTC跌破昨低64784且无法快速收复，或MSTR转弱且纳指期货下跌",
       "max_hold_hours": 24,
       "risk_flags": [
-        "RSI 75.6超买，追高风险",
-        "量能偏低，突破需放量确认",
-        "若跌破昨低立即止损，不扛单"
+        "RSI超买，追高风险",
+        "量能不足，突破可能乏力",
+        "若跌破昨低则转空"
       ],
       "action": "skip"
     },
@@ -32,17 +32,17 @@
       "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货企稳、NVDA和MSTR上涨，风险偏好改善；第二层：BTC站稳关键位，SOL/BTC走强，OI微降显示杠杆未堆积，资金费率中性，情绪偏恐惧但未极端；第三层：现价接近昨高，但未突破，回踩昨低附近入场，止损明确，目标空间约0.8%，覆盖成本。",
+      "rationale": "第一层：NVDA和MSTR走强，纳指企稳，全球风险偏好改善；第二层：BTC站稳，SOL/BTC走强确认风险偏好，OI微降显示杠杆健康，资金费率正常；第三层：现价接近昨高，但未过度偏离，入场区间参考昨高昨低，止损设于昨低下方，目标空间约1.5%，覆盖成本。",
       "market_state": "risk-on",
       "entry_low": 1912.27,
-      "entry_high": 1921.79,
-      "invalidation": "小时收盘跌破1912.27（昨低）且无法快速收回，或纳指期货转跌、MSTR转弱",
+      "entry_high": 1926.72,
+      "invalidation": "小时收盘跌破1912.27（昨低）且无法快速收回，或BTC跌破关键支撑，或纳指期货转跌且MSTR转弱",
       "max_hold_hours": 24,
       "risk_flags": [
-        "量能低迷，突破可能乏力",
-        "恐惧贪婪指数31，情绪偏弱",
+        "现价接近昨高，追多需谨慎，等待回踩",
         "若跌破昨低且无法收回，立即止损",
-        "禁止追高，等待回踩入场"
+        "若ETH/BTC持续走弱，降低多头信心",
+        "若纳指期货转跌或MSTR转弱，风险偏好可能逆转"
       ],
       "action": "skip"
     }
@@ -60,9 +60,9 @@
     "mstr_chg": 1.67,
     "nvda_chg": 2.16,
     "coin_chg": 2.48,
-    "btc_chg": 0.122,
+    "btc_chg": 0.075,
     "ethbtc_chg": -0.068,
-    "solbtc_chg": 1.161
+    "solbtc_chg": 1.057
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
