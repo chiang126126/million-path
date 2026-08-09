@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-09T07:07:01Z",
+  "ts": "2026-08-09T08:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -12,17 +12,16 @@
       "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：NVDA和MSTR上涨，美债收益率下降，全球风险偏好改善；第二层：BTC在昨低附近企稳，ETH/BTC和SOL/BTC相对走强，OI下降表明杠杆清理，资金费率中性，恐惧情绪提供反向指标；第三层：现价接近昨低和EMA50，入场风险有限，止损明确，目标空间覆盖成本，但需警惕追高风险。",
+      "rationale": "第一层：NVDA和MSTR走强，纳指企稳，风险偏好回升；第二层：BTC贴近EMA21/50，ETH/SOL相对走强，OI下降显示杠杆清理，资费中性；第三层：现价接近昨低，可轻仓做多，止损明确，目标空间足够。",
       "market_state": "risk-on",
-      "entry_low": 64784.19,
-      "entry_high": 64913.45,
-      "invalidation": "BTC跌破昨低64784.19且1小时收盘价低于该位，或纳指期货转跌且MSTR转弱",
+      "entry_low": 64800,
+      "entry_high": 65100,
+      "invalidation": "BTC跌破昨低64784且无法快速收回，或纳指期货转跌、MSTR转弱",
       "max_hold_hours": 24,
       "risk_flags": [
-        "禁止在跌破昨低后立即追空",
-        "禁止在纳指期货下跌时做多",
-        "禁止在MSTR弱于BTC时做多",
-        "禁止在资金费率极端偏多时追多"
+        "日线震荡，方向不明，仓位需轻",
+        "量能萎缩，突破需放量确认",
+        "若跌破昨低64784，立即止损，不扛单"
       ],
       "action": "skip"
     },
@@ -30,20 +29,20 @@
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "LONG",
-      "confidence": 0.55,
+      "confidence": 0.65,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货持平但NVDA和MSTR上涨，风险偏好改善，MSTR转强为机构风险偏好恢复的早期信号。第二层：ETH/BTC和SOL/BTC相对走强，资金费率正常，OI温和增加，日线偏多，但RSI偏低且量能萎缩，需谨慎。第三层：现价接近昨高，不宜追多，等待回踩昨低附近入场，止损设在昨低下方，目标空间约1.5%，覆盖成本。",
+      "rationale": "第一层：NVDA和MSTR走强，纳指企稳，风险偏好回升；第二层：ETH/BTC和SOL/BTC相对走强，OI温和增加，资金费率正常，日线偏多；第三层：现价接近昨高，回踩EMA21附近可入场，止损设于昨低下方，目标空间约1.2%，覆盖成本。",
       "market_state": "risk-on",
-      "entry_low": 1912.27,
-      "entry_high": 1926.72,
-      "invalidation": "若价格跌破昨低1912.27且1小时收盘价低于该位，或MSTR转弱且纳指期货下跌，则判断错误，应止损离场。",
+      "entry_low": 1918.0,
+      "entry_high": 1926.7,
+      "invalidation": "小时收盘跌破1912.27（昨低）",
       "max_hold_hours": 24,
       "risk_flags": [
-        "若价格跌破昨低1912.27且1小时收盘价低于该位，或MSTR转弱且纳指期货下跌，则判断错误，应止损离场。",
-        "量能低迷，突破可能乏力，若价格在昨高附近滞涨，应减仓或离场。",
-        "若ETH/BTC或SOL/BTC转弱，或资金费率转负，则风险偏好可能逆转，应平仓。",
-        "禁止因纳指下跌或跌破均线而追空，禁止把快速反弹当底部。"
+        "若跌破昨低1912.27则止损离场",
+        "若MSTR转弱或纳指期货下跌则降低仓位",
+        "若ETH/BTC转弱或SOL/BTC走弱则警惕风险偏好下降",
+        "若资金费率转负或OI大幅下降则平仓"
       ],
       "action": "skip"
     }
@@ -61,9 +60,9 @@
     "mstr_chg": 1.67,
     "nvda_chg": 2.16,
     "coin_chg": 2.48,
-    "btc_chg": -0.241,
-    "ethbtc_chg": 0.441,
-    "solbtc_chg": 2.312
+    "btc_chg": -0.066,
+    "ethbtc_chg": 0.509,
+    "solbtc_chg": 2.319
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
