@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-09T08:07:01Z",
+  "ts": "2026-08-09T09:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -12,16 +12,17 @@
       "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：NVDA和MSTR走强，纳指企稳，风险偏好回升；第二层：BTC贴近EMA21/50，ETH/SOL相对走强，OI下降显示杠杆清理，资费中性；第三层：现价接近昨低，可轻仓做多，止损明确，目标空间足够。",
+      "rationale": "第一层：NVDA和MSTR走强，美债收益率下行，风险偏好改善；第二层：BTC在昨低附近企稳，ETH/SOL相对走强，OI下降显示杠杆清理，资金费率中性，恐惧情绪提供反向指标；第三层：现价接近支撑，入场区间明确，止损设于昨低下方，目标空间约0.8%，覆盖成本，但需警惕量能不足和宏观事件。",
       "market_state": "risk-on",
-      "entry_low": 64800,
-      "entry_high": 65100,
-      "invalidation": "BTC跌破昨低64784且无法快速收回，或纳指期货转跌、MSTR转弱",
+      "entry_low": 64784.19,
+      "entry_high": 64896.88,
+      "invalidation": "BTC跌破昨低64784.19且无法快速收回，或纳指期货转跌、MSTR转弱",
       "max_hold_hours": 24,
       "risk_flags": [
-        "日线震荡，方向不明，仓位需轻",
-        "量能萎缩，突破需放量确认",
-        "若跌破昨低64784，立即止损，不扛单"
+        "量能低迷，突破可能乏力",
+        "日线震荡，方向不明",
+        "Powell讲话可能引发波动",
+        "禁止追高，等待回踩入场"
       ],
       "action": "skip"
     },
@@ -29,20 +30,20 @@
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "LONG",
-      "confidence": 0.65,
+      "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：NVDA和MSTR走强，纳指企稳，风险偏好回升；第二层：ETH/BTC和SOL/BTC相对走强，OI温和增加，资金费率正常，日线偏多；第三层：现价接近昨高，回踩EMA21附近可入场，止损设于昨低下方，目标空间约1.2%，覆盖成本。",
+      "rationale": "第一层：NVDA和MSTR上涨，纳指企稳，风险偏好改善；第二层：ETH/BTC和SOL/BTC相对走强，OI温和增加，资金费率正常，日线偏多；第三层：现价接近昨低和EMA50，入场风险有限，目标空间约0.8%，覆盖成本。",
       "market_state": "risk-on",
-      "entry_low": 1918.0,
-      "entry_high": 1926.7,
-      "invalidation": "小时收盘跌破1912.27（昨低）",
+      "entry_low": 1912.27,
+      "entry_high": 1917.22,
+      "invalidation": "小时收盘跌破1912.27（昨低）且无法快速收回，或纳指期货转跌、MSTR转弱",
       "max_hold_hours": 24,
       "risk_flags": [
-        "若跌破昨低1912.27则止损离场",
-        "若MSTR转弱或纳指期货下跌则降低仓位",
-        "若ETH/BTC转弱或SOL/BTC走弱则警惕风险偏好下降",
-        "若资金费率转负或OI大幅下降则平仓"
+        "RSI 38.5偏低，反弹可能乏力",
+        "量能低迷，突破需放量确认",
+        "若跌破昨低1912.27，立即止损",
+        "避免在恐惧贪婪指数31时过度追多"
       ],
       "action": "skip"
     }
@@ -60,9 +61,9 @@
     "mstr_chg": 1.67,
     "nvda_chg": 2.16,
     "coin_chg": 2.48,
-    "btc_chg": -0.066,
-    "ethbtc_chg": 0.509,
-    "solbtc_chg": 2.319
+    "btc_chg": -0.254,
+    "ethbtc_chg": 0.237,
+    "solbtc_chg": 2.345
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
