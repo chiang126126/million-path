@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-09T10:07:01Z",
+  "ts": "2026-08-09T11:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -9,20 +9,20 @@
       "symbol": "BTCUSDT",
       "source": "llm",
       "bias": "LONG",
-      "confidence": 0.55,
+      "confidence": 0.35,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：NVDA和MSTR上涨，美债收益率下降，风险偏好改善；第二层：BTC在昨低附近企稳，SOL/BTC走强，OI下降显示杠杆清理，资金费率中性；第三层：现价接近昨低，入场风险有限，止损明确，目标空间约0.8%，覆盖成本。",
+      "rationale": "第一层：NVDA和MSTR走强，纳指企稳，全球风险偏好回升；第二层：BTC贴近昨高，SOL/BTC走强，OI下降显示杠杆清理，资金费率中性，情绪恐惧但未极端；第三层：现价接近昨高，但量能不足，追高风险大，需回踩确认，入场区间参考昨低附近，止损设于昨低下方，目标空间有限，故低信心尝试。",
       "market_state": "risk-on",
-      "entry_low": 64784.19,
-      "entry_high": 64950.0,
-      "invalidation": "BTC跌破昨低64784且1小时收盘价低于该位，或纳指期货转跌且MSTR转弱",
+      "entry_low": 64800,
+      "entry_high": 65000,
+      "invalidation": "BTC跌破昨低64784且无法快速收回，或纳指期货转跌、MSTR转弱",
       "max_hold_hours": 24,
       "risk_flags": [
-        "日线震荡，方向不明，仓位需轻",
-        "RSI偏低但未超卖，反弹可能乏力",
-        "量能萎缩，突破需放量确认",
-        "若跌破昨低，立即止损，不扛单"
+        "量能不足，突破可能失败",
+        "日线震荡，方向不明",
+        "恐惧情绪可能持续压制",
+        "重大事件前波动加大"
       ],
       "action": "skip"
     },
@@ -33,16 +33,16 @@
       "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：NVDA和MSTR上涨，纳指企稳，风险偏好改善；第二层：ETH站上EMA21和EMA50，ETH/BTC和SOL/BTC相对走强，OI平稳，资金费率正常，恐惧贪婪指数31显示情绪未过热；第三层：现价接近昨高，但未突破，回踩至EMA21附近可入场，止损设于昨低下方，目标空间约1.2%，覆盖成本。",
+      "rationale": "第一层：NVDA和MSTR上涨，美债收益率下行，风险偏好改善；第二层：BTC站稳，SOL/BTC走强，OI平稳，资金费率正常，日线偏多；第三层：现价接近昨高，回踩至EMA21附近可入场，止损设于昨低下方，目标空间约1%，覆盖成本。",
       "market_state": "risk-on",
       "entry_low": 1918.0,
       "entry_high": 1926.0,
-      "invalidation": "小时收盘跌破1912.27（昨低）或纳指期货转跌且MSTR转弱",
+      "invalidation": "小时收盘跌破1912（昨低）或纳指期货转跌且MSTR转弱",
       "max_hold_hours": 24,
       "risk_flags": [
-        "若突破昨高后快速回落，可能假突破，不宜追多",
-        "若BTC跌破关键支撑，ETH可能跟随下跌",
-        "若纳指期货转跌或MSTR走弱，风险偏好可能逆转"
+        "量能低迷，突破可能乏力",
+        "恐惧贪婪指数31，情绪偏弱",
+        "若跌破昨低则趋势转弱，立即止损"
       ],
       "action": "skip"
     }
@@ -60,9 +60,9 @@
     "mstr_chg": 1.67,
     "nvda_chg": 2.16,
     "coin_chg": 2.48,
-    "btc_chg": -0.145,
-    "ethbtc_chg": 0.237,
-    "solbtc_chg": 2.194
+    "btc_chg": -0.036,
+    "ethbtc_chg": 0.0,
+    "solbtc_chg": 1.792
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
