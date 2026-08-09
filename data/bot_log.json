@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-09T12:07:01Z",
+  "ts": "2026-08-09T13:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -8,21 +8,21 @@
     {
       "symbol": "BTCUSDT",
       "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.55,
+      "bias": "FLAT",
+      "confidence": 0.0,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货企稳、NVDA和MSTR走强显示风险偏好回升，MSTR强于BTC是机构情绪恢复的早期信号；第二层：BTC贴近EMA21/EMA50且RSI中性，SOL/BTC走强确认资金下沉，OI下降表明杠杆已清理，追空风险高；第三层：现价接近昨低支撑，入场区间合理，止损0.5%低于ATR，目标0.8%覆盖成本，但量能不足且恐惧贪婪指数低，故confidence中等。",
-      "market_state": "risk-on",
-      "entry_low": 64800,
-      "entry_high": 65000,
-      "invalidation": "BTC跌破昨低64784且无法快速收回，或纳指期货转跌、MSTR转弱",
-      "max_hold_hours": 24,
+      "rationale": "第一层：纳指期货持平，美债收益率下行，美元持平，NVDA上涨但新闻标题显示其下跌，MSTR盘前上涨但幅度有限，风险偏好信号矛盾。第二层：BTC窄幅震荡，ETH/BTC持平，SOL/BTC走强，OI下降，资金费率正常，情绪恐惧，但量能萎缩，方向不明。第三层：现价接近昨高，但缺乏明确突破或回调，入场风险高，空间不足，且新闻标题与盘前数据矛盾，故选择观望。",
+      "market_state": "mixed",
+      "entry_low": 0,
+      "entry_high": 0,
+      "invalidation": "",
+      "max_hold_hours": 0,
       "risk_flags": [
-        "量能低迷，突破可能乏力",
-        "恐惧贪婪指数31，情绪偏弱",
-        "若跌破昨低64784则止损",
-        "禁止追空，因OI下降显示空头动能减弱"
+        "新闻标题与盘前数据矛盾，需等待确认",
+        "量能萎缩，突破或跌破可能无效",
+        "美债收益率下行但美元持平，宏观信号不明",
+        "恐惧情绪可能引发快速反弹，不宜追空"
       ],
       "action": "skip"
     },
@@ -30,20 +30,19 @@
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "LONG",
-      "confidence": 0.55,
+      "confidence": 0.6,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货企稳、NVDA和MSTR走强，风险偏好回升；第二层：BTC站稳关键位，SOL/BTC走强确认风险偏好，OI平稳无杠杆压力，资金费率中性；第三层：现价接近昨低支撑，入场风险可控，目标空间约0.8%覆盖成本，但需警惕量能不足和恐惧情绪。",
+      "rationale": "第一层：NVDA和MSTR走强显示风险偏好恢复，但纳指期货持平需确认。第二层：ETH站上30日线且RSI中性，SOL/BTC走强确认风险偏好，OI平稳无杠杆风险。第三层：现价接近昨高昨低区间，可围绕现价入场，止损设于昨低下方，目标看至1%空间，覆盖成本。",
       "market_state": "risk-on",
       "entry_low": 1912.27,
-      "entry_high": 1917.09,
-      "invalidation": "小时收盘跌破1912.27（昨低）且无法快速收回，或纳指期货转跌、MSTR转弱",
+      "entry_high": 1926.72,
+      "invalidation": "跌破1912.27且无法快速收复，或纳指期货转跌、MSTR转弱",
       "max_hold_hours": 24,
       "risk_flags": [
-        "量能仅为常态0.4倍，突破可能乏力",
-        "恐惧贪婪指数31，情绪偏弱",
-        "若跌破昨低1912.27则止损",
-        "禁止追高，等待回踩入场"
+        "美股盘前波动大，需等待开盘确认",
+        "若跌破昨低且无法收复则立即止损",
+        "若纳指期货转跌或MSTR走弱则放弃做多"
       ],
       "action": "skip"
     }
@@ -61,9 +60,9 @@
     "mstr_chg": 1.67,
     "nvda_chg": 2.16,
     "coin_chg": 2.48,
-    "btc_chg": -0.056,
-    "ethbtc_chg": -0.169,
-    "solbtc_chg": 1.16
+    "btc_chg": 0.037,
+    "ethbtc_chg": -0.034,
+    "solbtc_chg": 1.352
   },
   "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
 }
