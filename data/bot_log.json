@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-10T00:07:01Z",
+  "ts": "2026-08-10T01:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -8,21 +8,20 @@
     {
       "symbol": "BTCUSDT",
       "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.55,
+      "bias": "FLAT",
+      "confidence": 0.0,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货企稳、NVDA和MSTR走强，风险偏好改善；第二层：BTC贴近昨低但未破，SOL/BTC相对走强，OI微降显示杠杆清理，资金费率中性；第三层：现价接近昨低支撑，入场风险有限，目标看昨高，空间约0.8%，覆盖成本。",
-      "market_state": "risk-on",
-      "entry_low": 64730,
-      "entry_high": 64942,
-      "invalidation": "BTC 4小时收盘跌破64730（昨低）或跌破EMA50且无法快速收回",
-      "max_hold_hours": 24,
+      "rationale": "第一层：纳指期货微跌但NVDA和MSTR上涨，风险偏好中性偏多；第二层：BTC窄幅震荡，ETH/BTC走弱但SOL/BTC走强，OI下降显示杠杆清理，资金费率正常，情绪恐惧；第三层：价格贴近昨高低点，方向不明，缺乏明确入场信号，且新闻标题矛盾（NVDA下跌与上涨并存），故选择观望。",
+      "market_state": "mixed",
+      "entry_low": 0,
+      "entry_high": 0,
+      "invalidation": "",
+      "max_hold_hours": 0,
       "risk_flags": [
-        "日线震荡，方向不明，仓位需轻",
-        "若跌破昨低64730，立即止损",
-        "美股盘后流动性低，滑点可能较大",
-        "恐惧贪婪指数30，情绪偏空，反弹可能乏力"
+        "方向不明，禁止强行交易",
+        "新闻标题矛盾，需等待澄清",
+        "OI下降但价格未动，可能变盘"
       ],
       "action": "skip"
     },
@@ -33,17 +32,17 @@
       "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货企稳、NVDA和MSTR走强，风险偏好改善；第二层：BTC站稳关键位，SOL/BTC相对走强，OI下降显示杠杆清理，资金费率中性，情绪恐惧但未极端；第三层：现价接近昨低，入场区间合理，止损设于昨低下方，目标空间约1.3%，覆盖成本，近期无重大事件。",
+      "rationale": "第一层：NVDA+2.2%显示AI风向偏暖，纳指期货微跌但美债收益率下行，整体risk-on；第二层：ETH站上30日线，日线偏多，OI下降显示杠杆清理，资金费率正常，SOL/BTC走强确认风险偏好；第三层：现价接近昨低支撑，入场区间合理，止损设于昨低下方，目标空间约1.5%，覆盖成本，但需警惕美股盘后波动和Powell讲话。",
       "market_state": "risk-on",
       "entry_low": 1907.56,
-      "entry_high": 1919.33,
-      "invalidation": "跌破昨低1907.56且无法快速收回，或纳指期货转跌、MSTR转弱，或ETH/BTC显著走弱",
+      "entry_high": 1918.54,
+      "invalidation": "小时收盘跌破1907.56（昨低）且无法快速收回，或BTC跌破关键支撑带动ETH下破",
       "max_hold_hours": 24,
       "risk_flags": [
-        "禁止追高，若价格快速拉升至1938上方则放弃",
-        "禁止因恐惧情绪而过度做空",
-        "若ETH/BTC持续走弱，降低多头信心",
-        "若MSTR转弱或纳指期货下跌，立即离场"
+        "美股盘后流动性低，滑点风险",
+        "Powell讲话可能引发波动",
+        "若跌破昨低且无法收回，立即止损",
+        "禁止追空，因OI下降显示空头动能减弱"
       ],
       "action": "skip"
     }
@@ -52,18 +51,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29844.5,
-    "nq_chg": 0.03,
+    "nq": 29795.0,
+    "nq_chg": -0.13,
     "tnx": 4.66,
     "tnx_chg": -0.21,
-    "dxy": 99.633,
+    "dxy": 99.629,
     "dxy_chg": 0.03,
     "mstr_chg": 1.67,
     "nvda_chg": 2.16,
     "coin_chg": 2.48,
-    "btc_chg": -0.031,
-    "ethbtc_chg": -0.169,
-    "solbtc_chg": 0.556
+    "btc_chg": -0.096,
+    "ethbtc_chg": -0.406,
+    "solbtc_chg": 0.761
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
