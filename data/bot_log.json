@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-10T12:07:15Z",
+  "ts": "2026-08-10T13:07:15Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -8,42 +8,40 @@
     {
       "symbol": "BTCUSDT",
       "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.55,
+      "bias": "FLAT",
+      "confidence": 0.0,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货微涨、NVDA+2.2%、MSTR+1.7%显示风险偏好改善，MSTR与BTC同步无背离；第二层：BTC站上30日线且偏离仅1.2%，ETH/BTC平稳、SOL/BTC+0.36%显示资金下沉，OI微增但资费正常，恐惧贪婪30未过热；第三层：现价接近昨高但未突破，回踩昨低64730附近入场风险收益比约1:1.4，覆盖成本，但需警惕追高，故等待回踩。",
-      "market_state": "risk-on",
-      "entry_low": 64730.08,
-      "entry_high": 65190.16,
-      "invalidation": "BTC 4小时收盘跌破64730（昨低）或跌破EMA50（65030）且无法快速收回",
-      "max_hold_hours": 24,
+      "rationale": "第一层：纳指期货微跌但NVDA和MSTR上涨，风险偏好中性偏多；第二层：BTC窄幅震荡，ETH/BTC走弱而SOL/BTC走强，OI微增，资金费率正常，情绪恐惧；第三层：方向不明，缺乏明确入场信号，且新闻标题矛盾（NVDA下跌与上涨并存），风险事件临近（Powell讲话），不宜交易。",
+      "market_state": "mixed",
+      "entry_low": 0,
+      "entry_high": 0,
+      "invalidation": "",
+      "max_hold_hours": 0,
       "risk_flags": [
-        "禁止在未回踩时追多，现价65190接近昨高65474，追多空间有限",
-        "若纳指期货转跌或NVDA回吐涨幅，风险偏好可能逆转，需立即离场",
-        "若BTC跌破昨低64730，则多头失效，禁止逆势做空，应观望",
-        "近期有Powell讲话，可能引发波动，注意仓位管理"
+        "方向不明，震荡区间窄，止损空间不足",
+        "Powell讲话可能引发波动，事件风险高",
+        "新闻标题矛盾，信息不一致，需等待确认"
       ],
       "action": "skip"
     },
     {
       "symbol": "ETHUSDT",
       "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.55,
+      "bias": "FLAT",
+      "confidence": 0.0,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货微涨、NVDA+2.2%显示风险偏好改善，MSTR+1.7%与BTC+0.4%无背离，确认risk-on。第二层：ETH站上30日线且偏离仅1.88%，RSI 52.4中性，OI微增但费率正常，SOL/BTC相对走强确认资金下沉，但量能不足且恐惧贪婪30显示情绪谨慎。第三层：现价1922接近EMA21/50，回踩至1915-1925区间入场，止损设于昨低1907.56下方，目标看至1950（+1.5%），空间覆盖成本，但需警惕Powell讲话及NVDA波动。",
-      "market_state": "risk-on",
-      "entry_low": 1915.0,
-      "entry_high": 1925.0,
-      "invalidation": "小时收盘跌破1907.56（昨低）或日线收盘跌破30日线（约1887）",
-      "max_hold_hours": 24,
+      "rationale": "第一层：纳指期货微跌但NVDA和MSTR上涨，风险偏好混合；第二层：BTC微跌但ETH/BTC走弱，SOL/BTC走强，OI上升但资金费率中性，恐惧贪婪30，信号冲突；第三层：价格接近昨低，方向不明，且无明确入场区间，空间不足，故FLAT。",
+      "market_state": "mixed",
+      "entry_low": 0,
+      "entry_high": 0,
+      "invalidation": "",
+      "max_hold_hours": 0,
       "risk_flags": [
-        "若纳指期货转跌或NVDA回吐涨幅，立即离场",
-        "若ETH跌破1907.56（昨低），止损出场",
-        "若量能持续低于常态，反弹可能乏力",
-        "Powell讲话可能引发波动，注意仓位"
+        "信号冲突，不强行选方向",
+        "价格接近昨低，追空风险大",
+        "恐惧贪婪指数低，但无确认信号"
       ],
       "action": "skip"
     }
@@ -52,18 +50,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29868.25,
-    "nq_chg": 0.11,
-    "tnx": 4.66,
-    "tnx_chg": -0.21,
-    "dxy": 99.735,
-    "dxy_chg": 0.2,
+    "nq": 29776.0,
+    "nq_chg": -0.2,
+    "tnx": 4.67,
+    "tnx_chg": 0.26,
+    "dxy": 99.774,
+    "dxy_chg": 0.24,
     "mstr_chg": 1.67,
     "nvda_chg": 2.16,
     "coin_chg": 2.48,
-    "btc_chg": 0.388,
-    "ethbtc_chg": -0.102,
-    "solbtc_chg": 0.357
+    "btc_chg": -0.187,
+    "ethbtc_chg": -0.406,
+    "solbtc_chg": 0.484
   },
   "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
 }
