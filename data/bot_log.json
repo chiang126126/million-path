@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-11T12:07:58Z",
+  "ts": "2026-08-11T13:08:14Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -12,17 +12,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货微涨但NVDA下跌，MSTR转强但幅度有限，风险偏好未明确；第二层：BTC贴近30日线震荡，RSI偏高，OI下降但幅度小，ETH/SOL未明显走强，信号冲突；第三层：现价接近昨高，追多空间不足，且缺乏明确方向，不满足进场条件。",
+      "rationale": "第一层：纳指期货微涨但NVDA下跌，美债收益率下行，美元持平，风险偏好不明朗；MSTR微涨与BTC小跌无背离，但整体信号不明确。第二层：BTC处于震荡区间，昨高昨低未突破，OI下降显示杠杆清理，但资金费率仍为正，ETH/SOL相对走弱，市场情绪恐惧，缺乏明确方向。第三层：当前价格接近区间中部，无明确入场点，且缺乏关键事件驱动，风险回报比不佳，故选择观望。",
       "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
-      "invalidation": "无",
+      "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "信号冲突，方向不明",
-        "RSI偏高，追多风险大",
-        "缺乏明确风险偏好信号",
-        "禁止追空或追多"
+        "禁止追空：OI下降但未极端，且BTC未跌破昨低",
+        "禁止做多：日线震荡，且未站上关键位",
+        "关注Powell讲话可能引发波动"
       ],
       "action": "skip"
     },
@@ -33,16 +32,18 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货微涨但美债收益率上行，NVDA下跌，MSTR相对走强但整体风险偏好不明。第二层：ETH震荡，RSI超买，OI上升但价格下跌，资金费率中性，ETH/BTC走弱，缺乏确认。第三层：方向不明，且RSI超买，追多风险高，做空缺乏确认，故选择观望。",
+      "rationale": "第一层：纳指期货微涨但NVDA下跌，美债收益率下行，美元持平，风险偏好不明朗；第二层：ETH现价贴近EMA21和EMA50，RSI 70.3接近超买，OI微增但资金费率正常，ETH/BTC和SOL/BTC均走弱，缺乏全面risk-on确认；第三层：价格处于昨高1931.57和昨低1867.96之间，方向不明，且RSI偏高，追多风险大，追空缺乏确认，空间不足，故选择FLAT。",
       "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "RSI超买，追多风险高",
-        "美债收益率上行压制风险资产",
-        "缺乏明确方向，避免逆势交易"
+        "RSI 70.3接近超买，追多风险大",
+        "ETH/BTC和SOL/BTC走弱，无全面risk-on确认",
+        "NVDA下跌，AI风向偏弱",
+        "价格位于昨高昨低之间，方向不明",
+        "禁止因纳指期货微涨而追多，禁止因NVDA下跌而追空"
       ],
       "action": "skip"
     }
@@ -51,18 +52,18 @@
   "news_lines": 3,
   "global_risk": "unknown",
   "xm": {
-    "nq": 29831.75,
-    "nq_chg": 0.32,
-    "tnx": 4.7,
-    "tnx_chg": 0.84,
-    "dxy": 99.853,
-    "dxy_chg": 0.04,
+    "nq": 29843.25,
+    "nq_chg": 0.36,
+    "tnx": 4.69,
+    "tnx_chg": -0.11,
+    "dxy": 99.809,
+    "dxy_chg": -0.0,
     "mstr_chg": 0.5,
     "nvda_chg": -0.66,
     "coin_chg": 2.25,
-    "btc_chg": -1.104,
-    "ethbtc_chg": -0.305,
-    "solbtc_chg": -0.008
+    "btc_chg": -0.83,
+    "ethbtc_chg": -0.136,
+    "solbtc_chg": -0.245
   },
   "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
 }
