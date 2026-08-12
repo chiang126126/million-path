@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-12T21:07:01Z",
+  "ts": "2026-08-12T22:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -12,7 +12,7 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货和NVDA走强显示risk-on，但MSTR显著弱于BTC，提示公司自身问题而非BTC走弱。第二层：BTC日线偏空，价格在昨低附近，OI上升但资金费率中性，ETH相对走强但SOL持平，信号混合。第三层：方向不明，且日线偏空禁止做多，但MSTR弱势不能做空BTC，且价格接近昨低，追空风险高，故FLAT。",
+      "rationale": "第一层：纳指期货和NVDA走强显示risk-on，但MSTR显著弱于BTC暗示公司层面问题，不能据此做空BTC。第二层：BTC日线偏空，价格在昨低附近但未跌破，OI上升表明新空进场，但资金费率中性，ETH/BTC微涨而SOL/BTC下跌，信号混杂。第三层：方向不明，且日线偏空禁止做多，但追空风险高（OI上升），且缺乏明确入场和失效位，空间不足，故FLAT。",
       "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
@@ -20,8 +20,8 @@
       "max_hold_hours": 0,
       "risk_flags": [
         "日线偏空禁做多",
-        "MSTR弱势不能做空BTC",
-        "价格接近昨低，追空风险高",
+        "OI上升追空危险",
+        "MSTR弱但BTC稳，不可做空BTC",
         "信号冲突，降低confidence"
       ],
       "action": "skip"
@@ -29,20 +29,20 @@
     {
       "symbol": "ETHUSDT",
       "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.6,
+      "bias": "FLAT",
+      "confidence": 0.0,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货与NVDA走强显示风险偏好改善，但MSTR弱势为个股因素，不可据此做空BTC。第二层：ETH/BTC相对走强，OI下降表明杠杆已清理，资金费率中性，恐惧贪婪指数27显示情绪偏冷，但价格站稳30小时均线，日线震荡。第三层：入场区间参考昨低与EMA21附近，止损设在昨低下方，目标空间约1.5%，覆盖成本，且无重大事件风险。",
+      "rationale": "第一层：纳指期货与NVDA走强显示risk-on，但MSTR显著弱于BTC暗示公司自身问题，不能据此做空BTC。第二层：BTC震荡，ETH/BTC微升但SOL/BTC下跌，OI下降显示杠杆清理，资金费率中性，情绪恐惧，缺乏明确方向。第三层：价格贴近均线，无明确突破或回踩，入场区间不清晰，空间不足以覆盖成本，且近期有Powell讲话等事件，条件不满足，故FLAT。",
       "market_state": "risk-on",
-      "entry_low": 1870.0,
-      "entry_high": 1890.0,
-      "invalidation": "跌破昨低1853.62或纳指期货转跌且MSTR继续大幅弱于BTC",
-      "max_hold_hours": 24,
+      "entry_low": 0,
+      "entry_high": 0,
+      "invalidation": "",
+      "max_hold_hours": 0,
       "risk_flags": [
-        "日线震荡，不宜重仓",
-        "MSTR弱势可能拖累情绪",
-        "若跌破昨低则立即止损"
+        "禁止追空：OI下降，杠杆已清理，追空危险",
+        "禁止做多：日线震荡，未站上关键位，且MSTR弱势可能拖累情绪",
+        "事件风险：Powell讲话可能引发波动"
       ],
       "action": "skip"
     }
@@ -51,18 +51,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29812.25,
-    "nq_chg": 0.63,
+    "nq": 29805.75,
+    "nq_chg": 0.61,
     "tnx": 4.68,
     "tnx_chg": -0.04,
-    "dxy": 99.978,
-    "dxy_chg": 0.16,
+    "dxy": 99.987,
+    "dxy_chg": 0.17,
     "mstr_chg": -2.57,
     "nvda_chg": 3.01,
     "coin_chg": 0.24,
-    "btc_chg": -0.267,
-    "ethbtc_chg": 0.508,
-    "solbtc_chg": -0.042
+    "btc_chg": -0.321,
+    "ethbtc_chg": 0.135,
+    "solbtc_chg": -0.792
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
