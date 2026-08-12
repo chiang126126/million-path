@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-12T16:07:16Z",
+  "ts": "2026-08-12T17:07:15Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -12,17 +12,17 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货和NVDA走强显示risk-on，但MSTR走弱且美元微涨，风险偏好未完全一致。第二层：BTC日线偏空，但ETH/SOL相对走强，OI上升暗示新空进场，资金费率中性，情绪恐惧，信号冲突。第三层：现价接近昨低，但日线偏空禁止做多，做空需等跌破昨低且反抽失败，当前未确认，且空间不足，故FLAT。",
-      "market_state": "mixed",
+      "rationale": "第一层：纳指期货与NVDA走强显示风险偏好改善，但MSTR单独大跌暗示公司自身问题，不能据此做空BTC。第二层：BTC未跟涨，ETH/SOL相对走强但BTC未确认，OI上升但价格未动，资金费率中性，日线偏空。第三层：方向不明，缺乏明确入场信号，且日线偏空限制做多，做空需等待跌破支撑后反抽确认，当前条件不满足。",
+      "market_state": "risk-on",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "日线偏空禁做多",
-        "未跌破昨低不追空",
-        "信号冲突降低confidence",
-        "警惕开盘噪音与插针"
+        "日线偏空，禁止做多",
+        "MSTR弱势但BTC稳，禁止做空BTC",
+        "美股盘中噪音大，避免追单",
+        "OI上升但价格未动，方向不明"
       ],
       "action": "skip"
     },
@@ -30,19 +30,21 @@
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "LONG",
-      "confidence": 0.6,
+      "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货与NVDA上涨显示风险偏好改善，MSTR未显著弱于BTC，无背离。第二层：ETH/BTC与SOL/BTC相对走强，OI下降表明杠杆清理，资金费率中性，恐惧情绪提供反向支撑。第三层：现价接近EMA21/50，回踩可入场，止损设于1880下方，目标空间约1.5%，覆盖成本。",
+      "rationale": "第一层：纳指期货与NVDA走强，风险偏好改善，但MSTR弱势为个股因素，不构成做空BTC依据。第二层：ETH/BTC与SOL/BTC相对走强，OI下降显示杠杆清理，现价贴近EMA21/50，RSI中性，日线震荡但站上30小时均线。第三层：现价接近昨高，不宜追高，回踩至1885-1895区间入场，止损设于昨低下方，目标空间约2%，覆盖成本。",
       "market_state": "risk-on",
       "entry_low": 1885.0,
       "entry_high": 1895.0,
-      "invalidation": "跌破1880或日线收盘低于EMA50且纳指期货转跌",
+      "invalidation": "小时收盘跌破昨低1853.62",
       "max_hold_hours": 24,
       "risk_flags": [
         "美股盘中波动大，警惕开盘噪音与插针",
-        "若纳指期货转跌或MSTR大幅走弱，立即离场",
-        "禁止追高，等待回踩入场"
+        "MSTR持续弱势可能拖累情绪",
+        "若跌破昨低1853.62则判断错误，立即止损",
+        "资金费率数据缺失，需关注后续变化",
+        "日线震荡，不宜重仓，控制杠杆"
       ],
       "action": "skip"
     }
@@ -51,18 +53,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29839.75,
-    "nq_chg": 0.72,
-    "tnx": 4.67,
-    "tnx_chg": -0.3,
-    "dxy": 99.844,
-    "dxy_chg": 0.02,
-    "mstr_chg": -1.8,
-    "nvda_chg": 2.63,
-    "coin_chg": -0.14,
-    "btc_chg": -0.237,
-    "ethbtc_chg": 1.81,
-    "solbtc_chg": 1.265
+    "nq": 29911.75,
+    "nq_chg": 0.96,
+    "tnx": 4.68,
+    "tnx_chg": -0.17,
+    "dxy": 99.95,
+    "dxy_chg": 0.13,
+    "mstr_chg": -2.2,
+    "nvda_chg": 2.95,
+    "coin_chg": -0.34,
+    "btc_chg": 0.038,
+    "ethbtc_chg": 1.396,
+    "solbtc_chg": 0.999
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
