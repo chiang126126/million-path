@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-12T01:08:13Z",
+  "ts": "2026-08-12T02:08:25Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -8,22 +8,21 @@
     {
       "symbol": "BTCUSDT",
       "source": "llm",
-      "bias": "FLAT",
-      "confidence": 0.0,
+      "bias": "SHORT",
+      "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货下跌、NVDA走弱、MSTR超额弱势显示全球风险偏好risk-off，但MSTR弱势或为公司自身问题，不能直接做空BTC。第二层：BTC日线偏空，但OI上升显示新空进场，追空危险；ETH/SOL相对走强，资金费率中性，情绪恐惧，信号冲突。第三层：方向不明，入场位和失效位不清晰，空间不足，且近期有Powell讲话等事件，风险高，故选择FLAT。",
+      "rationale": "第一层：纳指期货下跌、NVDA走弱、MSTR超额下跌，全球风险偏好risk-off；第二层：BTC跌破EMA21但仍在昨低上方，ETH/SOL相对走强但OI上升显示新空进场，资金费率中性，恐惧贪婪27；第三层：现价接近昨高，可轻仓做空，止损设在昨高上方，目标看至昨低附近，空间约1.5%，覆盖成本。",
       "market_state": "risk-off",
-      "entry_low": 0,
-      "entry_high": 0,
-      "invalidation": "",
-      "max_hold_hours": 0,
+      "entry_low": 63865.25,
+      "entry_high": 64515.43,
+      "invalidation": "BTC 4小时收盘价站上64515.43（昨高）且MSTR不再弱于BTC，或纳指期货转涨",
+      "max_hold_hours": 24,
       "risk_flags": [
-        "禁止因纳指下跌或跌破均线立即追空",
-        "禁止把下跌中的快速反弹当底部",
-        "MSTR单独走弱≠BTC更差，不能据此做空BTC",
-        "OI上升时追空危险，杠杆未清理",
-        "信号冲突，主动降低confidence或FLAT"
+        "禁止追空，若BTC快速反弹至昨高上方则失效",
+        "若ETH/SOL持续走强且BTC站稳昨高，则空头逻辑减弱",
+        "若MSTR止跌回升，风险偏好可能修复",
+        "注意Powell讲话可能引发波动"
       ],
       "action": "skip"
     },
@@ -34,17 +33,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货下跌、NVDA大跌、MSTR超额弱势，全球风险偏好risk-off；第二层：BTC相对抗跌但OI下降显示杠杆清理，ETH/SOL相对走强但整体量能不足，方向不明；第三层：现价处于昨高昨低之间，无明确入场信号，且风险事件临近，空间不足。",
+      "rationale": "第一层：纳指期货下跌、NVDA和MSTR走弱，全球风险偏好risk-off；第二层：BTC跌幅小但ETH/SOL相对走强，OI下降显示杠杆清理，信号冲突；第三层：现价接近昨高，方向不明，且空间不足，不满足入场条件。",
       "market_state": "risk-off",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "禁止追空：OI下降显示杠杆已清理，追空危险",
-        "禁止做多：risk-off环境且未站上关键位",
-        "MSTR弱势不能作为做空BTC依据",
-        "关注Powell讲话等宏观事件"
+        "禁止追空",
+        "禁止做多",
+        "信号冲突，保持观望"
       ],
       "action": "skip"
     }
@@ -53,18 +51,18 @@
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 29666.0,
-    "nq_chg": -0.24,
+    "nq": 29649.0,
+    "nq_chg": -0.3,
     "tnx": 4.68,
     "tnx_chg": -0.32,
-    "dxy": 99.828,
-    "dxy_chg": 0.02,
+    "dxy": 99.851,
+    "dxy_chg": 0.04,
     "mstr_chg": -3.92,
     "nvda_chg": -2.88,
     "coin_chg": -3.27,
-    "btc_chg": -0.396,
-    "ethbtc_chg": 0.887,
-    "solbtc_chg": 1.191
+    "btc_chg": -0.332,
+    "ethbtc_chg": 0.75,
+    "solbtc_chg": 0.892
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
