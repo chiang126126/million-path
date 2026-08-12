@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-12T15:07:16Z",
+  "ts": "2026-08-12T16:07:16Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -12,7 +12,7 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货和NVDA走强显示risk-on，但MSTR走弱且COIN下跌，风险偏好未全面传导。第二层：BTC日线偏空，价格在昨低附近，OI上升但资金费率中性，ETH/SOL相对走强但BTC未确认。第三层：方向不明，且日线偏空禁做多，但未跌破昨低且风险偏好改善，追空风险大，故FLAT。",
+      "rationale": "第一层：纳指期货和NVDA走强显示risk-on，但MSTR走弱且美元微涨，风险偏好未完全一致。第二层：BTC日线偏空，但ETH/SOL相对走强，OI上升暗示新空进场，资金费率中性，情绪恐惧，信号冲突。第三层：现价接近昨低，但日线偏空禁止做多，做空需等跌破昨低且反抽失败，当前未确认，且空间不足，故FLAT。",
       "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
@@ -20,9 +20,9 @@
       "max_hold_hours": 0,
       "risk_flags": [
         "日线偏空禁做多",
-        "未跌破昨低且风险偏好改善，追空风险大",
-        "MSTR走弱但BTC未跟随，存在背离",
-        "当前时段美股盘中，警惕开盘噪音与插针"
+        "未跌破昨低不追空",
+        "信号冲突降低confidence",
+        "警惕开盘噪音与插针"
       ],
       "action": "skip"
     },
@@ -30,20 +30,19 @@
       "symbol": "ETHUSDT",
       "source": "llm",
       "bias": "LONG",
-      "confidence": 0.55,
+      "confidence": 0.6,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货和NVDA上涨显示风险偏好改善，但MSTR走弱需警惕；第二层：ETH/BTC和SOL/BTC相对走强确认资金下沉，OI下降表明杠杆清理，资费中性，情绪恐惧提供反向支撑；第三层：现价接近昨高，回踩至1885-1897区间可入场，止损设于昨低下方，目标空间约1.5%，覆盖成本，但需警惕追高和开盘噪音。",
+      "rationale": "第一层：纳指期货与NVDA上涨显示风险偏好改善，MSTR未显著弱于BTC，无背离。第二层：ETH/BTC与SOL/BTC相对走强，OI下降表明杠杆清理，资金费率中性，恐惧情绪提供反向支撑。第三层：现价接近EMA21/50，回踩可入场，止损设于1880下方，目标空间约1.5%，覆盖成本。",
       "market_state": "risk-on",
       "entry_low": 1885.0,
-      "entry_high": 1897.8,
-      "invalidation": "小时收盘跌破1853.62（昨低）或纳指期货转跌且MSTR跌幅扩大至-5%以下",
+      "entry_high": 1895.0,
+      "invalidation": "跌破1880或日线收盘低于EMA50且纳指期货转跌",
       "max_hold_hours": 24,
       "risk_flags": [
-        "禁止追高，等待回踩入场",
-        "若跌破昨低1853.62则立即止损",
-        "若纳指期货转跌或MSTR跌幅扩大，则降低仓位或离场",
-        "警惕开盘插针，避免在开盘前15分钟内入场"
+        "美股盘中波动大，警惕开盘噪音与插针",
+        "若纳指期货转跌或MSTR大幅走弱，立即离场",
+        "禁止追高，等待回踩入场"
       ],
       "action": "skip"
     }
@@ -52,18 +51,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29868.25,
-    "nq_chg": 0.82,
+    "nq": 29839.75,
+    "nq_chg": 0.72,
     "tnx": 4.67,
-    "tnx_chg": -0.26,
-    "dxy": 99.815,
-    "dxy_chg": -0.01,
-    "mstr_chg": -2.3,
-    "nvda_chg": 2.95,
-    "coin_chg": -0.66,
-    "btc_chg": -0.52,
-    "ethbtc_chg": 1.361,
-    "solbtc_chg": 1.248
+    "tnx_chg": -0.3,
+    "dxy": 99.844,
+    "dxy_chg": 0.02,
+    "mstr_chg": -1.8,
+    "nvda_chg": 2.63,
+    "coin_chg": -0.14,
+    "btc_chg": -0.237,
+    "ethbtc_chg": 1.81,
+    "solbtc_chg": 1.265
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
