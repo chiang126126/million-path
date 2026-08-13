@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-13T15:07:01Z",
+  "ts": "2026-08-13T16:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -8,21 +8,21 @@
     {
       "symbol": "BTCUSDT",
       "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.55,
+      "bias": "FLAT",
+      "confidence": 0.0,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货与NVDA走强，美债收益率下行，风险偏好改善；第二层：BTC站稳EMA21/50，OI温和上升但资金费率正常，SOL相对走强确认风险偏好；第三层：现价接近昨低，回踩入场，止损明确，目标空间约1.5%，覆盖成本。",
-      "market_state": "risk-on",
-      "entry_low": 63310.34,
-      "entry_high": 63858.38,
-      "invalidation": "小时收盘跌破昨低63310.34，或纳指期货转跌且MSTR相对BTC走弱",
-      "max_hold_hours": 24,
+      "rationale": "第一层：纳指期货和NVDA上涨显示risk-on，但MSTR和COIN走弱，且美债收益率下降，美元微跌，风险偏好改善有限。第二层：BTC现价63442，低于昨高64500，高于昨低63310，日线偏空，OI微增，资金费率正常，ETH/SOL相对走弱，加密市场未确认传统市场风险偏好。第三层：现价接近昨低，但日线偏空，且未站上关键位，追多风险大，做空需等跌破昨低后反抽确认，当前无明确入场点，空间不足，故FLAT。",
+      "market_state": "mixed",
+      "entry_low": 0,
+      "entry_high": 0,
+      "invalidation": "",
+      "max_hold_hours": 0,
       "risk_flags": [
-        "日线震荡，不宜重仓",
-        "恐惧贪婪29，情绪偏弱，反弹可能乏力",
-        "美股盘中波动大，警惕插针",
-        "若跌破昨低立即止损，不扛单"
+        "日线偏空，禁止做多",
+        "现价接近昨低，追空风险大，需等跌破后反抽确认",
+        "MSTR和COIN走弱，警惕科技股回调传导",
+        "美股盘中波动大，避免开盘噪音"
       ],
       "action": "skip"
     },
@@ -33,17 +33,17 @@
       "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货和NVDA上涨，风险偏好改善，MSTR未背离；第二层：BTC稳，ETH贴近EMA21/50，OI温和上升但资费中性，恐惧贪婪指数低，SOL相对走强；第三层：现价接近EMA支撑，止损设于昨低下方，目标空间约1.8%覆盖成本，但日线震荡且美股盘中波动大，故降低信心。",
+      "rationale": "第一层：纳指期货和NVDA上涨显示风险偏好改善，MSTR无背离；第二层：BTC企稳，OI温和上升但资金费率中性，ETH/BTC略弱但SOL/BTC持平，市场未全面risk-on；第三层：现价接近昨低支撑，风险回报比尚可，但需确认支撑有效。",
       "market_state": "risk-on",
-      "entry_low": 1888.94,
-      "entry_high": 1891.73,
-      "invalidation": "跌破昨低1873.29且无法快速收复，或纳指期货转跌、NVDA转跌，或ETH/BTC显著走弱",
+      "entry_low": 1873.29,
+      "entry_high": 1881.41,
+      "invalidation": "小时收盘跌破1873.29（昨低）",
       "max_hold_hours": 24,
       "risk_flags": [
-        "日线震荡，不宜重仓",
-        "美股盘中波动大，警惕插针",
+        "美股盘中波动大，警惕开盘噪音",
+        "ETH/BTC走弱，若持续则降低信心",
         "若跌破昨低1873.29则止损",
-        "禁止追高，等待回踩入场"
+        "恐惧贪婪指数29，情绪偏弱，反弹可能有限"
       ],
       "action": "skip"
     }
@@ -52,18 +52,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 30211.25,
-    "nq_chg": 1.2,
-    "tnx": 4.62,
-    "tnx_chg": -1.3,
-    "dxy": 99.829,
-    "dxy_chg": -0.18,
-    "mstr_chg": 1.51,
-    "nvda_chg": 3.24,
-    "coin_chg": 0.46,
-    "btc_chg": 0.571,
-    "ethbtc_chg": -0.504,
-    "solbtc_chg": 0.302
+    "nq": 30129.75,
+    "nq_chg": 0.93,
+    "tnx": 4.64,
+    "tnx_chg": -0.88,
+    "dxy": 99.922,
+    "dxy_chg": -0.09,
+    "mstr_chg": -0.44,
+    "nvda_chg": 3.44,
+    "coin_chg": -0.38,
+    "btc_chg": 0.002,
+    "ethbtc_chg": -0.47,
+    "solbtc_chg": -0.067
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
