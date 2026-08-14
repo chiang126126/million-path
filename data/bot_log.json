@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-14T00:08:14Z",
+  "ts": "2026-08-14T01:11:39Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -8,20 +8,21 @@
     {
       "symbol": "BTCUSDT",
       "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.55,
+      "bias": "FLAT",
+      "confidence": 0.0,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货、NVDA上涨，美债收益率下降，美元走弱，风险偏好改善；MSTR涨幅小于BTC但无背离，非利空。第二层：BTC在昨低上方企稳，ETH/BTC和SOL/BTC相对走强，OI下降表明杠杆清理，资金费率中性，情绪恐惧但未极端。第三层：现价接近EMA21和EMA50，未过度追高，入场区间参考昨低上方，止损设于昨低下方，目标空间约1.8%覆盖成本，近期无重大数据事件。",
+      "rationale": "第一层：纳指期货和NVDA走强，风险偏好改善，但MSTR涨幅小于BTC，无背离。第二层：BTC在昨高昨低区间内震荡，ETH/SOL相对走强，OI下降，资费正常，但日线偏空，且价格未突破关键位。第三层：方向不明，入场区间不明确，空间不足，且日线偏空与risk-on冲突，故FLAT。",
       "market_state": "risk-on",
-      "entry_low": 63200,
-      "entry_high": 63600,
-      "invalidation": "BTC跌破昨低62802且无法快速收回，或纳指期货转跌，或MSTR相对BTC显著走弱",
-      "max_hold_hours": 24,
+      "entry_low": 0,
+      "entry_high": 0,
+      "invalidation": "",
+      "max_hold_hours": 0,
       "risk_flags": [
-        "日线趋势偏空，做多需谨慎，若跌破昨低立即止损",
-        "禁止因纳指下跌或跌破均线追空",
-        "若MSTR显著弱于BTC或ETH/SOL不跟涨，降低信心或平仓"
+        "日线偏空，禁止做多",
+        "未突破昨高，禁止追多",
+        "未跌破昨低，禁止追空",
+        "信号冲突，降低confidence"
       ],
       "action": "skip"
     },
@@ -32,17 +33,17 @@
       "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货与NVDA走强，风险偏好改善，MSTR无背离；第二层：ETH/BTC与SOL/BTC相对走强，OI微增但资费正常，情绪偏恐惧但未极端；第三层：现价贴近EMA21/50，RSI中性，入场区间在昨低上方，止损设于昨低下方，风险回报比约1:1.3，覆盖成本。",
+      "rationale": "第一层：纳指期货、NVDA、COIN均上涨，风险偏好改善，MSTR未背离；第二层：ETH/BTC和SOL/BTC相对走强，OI下降显示杠杆清理，资金费率中性，恐惧贪婪指数低位；第三层：现价接近EMA21和EMA50，回踩至1880-1890区间可入场，止损设于昨低下方，目标看至1915附近，空间覆盖成本。",
       "market_state": "risk-on",
-      "entry_low": 1880.0,
-      "entry_high": 1890.0,
+      "entry_low": 1880,
+      "entry_high": 1890,
       "invalidation": "跌破昨低1863.67且无法快速收回，或纳指期货转跌、MSTR显著弱于BTC",
       "max_hold_hours": 24,
       "risk_flags": [
         "日线震荡，不宜重仓",
-        "恐惧贪婪29，情绪偏弱，反弹可能乏力",
-        "美股盘后流动性低，滑点风险",
-        "若跌破昨低且无快速收复，立即止损"
+        "若跌破昨低1863.67则趋势转弱，立即止损",
+        "警惕美股盘后波动，若纳指期货转跌则离场",
+        "禁止追高，等待回踩入场"
       ],
       "action": "skip"
     }
@@ -51,18 +52,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 30200.75,
-    "nq_chg": 1.16,
+    "nq": 30152.75,
+    "nq_chg": 1.0,
     "tnx": 4.64,
     "tnx_chg": -0.88,
-    "dxy": 99.919,
-    "dxy_chg": -0.09,
+    "dxy": 99.885,
+    "dxy_chg": -0.12,
     "mstr_chg": 1.05,
     "nvda_chg": 3.59,
     "coin_chg": 3.58,
-    "btc_chg": -0.145,
-    "ethbtc_chg": 0.371,
-    "solbtc_chg": 0.839
+    "btc_chg": -0.163,
+    "ethbtc_chg": 0.439,
+    "solbtc_chg": 0.563
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
