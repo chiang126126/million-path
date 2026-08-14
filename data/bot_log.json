@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-14T08:10:04Z",
+  "ts": "2026-08-14T09:10:16Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -12,7 +12,7 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货微涨、美元走弱、NVDA大涨，但MSTR涨幅远小于NVDA，且新闻标题显示NVDA下跌与比特币触及72000（可能为旧闻），风险偏好信号矛盾。第二层：BTC日线偏空，价格在昨低附近，OI微增但资金费率中性，ETH/SOL相对走强但BTC未确认，恐惧贪婪指数29显示情绪偏空。第三层：现价接近昨低，但未跌破，方向不明，且新闻标题矛盾，缺乏明确入场信号，空间不足以覆盖成本。",
+      "rationale": "第一层：纳指期货微涨、美债收益率下降、美元走弱，NVDA和COIN上涨，但MSTR涨幅较小，风险偏好初步改善但力度有限。第二层：BTC跌破30日线，日线偏空，但RSI超卖，ETH和SOL相对走强，OI上升显示新空进场，资金费率正常，情绪恐惧，信号冲突。第三层：现价接近昨低，但日线偏空禁止做多，做空需等待跌破支撑后的反抽确认，当前条件不满足，且空间不足，故FLAT。",
       "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
@@ -20,30 +20,30 @@
       "max_hold_hours": 0,
       "risk_flags": [
         "日线偏空，禁止做多",
-        "未跌破昨低，禁止追空",
-        "新闻标题矛盾，需等待确认",
-        "价格接近昨低，若跌破可能加速，但需等待反抽确认"
+        "OI上升但价格未跌，空头拥挤，追空风险大",
+        "RSI超卖，反弹风险高",
+        "信号冲突，方向不明"
       ],
       "action": "skip"
     },
     {
       "symbol": "ETHUSDT",
       "source": "llm",
-      "bias": "FLAT",
-      "confidence": 0.0,
+      "bias": "LONG",
+      "confidence": 0.55,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货微涨、美债收益率下行、美元走弱，NVDA和COIN走强，但MSTR仅微涨且BTC下跌，风险偏好改善但未完全传导。第二层：ETH现价1875，低于昨高1900但高于昨低1863，RSI35.4偏弱，OI微降，资金费率小幅负，ETH/BTC和SOL/BTC相对走强，但量能萎缩，日线震荡，方向不明。第三层：现价处于昨高昨低之间，无明确入场区间，空间不足，且无重大事件驱动，执行条件不满足。",
-      "market_state": "mixed",
-      "entry_low": 0,
-      "entry_high": 0,
-      "invalidation": "",
-      "max_hold_hours": 0,
+      "rationale": "第一层：NVDA和COIN上涨，MSTR转强，纳指期货微涨，美元和美债收益率下行，全球风险偏好改善；第二层：ETH/BTC和SOL/BTC相对走强，OI微增但资金费率接近零，恐惧贪婪指数29显示情绪偏冷，但价格未破昨低，日线震荡偏多；第三层：现价接近昨低，入场区间合理，止损明确，目标空间约1.5%覆盖成本，但量能不足，需谨慎。",
+      "market_state": "risk-on",
+      "entry_low": 1863.67,
+      "entry_high": 1882.76,
+      "invalidation": "跌破昨低1863.67且无法快速收回，或纳指期货转跌、MSTR转弱，或ETH/BTC、SOL/BTC相对走弱",
+      "max_hold_hours": 24,
       "risk_flags": [
-        "禁止追空：OI下降，杠杆已清理，追空危险",
-        "禁止做多：日线震荡，RSI偏弱，未站上关键位",
-        "量能低迷，假突破风险高",
-        "MSTR与BTC背离，需观察是否恢复"
+        "量能不足，突破需放量确认",
+        "若跌破昨低1863.67，立即止损",
+        "避免在恐惧贪婪指数极低时追多",
+        "关注Powell讲话可能引发波动"
       ],
       "action": "skip"
     }
@@ -52,18 +52,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 30193.75,
-    "nq_chg": 0.02,
+    "nq": 30217.0,
+    "nq_chg": 0.09,
     "tnx": 4.64,
     "tnx_chg": -0.88,
-    "dxy": 99.759,
-    "dxy_chg": -0.2,
+    "dxy": 99.724,
+    "dxy_chg": -0.24,
     "mstr_chg": 1.05,
     "nvda_chg": 3.59,
     "coin_chg": 3.58,
-    "btc_chg": -1.471,
-    "ethbtc_chg": 0.404,
-    "solbtc_chg": 0.51
+    "btc_chg": -1.286,
+    "ethbtc_chg": 0.811,
+    "solbtc_chg": 0.904
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
