@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-15T01:07:01Z",
+  "ts": "2026-08-15T02:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -12,16 +12,17 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：美元走弱但纳指期货微跌，美债收益率上行，MSTR弱于BTC但未显著背离，风险偏好中性偏谨慎。第二层：BTC日线偏空，价格在昨高低区间内，OI上升但资金费率正常，ETH相对走强但SOL偏弱，信号冲突。第三层：方向不明，缺乏明确入场条件，且空间不足以覆盖成本，故FLAT。",
+      "rationale": "第一层：全球风险偏好偏暖，美元走弱，但纳指期货微跌，MSTR弱于BTC但未显著背离。第二层：BTC日线偏空，价格在EMA21附近，OI上升但资金费率正常，ETH相对走强但SOL持平，信号混合。第三层：当前价格接近昨高，但日线偏空，且缺乏明确方向，追多或追空均风险较大，空间不足，故选择观望。",
       "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "日线偏空禁做多",
-        "信号冲突，不强行选方向",
-        "量能不足，追单风险高"
+        "日线偏空，禁止做多",
+        "价格接近昨高，追多风险大",
+        "OI上升，若下跌可能新空进场，追空需谨慎",
+        "信号冲突，降低confidence"
       ],
       "action": "skip"
     },
@@ -32,17 +33,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：全球风险偏好偏risk-on但纳指期货微跌、美债收益率上行，MSTR弱于BTC但无显著背离，信号不明确。第二层：ETH/BTC走强但SOL/BTC走弱，OI微降，资金费率中性，日线震荡，缺乏方向性确认。第三层：现价贴近昨高昨低，量能萎缩，无明确入场区间，空间不足，且临近Powell讲话，风险事件临近。",
-      "market_state": "mixed",
+      "rationale": "第一层：美元走弱，纳指期货微跌，NVDA微涨，MSTR跌幅大于BTC但无显著背离，整体风险偏好偏暖。第二层：ETH/BTC走强，但OI下降，量能萎缩，价格贴近昨高，缺乏明确方向。第三层：现价接近昨高，追多空间有限，且无明确回踩确认，风险回报不佳，故选择观望。",
+      "market_state": "risk-on",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "日线震荡，方向不明",
+        "现价接近昨高，追多风险大",
         "量能低迷，突破有效性存疑",
-        "Powell讲话前市场谨慎",
-        "MSTR弱于BTC但未背离，不可据此做空"
+        "高周期震荡，方向不明"
       ],
       "action": "skip"
     }
@@ -60,9 +60,9 @@
     "mstr_chg": -1.89,
     "nvda_chg": 0.48,
     "coin_chg": -0.38,
-    "btc_chg": -0.855,
-    "ethbtc_chg": 0.505,
-    "solbtc_chg": -0.167
+    "btc_chg": -0.83,
+    "ethbtc_chg": 0.538,
+    "solbtc_chg": -0.058
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
