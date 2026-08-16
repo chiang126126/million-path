@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-16T14:11:16Z",
+  "ts": "2026-08-16T15:07:16Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -7,22 +7,18 @@
   "items": [
     {
       "symbol": "BTCUSDT",
-      "source": "llm",
+      "source": "rule",
       "bias": "FLAT",
-      "confidence": 0.0,
+      "confidence": 0.3,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：跨市场数据不可用，但新闻显示纳指期货下跌、NVDA下跌、MSTR下跌，风险偏好偏弱；第二层：BTC窄幅震荡，ETH/SOL相对走弱，OI微降，资金费率中性，日线偏空但偏离不大；第三层：方向不明，缺乏明确入场信号，且空间不足以覆盖成本。",
-      "market_state": "mixed",
-      "entry_low": 0,
-      "entry_high": 0,
-      "invalidation": "",
-      "max_hold_hours": 0,
-      "risk_flags": [
-        "禁止追空",
-        "禁止做多",
-        "等待明确信号"
-      ],
+      "rationale": "规则引擎兜底",
+      "market_state": null,
+      "entry_low": null,
+      "entry_high": null,
+      "invalidation": null,
+      "max_hold_hours": null,
+      "risk_flags": [],
       "action": "skip"
     },
     {
@@ -32,24 +28,24 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：跨市场数据不可用，但新闻显示纳指期货下跌、NVDA下跌、MSTR下跌，风险偏好偏弱；第二层：BTC微涨，ETH/BTC持平，SOL/BTC下跌，OI微增，资金费率正常，情绪恐惧，市场方向不明；第三层：价格在昨高昨低之间窄幅波动，量能萎缩，无明确方向，且宏观事件（Powell讲话）临近，不宜入场。",
-      "market_state": "mixed",
+      "rationale": "第一层：全球风险偏好risk-off，MSTR超额弱势但BTC稳，不能据此做空BTC；第二层：ETH窄幅震荡，量能极低，OI微增但方向不明，ETH/BTC和SOL/BTC均走弱，无risk-on确认；第三层：现价贴近昨高，但无明确方向，空间不足以覆盖成本，且美股盘中噪音大，不宜入场。",
+      "market_state": "risk-off",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "跨市场数据不可用，无法确认风险偏好",
-        "价格在窄幅区间内，突破方向不明",
-        "重大宏观事件（Powell讲话）前市场波动可能加大",
-        "量能萎缩，流动性不足，滑点风险高"
+        "禁止追空：MSTR弱但BTC稳，且OI未大增，追空风险高",
+        "禁止做多：无risk-on确认，且美股盘中波动大",
+        "量能极低，突破可能假突破",
+        "关注Powell讲话，可能引发波动"
       ],
       "action": "skip"
     }
   ],
   "testnet_usdt": 4297.01,
   "news_lines": 3,
-  "global_risk": "unknown",
+  "global_risk": "risk-off",
   "xm": {
     "nq": 30141.75,
     "nq_chg": 0.0,
@@ -60,9 +56,9 @@
     "mstr_chg": -1.89,
     "nvda_chg": 0.48,
     "coin_chg": -0.38,
-    "btc_chg": 0.032,
-    "ethbtc_chg": -0.033,
-    "solbtc_chg": -0.425
+    "btc_chg": 0.117,
+    "ethbtc_chg": -0.134,
+    "solbtc_chg": -0.184
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
