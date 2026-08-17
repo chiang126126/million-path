@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-17T13:07:01Z",
+  "ts": "2026-08-17T14:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -12,17 +12,17 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货微涨但MSTR超额弱势，风险偏好偏谨慎；第二层：BTC站上昨高但日线偏空，OI下降显示杠杆清理，ETH/BTC微涨但SOL/BTC走弱，信号冲突；第三层：现价接近昨高，追多空间有限，且日线偏空禁止做多，做空需等跌破支撑，当前条件不满足。",
-      "market_state": "risk-off",
+      "rationale": "第一层：纳指期货微涨但MSTR超额弱势显示杠杆降温，风险偏好偏谨慎；第二层：BTC站稳昨高但ETH/SOL未确认，OI下降显示杠杆清理，方向不明；第三层：现价接近昨高且RSI偏高，追多空间有限，且缺乏明确失效位，执行条件不足。",
+      "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "日线偏空禁做多",
-        "MSTR弱势但BTC稳，不能据此做空",
-        "OI下降追空危险",
-        "现价接近昨高，追多风险大"
+        "禁止追多：现价接近昨高且RSI偏高，追多风险大",
+        "禁止追空：OI下降显示杠杆已清理，追空危险",
+        "MSTR弱势为个股因素，不可作为做空BTC依据",
+        "关注Powell讲话，可能引发波动"
       ],
       "action": "skip"
     },
@@ -33,17 +33,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：美股盘前纳指期货微涨但MSTR超额弱势-2.7pp，显示杠杆资金在降风险，全球风险偏好偏risk-off。第二层：ETH现价1900高于昨高1892，但日线震荡且贴近30日线，OI微增但资金费率中性，ETH/BTC微涨而SOL/BTC下跌，缺乏全面risk-on确认。第三层：现价已突破昨高，追多空间有限且缺乏确认，做空则需等待跌破支撑，当前无明确入场区间，空间不足，故FLAT。",
-      "market_state": "risk-off",
+      "rationale": "第一层：纳指期货微涨但MSTR超额弱势显示降杠杆，风险偏好偏risk-off；第二层：BTC稳但ETH/BTC微涨、SOL/BTC走弱，OI微增但资费中性，市场方向不明；第三层：现价高于昨高，追多风险大，且无明确入场区间，空间不足，故FLAT。",
+      "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "禁止因MSTR弱势直接做空BTC/ETH",
-        "禁止在日线震荡且无确认时追多",
-        "禁止在OI未显著下降时追空",
-        "关注Powell讲话等宏观事件"
+        "禁止追多",
+        "禁止因MSTR弱势做空BTC",
+        "警惕美股开盘噪音与插针"
       ],
       "action": "skip"
     }
@@ -52,18 +51,18 @@
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 30204.5,
-    "nq_chg": 0.21,
-    "tnx": 4.72,
-    "tnx_chg": 0.43,
-    "dxy": 99.438,
-    "dxy_chg": -0.23,
-    "mstr_chg": -1.89,
-    "nvda_chg": 0.48,
-    "coin_chg": -0.38,
-    "btc_chg": 0.82,
-    "ethbtc_chg": 0.235,
-    "solbtc_chg": -0.712
+    "nq": 30232.5,
+    "nq_chg": 0.3,
+    "tnx": 4.7,
+    "tnx_chg": 0.13,
+    "dxy": 99.448,
+    "dxy_chg": -0.22,
+    "mstr_chg": -2.04,
+    "nvda_chg": 0.08,
+    "coin_chg": -2.98,
+    "btc_chg": 0.832,
+    "ethbtc_chg": 0.101,
+    "solbtc_chg": -0.494
   },
-  "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
+  "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
