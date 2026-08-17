@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-17T06:07:01Z",
+  "ts": "2026-08-17T07:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -12,17 +12,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货微涨但MSTR显著走弱，风险偏好偏谨慎，但MSTR走弱或为公司自身因素，不能据此做空BTC。第二层：BTC站上昨高但日线偏空，OI下降显示杠杆清理，ETH相对走强但SOL走弱，信号混合。第三层：现价接近昨高，追多空间有限，且日线偏空，缺乏明确入场位，风险回报不佳。",
+      "rationale": "第一层：纳指期货上涨但MSTR显著弱于BTC，显示风险偏好分化，MSTR弱势或为公司自身问题，不能据此做空BTC。第二层：BTC站上昨高但RSI接近超买，OI下降显示杠杆清理，ETH相对走强但SOL走弱，信号混杂。第三层：现价接近昨高，追多空间有限，且缺乏明确方向，执行条件不满足。",
       "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "日线偏空，禁止做多",
-        "MSTR走弱但BTC稳，禁止做空",
-        "现价接近昨高，追多风险大",
-        "信号冲突，降低confidence"
+        "禁止追多：现价已接近昨高，RSI 69接近超买，追多风险大",
+        "禁止做空：MSTR弱势不能作为做空BTC依据，且OI下降显示空头风险",
+        "等待更明确信号：需观察BTC能否站稳昨高并回踩确认，或跌破昨低后反抽失败"
       ],
       "action": "skip"
     },
@@ -33,36 +32,36 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：纳指期货微涨但MSTR显著弱于BTC，显示公司层面风险而非全面risk-off；第二层：ETH站上昨高但OI上升且费率中性，缺乏明确方向；第三层：现价接近昨高，追多空间有限，且无明确失效位，风险收益比不佳。",
+      "rationale": "第一层：纳指期货上涨但MSTR大幅走弱，风险偏好mixed；第二层：ETH站上昨高但RSI偏高，OI微增，资金费率中性，ETH/BTC走强但SOL/BTC走弱，信号冲突；第三层：现价已突破昨高，追多风险大，且缺乏回踩确认，空间不足，故FLAT。",
       "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "禁止追多",
+        "禁止追高",
         "禁止因MSTR弱势做空BTC",
-        "等待回踩或突破确认"
+        "等待回踩确认或突破后回踩"
       ],
       "action": "skip"
     }
   ],
   "testnet_usdt": 4297.01,
   "news_lines": 3,
-  "global_risk": "risk-off",
+  "global_risk": "mixed",
   "xm": {
-    "nq": 30271.0,
-    "nq_chg": 0.43,
+    "nq": 30317.75,
+    "nq_chg": 0.58,
     "tnx": 4.7,
     "tnx_chg": 1.19,
-    "dxy": 99.487,
-    "dxy_chg": -0.18,
+    "dxy": 99.422,
+    "dxy_chg": -0.25,
     "mstr_chg": -1.89,
     "nvda_chg": 0.48,
     "coin_chg": -0.38,
-    "btc_chg": 0.73,
-    "ethbtc_chg": 0.302,
-    "solbtc_chg": -0.594
+    "btc_chg": 0.85,
+    "ethbtc_chg": 0.503,
+    "solbtc_chg": -0.251
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
