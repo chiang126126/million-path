@@ -1,0 +1,37 @@
+{
+ "updated_at": "2026-08-19T18:07:23Z",
+ "books": {
+  "BTCUSDT": {
+   "equity": 1000.0,
+   "signal": {
+    "at": "2026-08-19T18:00:00Z",
+    "text": "模拟舱启动，从下一根K线开始交易",
+    "regime": null
+   },
+   "stats": {
+    "n": 0,
+    "net": 0,
+    "wr": null,
+    "pf": null,
+    "max_dd": 0,
+    "equity": 1000.0
+   }
+  },
+  "ETHUSDT": {
+   "equity": 1000.0,
+   "signal": {
+    "at": "2026-08-19T18:00:00Z",
+    "text": "模拟舱启动，从下一根K线开始交易",
+    "regime": null
+   },
+   "stats": {
+    "n": 0,
+    "net": 0,
+    "wr": null,
+    "pf": null,
+    "max_dd": 0,
+    "equity": 1000.0
+   }
+  }
+ }
+}

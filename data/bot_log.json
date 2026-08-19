@@ -1,9 +1,9 @@
 {
-  "ts": "2026-08-19T17:07:01Z",
+  "ts": "2026-08-19T18:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
-  "total_dd_pct": 20.76,
+  "total_dd_pct": 0.0,
   "items": [
     {
       "symbol": "BTCUSDT",
@@ -11,18 +11,18 @@
       "bias": "FLAT",
       "confidence": 0.0,
       "vetted": false,
-      "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：美股期货微跌，美元走弱，但NVDA下跌2.6%显示AI风向偏弱，MSTR与BTC同步上涨无背离，风险偏好mixed。第二层：BTC站上关键位且放量上涨，但RSI 93.1极度超买，OI增加3.7%显示新多进场，资金费率0.01%中性，ETH相对走强但SOL偏弱，情绪Fear，市场确认偏多但过热。第三层：现价68371远高于昨高65058，偏离均线5-6%，追高风险大，且无回调入场机会，空间不足，故FLAT。",
+      "reason": "决策为 FLAT/观望",
+      "rationale": "第一层：纳指期货微跌、NVDA下跌但美元走弱、MSTR与COIN上涨，风险偏好混合；第二层：BTC突破昨高但RSI 89.4极度超买，OI增加但资金费率中性，ETH相对走强但SOL弱；第三层：现价偏离昨高4.7%，追高风险大，且无明确回踩位，空间不足，故FLAT。",
       "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "RSI 93.1极度超买，追多风险高",
-        "现价偏离昨高5%，无回调入场点",
-        "NVDA下跌可能拖累风险偏好",
-        "禁止追多，等待回调或突破确认"
+        "RSI 89.4极度超买，追多风险高",
+        "纳指期货下跌，美股风险偏好未确认",
+        "偏离昨高4.7%，入场位不佳",
+        "资金费率中性，无极端情绪可做反向"
       ],
       "action": "skip"
     },
@@ -32,18 +32,18 @@
       "bias": "FLAT",
       "confidence": 0.0,
       "vetted": false,
-      "reason": "总回撤 20.8% ≥ 20%，kill switch",
-      "rationale": "第一层：美元走弱但NVDA下跌，纳指期货微跌，风险偏好mixed；第二层：BTC突破关键位但RSI 91.8极度超买，OI仅微增，ETH/BTC走强但SOL/BTC持平，资金费率中性；第三层：现价2082远高于昨高1923，偏离30日均线9.56%，追高风险极大，且无明确入场区间和失效位，空间不足。",
+      "reason": "决策为 FLAT/观望",
+      "rationale": "第一层：美股期货微跌、美元走弱，但NVDA下跌，风险偏好mixed；第二层：BTC突破关键位但RSI 93.2极度超买，OI仅微增，ETH/BTC走强但SOL/BTC走弱，信号冲突；第三层：现价偏离昨高8.5%，追高风险极大，且无明确入场区间，空间不足，故FLAT。",
       "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
-      "invalidation": "",
+      "invalidation": "无",
       "max_hold_hours": 0,
       "risk_flags": [
-        "RSI极度超买，回调风险高",
-        "价格偏离均线过大，追多易被套",
-        "美股盘中波动大，警惕插针",
-        "无明确入场位，禁止追高"
+        "RSI 93.2极度超买，追多风险高",
+        "现价偏离昨高8.5%，回调风险大",
+        "NVDA下跌，AI风向偏弱",
+        "SOL/BTC未同步走强，全面risk-on存疑"
       ],
       "action": "skip"
     }
@@ -52,18 +52,18 @@
   "news_lines": 3,
   "global_risk": "mixed",
   "xm": {
-    "nq": 29561.25,
-    "nq_chg": -0.08,
-    "tnx": 4.66,
-    "tnx_chg": -0.98,
-    "dxy": 98.848,
-    "dxy_chg": -0.8,
-    "mstr_chg": 6.87,
-    "nvda_chg": -2.64,
-    "coin_chg": 8.38,
-    "btc_chg": 5.505,
-    "ethbtc_chg": 3.044,
-    "solbtc_chg": 0.337
+    "nq": 29550.5,
+    "nq_chg": -0.12,
+    "tnx": 4.67,
+    "tnx_chg": -0.76,
+    "dxy": 98.957,
+    "dxy_chg": -0.7,
+    "mstr_chg": 6.21,
+    "nvda_chg": -2.56,
+    "coin_chg": 6.82,
+    "btc_chg": 5.383,
+    "ethbtc_chg": 3.483,
+    "solbtc_chg": 0.42
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
