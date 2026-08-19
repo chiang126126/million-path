@@ -4,7 +4,7 @@
    "equity": 1000.0,
    "peak": 1000.0,
    "pos": null,
-   "last_t": 1787169600000,
+   "last_t": 1787173200000,
    "day": "2026-08-19",
    "day_start": 1000.0,
    "entries_today": 0,
@@ -12,17 +12,17 @@
    "cooldown_until": null,
    "halted": false,
    "signal": {
-    "at": "2026-08-19T21:00:00Z",
-    "text": "⏳ 量能异常放大 4.17×——事件行情不开新仓",
+    "at": "2026-08-19T22:00:00Z",
+    "text": "⏳ 量能异常放大 4.58×——事件行情不开新仓",
     "regime": "range",
-    "dev": 7.5
+    "dev": 8.53
    }
   },
   "ETHUSDT": {
    "equity": 1000.0,
    "peak": 1000.0,
    "pos": null,
-   "last_t": 1787169600000,
+   "last_t": 1787173200000,
    "day": "2026-08-19",
    "day_start": 1000.0,
    "entries_today": 0,
@@ -30,13 +30,13 @@
    "cooldown_until": null,
    "halted": false,
    "signal": {
-    "at": "2026-08-19T21:00:00Z",
-    "text": "⏳ 量能异常放大 8.56×——事件行情不开新仓",
+    "at": "2026-08-19T22:00:00Z",
+    "text": "⏳ 量能异常放大 10.82×——事件行情不开新仓",
     "regime": "trend_up",
-    "dev": 17.04
+    "dev": 20.62
    }
   }
  },
  "started_at": "2026-08-19T18:07:18Z",
- "updated_at": "2026-08-19T21:07:23Z"
+ "updated_at": "2026-08-19T22:07:22Z"
 }
