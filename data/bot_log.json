@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-21T10:07:16Z",
+  "ts": "2026-08-21T11:07:16Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
@@ -9,61 +9,40 @@
       "symbol": "BTCUSDT",
       "source": "llm",
       "bias": "LONG",
-      "confidence": 0.6,
+      "confidence": 0.55,
       "vetted": false,
       "reason": "RSI 76 超买区，不追多",
-      "rationale": "第一层：纳指期货上涨、美元走弱，MSTR大涨显示机构风险偏好恢复；第二层：BTC站上关键位且放量，但ETH/SOL相对走弱显示非全面risk-on，OI微增显示新多进场但未过热；第三层：现价高于昨高，追高风险大，等待回踩昨高附近入场，止损设于昨低下方，目标空间约10%覆盖成本。",
+      "rationale": "第一层：纳指期货上涨、美元走弱，MSTR大涨21.5%显示机构风险偏好恢复，但NVDA下跌构成隐忧；第二层：BTC站上昨高73400，量能放大3倍，但RSI超买且ETH/SOL相对走弱，OI微增显示新多进场但杠杆温和；第三层：现价已偏离昨高，追高风险大，但回踩EMA21附近入场可控制风险，目标空间约5%覆盖成本。",
       "market_state": "risk-on",
-      "entry_low": 73400,
-      "entry_high": 77724,
-      "invalidation": "BTC收盘价跌破昨低68902，或纳指期货转跌且MSTR转弱",
-      "max_hold_hours": 48,
-      "risk_flags": [
-        "RSI超买，短期回调风险",
-        "ETH/SOL相对走弱，上涨可能不持续",
-        "追高风险，等待回踩",
-        "Powell讲话可能引发波动"
-      ],
-      "action": "skip"
-    },
-    {
-      "symbol": "ETHUSDT",
-      "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.6,
-      "vetted": true,
-      "reason": "通过风控",
-      "rationale": "第一层：纳指期货上涨、美元走弱，MSTR大涨显示机构风险偏好恢复；第二层：BTC放量上涨，ETH站上关键位，OI温和增加，资金费率正常，但ETH/BTC相对走弱；第三层：现价接近昨高，追高风险有限，止损明确，目标空间足够。",
-      "market_state": "risk-on",
-      "entry_low": 2360.0,
-      "entry_high": 2397.89,
-      "invalidation": "收盘价跌破昨低2221.54或BTC跌破关键支撑且MSTR转弱",
+      "entry_low": 74970,
+      "entry_high": 77728,
+      "invalidation": "BTC 4小时收盘跌破EMA21(74970)且无法快速收复，或MSTR转弱跌破其关键支撑，或纳指期货转跌",
       "max_hold_hours": 24,
       "risk_flags": [
-        "ETH/BTC相对弱势，若BTC回调ETH可能跌幅更大",
-        "RSI接近超买，短期回调风险",
-        "Powell讲话可能引发波动"
+        "RSI 76超买，短期回调风险",
+        "ETH/SOL相对走弱，非全面risk-on",
+        "NVDA下跌可能拖累科技股情绪",
+        "MSTR涨幅过大，若回落将拖累BTC"
       ],
-      "action": "OPEN LONG",
-      "price": 2397.89
+      "action": "skip"
     }
   ],
-  "testnet_usdt": 4297.01,
+  "testnet_usdt": 4095.39,
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29487.75,
-    "nq_chg": 0.64,
+    "nq": 29480.0,
+    "nq_chg": 0.61,
     "tnx": 4.7,
     "tnx_chg": 0.92,
-    "dxy": 98.639,
-    "dxy_chg": -0.26,
+    "dxy": 98.652,
+    "dxy_chg": -0.25,
     "mstr_chg": 21.48,
     "nvda_chg": -1.32,
     "coin_chg": 17.86,
-    "btc_chg": 8.163,
-    "ethbtc_chg": -2.864,
-    "solbtc_chg": -3.516
+    "btc_chg": 8.11,
+    "ethbtc_chg": -3.264,
+    "solbtc_chg": -2.918
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
