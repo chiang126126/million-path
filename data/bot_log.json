@@ -1,49 +1,26 @@
 {
-  "ts": "2026-08-21T12:07:01Z",
+  "ts": "2026-08-21T13:07:01Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": 0.0,
   "total_dd_pct": 0.0,
-  "items": [
-    {
-      "symbol": "BTCUSDT",
-      "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.65,
-      "vetted": true,
-      "reason": "通过风控",
-      "rationale": "第一层：纳指期货上涨、美元走弱、MSTR大涨显示风险偏好回升；第二层：BTC站上关键位且放量，但ETH/SOL相对走弱显示非全面risk-on，OI微降显示杠杆未过热；第三层：现价高于昨高，追多风险大，但回踩EMA21附近可入场，止损明确，目标空间足够。",
-      "market_state": "risk-on",
-      "entry_low": 75000,
-      "entry_high": 77000,
-      "invalidation": "BTC 4小时收盘跌破75000（EMA21附近）且MSTR转弱或纳指期货转跌",
-      "max_hold_hours": 48,
-      "risk_flags": [
-        "NVDA下跌可能拖累科技股",
-        "ETH/SOL相对弱势显示资金未全面下沉",
-        "RSI接近超买，追高风险大",
-        "Powell讲话可能引发波动"
-      ],
-      "action": "OPEN LONG",
-      "price": 76894.0
-    }
-  ],
-  "testnet_usdt": 4095.43,
+  "items": [],
+  "testnet_usdt": 3964.52,
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29503.25,
-    "nq_chg": 0.69,
+    "nq": 29507.75,
+    "nq_chg": 0.71,
     "tnx": 4.7,
-    "tnx_chg": 0.92,
-    "dxy": 98.661,
-    "dxy_chg": -0.24,
+    "tnx_chg": 0.0,
+    "dxy": 98.745,
+    "dxy_chg": -0.16,
     "mstr_chg": 21.48,
     "nvda_chg": -1.32,
     "coin_chg": 17.86,
-    "btc_chg": 7.351,
-    "ethbtc_chg": -2.8,
-    "solbtc_chg": -3.018
+    "btc_chg": 7.436,
+    "ethbtc_chg": -2.979,
+    "solbtc_chg": -2.987
   },
   "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
 }
