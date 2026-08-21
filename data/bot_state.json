@@ -42,9 +42,45 @@
       },
       "max_hold_hours": 24.0,
       "mfe_price": 2411.84,
-      "managed_t": 1787306400000
+      "managed_t": 1787310000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry": 76894.0,
+      "stop": 74587.18,
+      "target": 80738.7,
+      "qty": 0.0017,
+      "notional": 134.82,
+      "risk_usdt": 4.04,
+      "fee_in": 0.06741,
+      "confidence": 0.65,
+      "opened_at": "2026-08-21T12:07:19Z",
+      "opened_kline_t": 1787313600000,
+      "stop_kind": "INIT",
+      "snapshot": {
+        "dev_pct": 4.11,
+        "rsi14": 69.8,
+        "atr_pct": 1.5,
+        "funding_pct": 0.01,
+        "fng": 72,
+        "fng_label": "Greed",
+        "regime": "risk-on",
+        "daily_dev_pct": 18.41,
+        "source": "llm",
+        "confidence": 0.65,
+        "global_risk": "risk-on",
+        "nq_chg": 0.69,
+        "dxy_chg": -0.24,
+        "mstr_chg": 21.48,
+        "ethbtc_chg": -2.8,
+        "solbtc_chg": -3.02,
+        "oi_chg_pct": -0.68,
+        "market_state": "risk-on"
+      },
+      "max_hold_hours": 48.0
     }
   ],
-  "updated_at": "2026-08-21T11:07:33Z",
+  "updated_at": "2026-08-21T12:07:19Z",
   "guardian_at": "2026-08-01T18:33:05Z"
 }
