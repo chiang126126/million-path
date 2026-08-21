@@ -1,26 +1,49 @@
 {
-  "ts": "2026-08-21T18:07:17Z",
+  "ts": "2026-08-21T19:07:19Z",
   "mode": "testnet",
-  "equity": 404.46,
-  "day_pnl_pct": -0.0,
-  "total_dd_pct": 0.0,
-  "items": [],
-  "testnet_usdt": 3918.1,
+  "equity": 404.37,
+  "day_pnl_pct": -0.02,
+  "total_dd_pct": 0.02,
+  "items": [
+    {
+      "symbol": "ETHUSDT",
+      "source": "llm",
+      "bias": "LONG",
+      "confidence": 0.65,
+      "vetted": true,
+      "reason": "通过风控",
+      "rationale": "第一层：纳指期货上涨、MSTR大涨14.34%且强于BTC，显示机构风险偏好恢复；第二层：BTC大涨6%突破关键位，ETH站上昨高，OI增加但资金费率温和，日线偏多；第三层：现价接近昨高，回踩入场，止损设于昨低下方，目标空间约4%，覆盖成本。",
+      "market_state": "risk-on",
+      "entry_low": 2360.0,
+      "entry_high": 2407.74,
+      "invalidation": "收盘价跌破昨低2221.54或BTC跌破关键支撑且MSTR转弱",
+      "max_hold_hours": 24,
+      "risk_flags": [
+        "美股盘中波动大，警惕开盘噪音与插针",
+        "ETH/BTC相对走弱，若持续可能拖累ETH",
+        "追高风险，若直接拉升不回调则放弃入场",
+        "Powell讲话可能引发波动，注意仓位管理"
+      ],
+      "action": "OPEN LONG",
+      "price": 2407.74
+    }
+  ],
+  "testnet_usdt": 4119.61,
   "news_lines": 3,
   "global_risk": "unknown",
   "xm": {
-    "nq": 29388.5,
-    "nq_chg": 0.3,
+    "nq": 29392.25,
+    "nq_chg": 0.31,
     "tnx": 4.74,
-    "tnx_chg": 0.98,
-    "dxy": 98.822,
-    "dxy_chg": -0.08,
-    "mstr_chg": 15.09,
-    "nvda_chg": -0.85,
-    "coin_chg": 16.37,
-    "btc_chg": 6.688,
-    "ethbtc_chg": -2.613,
-    "solbtc_chg": -1.166
+    "tnx_chg": 0.94,
+    "dxy": 98.814,
+    "dxy_chg": -0.09,
+    "mstr_chg": 14.34,
+    "nvda_chg": -1.02,
+    "coin_chg": 15.9,
+    "btc_chg": 6.047,
+    "ethbtc_chg": -2.216,
+    "solbtc_chg": -1.884
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
