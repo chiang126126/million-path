@@ -10,7 +10,7 @@
       "symbol": "BTCUSDT",
       "side": "LONG",
       "entry": 76970.24,
-      "stop": 75815.69,
+      "stop": 77047.21,
       "target": 79279.35,
       "qty": 0.0023,
       "notional": 182.01,
@@ -19,7 +19,7 @@
       "confidence": 0.65,
       "opened_at": "2026-08-21T16:09:33Z",
       "opened_kline_t": 1787328000000,
-      "stop_kind": "INIT",
+      "stop_kind": "BE",
       "snapshot": {
         "dev_pct": 3.1,
         "rsi14": 65.0,
@@ -41,10 +41,10 @@
         "market_state": "risk-on"
       },
       "max_hold_hours": 24.0,
-      "mfe_price": 77722.12,
+      "mfe_price": 77946.0,
       "managed_t": 1787342400000
     }
   ],
   "updated_at": "2026-08-21T21:07:31Z",
-  "guardian_at": "2026-08-21T20:21:19Z"
+  "guardian_at": "2026-08-21T21:25:18Z"
 }
