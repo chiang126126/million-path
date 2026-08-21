@@ -5,7 +5,44 @@
   "day": "2026-08-21",
   "day_start_equity": 404.4611685240001,
   "peak_equity": 404.4611685240001,
-  "positions": [],
-  "updated_at": "2026-08-21T09:07:19Z",
+  "positions": [
+    {
+      "symbol": "ETHUSDT",
+      "side": "LONG",
+      "entry": 2397.89,
+      "stop": 2349.93,
+      "target": 2493.81,
+      "qty": 0.084,
+      "notional": 202.23,
+      "risk_usdt": 4.04,
+      "fee_in": 0.101115,
+      "confidence": 0.6,
+      "opened_at": "2026-08-21T10:07:40Z",
+      "opened_kline_t": 1787306400000,
+      "stop_kind": "INIT",
+      "snapshot": {
+        "dev_pct": 3.08,
+        "rsi14": 68.1,
+        "atr_pct": 1.25,
+        "funding_pct": 0.01,
+        "fng": 72,
+        "fng_label": "Greed",
+        "regime": "risk-on",
+        "daily_dev_pct": 23.9,
+        "source": "llm",
+        "confidence": 0.6,
+        "global_risk": "risk-on",
+        "nq_chg": 0.64,
+        "dxy_chg": -0.26,
+        "mstr_chg": 21.48,
+        "ethbtc_chg": -2.86,
+        "solbtc_chg": -3.52,
+        "oi_chg_pct": 1.24,
+        "market_state": "risk-on"
+      },
+      "max_hold_hours": 24.0
+    }
+  ],
+  "updated_at": "2026-08-21T10:07:40Z",
   "guardian_at": "2026-08-01T18:33:05Z"
 }
