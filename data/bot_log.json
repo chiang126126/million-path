@@ -1,49 +1,26 @@
 {
-  "ts": "2026-08-21T16:07:30Z",
+  "ts": "2026-08-21T17:07:17Z",
   "mode": "testnet",
   "equity": 404.46,
   "day_pnl_pct": -0.0,
   "total_dd_pct": 0.0,
-  "items": [
-    {
-      "symbol": "BTCUSDT",
-      "source": "llm",
-      "bias": "LONG",
-      "confidence": 0.65,
-      "vetted": true,
-      "reason": "通过风控",
-      "rationale": "第一层：纳指期货上涨、MSTR大涨14.7%且强于BTC，显示机构风险偏好恢复；第二层：BTC放量上涨6.28%，站上EMA21，资金费率正常，OI下降表明杠杆未过热，但ETH/SOL相对走弱显示非全面risk-on；第三层：现价接近近期高点，追高风险存在，但回踩至76500-77200区间入场，止损设于76000下方，目标看至79000，风险回报比约1:2，且无重大数据事件。",
-      "market_state": "risk-on",
-      "entry_low": 76500,
-      "entry_high": 77200,
-      "invalidation": "BTC 4小时收盘跌破76000或跌破EMA21(75759)且无法快速收复",
-      "max_hold_hours": 24,
-      "risk_flags": [
-        "追高风险：现价已涨6%，不宜追高，等待回踩",
-        "ETH/SOL相对走弱，上涨可能不持续",
-        "NVDA下跌，AI叙事可能拖累风险偏好",
-        "若BTC跌破76000，多头失效，需立即止损"
-      ],
-      "action": "OPEN LONG",
-      "price": 76970.24
-    }
-  ],
-  "testnet_usdt": 4095.56,
+  "items": [],
+  "testnet_usdt": 3918.1,
   "news_lines": 3,
-  "global_risk": "risk-on",
+  "global_risk": "unknown",
   "xm": {
-    "nq": 29451.0,
-    "nq_chg": 0.51,
+    "nq": 29386.5,
+    "nq_chg": 0.29,
     "tnx": 4.73,
-    "tnx_chg": 0.72,
-    "dxy": 98.808,
+    "tnx_chg": 0.77,
+    "dxy": 98.81,
     "dxy_chg": -0.09,
-    "mstr_chg": 14.73,
-    "nvda_chg": -0.65,
-    "coin_chg": 17.06,
-    "btc_chg": 6.278,
-    "ethbtc_chg": -3.547,
-    "solbtc_chg": -1.835
+    "mstr_chg": 15.42,
+    "nvda_chg": -0.97,
+    "coin_chg": 16.92,
+    "btc_chg": 6.799,
+    "ethbtc_chg": -3.357,
+    "solbtc_chg": -1.884
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
