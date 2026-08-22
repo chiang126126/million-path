@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-22T10:07:02Z",
+  "ts": "2026-08-22T11:07:01Z",
   "mode": "testnet",
   "equity": 406.12,
   "day_pnl_pct": -0.0,
@@ -12,17 +12,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：纳指期货微涨但NVDA下跌，美债收益率上行，MSTR大涨但BTC未跟，风险偏好信号矛盾。第二层：ETH/BTC和SOL/BTC走强，但BTC下跌且OI上升，资金费率中性，日线偏多但偏离过大，信号冲突。第三层：现价处于昨高昨低之间，方向不明，且缺乏明确入场位，空间不确定，故FLAT。",
+      "rationale": "第一层：纳指期货微涨但NVDA下跌，美债收益率上行，MSTR大涨但BTC未跟，风险偏好信号矛盾。第二层：ETH现价2412，昨高2546，昨低2325，RSI16.1超卖但OI上升，资金费率中性，ETH/SOL相对走强，但BTC下跌，市场未形成一致方向。第三层：现价接近昨低，但未确认支撑，且RSI超卖可能反弹，但缺乏明确入场信号，空间不足，故FLAT。",
       "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "信号冲突，不强行交易",
-        "日线偏离23%过大，追多风险高",
-        "OI上升但价格下跌，空头进场，不宜追空",
-        "MSTR大涨但BTC未跟，需观察持续性"
+        "禁止追空，因RSI超卖且ETH/SOL相对走强",
+        "禁止做多，因BTC未企稳且美债收益率上行",
+        "等待价格突破昨高或回踩昨低确认后再行动"
       ],
       "action": "skip"
     }
@@ -40,9 +39,9 @@
     "mstr_chg": 14.39,
     "nvda_chg": -1.31,
     "coin_chg": 16.41,
-    "btc_chg": -1.043,
-    "ethbtc_chg": 1.685,
-    "solbtc_chg": 3.048
+    "btc_chg": -0.993,
+    "ethbtc_chg": 1.72,
+    "solbtc_chg": 2.565
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }

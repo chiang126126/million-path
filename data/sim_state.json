@@ -1,45 +1,9 @@
 {
  "books": {
   "BTCUSDT": {
-   "equity": 999.271255,
+   "equity": 983.5499424073369,
    "peak": 1000.0,
-   "pos": {
-    "symbol": "BTCUSDT",
-    "side": "LONG",
-    "entry": 77380.75,
-    "qty": 0.01883531388153663,
-    "notional": 1457.49,
-    "risk": 15.0,
-    "stop": 76584.37,
-    "target": 79132.78,
-    "stop_pct": 0.010291660762805075,
-    "rr": 2.2,
-    "max_hold": 48,
-    "stop_kind": "STOP",
-    "tag": "趋势·回踩30h线多",
-    "opened_t": 1787378400000,
-    "opened_at": "2026-08-22T06:00:00Z",
-    "fee_in": 0.7287,
-    "mfe_price": 77669.28
-   },
-   "last_t": 1787389200000,
-   "day": "2026-08-22",
-   "day_start": 1000.0,
-   "entries_today": 1,
-   "consec_stops": 0,
-   "cooldown_until": null,
-   "halted": false,
-   "signal": {
-    "at": "2026-08-22T10:00:00Z",
-    "text": "持仓管理中：LONG @77380.75，止损 76584.37(STOP)",
-    "regime": "trend_up",
-    "dev": 18.58
-   }
-  },
-  "ETHUSDT": {
-   "equity": 983.2903235722044,
-   "peak": 1000.0,
-   "last_t": 1787389200000,
+   "last_t": 1787392800000,
    "day": "2026-08-22",
    "day_start": 1000.0,
    "entries_today": 1,
@@ -47,15 +11,35 @@
    "cooldown_until": null,
    "halted": false,
    "signal": {
-    "at": "2026-08-22T10:15:04Z",
-    "text": "🛡 守护层分钟级离场: STOP @2401.60",
-    "regime": "trend_up"
+    "at": "2026-08-22T11:00:00Z",
+    "text": "🚫 今日已进场1次——频率上限",
+    "regime": "trend_up",
+    "dev": 18.45
+   },
+   "pos": null,
+   "last_exit_t": 1787392800000
+  },
+  "ETHUSDT": {
+   "equity": 983.2903235722044,
+   "peak": 1000.0,
+   "last_t": 1787392800000,
+   "day": "2026-08-22",
+   "day_start": 1000.0,
+   "entries_today": 1,
+   "consec_stops": 1,
+   "cooldown_until": null,
+   "halted": false,
+   "signal": {
+    "at": "2026-08-22T11:00:00Z",
+    "text": "🚫 今日已进场1次——频率上限",
+    "regime": "trend_up",
+    "dev": 24.41
    },
    "pos": null,
    "last_exit_t": 1787390104553
   }
  },
  "started_at": "2026-08-19T18:07:18Z",
- "updated_at": "2026-08-22T10:07:20Z",
+ "updated_at": "2026-08-22T11:07:21Z",
  "guardian_at": "2026-08-22T10:15:04Z"
 }
