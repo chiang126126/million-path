@@ -20,9 +20,9 @@
     "opened_t": 1787378400000,
     "opened_at": "2026-08-22T06:00:00Z",
     "fee_in": 0.7287,
-    "mfe_price": 77380.75
+    "mfe_price": 77572.16
    },
-   "last_t": 1787374800000,
+   "last_t": 1787378400000,
    "day": "2026-08-22",
    "day_start": 1000.0,
    "entries_today": 1,
@@ -30,10 +30,10 @@
    "cooldown_until": null,
    "halted": false,
    "signal": {
-    "at": "2026-08-22T06:00:00Z",
-    "text": "🟢 买入开多 @77380.75｜趋势·回踩30h线多｜止损1.03% 目标2.2R",
+    "at": "2026-08-22T07:00:00Z",
+    "text": "持仓管理中：LONG @77380.75，止损 76584.37(STOP)",
     "regime": "trend_up",
-    "dev": 19.07
+    "dev": 19.23
    }
   },
   "ETHUSDT": {
@@ -56,9 +56,9 @@
     "opened_t": 1787378400000,
     "opened_at": "2026-08-22T06:00:00Z",
     "fee_in": 0.5,
-    "mfe_price": 2439.95
+    "mfe_price": 2443.68
    },
-   "last_t": 1787374800000,
+   "last_t": 1787378400000,
    "day": "2026-08-22",
    "day_start": 1000.0,
    "entries_today": 1,
@@ -66,13 +66,13 @@
    "cooldown_until": null,
    "halted": false,
    "signal": {
-    "at": "2026-08-22T06:00:00Z",
-    "text": "🟢 买入开多 @2439.95｜趋势·回踩30h线多｜止损1.50% 目标2.2R",
+    "at": "2026-08-22T07:00:00Z",
+    "text": "持仓管理中：LONG @2439.95，止损 2403.35(STOP)",
     "regime": "trend_up",
-    "dev": 25.81
+    "dev": 25.7
    }
   }
  },
  "started_at": "2026-08-19T18:07:18Z",
- "updated_at": "2026-08-22T06:09:56Z"
+ "updated_at": "2026-08-22T07:09:56Z"
 }
