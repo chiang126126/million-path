@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-22T10:07:20Z",
+ "updated_at": "2026-08-22T10:15:04Z",
  "books": {
   "BTCUSDT": {
    "equity": 999.27,
@@ -19,20 +19,32 @@
    }
   },
   "ETHUSDT": {
-   "equity": 999.5,
+   "equity": 983.29,
    "signal": {
-    "at": "2026-08-22T10:00:00Z",
-    "text": "持仓管理中：LONG @2439.95，止损 2403.35(STOP)",
-    "regime": "trend_up",
-    "dev": 24.88
+    "at": "2026-08-22T10:15:04Z",
+    "text": "🛡 守护层分钟级离场: STOP @2401.60",
+    "regime": "trend_up"
    },
    "stats": {
-    "n": 0,
-    "net": 0,
-    "wr": null,
-    "pf": null,
-    "max_dd": 0,
-    "equity": 999.5
+    "n": 1,
+    "net": -16.71,
+    "wr": 0.0,
+    "pf": 0.0,
+    "max_dd": 1.67,
+    "equity": 983.29,
+    "fees": 0.99,
+    "by_reason": {
+     "STOP": {
+      "n": 1,
+      "net": -16.71
+     }
+    },
+    "by_tag": {
+     "趋势·回踩30h线多": {
+      "n": 1,
+      "net": -16.71
+     }
+    }
    }
   }
  }

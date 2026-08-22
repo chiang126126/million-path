@@ -1,1 +1,22 @@
-[]
+[
+ {
+  "symbol": "ETHUSDT",
+  "side": "LONG",
+  "tag": "趋势·回踩30h线多",
+  "entry": 2439.95,
+  "exit": 2401.6,
+  "qty": 0.409844,
+  "notional": 1000.0,
+  "risk": 15.0,
+  "pnl": -16.7097,
+  "r": -1.11,
+  "fee_total": 0.9921,
+  "mfe_pct": 0.31,
+  "exit_reason": "STOP",
+  "hold_hours": 4.3,
+  "opened_at": "2026-08-22T06:00:00Z",
+  "closed_at": "2026-08-22T10:15:04Z",
+  "equity_after": 983.29,
+  "via": "guardian"
+ }
+]
