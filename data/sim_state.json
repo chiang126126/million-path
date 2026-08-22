@@ -22,7 +22,7 @@
     "fee_in": 0.7287,
     "mfe_price": 77669.28
    },
-   "last_t": 1787385600000,
+   "last_t": 1787389200000,
    "day": "2026-08-22",
    "day_start": 1000.0,
    "entries_today": 1,
@@ -30,10 +30,10 @@
    "cooldown_until": null,
    "halted": false,
    "signal": {
-    "at": "2026-08-22T09:00:00Z",
+    "at": "2026-08-22T10:00:00Z",
     "text": "持仓管理中：LONG @77380.75，止损 76584.37(STOP)",
     "regime": "trend_up",
-    "dev": 18.81
+    "dev": 18.58
    }
   },
   "ETHUSDT": {
@@ -58,7 +58,7 @@
     "fee_in": 0.5,
     "mfe_price": 2447.6
    },
-   "last_t": 1787385600000,
+   "last_t": 1787389200000,
    "day": "2026-08-22",
    "day_start": 1000.0,
    "entries_today": 1,
@@ -66,13 +66,13 @@
    "cooldown_until": null,
    "halted": false,
    "signal": {
-    "at": "2026-08-22T09:00:00Z",
+    "at": "2026-08-22T10:00:00Z",
     "text": "持仓管理中：LONG @2439.95，止损 2403.35(STOP)",
     "regime": "trend_up",
-    "dev": 25.08
+    "dev": 24.88
    }
   }
  },
  "started_at": "2026-08-19T18:07:18Z",
- "updated_at": "2026-08-22T09:09:50Z"
+ "updated_at": "2026-08-22T10:07:20Z"
 }
