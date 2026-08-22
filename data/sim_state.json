@@ -3,7 +3,7 @@
   "BTCUSDT": {
    "equity": 983.5499424073369,
    "peak": 1000.0,
-   "last_t": 1787392800000,
+   "last_t": 1787396400000,
    "day": "2026-08-22",
    "day_start": 1000.0,
    "entries_today": 1,
@@ -11,10 +11,10 @@
    "cooldown_until": null,
    "halted": false,
    "signal": {
-    "at": "2026-08-22T11:00:00Z",
+    "at": "2026-08-22T12:00:00Z",
     "text": "🚫 今日已进场1次——频率上限",
     "regime": "trend_up",
-    "dev": 18.45
+    "dev": 18.68
    },
    "pos": null,
    "last_exit_t": 1787392800000
@@ -22,7 +22,7 @@
   "ETHUSDT": {
    "equity": 983.2903235722044,
    "peak": 1000.0,
-   "last_t": 1787392800000,
+   "last_t": 1787396400000,
    "day": "2026-08-22",
    "day_start": 1000.0,
    "entries_today": 1,
@@ -30,16 +30,16 @@
    "cooldown_until": null,
    "halted": false,
    "signal": {
-    "at": "2026-08-22T11:00:00Z",
+    "at": "2026-08-22T12:00:00Z",
     "text": "🚫 今日已进场1次——频率上限",
     "regime": "trend_up",
-    "dev": 24.41
+    "dev": 24.99
    },
    "pos": null,
    "last_exit_t": 1787390104553
   }
  },
  "started_at": "2026-08-19T18:07:18Z",
- "updated_at": "2026-08-22T11:07:21Z",
+ "updated_at": "2026-08-22T12:07:21Z",
  "guardian_at": "2026-08-22T10:15:04Z"
 }
