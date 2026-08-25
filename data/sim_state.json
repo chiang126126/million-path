@@ -3,7 +3,7 @@
   "BTCUSDT": {
    "equity": 982.7141374073368,
    "peak": 1000.0,
-   "last_t": 1787652000000,
+   "last_t": 1787655600000,
    "day": "2026-08-25",
    "day_start": 983.5499424073369,
    "entries_today": 1,
@@ -11,10 +11,10 @@
    "cooldown_until": null,
    "halted": false,
    "signal": {
-    "at": "2026-08-25T11:00:00Z",
+    "at": "2026-08-25T12:00:00Z",
     "text": "持仓管理中：LONG @79187.20，止损 78488.31(STOP)",
     "regime": "trend_up",
-    "dev": 19.57
+    "dev": 19.28
    },
    "pos": {
     "symbol": "BTCUSDT",
@@ -40,7 +40,7 @@
   "ETHUSDT": {
    "equity": 983.2903235722044,
    "peak": 1000.0,
-   "last_t": 1787652000000,
+   "last_t": 1787655600000,
    "day": "2026-08-25",
    "day_start": 983.2903235722044,
    "entries_today": 0,
@@ -48,16 +48,16 @@
    "cooldown_until": null,
    "halted": false,
    "signal": {
-    "at": "2026-08-25T11:00:00Z",
+    "at": "2026-08-25T12:00:00Z",
     "text": "⏳ 趋势↑待回踩：等价格回踩30h线收复(不追第一波)",
     "regime": "trend_up",
-    "dev": 24.23
+    "dev": 24.03
    },
    "pos": null,
    "last_exit_t": 1787390104553
   }
  },
  "started_at": "2026-08-19T18:07:18Z",
- "updated_at": "2026-08-25T11:07:27Z",
+ "updated_at": "2026-08-25T12:07:23Z",
  "guardian_at": "2026-08-22T10:15:04Z"
 }
