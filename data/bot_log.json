@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-26T04:08:14Z",
+  "ts": "2026-08-26T05:07:45Z",
   "mode": "testnet",
   "equity": 399.74,
   "day_pnl_pct": 0.0,
@@ -12,7 +12,7 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：纳指期货微跌，美债收益率下行，美元微涨，NVDA下跌但MSTR大涨，风险偏好不明。第二层：BTC日线偏多但偏离较大，现价接近EMA21，OI下降显示杠杆清理，ETH相对走强但SOL走弱，情绪贪婪。第三层：方向不明，且未满足做多或做空条件，故FLAT。",
+      "rationale": "第一层：纳指期货微跌、NVDA下跌但MSTR大涨，风险偏好不明朗；第二层：BTC下跌但ETH/BTC走强，OI下降显示杠杆清理，但日线偏离过大且RSI中性；第三层：方向不明，缺乏明确入场信号，且当前时段不宜交易。",
       "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
@@ -32,16 +32,16 @@
       "confidence": 0.0,
       "vetted": false,
       "reason": "决策为 FLAT/观望",
-      "rationale": "第一层：全球风险偏好不明，纳指期货微跌，美债收益率下行，美元微涨，NVDA下跌但MSTR大涨，信号混杂。第二层：BTC下跌但ETH相对走强，OI微降，资金费率正常，日线偏多但价格接近EMA，量能萎缩，方向不明。第三层：缺乏明确入场信号，且空间不足，风险回报比不佳，故选择观望。",
+      "rationale": "第一层：纳指期货微跌，美债收益率下行，美元微涨，NVDA下跌但MSTR大涨，风险偏好不明。第二层：BTC下跌但ETH相对抗跌，OI微降，资金费率正常，日线偏多但RSI中性，信号冲突。第三层：现价接近EMA21/50，但方向不明，且量能低迷，缺乏明确入场依据。",
       "market_state": "mixed",
       "entry_low": 0,
       "entry_high": 0,
       "invalidation": "",
       "max_hold_hours": 0,
       "risk_flags": [
-        "市场方向不明，避免强行交易",
-        "量能萎缩，突破或跌破可能缺乏持续性",
-        "关注Powell讲话及美股开盘后的风险偏好变化"
+        "信号冲突，不强行交易",
+        "量能低迷，波动可能收窄",
+        "关注Powell讲话，可能引发波动"
       ],
       "action": "skip"
     }
@@ -50,18 +50,18 @@
   "news_lines": 3,
   "global_risk": "unknown",
   "xm": {
-    "nq": 29270.5,
-    "nq_chg": -0.02,
+    "nq": 29227.25,
+    "nq_chg": -0.17,
     "tnx": 4.64,
     "tnx_chg": -1.38,
-    "dxy": 98.973,
-    "dxy_chg": 0.05,
+    "dxy": 98.996,
+    "dxy_chg": 0.08,
     "mstr_chg": 6.36,
     "nvda_chg": -0.78,
     "coin_chg": 0.36,
-    "btc_chg": -1.587,
-    "ethbtc_chg": 0.548,
-    "solbtc_chg": -2.447
+    "btc_chg": -2.232,
+    "ethbtc_chg": 0.386,
+    "solbtc_chg": -3.246
   },
-  "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
+  "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
