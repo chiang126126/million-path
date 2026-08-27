@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-27T18:08:28Z",
+  "ts": "2026-08-27T19:07:01Z",
   "mode": "testnet",
   "equity": 399.74,
   "day_pnl_pct": 0.0,
@@ -8,10 +8,10 @@
     {
       "symbol": "BTCUSDT",
       "source": "rule",
-      "bias": "FLAT",
-      "confidence": 0.3,
+      "bias": "LONG",
+      "confidence": 0.53,
       "vetted": false,
-      "reason": "决策为 FLAT/观望",
+      "reason": "置信度 0.53 < 0.55",
       "rationale": "规则引擎兜底",
       "market_state": null,
       "entry_low": null,
@@ -42,18 +42,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29610.5,
-    "nq_chg": 1.1,
+    "nq": 29555.75,
+    "nq_chg": 0.91,
     "tnx": 4.67,
-    "tnx_chg": 0.09,
+    "tnx_chg": 0.17,
     "dxy": 99.155,
     "dxy_chg": -0.02,
-    "mstr_chg": 8.58,
-    "nvda_chg": 6.89,
-    "coin_chg": 1.66,
-    "btc_chg": 2.448,
-    "ethbtc_chg": -0.35,
-    "solbtc_chg": 8.826
+    "mstr_chg": 8.51,
+    "nvda_chg": 6.26,
+    "coin_chg": 2.08,
+    "btc_chg": 2.285,
+    "ethbtc_chg": -0.762,
+    "solbtc_chg": 10.156
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
