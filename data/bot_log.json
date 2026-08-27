@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-27T19:07:01Z",
+  "ts": "2026-08-27T20:08:29Z",
   "mode": "testnet",
   "equity": 399.74,
   "day_pnl_pct": 0.0,
@@ -8,10 +8,10 @@
     {
       "symbol": "BTCUSDT",
       "source": "rule",
-      "bias": "LONG",
-      "confidence": 0.53,
+      "bias": "FLAT",
+      "confidence": 0.3,
       "vetted": false,
-      "reason": "置信度 0.53 < 0.55",
+      "reason": "决策为 FLAT/观望",
       "rationale": "规则引擎兜底",
       "market_state": null,
       "entry_low": null,
@@ -42,18 +42,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29555.75,
-    "nq_chg": 0.91,
+    "nq": 29699.75,
+    "nq_chg": 1.4,
     "tnx": 4.67,
     "tnx_chg": 0.17,
-    "dxy": 99.155,
+    "dxy": 99.15,
     "dxy_chg": -0.02,
-    "mstr_chg": 8.51,
-    "nvda_chg": 6.26,
-    "coin_chg": 2.08,
-    "btc_chg": 2.285,
-    "ethbtc_chg": -0.762,
-    "solbtc_chg": 10.156
+    "mstr_chg": 8.33,
+    "nvda_chg": 7.01,
+    "coin_chg": 1.9,
+    "btc_chg": 1.836,
+    "ethbtc_chg": -0.857,
+    "solbtc_chg": 10.22
   },
-  "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
+  "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
