@@ -1,12 +1,13 @@
 {
- "updated_at": "2026-08-28T08:09:05Z",
+ "updated_at": "2026-08-28T09:09:07Z",
  "books": {
   "BTCUSDT": {
    "equity": 965.02,
    "signal": {
-    "at": "2026-08-28T08:09:02Z",
-    "text": "⚠ 数据获取失败：HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=20)",
-    "regime": null
+    "at": "2026-08-28T09:00:00Z",
+    "text": "⏳ 趋势↑待回踩：等价格回踩30h线收复(不追第一波)",
+    "regime": "trend_up",
+    "dev": 17.25
    },
    "stats": {
     "n": 2,
@@ -33,10 +34,10 @@
   "ETHUSDT": {
    "equity": 983.29,
    "signal": {
-    "at": "2026-08-28T08:00:00Z",
+    "at": "2026-08-28T09:00:00Z",
     "text": "⏳ 趋势↑待回踩：等价格回踩30h线收复(不追第一波)",
     "regime": "trend_up",
-    "dev": 21.53
+    "dev": 21.12
    },
    "stats": {
     "n": 1,
