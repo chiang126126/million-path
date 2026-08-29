@@ -1,13 +1,13 @@
 {
- "updated_at": "2026-08-29T19:13:34Z",
+ "updated_at": "2026-08-29T20:14:10Z",
  "books": {
   "BTCUSDT": {
    "equity": 965.02,
    "signal": {
-    "at": "2026-08-29T19:00:00Z",
+    "at": "2026-08-29T20:00:00Z",
     "text": "⏳ 趋势↑待回踩：等价格回踩30h线收复(不追第一波)",
     "regime": "trend_up",
-    "dev": 14.46
+    "dev": 14.5
    },
    "stats": {
     "n": 2,
@@ -34,9 +34,10 @@
   "ETHUSDT": {
    "equity": 983.29,
    "signal": {
-    "at": "2026-08-29T19:13:34Z",
-    "text": "⚠ 数据获取失败：('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))",
-    "regime": null
+    "at": "2026-08-29T20:00:00Z",
+    "text": "⏳ 趋势↑待回踩：等价格回踩30h线收复(不追第一波)",
+    "regime": "trend_up",
+    "dev": 18.42
    },
    "stats": {
     "n": 1,
