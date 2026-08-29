@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-29T14:07:28Z",
+  "ts": "2026-08-29T16:12:19Z",
   "mode": "testnet",
   "equity": 399.74,
   "day_pnl_pct": 0.0,
@@ -51,9 +51,9 @@
     "mstr_chg": 3.34,
     "nvda_chg": 3.76,
     "coin_chg": -1.73,
-    "btc_chg": -1.223,
-    "ethbtc_chg": -0.791,
-    "solbtc_chg": 1.097
+    "btc_chg": 0.063,
+    "ethbtc_chg": -0.064,
+    "solbtc_chg": 0.477
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
