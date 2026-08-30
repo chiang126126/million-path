@@ -1,5 +1,5 @@
 {
-  "ts": "2026-08-30T01:08:15Z",
+  "ts": "2026-08-30T02:10:17Z",
   "mode": "testnet",
   "equity": 399.74,
   "day_pnl_pct": 0.0,
@@ -51,9 +51,9 @@
     "mstr_chg": 3.34,
     "nvda_chg": 3.76,
     "coin_chg": -1.73,
-    "btc_chg": 0.566,
-    "ethbtc_chg": 0.095,
-    "solbtc_chg": 0.635
+    "btc_chg": 0.366,
+    "ethbtc_chg": 0.191,
+    "solbtc_chg": 0.567
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
