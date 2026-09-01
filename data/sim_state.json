@@ -3,7 +3,7 @@
   "BTCUSDT": {
    "equity": 965.0159320186544,
    "peak": 1000.0,
-   "last_t": 1788228000000,
+   "last_t": 1788231600000,
    "day": "2026-09-01",
    "day_start": 965.0159320186544,
    "entries_today": 0,
@@ -11,10 +11,10 @@
    "cooldown_until": 1787709062014,
    "halted": false,
    "signal": {
-    "at": "2026-09-01T03:00:00Z",
+    "at": "2026-09-01T04:00:00Z",
     "text": "⏳ 趋势↑但近24h未离30h线≥1.2%——贴线磨不算真趋势回踩",
     "regime": "trend_up",
-    "dev": 12.48
+    "dev": 12.8
    },
    "last_exit_t": 1787662262014,
    "pos": null
@@ -22,7 +22,7 @@
   "ETHUSDT": {
    "equity": 982.3684885722045,
    "peak": 1000.0,
-   "last_t": 1788228000000,
+   "last_t": 1788231600000,
    "day": "2026-09-01",
    "day_start": 983.2903235722044,
    "entries_today": 1,
@@ -30,10 +30,10 @@
    "cooldown_until": null,
    "halted": false,
    "signal": {
-    "at": "2026-09-01T03:00:00Z",
-    "text": "持仓管理中：LONG @2462.86，止损 2443.16(STOP)",
+    "at": "2026-09-01T04:00:00Z",
+    "text": "持仓管理中：LONG @2462.86，止损 2465.32(STOP_BE)",
     "regime": "trend_up",
-    "dev": 15.78
+    "dev": 16.11
    },
    "pos": {
     "symbol": "ETHUSDT",
@@ -42,22 +42,22 @@
     "qty": 0.7485887775585633,
     "notional": 1843.67,
     "risk": 14.75,
-    "stop": 2443.16,
+    "stop": 2465.32,
     "target": 2506.21,
     "stop_pct": 0.008,
     "rr": 2.2,
     "max_hold": 48,
-    "stop_kind": "STOP",
+    "stop_kind": "STOP_BE",
     "tag": "趋势·回踩30h线多",
     "opened_t": 1788228000000,
     "opened_at": "2026-09-01T02:00:00Z",
     "fee_in": 0.9218,
-    "mfe_price": 2465.34
+    "mfe_price": 2482.8
    },
    "last_exit_t": 1787390104553
   }
  },
  "started_at": "2026-08-19T18:07:18Z",
- "updated_at": "2026-09-01T03:07:19Z",
+ "updated_at": "2026-09-01T04:07:19Z",
  "guardian_at": "2026-08-25T13:51:02Z"
 }
