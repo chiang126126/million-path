@@ -3,18 +3,18 @@
   "BTCUSDT": {
    "equity": 965.0159320186544,
    "peak": 1000.0,
-   "last_t": 1788217200000,
-   "day": "2026-08-31",
+   "last_t": 1788220800000,
+   "day": "2026-09-01",
    "day_start": 965.0159320186544,
    "entries_today": 0,
    "consec_stops": 0,
    "cooldown_until": 1787709062014,
    "halted": false,
    "signal": {
-    "at": "2026-09-01T00:00:00Z",
-    "text": "⏳ 趋势↑但近24h未离30h线≥1.2%——贴线磨不算真趋势回踩",
+    "at": "2026-09-01T01:00:00Z",
+    "text": "⏳ 趋势↑待回踩：等价格回踩30h线收复(不追第一波)",
     "regime": "trend_up",
-    "dev": 13.52
+    "dev": 12.77
    },
    "last_exit_t": 1787662262014,
    "pos": null
@@ -22,24 +22,24 @@
   "ETHUSDT": {
    "equity": 983.2903235722044,
    "peak": 1000.0,
-   "last_t": 1788217200000,
-   "day": "2026-08-31",
+   "last_t": 1788220800000,
+   "day": "2026-09-01",
    "day_start": 983.2903235722044,
    "entries_today": 0,
    "consec_stops": 1,
    "cooldown_until": null,
    "halted": false,
    "signal": {
-    "at": "2026-09-01T00:00:00Z",
+    "at": "2026-09-01T01:00:00Z",
     "text": "⏳ 趋势↑待回踩：等价格回踩30h线收复(不追第一波)",
     "regime": "trend_up",
-    "dev": 17.04
+    "dev": 16.09
    },
    "pos": null,
    "last_exit_t": 1787390104553
   }
  },
  "started_at": "2026-08-19T18:07:18Z",
- "updated_at": "2026-09-01T00:07:19Z",
+ "updated_at": "2026-09-01T01:07:21Z",
  "guardian_at": "2026-08-25T13:51:02Z"
 }
