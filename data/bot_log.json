@@ -1,5 +1,5 @@
 {
-  "ts": "2026-09-01T21:08:13Z",
+  "ts": "2026-09-01T22:08:15Z",
   "mode": "testnet",
   "equity": 399.74,
   "day_pnl_pct": 0.0,
@@ -42,18 +42,18 @@
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 29135.25,
-    "nq_chg": -1.28,
+    "nq": 29139.0,
+    "nq_chg": -1.27,
     "tnx": 4.8,
     "tnx_chg": 0.8,
-    "dxy": 99.664,
+    "dxy": 99.667,
     "dxy_chg": 0.24,
     "mstr_chg": -1.91,
     "nvda_chg": -0.05,
     "coin_chg": -1.02,
-    "btc_chg": -1.979,
-    "ethbtc_chg": -0.382,
-    "solbtc_chg": -1.675
+    "btc_chg": -2.162,
+    "ethbtc_chg": -0.351,
+    "solbtc_chg": -1.594
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
