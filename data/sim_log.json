@@ -1,13 +1,13 @@
 {
- "updated_at": "2026-09-01T08:09:02Z",
+ "updated_at": "2026-09-01T09:07:19Z",
  "books": {
   "BTCUSDT": {
    "equity": 965.02,
    "signal": {
-    "at": "2026-09-01T08:00:00Z",
+    "at": "2026-09-01T09:00:00Z",
     "text": "⏳ 趋势↑待回踩：等价格回踩30h线收复(不追第一波)",
     "regime": "trend_up",
-    "dev": 12.74
+    "dev": 11.66
    },
    "stats": {
     "n": 2,
@@ -34,9 +34,10 @@
   "ETHUSDT": {
    "equity": 981.55,
    "signal": {
-    "at": "2026-09-01T08:09:02Z",
-    "text": "🛡 守护层分钟级离场: STOP_BE @2463.00",
-    "regime": "trend_up"
+    "at": "2026-09-01T09:00:00Z",
+    "text": "🚫 今日已进场1次——频率上限",
+    "regime": "trend_up",
+    "dev": 14.98
    },
    "stats": {
     "n": 2,
