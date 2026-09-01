@@ -20,44 +20,25 @@
    "pos": null
   },
   "ETHUSDT": {
-   "equity": 982.3684885722045,
+   "equity": 981.5514039214992,
    "peak": 1000.0,
    "last_t": 1788246000000,
    "day": "2026-09-01",
    "day_start": 983.2903235722044,
    "entries_today": 1,
-   "consec_stops": 1,
+   "consec_stops": 0,
    "cooldown_until": null,
    "halted": false,
    "signal": {
-    "at": "2026-09-01T08:00:00Z",
-    "text": "持仓管理中：LONG @2462.86，止损 2465.32(STOP_BE)",
-    "regime": "trend_up",
-    "dev": 16.14
+    "at": "2026-09-01T08:09:02Z",
+    "text": "🛡 守护层分钟级离场: STOP_BE @2463.00",
+    "regime": "trend_up"
    },
-   "pos": {
-    "symbol": "ETHUSDT",
-    "side": "LONG",
-    "entry": 2462.86,
-    "qty": 0.7485887775585633,
-    "notional": 1843.67,
-    "risk": 14.75,
-    "stop": 2465.32,
-    "target": 2506.21,
-    "stop_pct": 0.008,
-    "rr": 2.2,
-    "max_hold": 48,
-    "stop_kind": "STOP_BE",
-    "tag": "趋势·回踩30h线多",
-    "opened_t": 1788228000000,
-    "opened_at": "2026-09-01T02:00:00Z",
-    "fee_in": 0.9218,
-    "mfe_price": 2485.5
-   },
-   "last_exit_t": 1787390104553
+   "last_exit_t": 1788246542113,
+   "pos": null
   }
  },
  "started_at": "2026-08-19T18:07:18Z",
  "updated_at": "2026-09-01T08:07:19Z",
- "guardian_at": "2026-08-25T13:51:02Z"
+ "guardian_at": "2026-09-01T08:09:02Z"
 }
