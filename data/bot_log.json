@@ -1,5 +1,5 @@
 {
-  "ts": "2026-09-02T17:07:01Z",
+  "ts": "2026-09-02T18:07:01Z",
   "mode": "testnet",
   "equity": 399.74,
   "day_pnl_pct": 0.0,
@@ -42,18 +42,18 @@
   "news_lines": 3,
   "global_risk": "mixed",
   "xm": {
-    "nq": 29165.0,
-    "nq_chg": 0.14,
-    "tnx": 4.8,
-    "tnx_chg": 0.04,
-    "dxy": 99.552,
-    "dxy_chg": -0.12,
-    "mstr_chg": -8.15,
-    "nvda_chg": 2.1,
-    "coin_chg": -6.7,
-    "btc_chg": -0.608,
-    "ethbtc_chg": -1.626,
-    "solbtc_chg": -1.799
+    "nq": 29156.5,
+    "nq_chg": 0.11,
+    "tnx": 4.79,
+    "tnx_chg": -0.13,
+    "dxy": 99.578,
+    "dxy_chg": -0.09,
+    "mstr_chg": -7.59,
+    "nvda_chg": 1.83,
+    "coin_chg": -6.12,
+    "btc_chg": 0.182,
+    "ethbtc_chg": -1.087,
+    "solbtc_chg": -1.314
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
