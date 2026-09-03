@@ -1,5 +1,5 @@
 {
-  "ts": "2026-09-03T12:07:01Z",
+  "ts": "2026-09-03T13:07:01Z",
   "mode": "testnet",
   "equity": 399.74,
   "day_pnl_pct": 0.0,
@@ -8,10 +8,10 @@
     {
       "symbol": "BTCUSDT",
       "source": "rule",
-      "bias": "FLAT",
-      "confidence": 0.3,
+      "bias": "LONG",
+      "confidence": 0.53,
       "vetted": false,
-      "reason": "决策为 FLAT/观望",
+      "reason": "置信度 0.53 < 0.55",
       "rationale": "规则引擎兜底",
       "market_state": null,
       "entry_low": null,
@@ -42,18 +42,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29108.5,
-    "nq_chg": -0.27,
-    "tnx": 4.8,
-    "tnx_chg": 0.0,
-    "dxy": 99.142,
-    "dxy_chg": -0.42,
+    "nq": 29247.75,
+    "nq_chg": 0.21,
+    "tnx": 4.74,
+    "tnx_chg": -1.17,
+    "dxy": 98.98,
+    "dxy_chg": -0.58,
     "mstr_chg": -7.33,
     "nvda_chg": 1.64,
     "coin_chg": -7.0,
-    "btc_chg": 1.561,
-    "ethbtc_chg": -0.355,
-    "solbtc_chg": 1.206
+    "btc_chg": 2.155,
+    "ethbtc_chg": -0.773,
+    "solbtc_chg": 1.119
   },
   "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
 }
