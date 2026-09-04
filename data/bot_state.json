@@ -40,10 +40,10 @@
         "oi_chg_pct": -0.94,
         "market_state": null
       },
-      "mfe_price": 2517.2,
-      "managed_t": 1788490800000
+      "mfe_price": 2525.0,
+      "managed_t": 1788494400000
     }
   ],
-  "updated_at": "2026-09-04T04:07:11Z",
+  "updated_at": "2026-09-04T05:07:11Z",
   "guardian_at": "2026-08-25T20:49:28Z"
 }
