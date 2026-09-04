@@ -39,9 +39,11 @@
         "solbtc_chg": -1.06,
         "oi_chg_pct": -0.94,
         "market_state": null
-      }
+      },
+      "mfe_price": 2507.74,
+      "managed_t": 1788487200000
     }
   ],
-  "updated_at": "2026-09-04T02:07:16Z",
+  "updated_at": "2026-09-04T03:07:11Z",
   "guardian_at": "2026-08-25T20:49:28Z"
 }

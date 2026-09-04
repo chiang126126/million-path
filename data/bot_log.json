@@ -1,5 +1,5 @@
 {
-  "ts": "2026-09-04T02:07:01Z",
+  "ts": "2026-09-04T03:07:01Z",
   "mode": "testnet",
   "equity": 399.74,
   "day_pnl_pct": 0.0,
@@ -20,41 +20,24 @@
       "max_hold_hours": null,
       "risk_flags": [],
       "action": "skip"
-    },
-    {
-      "symbol": "ETHUSDT",
-      "source": "rule",
-      "bias": "LONG",
-      "confidence": 0.55,
-      "vetted": true,
-      "reason": "通过风控",
-      "rationale": "规则引擎兜底",
-      "market_state": null,
-      "entry_low": null,
-      "entry_high": null,
-      "invalidation": null,
-      "max_hold_hours": null,
-      "risk_flags": [],
-      "action": "OPEN LONG",
-      "price": 2500.9
     }
   ],
-  "testnet_usdt": 4296.66,
+  "testnet_usdt": 4031.44,
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29538.5,
-    "nq_chg": 1.21,
+    "nq": 29563.5,
+    "nq_chg": 1.29,
     "tnx": 4.76,
     "tnx_chg": -0.71,
-    "dxy": 98.975,
-    "dxy_chg": -0.59,
+    "dxy": 98.997,
+    "dxy_chg": -0.57,
     "mstr_chg": 15.97,
     "nvda_chg": 5.06,
     "coin_chg": 8.98,
-    "btc_chg": 4.559,
-    "ethbtc_chg": 0.259,
-    "solbtc_chg": -1.065
+    "btc_chg": 4.205,
+    "ethbtc_chg": 0.42,
+    "solbtc_chg": -1.032
   },
   "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
