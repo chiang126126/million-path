@@ -1,5 +1,5 @@
 {
-  "ts": "2026-09-04T07:07:01Z",
+  "ts": "2026-09-04T08:07:01Z",
   "mode": "testnet",
   "equity": 399.74,
   "day_pnl_pct": 0.0,
@@ -8,10 +8,10 @@
     {
       "symbol": "BTCUSDT",
       "source": "rule",
-      "bias": "LONG",
-      "confidence": 0.53,
+      "bias": "FLAT",
+      "confidence": 0.3,
       "vetted": false,
-      "reason": "置信度 0.53 < 0.55",
+      "reason": "决策为 FLAT/观望",
       "rationale": "规则引擎兜底",
       "market_state": null,
       "entry_low": null,
@@ -22,22 +22,22 @@
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4031.44,
+  "testnet_usdt": 4031.41,
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29577.75,
-    "nq_chg": 0.18,
+    "nq": 29647.0,
+    "nq_chg": 0.41,
     "tnx": 4.76,
     "tnx_chg": -0.71,
-    "dxy": 99.004,
-    "dxy_chg": 0.0,
+    "dxy": 99.055,
+    "dxy_chg": 0.06,
     "mstr_chg": 15.97,
     "nvda_chg": 5.06,
     "coin_chg": 8.98,
-    "btc_chg": 3.619,
-    "ethbtc_chg": 0.452,
-    "solbtc_chg": -0.918
+    "btc_chg": 3.412,
+    "ethbtc_chg": 0.583,
+    "solbtc_chg": -0.865
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
