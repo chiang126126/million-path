@@ -1,5 +1,5 @@
 {
-  "ts": "2026-09-05T13:07:00Z",
+  "ts": "2026-09-05T14:07:01Z",
   "mode": "testnet",
   "equity": 399.74,
   "day_pnl_pct": 0.0,
@@ -51,9 +51,9 @@
     "mstr_chg": 15.92,
     "nvda_chg": 2.65,
     "coin_chg": 5.53,
-    "btc_chg": 0.43,
-    "ethbtc_chg": 0.032,
-    "solbtc_chg": 1.211
+    "btc_chg": 0.213,
+    "ethbtc_chg": -0.194,
+    "solbtc_chg": 1.002
   },
-  "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
+  "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
