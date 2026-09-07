@@ -1,5 +1,5 @@
 {
-  "ts": "2026-09-07T13:08:14Z",
+  "ts": "2026-09-07T14:08:13Z",
   "mode": "testnet",
   "equity": 399.74,
   "day_pnl_pct": 0.0,
@@ -46,14 +46,14 @@
     "nq_chg": 0.0,
     "tnx": 4.78,
     "tnx_chg": 0.46,
-    "dxy": 98.912,
+    "dxy": 98.91,
     "dxy_chg": -0.25,
     "mstr_chg": 15.92,
     "nvda_chg": 2.65,
     "coin_chg": 5.53,
-    "btc_chg": -0.519,
-    "ethbtc_chg": 0.736,
-    "solbtc_chg": -0.726
+    "btc_chg": -0.804,
+    "ethbtc_chg": 0.608,
+    "solbtc_chg": -1.388
   },
-  "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
+  "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
