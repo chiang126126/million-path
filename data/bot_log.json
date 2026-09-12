@@ -1,5 +1,5 @@
 {
-  "ts": "2026-09-12T12:07:18Z",
+  "ts": "2026-09-12T13:09:15Z",
   "mode": "testnet",
   "equity": 395.34,
   "day_pnl_pct": 0.0,
@@ -7,6 +7,22 @@
   "items": [
     {
       "symbol": "BTCUSDT",
+      "source": "rule",
+      "bias": "FLAT",
+      "confidence": 0.3,
+      "vetted": false,
+      "reason": "决策为 FLAT/观望",
+      "rationale": "规则引擎兜底",
+      "market_state": null,
+      "entry_low": null,
+      "entry_high": null,
+      "invalidation": null,
+      "max_hold_hours": null,
+      "risk_flags": [],
+      "action": "skip"
+    },
+    {
+      "symbol": "ETHUSDT",
       "source": "rule",
       "bias": "FLAT",
       "confidence": 0.3,
@@ -35,9 +51,9 @@
     "mstr_chg": -1.3,
     "nvda_chg": -2.41,
     "coin_chg": 0.31,
-    "btc_chg": 0.519,
-    "ethbtc_chg": 2.791,
-    "solbtc_chg": 2.465
+    "btc_chg": -0.241,
+    "ethbtc_chg": 1.988,
+    "solbtc_chg": 1.234
   },
   "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
 }
