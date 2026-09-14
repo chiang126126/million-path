@@ -1,5 +1,5 @@
 {
-  "ts": "2026-09-14T19:07:01Z",
+  "ts": "2026-09-14T20:07:01Z",
   "mode": "testnet",
   "equity": 395.34,
   "day_pnl_pct": 0.0,
@@ -25,9 +25,9 @@
       "symbol": "ETHUSDT",
       "source": "rule",
       "bias": "LONG",
-      "confidence": 0.52,
+      "confidence": 0.53,
       "vetted": false,
-      "reason": "置信度 0.52 < 0.55",
+      "reason": "置信度 0.53 < 0.55",
       "rationale": "规则引擎兜底",
       "market_state": null,
       "entry_low": null,
@@ -42,18 +42,18 @@
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 29566.25,
-    "nq_chg": -0.4,
+    "nq": 29464.0,
+    "nq_chg": -0.74,
     "tnx": 4.96,
-    "tnx_chg": -0.24,
-    "dxy": 99.406,
-    "dxy_chg": 0.29,
-    "mstr_chg": 5.85,
-    "nvda_chg": -2.72,
-    "coin_chg": 9.78,
-    "btc_chg": 2.17,
-    "ethbtc_chg": -1.262,
-    "solbtc_chg": -0.16
+    "tnx_chg": -0.28,
+    "dxy": 99.489,
+    "dxy_chg": 0.37,
+    "mstr_chg": 6.52,
+    "nvda_chg": -3.39,
+    "coin_chg": 11.13,
+    "btc_chg": 2.304,
+    "ethbtc_chg": -0.771,
+    "solbtc_chg": 0.0
   },
-  "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
+  "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
