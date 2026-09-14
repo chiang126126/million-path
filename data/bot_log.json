@@ -1,5 +1,5 @@
 {
-  "ts": "2026-09-14T17:07:00Z",
+  "ts": "2026-09-14T18:07:01Z",
   "mode": "testnet",
   "equity": 395.34,
   "day_pnl_pct": 0.0,
@@ -24,10 +24,10 @@
     {
       "symbol": "ETHUSDT",
       "source": "rule",
-      "bias": "FLAT",
-      "confidence": 0.3,
+      "bias": "LONG",
+      "confidence": 0.52,
       "vetted": false,
-      "reason": "决策为 FLAT/观望",
+      "reason": "置信度 0.52 < 0.55",
       "rationale": "规则引擎兜底",
       "market_state": null,
       "entry_low": null,
@@ -42,18 +42,18 @@
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 29552.75,
-    "nq_chg": -0.44,
-    "tnx": 4.94,
-    "tnx_chg": -0.7,
-    "dxy": 99.392,
-    "dxy_chg": 0.27,
-    "mstr_chg": 5.79,
-    "nvda_chg": -2.83,
-    "coin_chg": 10.64,
-    "btc_chg": 1.879,
-    "ethbtc_chg": -1.08,
-    "solbtc_chg": -0.291
+    "nq": 29600.0,
+    "nq_chg": -0.28,
+    "tnx": 4.96,
+    "tnx_chg": -0.32,
+    "dxy": 99.413,
+    "dxy_chg": 0.29,
+    "mstr_chg": 6.63,
+    "nvda_chg": -2.75,
+    "coin_chg": 10.65,
+    "btc_chg": 2.126,
+    "ethbtc_chg": -0.957,
+    "solbtc_chg": -0.084
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
