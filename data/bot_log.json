@@ -1,5 +1,5 @@
 {
-  "ts": "2026-09-15T13:07:01Z",
+  "ts": "2026-09-15T14:07:01Z",
   "mode": "testnet",
   "equity": 395.34,
   "day_pnl_pct": 0.0,
@@ -42,18 +42,18 @@
   "news_lines": 3,
   "global_risk": "mixed",
   "xm": {
-    "nq": 29442.75,
-    "nq_chg": 1.0,
-    "tnx": 4.99,
-    "tnx_chg": 0.58,
-    "dxy": 99.579,
-    "dxy_chg": 0.12,
-    "mstr_chg": 6.52,
-    "nvda_chg": -3.39,
-    "coin_chg": 11.13,
-    "btc_chg": -0.549,
-    "ethbtc_chg": 0.218,
-    "solbtc_chg": 1.146
+    "nq": 29421.5,
+    "nq_chg": 0.92,
+    "tnx": 5.0,
+    "tnx_chg": 0.83,
+    "dxy": 99.538,
+    "dxy_chg": 0.08,
+    "mstr_chg": -0.9,
+    "nvda_chg": -2.34,
+    "coin_chg": 1.71,
+    "btc_chg": -2.514,
+    "ethbtc_chg": 0.156,
+    "solbtc_chg": 1.264
   },
-  "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
+  "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
