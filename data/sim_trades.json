@@ -96,5 +96,25 @@
   "opened_at": "2026-09-14T12:00:00Z",
   "closed_at": "2026-09-14T14:00:00Z",
   "equity_after": 965.0
+ },
+ {
+  "symbol": "BTCUSDT",
+  "side": "LONG",
+  "tag": "趋势·回踩30h线多",
+  "entry": 77952.93,
+  "exit": 77279.84,
+  "qty": 0.023212,
+  "notional": 1809.4,
+  "risk": 14.48,
+  "pnl": -17.425,
+  "r": -1.2,
+  "fee_total": 1.8016,
+  "mfe_pct": 0.16,
+  "exit_reason": "STOP",
+  "hold_hours": 6.0,
+  "opened_at": "2026-09-15T01:00:00Z",
+  "closed_at": "2026-09-15T07:00:46Z",
+  "equity_after": 947.59,
+  "via": "guardian"
  }
 ]

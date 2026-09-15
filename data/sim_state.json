@@ -1,41 +1,22 @@
 {
  "books": {
   "BTCUSDT": {
-   "equity": 964.1112320186544,
+   "equity": 947.590908982985,
    "peak": 1000.0,
    "last_t": 1789441200000,
    "day": "2026-09-15",
    "day_start": 965.0159320186544,
    "entries_today": 1,
-   "consec_stops": 0,
+   "consec_stops": 1,
    "cooldown_until": 1787709062014,
    "halted": false,
    "signal": {
-    "at": "2026-09-15T04:00:00Z",
-    "text": "持仓管理中：LONG @77952.93，止损 77329.31(STOP)",
-    "regime": "trend_up",
-    "dev": 1.55
+    "at": "2026-09-15T07:00:46Z",
+    "text": "🛡 守护层分钟级离场: STOP @77279.84",
+    "regime": "trend_up"
    },
-   "last_exit_t": 1787662262014,
-   "pos": {
-    "symbol": "BTCUSDT",
-    "side": "LONG",
-    "entry": 77952.93,
-    "qty": 0.023211505616722517,
-    "notional": 1809.4,
-    "risk": 14.48,
-    "stop": 77329.31,
-    "target": 79324.9,
-    "stop_pct": 0.008,
-    "rr": 2.2,
-    "max_hold": 48,
-    "stop_kind": "STOP",
-    "tag": "趋势·回踩30h线多",
-    "opened_t": 1789434000000,
-    "opened_at": "2026-09-15T01:00:00Z",
-    "fee_in": 0.9047,
-    "mfe_price": 78080.0
-   }
+   "last_exit_t": 1789452046706,
+   "pos": null
   },
   "ETHUSDT": {
    "equity": 964.9977828457099,
@@ -59,5 +40,5 @@
  },
  "started_at": "2026-08-19T18:07:18Z",
  "updated_at": "2026-09-15T04:28:51Z",
- "guardian_at": "2026-09-01T08:09:02Z"
+ "guardian_at": "2026-09-15T07:00:46Z"
 }
