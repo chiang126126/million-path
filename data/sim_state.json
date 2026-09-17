@@ -3,7 +3,7 @@
   "BTCUSDT": {
    "equity": 946.169523982985,
    "peak": 1000.0,
-   "last_t": 1789628400000,
+   "last_t": 1789632000000,
    "day": "2026-09-17",
    "day_start": 947.590908982985,
    "entries_today": 1,
@@ -11,10 +11,10 @@
    "cooldown_until": 1787709062014,
    "halted": false,
    "signal": {
-    "at": "2026-09-17T08:00:00Z",
+    "at": "2026-09-17T09:00:00Z",
     "text": "持仓管理中：SHORT @76441.99，止损 76801.13(STOP)",
     "regime": "range",
-    "dev": -1.09
+    "dev": -0.94
    },
    "last_exit_t": 1789452046706,
    "pos": {
@@ -40,7 +40,7 @@
   "ETHUSDT": {
    "equity": 964.9977828457099,
    "peak": 1000.0,
-   "last_t": 1789628400000,
+   "last_t": 1789632000000,
    "day": "2026-09-17",
    "day_start": 964.9977828457099,
    "entries_today": 0,
@@ -48,16 +48,16 @@
    "cooldown_until": null,
    "halted": false,
    "signal": {
-    "at": "2026-09-17T08:00:00Z",
+    "at": "2026-09-17T09:00:00Z",
     "text": "⏳ 震荡·区间中部无边缘信号(昨高2431/昨低2369内等待)",
     "regime": "range",
-    "dev": 0.28
+    "dev": 0.33
    },
    "last_exit_t": 1789390800000,
    "pos": null
   }
  },
  "started_at": "2026-08-19T18:07:18Z",
- "updated_at": "2026-09-17T08:07:20Z",
+ "updated_at": "2026-09-17T09:07:19Z",
  "guardian_at": "2026-09-15T07:00:46Z"
 }
