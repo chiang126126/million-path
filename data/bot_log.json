@@ -1,5 +1,5 @@
 {
-  "ts": "2026-09-18T08:07:01Z",
+  "ts": "2026-09-18T09:07:01Z",
   "mode": "testnet",
   "equity": 395.34,
   "day_pnl_pct": 0.0,
@@ -42,18 +42,18 @@
   "news_lines": 3,
   "global_risk": "risk-on",
   "xm": {
-    "nq": 29936.25,
-    "nq_chg": 1.66,
+    "nq": 29900.75,
+    "nq_chg": 1.54,
     "tnx": 4.95,
     "tnx_chg": -1.18,
-    "dxy": 100.296,
-    "dxy_chg": 0.08,
+    "dxy": 100.358,
+    "dxy_chg": 0.14,
     "mstr_chg": 2.04,
     "nvda_chg": 3.38,
     "coin_chg": 1.08,
-    "btc_chg": 1.729,
-    "ethbtc_chg": 0.156,
-    "solbtc_chg": 3.928
+    "btc_chg": 2.141,
+    "ethbtc_chg": 0.501,
+    "solbtc_chg": 3.456
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
