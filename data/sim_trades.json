@@ -116,5 +116,25 @@
   "closed_at": "2026-09-15T07:00:46Z",
   "equity_after": 947.59,
   "via": "guardian"
+ },
+ {
+  "symbol": "BTCUSDT",
+  "side": "SHORT",
+  "tag": "震荡·摸昨高受阻空",
+  "entry": 76441.99,
+  "exit": 77543.99,
+  "qty": 0.037189,
+  "notional": 2842.77,
+  "risk": 13.36,
+  "pnl": -43.8451,
+  "r": -3.28,
+  "fee_total": 2.8633,
+  "mfe_pct": 0.33,
+  "exit_reason": "STOP",
+  "hold_hours": 26.3,
+  "opened_at": "2026-09-17T04:00:00Z",
+  "closed_at": "2026-09-18T06:15:39Z",
+  "equity_after": 903.75,
+  "via": "guardian"
  }
 ]
