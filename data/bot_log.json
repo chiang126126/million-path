@@ -1,5 +1,5 @@
 {
-  "ts": "2026-10-01T19:07:01Z",
+  "ts": "2026-10-01T20:09:16Z",
   "mode": "testnet",
   "equity": 395.34,
   "day_pnl_pct": 0.0,
@@ -8,10 +8,10 @@
     {
       "symbol": "BTCUSDT",
       "source": "rule",
-      "bias": "LONG",
-      "confidence": 0.52,
+      "bias": "FLAT",
+      "confidence": 0.3,
       "vetted": false,
-      "reason": "置信度 0.52 < 0.55",
+      "reason": "决策为 FLAT/观望",
       "rationale": "规则引擎兜底",
       "market_state": null,
       "entry_low": null,
@@ -42,18 +42,18 @@
   "news_lines": 3,
   "global_risk": "mixed",
   "xm": {
-    "nq": 30825.25,
-    "nq_chg": 0.41,
+    "nq": 30755.5,
+    "nq_chg": 0.18,
     "tnx": 5.24,
-    "tnx_chg": -1.02,
-    "dxy": 102.092,
-    "dxy_chg": 0.63,
-    "mstr_chg": 3.62,
-    "nvda_chg": 2.03,
-    "coin_chg": 0.51,
-    "btc_chg": 1.114,
-    "ethbtc_chg": -0.251,
-    "solbtc_chg": -1.168
+    "tnx_chg": -1.06,
+    "dxy": 102.051,
+    "dxy_chg": 0.59,
+    "mstr_chg": 3.77,
+    "nvda_chg": 1.61,
+    "coin_chg": -0.38,
+    "btc_chg": 1.417,
+    "ethbtc_chg": -0.282,
+    "solbtc_chg": -0.534
   },
-  "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
+  "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
