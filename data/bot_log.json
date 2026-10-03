@@ -1,5 +1,5 @@
 {
-  "ts": "2026-10-03T11:07:01Z",
+  "ts": "2026-10-03T12:07:01Z",
   "mode": "testnet",
   "equity": 395.34,
   "day_pnl_pct": 0.0,
@@ -51,9 +51,9 @@
     "mstr_chg": 4.52,
     "nvda_chg": 2.44,
     "coin_chg": -1.83,
-    "btc_chg": -2.032,
-    "ethbtc_chg": -0.283,
-    "solbtc_chg": -0.367
+    "btc_chg": -2.002,
+    "ethbtc_chg": -0.315,
+    "solbtc_chg": 0.021
   },
-  "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
+  "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
 }
