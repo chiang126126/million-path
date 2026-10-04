@@ -1,5 +1,5 @@
 {
-  "ts": "2026-10-04T09:07:01Z",
+  "ts": "2026-10-04T10:07:01Z",
   "mode": "testnet",
   "equity": 395.34,
   "day_pnl_pct": 0.0,
@@ -51,9 +51,9 @@
     "mstr_chg": 4.52,
     "nvda_chg": 2.44,
     "coin_chg": -1.83,
-    "btc_chg": 0.513,
-    "ethbtc_chg": -0.032,
-    "solbtc_chg": 0.731
+    "btc_chg": 0.761,
+    "ethbtc_chg": 0.032,
+    "solbtc_chg": 1.049
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
