@@ -1,16 +1,10 @@
 {
-  "ts": "2026-10-09T13:07:01Z",
+  "ts": "2026-10-09T14:07:01Z",
   "mode": "testnet",
-  "equity": 395.34,
-  "day_pnl_pct": 0.0,
-  "total_dd_pct": 2.65,
+  "equity": 391.16,
+  "day_pnl_pct": -1.06,
+  "total_dd_pct": 3.68,
   "items": [
-    {
-      "symbol": "ETHUSDT",
-      "action": "CLOSE STOP",
-      "price": 2512.48,
-      "pnl": -4.18
-    },
     {
       "symbol": "BTCUSDT",
       "source": "rule",
@@ -26,24 +20,40 @@
       "max_hold_hours": null,
       "risk_flags": [],
       "action": "skip"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "source": "rule",
+      "bias": "FLAT",
+      "confidence": 0.3,
+      "vetted": false,
+      "reason": "决策为 FLAT/观望",
+      "rationale": "规则引擎兜底",
+      "market_state": null,
+      "entry_low": null,
+      "entry_high": null,
+      "invalidation": null,
+      "max_hold_hours": null,
+      "risk_flags": [],
+      "action": "skip"
     }
   ],
-  "testnet_usdt": 4051.99,
+  "testnet_usdt": 4291.92,
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 31165.0,
-    "nq_chg": 0.63,
+    "nq": 31028.0,
+    "nq_chg": 0.19,
     "tnx": 5.26,
-    "tnx_chg": 0.57,
-    "dxy": 102.323,
-    "dxy_chg": 0.18,
-    "mstr_chg": -7.95,
-    "nvda_chg": -3.66,
-    "coin_chg": -7.4,
-    "btc_chg": 0.937,
-    "ethbtc_chg": -2.083,
-    "solbtc_chg": -2.378
+    "tnx_chg": 0.61,
+    "dxy": 102.31,
+    "dxy_chg": 0.17,
+    "mstr_chg": -0.03,
+    "nvda_chg": -2.67,
+    "coin_chg": -1.62,
+    "btc_chg": 0.438,
+    "ethbtc_chg": -2.021,
+    "solbtc_chg": -2.776
   },
-  "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
+  "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
