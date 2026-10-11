@@ -1,13 +1,13 @@
 {
- "updated_at": "2026-10-09T20:02:16Z",
+ "updated_at": "2026-10-11T11:07:20Z",
  "books": {
   "BTCUSDT": {
    "equity": 887.99,
    "signal": {
-    "at": "2026-10-09T19:00:00Z",
-    "text": "⏳ 震荡·区间中部无边缘信号(昨高83521/昨低80394内等待)",
+    "at": "2026-10-11T11:00:00Z",
+    "text": "⏳ 震荡·区间中部无边缘信号(昨高83173/昨低82546内等待)",
     "regime": "range",
-    "dev": 0.62
+    "dev": 0.83
    },
    "stats": {
     "n": 5,
@@ -36,24 +36,25 @@
    }
   },
   "ETHUSDT": {
-   "equity": 965.0,
+   "equity": 950.51,
    "signal": {
-    "at": "2026-10-09T20:02:16Z",
-    "text": "⚠ 数据获取失败：HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=20)",
-    "regime": null
+    "at": "2026-10-11T11:00:00Z",
+    "text": "⏳ 震荡·区间中部无边缘信号(昨高2520/昨低2486内等待)",
+    "regime": "range",
+    "dev": -4.39
    },
    "stats": {
-    "n": 3,
-    "net": -35.0,
+    "n": 4,
+    "net": -49.49,
     "wr": 0.0,
     "pf": 0.0,
-    "max_dd": 3.5,
-    "equity": 965.0,
-    "fees": 4.67,
+    "max_dd": 4.95,
+    "equity": 950.51,
+    "fees": 7.57,
     "by_reason": {
      "STOP": {
-      "n": 2,
-      "net": -33.26
+      "n": 3,
+      "net": -47.75
      },
      "STOP_BE": {
       "n": 1,
@@ -64,6 +65,10 @@
      "趋势·回踩30h线多": {
       "n": 3,
       "net": -35.0
+     },
+     "震荡·摸昨高受阻空": {
+      "n": 1,
+      "net": -14.49
      }
     }
    }

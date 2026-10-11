@@ -156,5 +156,24 @@
   "closed_at": "2026-10-02T17:30:02Z",
   "equity_after": 887.99,
   "via": "guardian"
+ },
+ {
+  "symbol": "ETHUSDT",
+  "side": "SHORT",
+  "tag": "震荡·摸昨高受阻空",
+  "entry": 2508.8,
+  "exit": 2518.84,
+  "qty": 1.153935,
+  "notional": 2894.99,
+  "risk": 11.58,
+  "pnl": -14.4863,
+  "r": -1.25,
+  "fee_total": 2.9008,
+  "mfe_pct": 0.18,
+  "exit_reason": "STOP",
+  "hold_hours": 5.0,
+  "opened_at": "2026-10-10T15:00:00Z",
+  "closed_at": "2026-10-10T20:00:00Z",
+  "equity_after": 950.51
  }
 ]
