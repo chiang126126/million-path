@@ -194,5 +194,24 @@
   "opened_at": "2026-10-12T02:00:00Z",
   "closed_at": "2026-10-12T03:00:00Z",
   "equity_after": 936.25
+ },
+ {
+  "symbol": "BTCUSDT",
+  "side": "LONG",
+  "tag": "震荡·探昨低承接多",
+  "entry": 82861.8,
+  "exit": 82530.35,
+  "qty": 0.03215,
+  "notional": 2663.97,
+  "risk": 10.66,
+  "pnl": -13.3146,
+  "r": -1.25,
+  "fee_total": 2.6587,
+  "mfe_pct": 0.35,
+  "exit_reason": "STOP",
+  "hold_hours": 2.0,
+  "opened_at": "2026-10-12T20:00:00Z",
+  "closed_at": "2026-10-12T22:00:00Z",
+  "equity_after": 874.68
  }
 ]

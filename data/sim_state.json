@@ -1,45 +1,45 @@
 {
  "books": {
   "BTCUSDT": {
-   "equity": 887.9904863094638,
+   "equity": 874.67586771341,
    "peak": 1000.0,
-   "last_t": 1791824400000,
-   "day": "2026-10-12",
-   "day_start": 887.9904863094638,
+   "last_t": 1791882000000,
+   "day": "2026-10-13",
+   "day_start": 874.67586771341,
    "entries_today": 0,
-   "consec_stops": 1,
-   "cooldown_until": 1789755339716,
+   "consec_stops": 0,
+   "cooldown_until": 1791885600000,
    "halted": false,
    "signal": {
-    "at": "2026-10-12T18:00:00Z",
-    "text": "⏳ 震荡·区间中部无边缘信号(昨高84199/昨低82805内等待)",
-    "regime": "range",
-    "dev": -0.03
+    "at": "2026-10-13T10:00:00Z",
+    "text": "🚫 连续止损冷静期(剩1h)",
+    "regime": "trend_up",
+    "dev": 1.14
    },
-   "last_exit_t": 1790958602412,
+   "last_exit_t": 1791838800000,
    "pos": null
   },
   "ETHUSDT": {
    "equity": 936.2476641381783,
    "peak": 1000.0,
-   "last_t": 1791824400000,
-   "day": "2026-10-12",
-   "day_start": 950.5114861308155,
-   "entries_today": 1,
+   "last_t": 1791882000000,
+   "day": "2026-10-13",
+   "day_start": 936.2476641381783,
+   "entries_today": 0,
    "consec_stops": 1,
    "cooldown_until": 1791705600000,
    "halted": false,
    "signal": {
-    "at": "2026-10-12T18:00:00Z",
-    "text": "🚫 今日已进场1次——频率上限",
+    "at": "2026-10-13T10:00:00Z",
+    "text": "⏳ 震荡·区间中部无边缘信号(昨高2580/昨低2443内等待)",
     "regime": "range",
-    "dev": -3.97
+    "dev": -3.77
    },
    "last_exit_t": 1791770400000,
    "pos": null
   }
  },
  "started_at": "2026-08-19T18:07:18Z",
- "updated_at": "2026-10-12T18:07:21Z",
+ "updated_at": "2026-10-13T10:07:20Z",
  "guardian_at": "2026-10-02T17:30:02Z"
 }
