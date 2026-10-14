@@ -3,18 +3,18 @@
   "BTCUSDT": {
    "equity": 874.67586771341,
    "peak": 1000.0,
-   "last_t": 1791882000000,
-   "day": "2026-10-13",
+   "last_t": 1791964800000,
+   "day": "2026-10-14",
    "day_start": 874.67586771341,
    "entries_today": 0,
    "consec_stops": 0,
    "cooldown_until": 1791885600000,
    "halted": false,
    "signal": {
-    "at": "2026-10-13T10:00:00Z",
-    "text": "🚫 连续止损冷静期(剩1h)",
-    "regime": "trend_up",
-    "dev": 1.14
+    "at": "2026-10-14T09:00:00Z",
+    "text": "⏳ 震荡·区间中部无边缘信号(昨高84168/昨低81034内等待)",
+    "regime": "range",
+    "dev": 0.65
    },
    "last_exit_t": 1791838800000,
    "pos": null
@@ -22,24 +22,24 @@
   "ETHUSDT": {
    "equity": 936.2476641381783,
    "peak": 1000.0,
-   "last_t": 1791882000000,
-   "day": "2026-10-13",
+   "last_t": 1791964800000,
+   "day": "2026-10-14",
    "day_start": 936.2476641381783,
    "entries_today": 0,
    "consec_stops": 1,
    "cooldown_until": 1791705600000,
    "halted": false,
    "signal": {
-    "at": "2026-10-13T10:00:00Z",
-    "text": "⏳ 震荡·区间中部无边缘信号(昨高2580/昨低2443内等待)",
+    "at": "2026-10-14T09:00:00Z",
+    "text": "⏳ 震荡·区间中部无边缘信号(昨高2539/昨低2409内等待)",
     "regime": "range",
-    "dev": -3.77
+    "dev": -4.13
    },
    "last_exit_t": 1791770400000,
    "pos": null
   }
  },
  "started_at": "2026-08-19T18:07:18Z",
- "updated_at": "2026-10-13T10:07:20Z",
+ "updated_at": "2026-10-14T09:07:20Z",
  "guardian_at": "2026-10-02T17:30:02Z"
 }
