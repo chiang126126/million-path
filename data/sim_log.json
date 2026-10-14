@@ -1,13 +1,13 @@
 {
- "updated_at": "2026-10-14T19:07:31Z",
+ "updated_at": "2026-10-14T21:41:43Z",
  "books": {
   "BTCUSDT": {
    "equity": 874.68,
    "signal": {
-    "at": "2026-10-14T19:00:00Z",
+    "at": "2026-10-14T21:00:00Z",
     "text": "⏳ 震荡·区间中部无边缘信号(昨高84168/昨低81034内等待)",
     "regime": "range",
-    "dev": -1.41
+    "dev": -1.33
    },
    "stats": {
     "n": 6,
@@ -42,10 +42,9 @@
   "ETHUSDT": {
    "equity": 936.25,
    "signal": {
-    "at": "2026-10-14T19:00:00Z",
-    "text": "⏳ 震荡·区间中部无边缘信号(昨高2539/昨低2409内等待)",
-    "regime": "range",
-    "dev": -6.98
+    "at": "2026-10-14T21:41:43Z",
+    "text": "⚠ 数据获取失败：('Connection aborted.', TimeoutError(60, 'Operation timed out'))",
+    "regime": null
    },
    "stats": {
     "n": 5,
