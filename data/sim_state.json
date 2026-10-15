@@ -3,18 +3,18 @@
   "BTCUSDT": {
    "equity": 874.67586771341,
    "peak": 1000.0,
-   "last_t": 1792008000000,
-   "day": "2026-10-14",
+   "last_t": 1792062000000,
+   "day": "2026-10-15",
    "day_start": 874.67586771341,
    "entries_today": 0,
    "consec_stops": 0,
    "cooldown_until": 1791885600000,
    "halted": false,
    "signal": {
-    "at": "2026-10-14T21:00:00Z",
-    "text": "⏳ 震荡·区间中部无边缘信号(昨高84168/昨低81034内等待)",
+    "at": "2026-10-15T12:00:00Z",
+    "text": "⏳ 震荡·区间中部无边缘信号(昨高84147/昨低81444内等待)",
     "regime": "range",
-    "dev": -1.33
+    "dev": -2.44
    },
    "last_exit_t": 1791838800000,
    "pos": null
@@ -22,23 +22,24 @@
   "ETHUSDT": {
    "equity": 936.2476641381783,
    "peak": 1000.0,
-   "last_t": 1792000800000,
-   "day": "2026-10-14",
+   "last_t": 1792062000000,
+   "day": "2026-10-15",
    "day_start": 936.2476641381783,
    "entries_today": 0,
    "consec_stops": 1,
    "cooldown_until": 1791705600000,
    "halted": false,
    "signal": {
-    "at": "2026-10-14T21:41:43Z",
-    "text": "⚠ 数据获取失败：('Connection aborted.', TimeoutError(60, 'Operation timed out'))",
-    "regime": null
+    "at": "2026-10-15T12:00:00Z",
+    "text": "⏳ 趋势↓待反抽：等价格反抽30h线受阻(不追第一波)",
+    "regime": "trend_down",
+    "dev": -9.49
    },
    "last_exit_t": 1791770400000,
    "pos": null
   }
  },
  "started_at": "2026-08-19T18:07:18Z",
- "updated_at": "2026-10-14T21:41:43Z",
+ "updated_at": "2026-10-15T12:07:21Z",
  "guardian_at": "2026-10-02T17:30:02Z"
 }
