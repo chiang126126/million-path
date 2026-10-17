@@ -1,5 +1,5 @@
 {
-  "ts": "2026-10-17T16:07:01Z",
+  "ts": "2026-10-17T17:07:01Z",
   "mode": "testnet",
   "equity": 391.16,
   "day_pnl_pct": 0.0,
@@ -24,10 +24,10 @@
     {
       "symbol": "ETHUSDT",
       "source": "rule",
-      "bias": "FLAT",
-      "confidence": 0.3,
+      "bias": "SHORT",
+      "confidence": 0.52,
       "vetted": false,
-      "reason": "决策为 FLAT/观望",
+      "reason": "置信度 0.52 < 0.55",
       "rationale": "规则引擎兜底",
       "market_state": null,
       "entry_low": null,
@@ -51,9 +51,9 @@
     "mstr_chg": -4.48,
     "nvda_chg": -3.24,
     "coin_chg": 0.16,
-    "btc_chg": 0.017,
-    "ethbtc_chg": -0.803,
-    "solbtc_chg": -0.18
+    "btc_chg": -0.019,
+    "ethbtc_chg": -0.671,
+    "solbtc_chg": -0.423
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
