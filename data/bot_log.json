@@ -1,5 +1,5 @@
 {
-  "ts": "2026-10-21T10:10:20Z",
+  "ts": "2026-10-21T11:07:01Z",
   "mode": "testnet",
   "equity": 391.16,
   "day_pnl_pct": 0.0,
@@ -8,10 +8,10 @@
     {
       "symbol": "BTCUSDT",
       "source": "rule",
-      "bias": "LONG",
-      "confidence": 0.52,
+      "bias": "FLAT",
+      "confidence": 0.3,
       "vetted": false,
-      "reason": "置信度 0.52 < 0.55",
+      "reason": "决策为 FLAT/观望",
       "rationale": "规则引擎兜底",
       "market_state": null,
       "entry_low": null,
@@ -42,18 +42,18 @@
   "news_lines": 3,
   "global_risk": "unknown",
   "xm": {
-    "nq": 29795.25,
-    "nq_chg": 0.4,
+    "nq": 29818.5,
+    "nq_chg": 0.48,
     "tnx": 5.12,
     "tnx_chg": -0.37,
-    "dxy": 101.786,
-    "dxy_chg": 0.06,
+    "dxy": 101.691,
+    "dxy_chg": -0.04,
     "mstr_chg": 4.3,
     "nvda_chg": 1.09,
     "coin_chg": -1.33,
-    "btc_chg": 2.248,
-    "ethbtc_chg": 0.478,
-    "solbtc_chg": -0.18
+    "btc_chg": 2.331,
+    "ethbtc_chg": 0.751,
+    "solbtc_chg": 0.086
   },
   "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
