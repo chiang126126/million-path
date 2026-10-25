@@ -20,44 +20,25 @@
    "pos": null
   },
   "ETHUSDT": {
-   "equity": 935.3699341381782,
+   "equity": 947.6788031495313,
    "peak": 1000.0,
    "last_t": 1792922400000,
    "day": "2026-10-24",
    "day_start": 936.2476641381783,
    "entries_today": 1,
-   "consec_stops": 1,
+   "consec_stops": 0,
    "cooldown_until": 1791705600000,
    "halted": false,
    "signal": {
-    "at": "2026-10-25T11:00:00Z",
-    "text": "持仓管理中：SHORT @2358.82，止损 2338.41(STOP_TRAIL)",
-    "regime": "trend_down",
-    "dev": -8.66
+    "at": "2026-10-25T11:51:05Z",
+    "text": "🛡 守护层分钟级离场: STOP_TRAIL @2341.11",
+    "regime": "trend_down"
    },
-   "last_exit_t": 1791770400000,
-   "pos": {
-    "symbol": "ETHUSDT",
-    "side": "SHORT",
-    "entry": 2358.82,
-    "qty": 0.7442129413262073,
-    "notional": 1755.46,
-    "risk": 14.04,
-    "stop": 2338.41,
-    "target": 2317.3,
-    "stop_pct": 0.008,
-    "rr": 2.2,
-    "max_hold": 48,
-    "stop_kind": "STOP_TRAIL",
-    "tag": "趋势·反抽30h线空",
-    "opened_t": 1792886400000,
-    "opened_at": "2026-10-25T00:00:00Z",
-    "fee_in": 0.8777,
-    "mfe_price": 2318.0
-   }
+   "last_exit_t": 1792925465539,
+   "pos": null
   }
  },
  "started_at": "2026-08-19T18:07:18Z",
  "updated_at": "2026-10-25T11:07:24Z",
- "guardian_at": "2026-10-02T17:30:02Z"
+ "guardian_at": "2026-10-25T11:51:05Z"
 }
