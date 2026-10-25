@@ -3,7 +3,7 @@
   "BTCUSDT": {
    "equity": 874.677336413001,
    "peak": 1000.0,
-   "last_t": 1792922400000,
+   "last_t": 1792926000000,
    "day": "2026-10-25",
    "day_start": 874.677336413001,
    "entries_today": 0,
@@ -11,10 +11,10 @@
    "cooldown_until": 1791885600000,
    "halted": false,
    "signal": {
-    "at": "2026-10-25T11:00:00Z",
-    "text": "⏳ 趋势↓待反抽：等价格反抽30h线受阻(不追第一波)",
+    "at": "2026-10-25T12:00:00Z",
+    "text": "⏳ 30h线8h内已被触过——非第一次反抽，不重复进场",
     "regime": "trend_down",
-    "dev": -3.55
+    "dev": -3.19
    },
    "last_exit_t": 1792562400000,
    "pos": null
@@ -22,23 +22,24 @@
   "ETHUSDT": {
    "equity": 947.6788031495313,
    "peak": 1000.0,
-   "last_t": 1792922400000,
-   "day": "2026-10-24",
-   "day_start": 936.2476641381783,
-   "entries_today": 1,
+   "last_t": 1792926000000,
+   "day": "2026-10-25",
+   "day_start": 947.6788031495313,
+   "entries_today": 0,
    "consec_stops": 0,
    "cooldown_until": 1791705600000,
    "halted": false,
    "signal": {
-    "at": "2026-10-25T11:51:05Z",
-    "text": "🛡 守护层分钟级离场: STOP_TRAIL @2341.11",
-    "regime": "trend_down"
+    "at": "2026-10-25T12:00:00Z",
+    "text": "🚫 离场后6h再进场冷却中(防报复性进场)",
+    "regime": "trend_down",
+    "dev": -8.14
    },
    "last_exit_t": 1792925465539,
    "pos": null
   }
  },
  "started_at": "2026-08-19T18:07:18Z",
- "updated_at": "2026-10-25T11:07:24Z",
+ "updated_at": "2026-10-25T12:07:24Z",
  "guardian_at": "2026-10-25T11:51:05Z"
 }
