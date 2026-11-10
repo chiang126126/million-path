@@ -1,5 +1,5 @@
 {
-  "ts": "2026-11-10T13:07:01Z",
+  "ts": "2026-11-10T14:07:01Z",
   "mode": "testnet",
   "equity": 392.78,
   "day_pnl_pct": 0.41,
@@ -42,18 +42,18 @@
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 27895.0,
-    "nq_chg": -0.43,
-    "tnx": 4.86,
-    "tnx_chg": 0.1,
-    "dxy": 101.771,
-    "dxy_chg": 0.12,
+    "nq": 27673.0,
+    "nq_chg": -1.22,
+    "tnx": 4.93,
+    "tnx_chg": 1.44,
+    "dxy": 102.036,
+    "dxy_chg": 0.38,
     "mstr_chg": -2.87,
     "nvda_chg": -1.61,
     "coin_chg": -0.53,
-    "btc_chg": -0.721,
-    "ethbtc_chg": -0.564,
-    "solbtc_chg": -1.271
+    "btc_chg": -0.959,
+    "ethbtc_chg": -1.338,
+    "solbtc_chg": -1.927
   },
   "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
 }
