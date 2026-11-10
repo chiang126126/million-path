@@ -2,7 +2,7 @@
   "mode": "testnet",
   "equity0": 500.0,
   "equity": 391.16396852400004,
-  "day": "2026-11-09",
+  "day": "2026-11-10",
   "day_start_equity": 391.16396852400004,
   "peak_equity": 406.1230685240001,
   "positions": [
@@ -40,10 +40,10 @@
         "oi_chg_pct": -4.48,
         "market_state": null
       },
-      "mfe_price": 2113.2,
-      "managed_t": 1794236400000
+      "mfe_price": 2108.14,
+      "managed_t": 1794297600000
     }
   ],
-  "updated_at": "2026-11-09T16:07:11Z",
+  "updated_at": "2026-11-10T09:07:10Z",
   "guardian_at": "2026-09-11T22:02:28Z"
 }

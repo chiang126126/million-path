@@ -3,18 +3,18 @@
   "BTCUSDT": {
    "equity": 874.677336413001,
    "peak": 1000.0,
-   "last_t": 1794236400000,
-   "day": "2026-11-09",
+   "last_t": 1794297600000,
+   "day": "2026-11-10",
    "day_start": 874.677336413001,
    "entries_today": 0,
    "consec_stops": 0,
    "cooldown_until": 1791885600000,
    "halted": false,
    "signal": {
-    "at": "2026-11-09T16:00:00Z",
-    "text": "⏳ 量能异常放大 2.54×——事件行情不开新仓",
+    "at": "2026-11-10T09:00:00Z",
+    "text": "⏳ 趋势↓但近24h未离30h线≥1.2%——贴线磨不算真趋势反抽",
     "regime": "trend_down",
-    "dev": -5.77
+    "dev": -6.48
    },
    "last_exit_t": 1792562400000,
    "pos": null
@@ -22,24 +22,24 @@
   "ETHUSDT": {
    "equity": 947.6788031495313,
    "peak": 1000.0,
-   "last_t": 1794236400000,
-   "day": "2026-11-09",
+   "last_t": 1794297600000,
+   "day": "2026-11-10",
    "day_start": 947.6788031495313,
    "entries_today": 0,
    "consec_stops": 0,
    "cooldown_until": 1791705600000,
    "halted": false,
    "signal": {
-    "at": "2026-11-09T16:00:00Z",
-    "text": "⏳ 量能异常放大 2.62×——事件行情不开新仓",
+    "at": "2026-11-10T09:00:00Z",
+    "text": "⏳ 趋势↓待反抽：等价格反抽30h线受阻(不追第一波)",
     "regime": "trend_down",
-    "dev": -8.93
+    "dev": -9.69
    },
    "last_exit_t": 1792925465539,
    "pos": null
   }
  },
  "started_at": "2026-08-19T18:07:18Z",
- "updated_at": "2026-11-09T16:07:16Z",
+ "updated_at": "2026-11-10T09:07:16Z",
  "guardian_at": "2026-10-25T11:51:05Z"
 }
