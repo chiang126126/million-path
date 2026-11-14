@@ -3,18 +3,18 @@
   "BTCUSDT": {
    "equity": 874.677336413001,
    "peak": 1000.0,
-   "last_t": 1794574800000,
-   "day": "2026-11-13",
+   "last_t": 1794643200000,
+   "day": "2026-11-14",
    "day_start": 874.677336413001,
    "entries_today": 0,
    "consec_stops": 0,
    "cooldown_until": 1791885600000,
    "halted": false,
    "signal": {
-    "at": "2026-11-13T14:00:00Z",
+    "at": "2026-11-14T09:00:00Z",
     "text": "⏳ 趋势↓待反抽：等价格反抽30h线受阻(不追第一波)",
     "regime": "trend_down",
-    "dev": -11.86
+    "dev": -14.62
    },
    "last_exit_t": 1792562400000,
    "pos": null
@@ -22,23 +22,24 @@
   "ETHUSDT": {
    "equity": 977.8824950316636,
    "peak": 1000.0,
-   "last_t": 1794574800000,
-   "day": "2026-11-13",
-   "day_start": 947.6788031495313,
-   "entries_today": 1,
+   "last_t": 1794643200000,
+   "day": "2026-11-14",
+   "day_start": 977.8824950316636,
+   "entries_today": 0,
    "consec_stops": 0,
    "cooldown_until": 1791705600000,
    "halted": false,
    "signal": {
-    "at": "2026-11-14T08:15:59Z",
-    "text": "🛡 守护层分钟级离场: TARGET @1910.65",
-    "regime": "trend_down"
+    "at": "2026-11-14T09:00:00Z",
+    "text": "🚫 离场后6h再进场冷却中(防报复性进场)",
+    "regime": "trend_down",
+    "dev": -17.04
    },
    "last_exit_t": 1794640559763,
    "pos": null
   }
  },
  "started_at": "2026-08-19T18:07:18Z",
- "updated_at": "2026-11-13T14:07:16Z",
+ "updated_at": "2026-11-14T09:41:11Z",
  "guardian_at": "2026-11-14T08:15:59Z"
 }

@@ -1,17 +1,33 @@
 {
-  "ts": "2026-11-13T14:07:01Z",
+  "ts": "2026-11-14T08:23:48Z",
   "mode": "testnet",
-  "equity": 392.78,
+  "equity": 399.97,
   "day_pnl_pct": 0.0,
-  "total_dd_pct": 3.29,
+  "total_dd_pct": 1.51,
   "items": [
+    {
+      "symbol": "BTCUSDT",
+      "source": "rule",
+      "bias": "FLAT",
+      "confidence": 0.3,
+      "vetted": false,
+      "reason": "决策为 FLAT/观望",
+      "rationale": "规则引擎兜底",
+      "market_state": null,
+      "entry_low": null,
+      "entry_high": null,
+      "invalidation": null,
+      "max_hold_hours": null,
+      "risk_flags": [],
+      "action": "skip"
+    },
     {
       "symbol": "ETHUSDT",
       "source": "rule",
-      "bias": "SHORT",
-      "confidence": 0.52,
+      "bias": "FLAT",
+      "confidence": 0.3,
       "vetted": false,
-      "reason": "置信度 0.52 < 0.55",
+      "reason": "决策为 FLAT/观望",
       "rationale": "规则引擎兜底",
       "market_state": null,
       "entry_low": null,
@@ -22,22 +38,22 @@
       "action": "skip"
     }
   ],
-  "testnet_usdt": 4051.41,
+  "testnet_usdt": 4301.95,
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 28421.25,
-    "nq_chg": 0.13,
-    "tnx": 5.14,
-    "tnx_chg": 0.78,
-    "dxy": 103.203,
-    "dxy_chg": 0.03,
-    "mstr_chg": -5.5,
-    "nvda_chg": -1.6,
-    "coin_chg": -1.1,
-    "btc_chg": -4.199,
-    "ethbtc_chg": 1.945,
-    "solbtc_chg": 4.442
+    "nq": 28034.75,
+    "nq_chg": -1.23,
+    "tnx": 5.15,
+    "tnx_chg": 1.0,
+    "dxy": 103.411,
+    "dxy_chg": 0.23,
+    "mstr_chg": -8.77,
+    "nvda_chg": -6.26,
+    "coin_chg": -6.33,
+    "btc_chg": -1.914,
+    "ethbtc_chg": 0.604,
+    "solbtc_chg": -3.341
   },
-  "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
+  "phase": "欧洲上午·复盘隔夜/亚洲盘，形成初步假设，不急于交易"
 }
