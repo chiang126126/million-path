@@ -252,5 +252,25 @@
   "closed_at": "2026-10-25T11:51:05Z",
   "equity_after": 947.68,
   "via": "guardian"
+ },
+ {
+  "symbol": "ETHUSDT",
+  "side": "SHORT",
+  "tag": "趋势·反抽30h线空",
+  "entry": 1967.28,
+  "exit": 1910.65,
+  "qty": 0.55226,
+  "notional": 1086.45,
+  "risk": 14.22,
+  "pnl": 30.2037,
+  "r": 2.12,
+  "fee_total": 1.0708,
+  "mfe_pct": 3.23,
+  "exit_reason": "TARGET",
+  "hold_hours": 18.3,
+  "opened_at": "2026-11-13T14:00:00Z",
+  "closed_at": "2026-11-14T08:15:59Z",
+  "equity_after": 977.88,
+  "via": "guardian"
  }
 ]

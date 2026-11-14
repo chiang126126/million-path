@@ -20,7 +20,7 @@
    "pos": null
   },
   "ETHUSDT": {
-   "equity": 947.1355781495313,
+   "equity": 977.8824950316636,
    "peak": 1000.0,
    "last_t": 1794574800000,
    "day": "2026-11-13",
@@ -30,34 +30,15 @@
    "cooldown_until": 1791705600000,
    "halted": false,
    "signal": {
-    "at": "2026-11-13T14:00:00Z",
-    "text": "🔴 卖出开空 @1967.28｜趋势·反抽30h线空｜止损1.31% 目标2.2R",
-    "regime": "trend_down",
-    "dev": -14.49
+    "at": "2026-11-14T08:15:59Z",
+    "text": "🛡 守护层分钟级离场: TARGET @1910.65",
+    "regime": "trend_down"
    },
-   "last_exit_t": 1792925465539,
-   "pos": {
-    "symbol": "ETHUSDT",
-    "side": "SHORT",
-    "entry": 1967.28,
-    "qty": 0.5522603747957643,
-    "notional": 1086.45,
-    "risk": 14.22,
-    "stop": 1993.02,
-    "target": 1910.65,
-    "stop_pct": 0.013084055142125163,
-    "rr": 2.2,
-    "max_hold": 48,
-    "stop_kind": "STOP",
-    "tag": "趋势·反抽30h线空",
-    "opened_t": 1794578400000,
-    "opened_at": "2026-11-13T14:00:00Z",
-    "fee_in": 0.5432,
-    "mfe_price": 1967.28
-   }
+   "last_exit_t": 1794640559763,
+   "pos": null
   }
  },
  "started_at": "2026-08-19T18:07:18Z",
  "updated_at": "2026-11-13T14:07:16Z",
- "guardian_at": "2026-10-25T11:51:05Z"
+ "guardian_at": "2026-11-14T08:15:59Z"
 }
