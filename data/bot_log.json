@@ -1,5 +1,5 @@
 {
-  "ts": "2026-11-16T14:07:00Z",
+  "ts": "2026-11-16T15:07:01Z",
   "mode": "testnet",
   "equity": 399.97,
   "day_pnl_pct": 0.0,
@@ -8,10 +8,10 @@
     {
       "symbol": "BTCUSDT",
       "source": "rule",
-      "bias": "SHORT",
-      "confidence": 0.52,
+      "bias": "FLAT",
+      "confidence": 0.3,
       "vetted": false,
-      "reason": "置信度 0.52 < 0.55",
+      "reason": "决策为 FLAT/观望",
       "rationale": "规则引擎兜底",
       "market_state": null,
       "entry_low": null,
@@ -42,18 +42,18 @@
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 27624.75,
-    "nq_chg": -1.46,
-    "tnx": 5.14,
-    "tnx_chg": -0.25,
-    "dxy": 103.506,
-    "dxy_chg": 0.09,
-    "mstr_chg": -8.77,
-    "nvda_chg": -6.26,
-    "coin_chg": -6.33,
-    "btc_chg": -1.609,
-    "ethbtc_chg": 0.68,
-    "solbtc_chg": -0.325
+    "nq": 27607.25,
+    "nq_chg": -1.52,
+    "tnx": 5.13,
+    "tnx_chg": -0.41,
+    "dxy": 103.534,
+    "dxy_chg": 0.12,
+    "mstr_chg": -9.67,
+    "nvda_chg": -4.45,
+    "coin_chg": -8.56,
+    "btc_chg": 0.11,
+    "ethbtc_chg": 0.573,
+    "solbtc_chg": -0.898
   },
-  "phase": "美股盘前·观察期指/美债/美元/MSTR盘前，按三套情景准备预案"
+  "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
