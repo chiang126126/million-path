@@ -1,5 +1,5 @@
 {
-  "ts": "2026-11-16T17:07:00Z",
+  "ts": "2026-11-17T16:07:01Z",
   "mode": "testnet",
   "equity": 399.97,
   "day_pnl_pct": 0.0,
@@ -24,10 +24,10 @@
     {
       "symbol": "ETHUSDT",
       "source": "rule",
-      "bias": "FLAT",
-      "confidence": 0.3,
+      "bias": "SHORT",
+      "confidence": 0.53,
       "vetted": false,
-      "reason": "决策为 FLAT/观望",
+      "reason": "置信度 0.53 < 0.55",
       "rationale": "规则引擎兜底",
       "market_state": null,
       "entry_low": null,
@@ -42,18 +42,18 @@
   "news_lines": 3,
   "global_risk": "risk-off",
   "xm": {
-    "nq": 27545.0,
-    "nq_chg": -1.75,
-    "tnx": 5.14,
-    "tnx_chg": -0.17,
-    "dxy": 103.559,
-    "dxy_chg": 0.14,
-    "mstr_chg": -9.32,
-    "nvda_chg": -4.57,
-    "coin_chg": -8.46,
-    "btc_chg": 0.19,
-    "ethbtc_chg": 0.321,
-    "solbtc_chg": 0.2
+    "nq": 26816.75,
+    "nq_chg": -1.71,
+    "tnx": 5.11,
+    "tnx_chg": -0.31,
+    "dxy": 103.496,
+    "dxy_chg": -0.05,
+    "mstr_chg": -10.71,
+    "nvda_chg": -5.34,
+    "coin_chg": -8.51,
+    "btc_chg": -0.147,
+    "ethbtc_chg": -1.382,
+    "solbtc_chg": 3.053
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
