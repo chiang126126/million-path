@@ -291,5 +291,24 @@
   "opened_at": "2026-11-19T02:00:00Z",
   "closed_at": "2026-11-19T05:00:00Z",
   "equity_after": 962.01
+ },
+ {
+  "symbol": "BTCUSDT",
+  "side": "SHORT",
+  "tag": "趋势·反抽30h线空",
+  "entry": 63584.71,
+  "exit": 63521.13,
+  "qty": 0.019982,
+  "notional": 1270.55,
+  "risk": 13.12,
+  "pnl": 0.0005,
+  "r": 0.0,
+  "fee_total": 1.2699,
+  "mfe_pct": 1.12,
+  "exit_reason": "STOP_BE",
+  "hold_hours": 10.0,
+  "opened_at": "2026-11-19T05:00:00Z",
+  "closed_at": "2026-11-19T15:00:00Z",
+  "equity_after": 874.68
  }
 ]
