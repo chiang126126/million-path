@@ -3,7 +3,7 @@
   "BTCUSDT": {
    "equity": 874.6778784130688,
    "peak": 1000.0,
-   "last_t": 1795107600000,
+   "last_t": 1795111200000,
    "day": "2026-11-19",
    "day_start": 874.677336413001,
    "entries_today": 1,
@@ -11,10 +11,10 @@
    "cooldown_until": 1791885600000,
    "halted": false,
    "signal": {
-    "at": "2026-11-19T18:00:00Z",
+    "at": "2026-11-19T19:00:00Z",
     "text": "🚫 今日已进场1次——频率上限",
     "regime": "trend_down",
-    "dev": -16.97
+    "dev": -16.79
    },
    "last_exit_t": 1795096800000,
    "pos": null
@@ -22,7 +22,7 @@
   "ETHUSDT": {
    "equity": 962.0111337268727,
    "peak": 1000.0,
-   "last_t": 1795107600000,
+   "last_t": 1795111200000,
    "day": "2026-11-19",
    "day_start": 977.8824950316636,
    "entries_today": 1,
@@ -30,16 +30,16 @@
    "cooldown_until": 1791705600000,
    "halted": false,
    "signal": {
-    "at": "2026-11-19T18:00:00Z",
+    "at": "2026-11-19T19:00:00Z",
     "text": "🚫 今日已进场1次——频率上限",
     "regime": "trend_down",
-    "dev": -18.84
+    "dev": -18.54
    },
    "last_exit_t": 1795060800000,
    "pos": null
   }
  },
  "started_at": "2026-08-19T18:07:18Z",
- "updated_at": "2026-11-19T18:07:18Z",
+ "updated_at": "2026-11-19T19:07:18Z",
  "guardian_at": "2026-11-19T15:45:02Z"
 }
