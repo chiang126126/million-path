@@ -1,13 +1,13 @@
 {
- "updated_at": "2026-11-19T12:07:20Z",
+ "updated_at": "2026-11-19T13:07:19Z",
  "books": {
   "BTCUSDT": {
    "equity": 874.04,
    "signal": {
-    "at": "2026-11-19T12:00:00Z",
+    "at": "2026-11-19T13:00:00Z",
     "text": "持仓管理中：SHORT @63584.71，止损 64241.31(STOP)",
     "regime": "trend_down",
-    "dev": -15.39
+    "dev": -15.48
    },
    "stats": {
     "n": 7,
@@ -46,10 +46,10 @@
   "ETHUSDT": {
    "equity": 962.01,
    "signal": {
-    "at": "2026-11-19T12:00:00Z",
+    "at": "2026-11-19T13:00:00Z",
     "text": "🚫 今日已进场1次——频率上限",
     "regime": "trend_down",
-    "dev": -17.18
+    "dev": -17.23
    },
    "stats": {
     "n": 8,
