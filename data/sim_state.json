@@ -1,45 +1,63 @@
 {
  "books": {
   "BTCUSDT": {
-   "equity": 874.677336413001,
+   "equity": 874.042061413001,
    "peak": 1000.0,
-   "last_t": 1795006800000,
-   "day": "2026-11-18",
+   "last_t": 1795086000000,
+   "day": "2026-11-19",
    "day_start": 874.677336413001,
-   "entries_today": 0,
+   "entries_today": 1,
    "consec_stops": 0,
    "cooldown_until": 1791885600000,
    "halted": false,
    "signal": {
-    "at": "2026-11-18T14:00:00Z",
-    "text": "⏳ 趋势↓待反抽：等价格反抽30h线受阻(不追第一波)",
+    "at": "2026-11-19T12:00:00Z",
+    "text": "持仓管理中：SHORT @63584.71，止损 64241.31(STOP)",
     "regime": "trend_down",
-    "dev": -16.09
+    "dev": -15.39
    },
    "last_exit_t": 1792562400000,
-   "pos": null
+   "pos": {
+    "symbol": "BTCUSDT",
+    "side": "SHORT",
+    "entry": 63584.71,
+    "qty": 0.019982032995487613,
+    "notional": 1270.55,
+    "risk": 13.12,
+    "stop": 64241.31,
+    "target": 62140.19,
+    "stop_pct": 0.010326348223383519,
+    "rr": 2.2,
+    "max_hold": 48,
+    "stop_kind": "STOP",
+    "tag": "趋势·反抽30h线空",
+    "opened_t": 1795064400000,
+    "opened_at": "2026-11-19T05:00:00Z",
+    "fee_in": 0.6353,
+    "mfe_price": 63300.0
+   }
   },
   "ETHUSDT": {
-   "equity": 977.8824950316636,
+   "equity": 962.0111337268727,
    "peak": 1000.0,
-   "last_t": 1795006800000,
-   "day": "2026-11-18",
+   "last_t": 1795086000000,
+   "day": "2026-11-19",
    "day_start": 977.8824950316636,
-   "entries_today": 0,
-   "consec_stops": 0,
+   "entries_today": 1,
+   "consec_stops": 1,
    "cooldown_until": 1791705600000,
    "halted": false,
    "signal": {
-    "at": "2026-11-18T14:00:00Z",
-    "text": "⏳ 趋势↓待反抽：等价格反抽30h线受阻(不追第一波)",
+    "at": "2026-11-19T12:00:00Z",
+    "text": "🚫 今日已进场1次——频率上限",
     "regime": "trend_down",
-    "dev": -18.75
+    "dev": -17.18
    },
-   "last_exit_t": 1794640559763,
+   "last_exit_t": 1795060800000,
    "pos": null
   }
  },
  "started_at": "2026-08-19T18:07:18Z",
- "updated_at": "2026-11-18T14:07:19Z",
+ "updated_at": "2026-11-19T12:07:20Z",
  "guardian_at": "2026-11-14T08:15:59Z"
 }
