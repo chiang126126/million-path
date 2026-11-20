@@ -3,18 +3,18 @@
   "BTCUSDT": {
    "equity": 874.6778784130688,
    "peak": 1000.0,
-   "last_t": 1795114800000,
-   "day": "2026-11-19",
-   "day_start": 874.677336413001,
-   "entries_today": 1,
+   "last_t": 1795179600000,
+   "day": "2026-11-20",
+   "day_start": 874.6778784130688,
+   "entries_today": 0,
    "consec_stops": 0,
    "cooldown_until": 1791885600000,
    "halted": false,
    "signal": {
-    "at": "2026-11-19T20:00:00Z",
-    "text": "🚫 今日已进场1次——频率上限",
+    "at": "2026-11-20T14:00:00Z",
+    "text": "⏳ 趋势↓待反抽：等价格反抽30h线受阻(不追第一波)",
     "regime": "trend_down",
-    "dev": -17.47
+    "dev": -17.35
    },
    "last_exit_t": 1795096800000,
    "pos": null
@@ -22,24 +22,24 @@
   "ETHUSDT": {
    "equity": 962.0111337268727,
    "peak": 1000.0,
-   "last_t": 1795114800000,
-   "day": "2026-11-19",
-   "day_start": 977.8824950316636,
-   "entries_today": 1,
+   "last_t": 1795179600000,
+   "day": "2026-11-20",
+   "day_start": 962.0111337268727,
+   "entries_today": 0,
    "consec_stops": 1,
    "cooldown_until": 1791705600000,
    "halted": false,
    "signal": {
-    "at": "2026-11-19T20:00:00Z",
-    "text": "🚫 今日已进场1次——频率上限",
+    "at": "2026-11-20T14:00:00Z",
+    "text": "⏳ 趋势↓待反抽：等价格反抽30h线受阻(不追第一波)",
     "regime": "trend_down",
-    "dev": -18.86
+    "dev": -18.75
    },
    "last_exit_t": 1795060800000,
    "pos": null
   }
  },
  "started_at": "2026-08-19T18:07:18Z",
- "updated_at": "2026-11-19T20:07:19Z",
+ "updated_at": "2026-11-20T14:07:18Z",
  "guardian_at": "2026-11-19T15:45:02Z"
 }
