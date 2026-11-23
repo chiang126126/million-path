@@ -1,5 +1,5 @@
 {
-  "ts": "2026-11-23T20:07:01Z",
+  "ts": "2026-11-23T22:07:00Z",
   "mode": "testnet",
   "equity": 399.97,
   "day_pnl_pct": 0.0,
@@ -42,18 +42,18 @@
   "news_lines": 3,
   "global_risk": "mixed",
   "xm": {
-    "nq": 26768.25,
-    "nq_chg": 6.53,
+    "nq": 26821.5,
+    "nq_chg": 6.75,
     "tnx": 4.92,
-    "tnx_chg": 0.16,
-    "dxy": 104.332,
-    "dxy_chg": 0.51,
-    "mstr_chg": -1.67,
-    "nvda_chg": 12.73,
-    "coin_chg": -0.8,
-    "btc_chg": 0.718,
-    "ethbtc_chg": 0.035,
-    "solbtc_chg": 3.298
+    "tnx_chg": 0.12,
+    "dxy": 104.324,
+    "dxy_chg": 0.5,
+    "mstr_chg": -2.01,
+    "nvda_chg": 13.06,
+    "coin_chg": -0.08,
+    "btc_chg": 0.599,
+    "ethbtc_chg": -0.355,
+    "solbtc_chg": 2.042
   },
-  "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
+  "phase": "美股盘后/亚洲时段·关注加密独立行情与夜间异动"
 }
