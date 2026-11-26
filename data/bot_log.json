@@ -1,5 +1,5 @@
 {
-  "ts": "2026-11-26T19:07:01Z",
+  "ts": "2026-11-26T20:07:01Z",
   "mode": "testnet",
   "equity": 399.97,
   "day_pnl_pct": 0.0,
@@ -46,14 +46,14 @@
     "nq_chg": -0.21,
     "tnx": 4.85,
     "tnx_chg": -1.14,
-    "dxy": 103.772,
+    "dxy": 103.766,
     "dxy_chg": -0.04,
     "mstr_chg": -5.26,
     "nvda_chg": -9.54,
     "coin_chg": -4.65,
-    "btc_chg": 0.973,
-    "ethbtc_chg": -0.107,
-    "solbtc_chg": 0.83
+    "btc_chg": 1.371,
+    "ethbtc_chg": 0.0,
+    "solbtc_chg": 0.034
   },
   "phase": "美股盘中·只做确认不追第一波，警惕开盘噪音与插针"
 }
